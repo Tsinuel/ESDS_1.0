@@ -1,0 +1,3614 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ESADS.Graphics</name>
+    </assembly>
+    <members>
+        <member name="T:ESADS.EGraphics.eIDrawing">
+            <summary>
+            Represent a graphic object than can adergo graphic processes like zooming,paning,and drawing.
+            </summary>
+        </member>
+        <member name="M:ESADS.EGraphics.eIDrawing.Zoom(System.Drawing.PointF,System.Single)">
+            <summary>
+            Zooms the graphic object on which it is called by the given zoom factor and zooming center.
+            </summary>
+            <param name="ZoomCenter">The zoom ceter from which the zooming is done.</param>
+            <param name="ZoomFactor">The zoom factor by which the drawing object is enlarged.</param>
+        </member>
+        <member name="M:ESADS.EGraphics.eIDrawing.Pan(System.Single,System.Single)">
+             <summary>
+             Pans or moves graphic object on which it is called by by specified offset in both axis.
+             </summary>
+            <param name="Xoffset">The X-Offset by which the object is moved.</param>
+            <param name="Yoffset">The Y-Offset by which the object is moved.</param>
+        </member>
+        <member name="M:ESADS.EGraphics.eIDrawing.Draw(System.Drawing.Graphics)">
+             <summary>
+             Draws graphic object on which it is called.
+             </summary>
+            <param name="g"> The graphic object on which the element is to be drawn.</param>
+        </member>
+        <member name="P:ESADS.EGraphics.eIDrawing.Location">
+            <summary>
+            Gets or sets the start of the drawing object.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.eIDrawing.Layer">
+            <summary>
+            Gets the layer of the drawing on which the graphic object  is drawn.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.eIDrawing.Color">
+            <summary>
+            Gets or sets the color of this drawing object.
+            </summary>
+        </member>
+        <member name="T:ESADS.EGraphics.eChangeBy">
+            <summary>
+            Represents the way by which drawing objects change their properties.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eChangeBy.ByLayer">
+             <summary>
+            Represents condition when the drawing object properties change when the layer property change.
+             </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eChangeBy.ByObject">
+             <summary>
+            Represents condition when the drawing object properties change when the object  property change.
+             </summary>
+        </member>
+        <member name="T:ESADS.EGraphics.eRectangle">
+             <summary>
+            Represents Rectangular graphics drawing.
+             </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eRectangle.color">
+            <summary>
+            Holds a value for property 'Color'.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eRectangle.lineType">
+            <summary>
+            Holds a value for property 'LineType'.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eRectangle.lineWeigth">
+            <summary>
+            Holds a value for property 'LineWeigth'.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eRectangle.width">
+            <summary>
+            Holds the value of the 'Width' property.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eRectangle.height">
+            <summary>
+            Holds the value of the 'Height' property.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eRectangle.location">
+            <summary>
+            Holds the value of the 'location' property.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eRectangle.drawType">
+            <summary>
+            Holds the value of the 'Draw startPoint' property.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eRectangle.fillColor">
+            <summary>
+            Holds the value of the 'NegFillColor' property.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eRectangle.layer">
+            <summary>
+            Holds the value of the 'Layer' property.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eRectangle.hatchStyle">
+            <summary>
+            Accesses the public property 'HatchStyle'.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eRectangle.rotation">
+            <summary>
+            Holds the value of the 'Rotation' property.
+            </summary>
+        </member>
+        <member name="M:ESADS.EGraphics.eRectangle.#ctor(System.Drawing.PointF,System.Single,System.Single,ESADS.EGraphics.eDrawType,System.Drawing.Drawing2D.HatchStyle,ESADS.EGraphics.eLayer)">
+            <summary>
+            Creates new instance of ESADS.EGraphics.eRectangle class from all basic parameters.
+            </summary>
+            <param name="width">The width of the rectangle.</param>
+            <param name="height">The height of the rectangle.</param>
+            <param name="location">The start of the top left corner of the rectangle.</param>
+            <param name="drawType">The drawType startPoint of the rectangle.</param>
+            <param name="hatchStyle">The hatch Style of the rectangle.</param>
+            <param name="layer">The layer on which the drawing is done.</param>
+        </member>
+        <member name="M:ESADS.EGraphics.eRectangle.#ctor(System.Drawing.PointF,System.Single,System.Single,ESADS.EGraphics.eLayer)">
+             <summary>
+            Creates new instance of ESADS.EGraphics.eRectangle class for draw mode.
+             </summary>
+             <param name="width">The width of the rectangle.</param>
+             <param name="height">The height of the rectangle.</param>
+             <param name="location">The start of the top left corner of the rectangle.</param>
+             <param name="layer">The layer on which the drawing is done.</param>
+        </member>
+        <member name="M:ESADS.EGraphics.eRectangle.#ctor(System.Drawing.PointF,System.Single,System.Single,ESADS.EGraphics.eDrawType,ESADS.EGraphics.eLayer)">
+            <summary>
+            Creates an instance of ESADS.EGraphics.eRectangle class for fill mode.
+            </summary>
+            <param name="location">The the top left corner coordinate of the rectangle.</param>
+            <param name="width">Width of the rectanle.</param>
+            <param name="height">Height of the rectangle.</param>
+            <param name="drawType">The drawing mode.</param>
+            <param name="layer">The layer on which the drawing is done.</param>
+        </member>
+        <member name="M:ESADS.EGraphics.eRectangle.Zoom(System.Drawing.PointF,System.Single)">
+            <summary>
+            Zooms the rectangle on which it is called.
+            </summary>
+            <param name="ZoomCenter">The zoom center for the rcatangle</param>
+            <param name="ZoomFactor">The zoom factor by which the rectagle is going to be  enlarged.</param>
+        </member>
+        <member name="M:ESADS.EGraphics.eRectangle.Pan(System.Single,System.Single)">
+            <summary>
+            Pans or moves the rectangle on which it is called.
+            </summary>
+            <param name="Xoffset">The distance in x-direction by which the drawing is going to be moved.</param>
+            <param name="Yoffset">The distance in y-direction by which the drawing is going to be moved.</param>
+        </member>
+        <member name="M:ESADS.EGraphics.eRectangle.Draw(System.Drawing.Graphics)">
+            <summary>
+            Draws the rectangle object on which it is called.
+            </summary>
+            <param name="g">Graphic object on which the drawing are going to be drawn.</param>
+        </member>
+        <member name="M:ESADS.EGraphics.eRectangle.Contains(System.Drawing.PointF)">
+            <summary>
+            Checks if a point is contained in this rectangle.
+            </summary>
+            <param name="p">The point for which the existance is going to be checked. </param>
+            <returns></returns>
+        </member>
+        <member name="M:ESADS.EGraphics.eRectangle.layer_Modified(ESADS.EGraphics.eLayer,ESADS.EGraphics.eLayerModifiedEventArgs)">
+            <summary>
+            Event handler for ESADS.EGraphics.eLayer.Modifeid event;
+            </summary>
+            <param name="sender">The layer sending this event.</param>
+            <param name="e">Event argument containing all the necessary information related to the event.</param>
+        </member>
+        <member name="P:ESADS.EGraphics.eRectangle.DrawType">
+            <summary>
+            Gets or sets the way the drawing is drawn.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.eRectangle.FillColor">
+            <summary>
+            Gets or sets the color to fill the rectangle with.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.eRectangle.Location">
+            <summary>
+            Gets or sets the start of the top left corner of the rectangle.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.eRectangle.Width">
+            <summary>
+            Gets or sets the width of the rectangle.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.eRectangle.Height">
+            <summary>
+            Gets or sets the height of the rectangle.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.eRectangle.Layer">
+            <summary>
+            Gets the layer in which the rectangle is located.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.eRectangle.TopRight">
+            <summary>
+            Gets or sets the coordinate of the top right corner.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.eRectangle.BottomLeft">
+            <summary>
+            Gets or sets the coordinate of the bottom left corner.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.eRectangle.BottomRight">
+            <summary>
+            Gets or sets the coordinate of the bottom right.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.eRectangle.HatchStyle">
+            <summary>
+            Gets or sets the hatch style of the rctangle.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.eRectangle.Rotation">
+            <summary>
+            Gets or sets the clockwise rotation angle of rectangle relative to its center.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.eRectangle.Color">
+            <summary>
+            Gets or sets the color of the Dimension.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.eRectangle.LineType">
+            <summary>
+            Gets or sets the line type of the Dimension.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.eRectangle.LineWeight">
+            <summary>
+            Gets or sets the line weight of the Dimension.
+            </summary>
+        </member>
+        <member name="T:ESADS.EGraphics.eAxisIcon">
+            <summary>
+            Represents the universal coordinate system axis icon.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eAxisIcon.location">
+            <summary>
+            Holds a value for public property 'location'.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eAxisIcon.color">
+            <summary>
+            Holds a value for public property 'Color'.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eAxisIcon.dwgForm">
+            <summary>
+            Contains the drawing form on which the axis icon
+            </summary>
+        </member>
+        <member name="M:ESADS.EGraphics.eAxisIcon.#ctor(System.Windows.Forms.Form)">
+            <summary>
+            Creates an instance of ESADS.eAxisIcon structure given the form on which drawing is done.
+            </summary>
+            <param name="dwgForm">The drawing form where the axis icon found.</param>
+        </member>
+        <member name="M:ESADS.EGraphics.eAxisIcon.Zoom(System.Drawing.PointF,System.Single)">
+            <summary>
+            Zooms the axis icon on which it is called.
+            </summary>
+            <param name="ZoomCenter">The zoom center from which zooming is done.</param>
+            <param name="ZoomFactor">The factor by which the drawing is elarged.</param>
+        </member>
+        <member name="M:ESADS.EGraphics.eAxisIcon.Pan(System.Single,System.Single)">
+            <summary>
+            Pans or moves the axis icon by the specifeid offesets in both axis.
+            </summary>
+            <param name="XOffset">The distance moved in x-direction</param>
+            <param name="YOffset">The distance moved in y-direction</param>
+        </member>
+        <member name="M:ESADS.EGraphics.eAxisIcon.Draw(System.Drawing.Graphics)">
+            <summary>
+            Draws the ixis icon on which it is called.
+            </summary>
+            <param name="g">The graphic object on which drawing is done.</param>
+        </member>
+        <member name="M:ESADS.EGraphics.eAxisIcon.dwgForm_BackColorChanged(System.Object,System.EventArgs)">
+            <summary>
+            Event handler which changes the color of the axis icon when ever the color of the draw from change.The color changed to give best contrast.
+            </summary>
+            <param name="sender">The object sending the event</param>
+            <param name="e">The event argument.</param>
+        </member>
+        <member name="M:ESADS.EGraphics.eAxisIcon.dwgForm_SizeChanged(System.Object,System.EventArgs)">
+            <summary>
+            Event hadler which change the size of the axis icon when ever the size of the draw from change.
+            </summary>
+            <param name="sender">The object sending the event</param>
+            <param name="e">The event argument.</param>
+        </member>
+        <member name="P:ESADS.EGraphics.eAxisIcon.Color">
+            <summary>
+            Gets or sets the color of the axis icon.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.eAxisIcon.Location">
+            <summary>
+            Gets or sets the start of the axis icon.
+            </summary>
+        </member>
+        <member name="T:ESADS.EGraphics.eDrawType">
+            <summary>
+            Specifies the way to drawType two dimensional drawings, specially closed perimenters.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eDrawType.Draw">
+            <summary>
+            Draws the perimeter of the two dimensional drawing.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eDrawType.Fill">
+            <summary>
+            Fills the object if the two dimensional drawing is a closed one.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eDrawType.FillAndDraw">
+            <summary>
+            Fills the area and draws the perimeter as well.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eDrawType.Hatch">
+            <summary>
+            Hatchs the surounded by the object.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eDrawType.HatchAndDraw">
+            <summary>
+            First hatchs the area and then draw the exterior
+            </summary>
+        </member>
+        <member name="T:ESADS.EGraphics.eDimensionLinePosition">
+            <summary>
+            Determines the relative position of the membDimension and the object to be measured.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eDimensionLinePosition.LeftOrAbove">
+            <summary>
+            Puts the membDimension line to the left or above the object to be measured depanding on the startPoint of membDimension.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eDimensionLinePosition.RightOrBottom">
+            <summary>
+            Puts the membDimension line to the right or at the bottom of the object to be measured.
+            </summary>
+        </member>
+        <member name="T:ESADS.EGraphics.eDimension">
+            <summary>
+            Represents the combination of lines, arrows and text_left to show the distance between two points on drawing.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eDimension.color">
+            <summary>
+            Holds a value for property 'Color'.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eDimension.lineType">
+            <summary>
+            Holds a value for property 'LineType'.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eDimension.lineWeight">
+            <summary>
+            Holds a value for property 'LineWeigth'.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eDimension.textStyle">
+            <summary>
+            Holds a value for public property 'TextStyle'.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eDimension.type">
+            <summary>
+            Holds the value of the 'Type' property.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eDimension.start">
+            <summary>
+            Holds the value of the 'TopLeft' property.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eDimension.end">
+            <summary>
+            Holds the value of the 'BottomRight' property.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eDimension.shortExtLength">
+            <summary>
+            The distance from the nearest object point to the tip of the extension lineType.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eDimension.dimensionLinePosition">
+            <summary>
+            The relative position of the membDimension lineType to the object to be measured.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eDimension.offsetFromOrigin">
+            <summary>
+            The distance from the point to be measured to the first extension lineType point.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eDimension.extBeyondDimLines">
+            <summary>
+            The distance from the intersection of the membDimension lineType and extension lineType to the tip of the extension lineType.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eDimension.arrowSize">
+            <summary>
+            A number to scale the arrow head from a predefined height to width ratio.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eDimension.rotation">
+            <summary>
+            The rotation of the whole membDimension about the start point measured in degrees.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eDimension.layer">
+            <summary>
+            Holds the value of the 'Layer' property.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eDimension.suppressExt1">
+            <summary>
+            Holds the value of the 'SuppressExt1' property.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eDimension.suppressExt2">
+            <summary>
+            Holds the value of the 'SuppressExt2' property.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eDimension.rotateVerticalText">
+            <summary>
+            Holds the value of the 'RotateVerticalText' property.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eDimension.visible">
+            <summary>
+            Holds the value of 'Visible' property.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eDimension.popText">
+            <summary>
+            Value of the 'PopText' property.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eDimension.dwgObjects">
+            <summary>
+            All the drawing components of the dimension.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eDimension.angle">
+            <summary>
+            The angle by which the dimension is rotated for aligned type dimension.
+            </summary>
+        </member>
+        <member name="M:ESADS.EGraphics.eDimension.InitializeComponents">
+            <summary>
+            Initalizes the initial default components of the dimension.
+            </summary>
+        </member>
+        <member name="M:ESADS.EGraphics.eDimension.GenerateDWGs">
+            <summary>
+            Regenerates all the drawing components of the dimension.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.eDimension.TextStyle">
+            <summary>
+            Gets or sets the text_left style of the membDimension.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.eDimension.Location">
+            <summary>
+            Gets or sets the start of the membDimension, which is by default the start point of the dimensio.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.eDimension.Start">
+            <summary>
+            Gets or sets the first point of the text_left to be measured.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.eDimension.End">
+            <summary>
+            Gets or sets the second point of the text_left to be measured.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.eDimension.Text">
+            <summary>
+            Gets or sets the text_left specifying the text_left value.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.eDimension.Type">
+            <summary>
+            Gets or sets the membDimension startPoint to measure between two points.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.eDimension.ShortExtensionLength">
+            <summary>
+            Gets or sets the shorter length from either the start or end point, whichever is nearer.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.eDimension.ArrowSize">
+            <summary>
+            Gets or sets a number determining the size of the arrow head.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.eDimension.DimensionLinePosition">
+            <summary>
+            Gets or sets the relative position of the membDimension line to the object to be measured.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.eDimension.ExtBeyondDimLines">
+            <summary>
+            Gets or sets the extra length of the extension lines from the membDimension line.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.eDimension.Layer">
+            <summary>
+            Gets the layer on which the membDimension is drawn
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.eDimension.OffsetFromOrigin">
+            <summary>
+            Gets or sets the distance from the object to the first point of the extension lines.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.eDimension.SuppressExt1">
+            <summary>
+            Gets or sets the value if the first extension line is to be omitted.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.eDimension.SuppressExt2">
+            <summary>
+            Gets or sets the value if the second extension line is to be omitted.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.eDimension.RotateVerticalText">
+            <summary>
+            Gets or sets whether to rotate the text_left in linear vertical membDimension by nignty degrees type.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.eDimension.Color">
+            <summary>
+            Gets or sets the color of the Dimension.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.eDimension.LineType">
+            <summary>
+            Gets or sets the line type of the Dimension.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.eDimension.LineWeight">
+            <summary>
+            Gets or sets the line weight of the Dimension.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.eDimension.Visible">
+            <summary>
+            Gets or sets if the membDimension is visible.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.eDimension.PopText">
+            <summary>
+            Gets or sets the value if the text_left is put outside the extension line when the space available is not enough for it.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.eDimension.TextObjet">
+            <summary>
+            Gets the text_left object used to display the membDimension.
+            </summary>
+        </member>
+        <member name="T:ESADS.EGraphics.eColor">
+            <summary>
+            Represents ESADS color types.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eColor.changeBy">
+            <summary>
+            Holds a value for property 'ChangeBy'.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eColor.color">
+            <summary>
+            Contains the clor represented in this structure.
+            </summary>
+        </member>
+        <member name="M:ESADS.EGraphics.eColor.#ctor(System.Drawing.Color,ESADS.EGraphics.eChangeBy)">
+            <summary>
+            Creates an instance of ESADS.EGraphics.eColor structure from given basic parameters.
+            </summary>
+            <param name="color">Required color.</param>
+            <param name="changeBy">Indicates the way how the color change.</param>
+        </member>
+        <member name="M:ESADS.EGraphics.eColor.#ctor(System.Drawing.Color)">
+            <summary>
+            Creates an instance of ESADS.EGraphics.eColor structure from given basic parameters.
+            </summary>
+            <param name="color">Required color.</param>
+        </member>
+        <member name="M:ESADS.EGraphics.eColor.FromArgb(System.Int32,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Sets the color from the ARGB values.
+            </summary>
+            <param name="Alpha">The alpha value ranging from 0-255.</param>
+            <param name="Red">The red value ranging from 0-255.</param>
+            <param name="Green">The green value ranging from 0-255.</param>
+            <param name="Blue">The blue value ranging from 0-255.</param>
+        </member>
+        <member name="M:ESADS.EGraphics.eColor.FromArgb(System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Sets the color from the ARGB values.
+            </summary>
+            <param name="Red">The red value ranging from 0-255.</param>
+            <param name="Green">The green value ranging from 0-255.</param>
+            <param name="Blue">The blue value ranging from 0-255.</param>
+        </member>
+        <member name="M:ESADS.EGraphics.eColor.SetColor(System.Drawing.Color)">
+            <summary>
+            Sets the color from predefied colors.
+            </summary>
+            <param name="Color">The color to set the original value.</param>
+        </member>
+        <member name="M:ESADS.EGraphics.eColor.op_Implicit(ESADS.EGraphics.eColor)~System.Drawing.Color">
+            <summary>
+            Convers the ESADS.EGraphics.eColor struct to System.Drawing.eColor.
+            </summary>
+            <param name="c"></param>
+            <returns></returns>
+        </member>
+        <member name="P:ESADS.EGraphics.eColor.ChangeBy">
+            <summary>
+            Gets or set the value indicating how this color change.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eBreakLine.extension">
+            <summary>
+            Holds the value of 'Extension'.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eBreakLine.amplitude">
+            <summary>
+            Holds the value of 'Amplitude'.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eBreakLine.point1">
+            <summary>
+            Holds the value of 'Point1'.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eBreakLine.point2">
+            <summary>
+            Holds the value of 'Point2'.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eBreakLine.lineWeight">
+            <summary>
+            Holds the value of 'LineWeight'.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eBreakLine.tension">
+            <summary>
+            Holds the value of 'Tension'.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eBreakLine.lineType">
+            <summary>
+            Holds the value of 'LineType'.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eBreakLine.color">
+            <summary>
+            Holds the value of 'Color'.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eBreakLine.layer">
+            <summary>
+            Holds the value of 'Layer'.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eBreakLine.size">
+            <summary>
+            Holds the value of 'Size'.
+            </summary>
+        </member>
+        <member name="M:ESADS.EGraphics.eBreakLine.#ctor(ESADS.EGraphics.eLayer,System.Drawing.PointF,System.Drawing.PointF)">
+            <summary>
+            Creates a set of lines which is used to indicate discontinuity in drawings.
+            </summary>
+            <param name="layer">The layer on which the break line is to be drawn.</param>
+            <param name="point1">The first point of the break line.</param>
+            <param name="point2">The second point of the break line.</param>
+        </member>
+        <member name="M:ESADS.EGraphics.eBreakLine.GenerateDwgObjects">
+            <summary>
+            Generates all the necessary objects to draw the break line.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.eBreakLine.Location">
+            <summary>
+            Gets or sets the first point of the break line.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.eBreakLine.Layer">
+            <summary>
+            Gets or sets the layer on which the break line is drawn.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.eBreakLine.Color">
+            <summary>
+            Gets or sets the color of the break line
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.eBreakLine.Amplitude">
+            <summary>
+            Gets or sets the extent by which the middle wavy lines protrude from the horizontal lines. Value should be greater than zero.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.eBreakLine.Extention">
+            <summary>
+            Gets or sets the distance by which the horizontal line extends beyond the end points. Value should be greater than zero.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.eBreakLine.Point1">
+            <summary>
+            Gets or sets the first point at which one end of the break line lies.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.eBreakLine.Point2">
+            <summary>
+            Gets or sets the second point at which the other end of the break line lies.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.eBreakLine.LineWeight">
+            <summary>
+            Gets or sets the line weight of the break line.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.eBreakLine.LineType">
+            <summary>
+            Gets or sets the line type of the break line.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.eBreakLine.Tension">
+            <summary>
+            Gets or sets the distance the middle wavy part covers relative to the total distance between the two end points. Value shall be between 0.001f and 1.0f.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.eBreakLine.Size">
+            <summary>
+            Gets or sets the value which indicates the overall largeness of the breakline. It cannot be zero or negative.
+            </summary>
+        </member>
+        <member name="T:ESADS.EGraphics.eArc">
+            <summary>
+            Represents portion of a circle or an ellipse, may be tilted at an angle.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eArc.color">
+            <summary>
+            Holds a value for property 'Color'.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eArc.lineType">
+            <summary>
+            Holds a value for property 'LineType'.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eArc.lineWeigth">
+            <summary>
+            Holds a value for property 'LineWeigth'.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eArc.layer">
+            <summary>
+            Holds the value of the 'Layer' property.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eArc.startAngle">
+            <summary>
+            Holds the value of the 'startAngle' property.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eArc.sweepAngle">
+            <summary>
+            Holds the value of the 'sweepAngle' property.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eArc.rectangle">
+            <summary>
+            The rectangle that bears the ellipse
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eArc.rotation">
+            <summary>
+            The clockwise angle by which the arc is to be tited.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eArc.rotationCenter">
+            <summary>
+            Holds the value of the 'RotationCenter' property.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eArc.start">
+            <summary>
+            the start point of the arc.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eArc.end">
+            <summary>
+            the end point of the arc.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eArc.cuvature">
+            <summary>
+            Holds the value of the 'Curvature' property.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eArc.zoomDashPattern">
+            <summary>
+            value of 'ZoomDashPattern'
+            </summary>
+        </member>
+        <member name="M:ESADS.EGraphics.eArc.#ctor(System.Drawing.PointF,System.Single,System.Single,System.Single,ESADS.EGraphics.eLayer)">
+            <summary>
+            Creates a circular arc given its center, radius, start angle and sweep angle.
+            </summary>
+            <param name="center">The center point of the arc.</param>
+            <param name="radius">The radius of the arc.</param>
+            <param name="startAngle">The clockwise angle measured from the positive x-axis.</param>
+            <param name="sweepAngle">The clockwise angle measured form the start point.</param>
+            <param name="layer">The layer on which to draw the arc on.</param>
+        </member>
+        <member name="M:ESADS.EGraphics.eArc.#ctor(System.Drawing.RectangleF,System.Single,System.Single,System.Single,System.Drawing.PointF,ESADS.EGraphics.eLayer,ESADS.EGraphics.eLineTypes)">
+            <summary>
+            Creates an arc that is extracted from an ellipse rotated at an angle.
+            </summary>
+            <param name="IncludingRectangle">The rectangle that forms the ellipse from which the arc is cut.</param>
+            <param name="StartAngle">The clockwise angle measured from the positive x-axis to the start point of the arc.</param>
+            <param name="SweepAngle">The clockwise angle measured from the start point of the arc to the end point.</param>
+            <param name="Rotation">The clockwise angle to rotate the whole arc about the center of the ellipse.</param>
+            <param name="rotationCenter">The center about which to rotate the including rectangle to draw the arc.</param>
+            <param name="layer">The layer on which to draw the arc.</param>
+            <param name="lineType">The line style of the line to draw the arc.</param>
+        </member>
+        <member name="M:ESADS.EGraphics.eArc.#ctor(System.Drawing.PointF,System.Drawing.PointF,System.Single,ESADS.EGraphics.eLayer)">
+            <summary>
+            Creates an arc given its start, end and curvature. The arc drawn is always a quarter of an ellipse.
+            </summary>
+            <param name="start">The start point of the arc.</param>
+            <param name="end">The end point of the arc.</param>
+            <param name="cuvature">The amount of curvature of the arc measured with a scale from 0 for straight to 90 highly curved at the tip.</param>
+            <param name="layer">The layer on which to draw the arc.</param>
+        </member>
+        <member name="M:ESADS.EGraphics.eArc.Refresh">
+            <summary>
+            Recalculates all the necessary components based on the most recent changes.
+            </summary>
+        </member>
+        <member name="M:ESADS.EGraphics.eArc.Zoom(System.Drawing.PointF,System.Single)">
+            <summary>
+            Zooms the arc given the zoom center and zoom factor.
+            </summary>
+            <param name="ZoomCenter">The zoom origin from which all relative coordinates are scaled.</param>
+            <param name="ZoomFactor">The zoom factor by which to scale the relative coordinates.</param>
+        </member>
+        <member name="M:ESADS.EGraphics.eArc.Pan(System.Single,System.Single)">
+            <summary>
+            Pans the arc with the given x and y offsets.
+            </summary>
+            <param name="Xoffset">Amount of offset in x direction.</param>
+            <param name="Yoffset">Amount of offset in y direction.</param>
+        </member>
+        <member name="M:ESADS.EGraphics.eArc.Draw(System.Drawing.Graphics)">
+            <summary>
+            Draws the arc on the given graphics object.
+            </summary>
+            <param name="g">The graphics object on which to draw the arc.</param>
+        </member>
+        <member name="M:ESADS.EGraphics.eArc.SetCircularArc(System.Drawing.PointF,System.Single,System.Single,System.Single)">
+            <summary>
+            Sets the arc to a circular arc taking the radius, center, start angle and sweep angle.
+            </summary>
+            <param name="Center">The center point of the arc.</param>
+            <param name="Radius">The radius of the circle from the arc was cut from.</param>
+            <param name="StartAngle">The clockwise angle measured from the positive x-axis from which the arc starts.</param>
+            <param name="SweepAngle">The clockwise angle subtended by the arc.</param>
+        </member>
+        <member name="M:ESADS.EGraphics.eArc.SetEllipticalArc(System.Drawing.RectangleF,System.Single,System.Single,System.Single)">
+            <summary>
+            Sets the arc to an elliptical arc tilted by an angle from the including rectangle, start angle and sweep angle.
+            </summary>
+            <param name="IncludingRectangle">The rectangle that forms the ellipse from which the arc is cut.</param>
+            <param name="StartAngle">The clockwise angle measured from the positive x-axis.</param>
+            <param name="SweepAngle">The clockwise angle subtended by the arc.</param>
+            <param name="Rotation">The clockwise angle to rotate the whole arc about the center of the ellipse.</param>
+        </member>
+        <member name="M:ESADS.EGraphics.eArc.GetRegion(System.Single)">
+            <summary>
+            Gets the region enclosing the arc with a distance given.
+            </summary>
+            <param name="offset">The offset from the arc to the region boundry.</param>
+        </member>
+        <member name="P:ESADS.EGraphics.eArc.Layer">
+            <summary>
+            Gets or sets the layer on which the arc is drawn.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.eArc.Location">
+            <summary>
+            Gets or sets the center start of the rectangle inscribing the full ellipse.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.eArc.RotationCenter">
+            <summary>
+            Gets or sets the rotation center if the arc is to be rotated.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.eArc.Rotation">
+            <summary>
+            Gets or sets a clockwise angle to rotate the arc with about the rotation center.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.eArc.Start">
+            <summary>
+            Gets or sets the start point of the arc. When it is set, it changes a circular arc to an elliptical one.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.eArc.End">
+            <summary>
+            Gets or sets the end point of the arc.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.eArc.Curvature">
+            <summary>
+            Gets or sets the curvature value of the arc.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.eArc.Color">
+            <summary>
+            Gets or sets the color of the arc
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.eArc.LineType">
+            <summary>
+            Gets or sets the line type of the arc.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.eArc.LineWeight">
+            <summary>
+            Gets or sets the line weight of the arc.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.eArc.Radius">
+            <summary>
+            Gets the radius of the arc for a circle type arc. For other types it returns zero.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.eArc.ZoomDashPattern">
+            <summary>
+            Gets or set the value whether to zoom the dashes together with the dwg.
+            </summary>
+        </member>
+        <member name="T:ESADS.EGraphics.eSelectionRectangle">
+            <summary>
+            A dynamic rectangle used to select object that it touched or included depending on the type of selection.
+            </summary>
+        </member>
+        <member name="T:ESADS.EGraphics.eGridPoint">
+            <summary>
+            Represents a grid point which responds to different Syste.Widows.Form events.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eGridPoint.color">
+            <summary>
+            Holds a value for property 'Color'.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eGridPoint.layer">
+            <summary>
+            Holds a value for property 'Layer'.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eGridPoint.location">
+            <summary>
+            Holds a value for property 'location'.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eGridPoint.snapRadius">
+            <summary>
+            Holds a value for property 'SnapRadius'.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eGridPoint.gridPointRadius">
+            <summary>
+            Holds a value for property 'GridPointRadius'.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eGridPoint.region">
+            <summary>
+            Holds a value for property 'Region'.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eGridPoint.active">
+            <summary>
+            Holds a value for property 'Active'.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eGridPoint.selected">
+            <summary>
+            Holds a value for property 'Selected'.
+            </summary>
+        </member>
+        <member name="M:ESADS.EGraphics.eGridPoint.Zoom(System.Drawing.PointF,System.Single)">
+            <summary>
+            Zooms the grid point on which it is called.
+            </summary>
+            <param name="ZoomCenter">The zoom center from which zooming is done.</param>
+            <param name="ZoomFactor">The factor by which the drawing is elarged.</param>
+        </member>
+        <member name="M:ESADS.EGraphics.eGridPoint.Pan(System.Single,System.Single)">
+            <summary>
+            Pans or moves the grid point by the specifeid offesets in both axis.
+            </summary>
+            <param name="XOffset">The distance moved in x-direction</param>
+            <param name="YOffset">The distance moved in y-direction</param>
+        </member>
+        <member name="M:ESADS.EGraphics.eGridPoint.FormRegion">
+            <summary>
+            Forms the region of the Grid Point.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.eGridPoint.Location">
+            <summary>
+            Gets or set the location of the point.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.eGridPoint.Layer">
+            <summary>
+            Gets the layer of the grid point.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.eGridPoint.Color">
+            <summary>
+            Gets or sets the color of the grid point.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.eGridPoint.SnapRadius">
+            <summary>
+            Gets or sets the radius of the grid snap for which the point glows when the mouse aproach.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.eGridPoint.GridPointRadius">
+            <summary>
+            Gets or sets the radius of the grid point.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.eGridPoint.Region">
+            <summary>
+            Gets the region of the grid point including the snap radius.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.eGridPoint.Active">
+            <summary>
+            Get the value indicating whether the grid poit is active or not.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.eGridPoint.Selected">
+            <summary>
+            Gets or sets the value indicatin wheter the grid point is selected or not.
+            </summary>
+        </member>
+        <member name="T:ESADS.EGraphics.eCurve">
+            <summary>
+            Represents ESADS spline curve.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eCurve.color">
+            <summary>
+            Holds  a value for property 'Color'.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eCurve.layer">
+            <summary>
+            Holds  a value for property 'Layer'.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eCurve.location">
+            <summary>
+            Holds  a value for property 'location'.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eCurve.lineType">
+            <summary>
+            Holds  a value for property 'LineType'.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eCurve.lineWeight">
+            <summary>
+            Holds  a value for property 'LineWeight'.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eCurve.points">
+            <summary>
+            Holds  a value for property 'Points'.
+            </summary>
+        </member>
+        <member name="M:ESADS.EGraphics.eCurve.#ctor(System.Drawing.PointF[],ESADS.EGraphics.eLayer)">
+            <summary>
+            Creates an instance of ESADS.EGraphics.eSpline class from the given basic parameters.
+            </summary>
+            <param name="points">  Array of System.Drawing.Point structures that represent the points that determine.</param>
+            <param name="layer">Layer on which the spline is drawn.</param>
+        </member>
+        <member name="M:ESADS.EGraphics.eCurve.Zoom(System.Drawing.PointF,System.Single)">
+            <summary>
+            Zooms the spline from the specified zoom center by the given zoom factor.
+            </summary>
+            <param name="ZoomCenter">The zoom center from which zooming is done.</param>
+            <param name="ZoomFactor">The factor by which the drawing is elarged.</param>
+        </member>
+        <member name="M:ESADS.EGraphics.eCurve.Pan(System.Single,System.Single)">
+            <summary>
+            Pans or moves the spline by the specifeid offesets in both axis.
+            </summary>
+            <param name="XOffset">The distance moved in x-direction</param>
+            <param name="YOffset">The distance moved in y-direction</param>
+        </member>
+        <member name="M:ESADS.EGraphics.eCurve.Draw(System.Drawing.Graphics)">
+            <summary>
+            Draws this spline.
+            </summary>
+            <param name="g">The graphics object on which the drawing is done.</param>
+        </member>
+        <member name="P:ESADS.EGraphics.eCurve.Location">
+            <summary>
+            Gets or sets the location of the spline.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.eCurve.Layer">
+            <summary>
+            Gets the layerof the spline.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.eCurve.Color">
+            <summary>
+            Gets or sets the color of the spline.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.eCurve.LineType">
+            <summary>
+            Gets or sets the line type of the spline.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.eCurve.LineWeight">
+            <summary>
+            Gets or sets the line weight of the spline.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.eCurve.Points">
+            <summary>
+            Gets or sets the point which are connected by the spline.
+            </summary>
+        </member>
+        <member name="T:ESADS.EGraphics.eTextStyle">
+            <summary>
+            Represents ESADS Text styles.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eTextStyle.font">
+            <summary>
+            Represents the font represented by this text_left style.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eTextStyle.changeBy">
+            <summary>
+            Holds a value for property 'ChangeBy'.
+            </summary>
+        </member>
+        <member name="M:ESADS.EGraphics.eTextStyle.#ctor(System.Drawing.Font,ESADS.EGraphics.eChangeBy)">
+            <summary>
+            Creates an instance of ESADS.EGraphics.eTextStyle structure from the given basic parameters.
+            </summary>
+            <param name="font">Font used in the text_left style.</param>
+            <param name="changeBy">The way how the text_left style change.</param>
+        </member>
+        <member name="M:ESADS.EGraphics.eTextStyle.op_Implicit(ESADS.EGraphics.eTextStyle)~System.Drawing.Font">
+            <summary>
+            Convers the ESADS.EGraphics.eColor struct to System.Drawing.eColor.
+            </summary>
+            <param name="textStyle"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ESADS.EGraphics.eTextStyle.SetFont(System.Drawing.Font)">
+            <summary>
+            Sets Font for this text_left style.
+            </summary>
+            <param name="font">Font type.</param>
+        </member>
+        <member name="M:ESADS.EGraphics.eTextStyle.GetSizeOf(System.String)">
+            <summary>
+            Returns the size of the string measured when it is drawn in drawing media.
+            </summary>
+            <param name="Text">The text_left to be measured.</param>
+            <returns></returns>
+        </member>
+        <member name="P:ESADS.EGraphics.eTextStyle.ChangeBy">
+            <summary>
+            Gets or set the value indicating how this color change.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.eTextStyle.Height">
+            <summary>
+            Gets or set the height of the text_left.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.eTextStyle.Value">
+            <summary>
+            Gets or set the font of the text_left style.
+            </summary>
+        </member>
+        <member name="T:ESADS.EGraphics.eLeader">
+            <summary>
+            Represents a line with or without arrow head to show a specific place in drawing.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eLeader.color">
+            <summary>
+            Holds a value for property 'Color'.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eLeader.lineType">
+            <summary>
+            Holds a value for property 'LineType'.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eLeader.lineWeigth">
+            <summary>
+            Holds a value for property 'LineWeigth'.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eLeader.textStyle">
+            <summary>
+            Holds a value for public property 'TextStyle'.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eLeader.arrowHead">
+            <summary>
+            The end arrow pointing to the direction of the point to be indicated.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eLeader.points">
+            <summary>
+            The set of points in the order from the start of the leader to its tip(arrow).
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eLeader.dot">
+            <summary>
+            The dot at the start of the leader.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eLeader.arrowAndDotSize">
+            <summary>
+            Holds the value of the 'ArrowAndDotSize' property.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eLeader.layer">
+            <summary>
+            Holds the value of the 'Layer' propery.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eLeader.suppressArrow">
+            <summary>
+            Holds the value of the 'SuppressArrow' property.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eLeader.suppressDot">
+            <summary>
+            Holds the value of the 'SuppressDot' property.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eLeader.type">
+            <summary>
+            Holds the value of the 'Type' property.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eLeader.curvature">
+            <summary>
+            Holds the value of the 'Curvature' property.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eLeader.arc">
+            <summary>
+            The arc object for arc type leader.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eLeader.start">
+            <summary>
+            Holds the value of the 'TopLeft' property.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eLeader.end">
+            <summary>
+            Holds the value of the 'BottomRight' property.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eLeader.curveDirection">
+            <summary>
+            Holds the vallue of the 'CureveDirection' property.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eLeader.text">
+            <summary>
+            The text_left object to be drawn together with the leader.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eLeader.underLine">
+            <summary>
+            Holds the value of the 'UnderLine' property.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eLeader.circleText">
+            <summary>
+            Holds the value of the 'CircleText' property.
+            </summary>
+        </member>
+        <member name="M:ESADS.EGraphics.eLeader.#ctor(ESADS.EGraphics.eLeaderType,ESADS.EGraphics.eLayer,System.String,System.Boolean,System.Drawing.PointF[])">
+            <summary>
+            Creates new instance of a leader to indicate a point. This constructor cannot be used to form an arc type leader.
+            </summary>
+            <param name="type">The type of leader to be drawn. It cannot be an arc type leader.</param>
+            <param name="layer">The layer on which to draw the leader.</param>
+            <param name="text_left">The text_left to be drawn at the start of the leader.</param>
+            <param name="underline">Boolean value to indicate whether to underline the text_left or not.</param>
+            <param name="points">The sequence of points through which the leader passes.</param>
+        </member>
+        <member name="M:ESADS.EGraphics.eLeader.#ctor(ESADS.EGraphics.eLeaderType,ESADS.EGraphics.eLayer,ESADS.EGraphics.eLineTypes,System.Boolean,System.Boolean,System.String,System.Boolean,System.Drawing.PointF[])">
+            <summary>
+            Creates new instance of a leader to indicate a point. This constructor cannot be used to form an arc type leader.
+            </summary>
+            <param name="type">The type of the leader to be drawn. It cannot be an arc type leader.</param>
+            <param name="layer">The layer on which to draw the leader on.</param>
+            <param name="lineType">The type of line of the leader.</param>
+            <param name="suppressArrow">Omits the arrow if true.</param>
+            <param name="suppressDot">Omits the dot at the start if true.</param>
+            <param name="text_left">The text_left to be written with the  leader.</param>
+            <param name="underline">Indicates whether to underline the text_left or not.</param>
+            <param name="points">The sequence of points through which the leader passes.</param>
+        </member>
+        <member name="M:ESADS.EGraphics.eLeader.#ctor(System.Drawing.PointF,System.Drawing.PointF,System.Single,ESADS.EGraphics.eLayer,ESADS.EGraphics.eLineTypes,System.String,ESADS.EGraphics.eLeaderCurveDirection,System.Boolean,System.Boolean,System.Boolean,System.Boolean)">
+            <summary>
+            Creates an arc type leader with the start and end points and with a given curvature value.
+            </summary>
+            <param name="startPoint">The start point of the leader where the text_left is to be placed.</param>
+            <param name="endPoint">The end point of the leader at the tip of the arrow.</param>
+            <param name="curvature">The curvature value for the arc from the startPoint to the end leader with a number between 0 and 90.</param>
+            <param name="layer">the layer on which the leader is drawn.</param>
+            <param name="lineType">The line type of the leader.</param>
+            <param name="text_left">The text_left to be written with the leader.</param>
+            <param name="underline">Boolean value whether to underline the text_left or not.</param>
+        </member>
+        <member name="M:ESADS.EGraphics.eLeader.Zoom(System.Drawing.PointF,System.Single)">
+            <summary>
+            Zooms the leader with a zoom center and zoom factor.
+            </summary>
+            <param name="ZoomCenter">The scaling origin relative to which the leader is going to be zoomed.</param>
+            <param name="ZoomFactor">The scale factor to zoom the leader with.</param>
+        </member>
+        <member name="M:ESADS.EGraphics.eLeader.Pan(System.Single,System.Single)">
+            <summary>
+            Pans the leader with a given x and y offset.
+            </summary>
+            <param name="Xoffset">Amount of offset in x direction.</param>
+            <param name="Yoffset">Amount of offset in y direction.</param>
+        </member>
+        <member name="M:ESADS.EGraphics.eLeader.Draw(System.Drawing.Graphics)">
+            <summary>
+            Draws the leader given a graphics object.
+            </summary>
+            <param name="g">The graphics object on which to draw the leader on.</param>
+        </member>
+        <member name="M:ESADS.EGraphics.eLeader.UnderLineText(System.Drawing.Graphics)">
+            <summary>
+            Adds a line at the start of the leader so that the text_left is underlined.
+            </summary>
+            <param name="g">A graphics object to measure the size of the string .</param>
+        </member>
+        <member name="M:ESADS.EGraphics.eLeader.SetPoints(System.Drawing.PointF[])">
+            <summary>
+            Sets the path of the leader in the order from the start to the end.
+            </summary>
+            <param name="point">The points through which the leader passes in the order from the start to the end(arrow).</param>
+        </member>
+        <member name="M:ESADS.EGraphics.eLeader.layer_Modified(ESADS.EGraphics.eLayer,ESADS.EGraphics.eLayerModifiedEventArgs)">
+            <summary>
+            Event handler for ESADS.EGraphics.eLayer.Modifeid event;
+            </summary>
+            <param name="sender">The layer sending this event.</param>
+            <param name="e">Event argument containing all the necessary information related to the event.</param>
+        </member>
+        <member name="P:ESADS.EGraphics.eLeader.Location">
+            <summary>
+            Gets or sets the first point of the leader where the dot is located.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.eLeader.Layer">
+            <summary>
+            Gets or sets the layer on which the leader is drawn.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.eLeader.ArrowAndDotSize">
+            <summary>
+            Gets or sets the arrow and dot size of the leader.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.eLeader.SuppressArrow">
+            <summary>
+            Gets or sets the value if the head arrow is to be omited.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.eLeader.SuppressDot">
+            <summary>
+            Gets or sets the value if the start dot is to be omitted.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.eLeader.Type">
+            <summary>
+            Gets or sets the startPoint of the leader.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.eLeader.Points">
+            <summary>
+            Gets or sets the corner points of the leader in the order from the start to the arrow tip.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.eLeader.Curvature">
+            <summary>
+            Gets or sets the curvature value for the arc from the startPoint to the end leader with a number between 0 and 90.
+            </summary>
+            <remarks>A small value will make the curve more straight. A larger value cuves the leader highly near the arrow. A default value is 45. If a value greater than 90 is entered, its remainder when divided by 90 is taken. And if the value is negative, the same is done with its absolute value.</remarks>
+        </member>
+        <member name="P:ESADS.EGraphics.eLeader.Start">
+            <summary>
+            Gets or sets the start point of the leader.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.eLeader.End">
+            <summary>
+            Gets or sets the end point of the leader.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.eLeader.CurveDirection">
+            <summary>
+            Gets or sets the direction of curve for an arc type leader. The won't have effect for arc types other than arc type.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.eLeader.Text">
+            <summary>
+            Gets or sets the text_left at the start of the leader.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.eLeader.UnderLine">
+            <summary>
+            Gets or sets the value whether to put a line under the text_left emanating from the first point of the leader.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.eLeader.TextObject">
+            <summary>
+            Gets or sets the text_left object of the leader.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.eLeader.CircleText">
+            <summary>
+            Gets or sets the value whether to circle the text_left or not.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.eLeader.Color">
+            <summary>
+            Gets or sets the color of the Leader.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.eLeader.LineType">
+            <summary>
+            Gets or sets the line type of the Leader.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.eLeader.LineWeight">
+            <summary>
+            Gets or sets the line weight of the Leader.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eGridOrientation.TopLeft">
+            <summary>
+            Represents the location of the bubbles to be at Top or Left of the structure.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eGridOrientation.BottomRight">
+            <summary>
+            Represents the location of the bubbles to be at Bottom or Right of the structure.
+            </summary>
+        </member>
+        <member name="T:ESADS.EGraphics.eGraphicsException">
+            <summary>
+            An exception that occurs within the Graphics namespace.
+            </summary>
+        </member>
+        <member name="M:ESADS.EGraphics.eGraphicsException.#ctor">
+            <summary>
+            Creates a new exception that occurs in the Graphics namespace.
+            </summary>
+        </member>
+        <member name="M:ESADS.EGraphics.eGraphicsException.#ctor(System.String)">
+            <summary>
+            Creates a new exception that occurs in the Graphics namespace with a message attached to it.
+            </summary>
+            <param name="message">The message that explains the details of the exception.</param>
+        </member>
+        <member name="T:ESADS.EGraphics.eRectangularSelectionEventArgs">
+            <summary>
+            Contains the information needed from the ending of a rectangular selection.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eRectangularSelectionEventArgs.region">
+            <summary>
+            Value of the property, 'Region'
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eRectangularSelectionEventArgs.isPositive">
+            <summary>
+            Value of the property, 'IsPositive'.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eRectangularSelectionEventArgs.suppressEvent">
+            <summary>
+            Value of the property, 'SuppressEvent'.
+            </summary>
+        </member>
+        <member name="M:ESADS.EGraphics.eRectangularSelectionEventArgs.#ctor(System.Drawing.Region,System.Boolean)">
+            <param name="region">The region of the selection rectangle.</param>
+            <param name="isPositive">Value if the rectangle selects all the objects it touches. If the value is false, it selects all the objects it touches.</param>
+        </member>
+        <member name="P:ESADS.EGraphics.eRectangularSelectionEventArgs.Region">
+            <summary>
+            Gets the region of the selection rectangle.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.eRectangularSelectionEventArgs.IsPositive">
+            <summary>
+            Gets if the selection is of positive type.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.eRectangularSelectionEventArgs.SuppressEvent">
+            <summary>
+            Gets or sets the value whether to apply the event or to avoid it.
+            </summary>
+        </member>
+        <member name="T:ESADS.EGraphics.eLayerModifiedEventArgs">
+            <summary>
+            Contais all information related the changed layer.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eLayerModifiedEventArgs.color">
+            <summary>
+            Holds a value for public property 'Color'.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eLayerModifiedEventArgs.lineType">
+            <summary>
+            Holds a value for public property 'Color'.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eLayerModifiedEventArgs.lineWeight">
+            <summary>
+            Holds a value for public property 'LineWeght'.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eLayerModifiedEventArgs.textStyle">
+            <summary>
+            Holds a value for public property 'Font'.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eLayerModifiedEventArgs.pinPoint">
+            <summary>
+            Value of 'PinPoint'
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eLayerModifiedEventArgs.zoomFactor">
+            <summary>
+            Holds the value of the 'ZoomFactor'.
+            </summary>
+        </member>
+        <member name="M:ESADS.EGraphics.eLayerModifiedEventArgs.#ctor(ESADS.EGraphics.eColor,ESADS.EGraphics.eLineType,ESADS.EGraphics.eLineWeight,ESADS.EGraphics.eTextStyle)">
+            <summary>
+            Creates an instance of ESADS.EGraphics.eLayerChangedEventArgs class from all the necessary parameters.
+            </summary>
+            <param name="color">Color of the layer under going the change.</param>
+            <param name="lineType">Color of the layer under going the change.</param>
+            <param name="lineWeight">LineWeight of the layer under going the change.</param>
+            <param name="textStyle">Font of the layer under going the change.</param>
+        </member>
+        <member name="M:ESADS.EGraphics.eLayerModifiedEventArgs.#ctor(System.Drawing.PointF,System.Single)">
+            <summary>
+            Creates an event argument for 'Layer.TurnedOn' event.
+            </summary>
+            <param name="pinPoint">The pin point of the layer.</param>
+            <param name="MasterZoomFactor">The zoom factor of the layer.</param>
+        </member>
+        <member name="P:ESADS.EGraphics.eLayerModifiedEventArgs.Color">
+            <summary>
+            Gets the color of the layer which  undergo the change.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.eLayerModifiedEventArgs.LineType">
+            <summary>
+            Gets the line weight of the layer which  undergo the change.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.eLayerModifiedEventArgs.LineWeight">
+            <summary>
+            Gets the line weightof the layer which  undergo the change.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.eLayerModifiedEventArgs.TextStyle">
+            <summary>
+            Gets the TextStyle of the layer which  undergo the change.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.eLayerModifiedEventArgs.PinPoint">
+            <summary>
+            Gets the pin point of the layer that is being turned on.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.eLayerModifiedEventArgs.ZoomFactor">
+            <summary>
+            Gets the zoom factor that the layer has been zoomed by through its history.
+            </summary>
+        </member>
+        <member name="T:ESADS.EGraphics.eLayer">
+            <summary>
+            Represents layer of drawing used to place drawing objects with similar property and function.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eLayer.name">
+            <summary>
+            Accesses the public property 'Name'.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eLayer.lineType">
+            <summary>
+            Accesses the public property 'Color'.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eLayer.layerOn">
+            <summary>
+            Accesses the public property 'LayerOn'.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eLayer.lineWeight">
+            <summary>
+            Accesses the public property 'LineWeight'.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eLayer.color">
+            <summary>
+            Accesses the public property 'Color'.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eLayer.textStyle">
+            <summary>
+            Accesses the public property 'TextStyle'.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eLayer.dwgObjects">
+            <summary>
+            Contains all drawing in this layer.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eLayer.pinPoint">
+            <summary>
+            Point used to keep the layer aligned to others when it is turned on.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eLayer.zoomFactor">
+            <summary>
+            The factor by which the layer has been scaled till now.
+            </summary>
+        </member>
+        <member name="M:ESADS.EGraphics.eLayer.#ctor(System.String,System.Drawing.Color,ESADS.EGraphics.eLineTypes,System.Single,System.Drawing.Font,System.Single)">
+            <summary>
+            Creates an instance of ESADS.EGraphics.eLayer class from all the necessary parameters.
+            </summary>
+            <param name="name">Name of the layer.</param>
+            <param name="color">Color of the layer.</param>
+            <param name="lineType">Line type of the layer.</param>
+            <param name="lineWeight">Line thickness of the layer.</param>
+            <param name="font">Font style of the layer.</param>
+        </member>
+        <member name="M:ESADS.EGraphics.eLayer.#ctor(System.String,System.Drawing.Color,System.Single,System.Single)">
+            <summary>
+            Creates an istance of ESADS.EGraphics given name,color and lineType thickness with continuos lineType startPoint.
+            </summary>
+            <param name="name">Name of the layer.</param>
+            <param name="color">Color of the layer.</param>
+            <param name="lineWeight">Color thickness of the layer.</param>
+        </member>
+        <member name="M:ESADS.EGraphics.eLayer.#ctor(System.String,System.Drawing.Color,System.Single)">
+            <summary>
+            Creates an istance of ESADS.EGraphics given name and color with continuos lineType startPoint and unity lineType thickness.
+            </summary>
+            <param name="name">Name of the layer.</param>
+            <param name="color">Color of the layer.</param>
+        </member>
+        <member name="M:ESADS.EGraphics.eLayer.RemoveObjects">
+            <summary>
+            Removes all objects in the layer.
+            </summary>
+        </member>
+        <member name="M:ESADS.EGraphics.eLayer.AddLine(System.Drawing.PointF,System.Drawing.PointF)">
+             <summary>
+            Adds a line to the layer.
+             </summary>
+             <param name="Start">The start point of the line.</param>
+             <param name="End">The end point of the line. </param>
+        </member>
+        <member name="M:ESADS.EGraphics.eLayer.AddText(System.String,System.Drawing.PointF,System.Double)">
+            <summary>
+            Adds a text_left to the layer.
+            </summary>
+            <param name="Text">Text to be drawn.</param>
+            <param name="location">location of the center of the text_left.</param>
+            <param name="Angle">Angle of the the text_left from x-axis counter clockwise.</param>
+        </member>
+        <member name="M:ESADS.EGraphics.eLayer.AddText(System.String,System.Double,System.Double,System.Double)">
+            <summary>
+            Adds a text_left to the layer.
+            </summary>
+            <param name="Text">Text to be drawn.</param>
+            <param name="location">location of the center of the text_left.</param>
+            <param name="Angle">Angle of the the text_left from x-axis counter clockwise.</param>
+        </member>
+        <member name="M:ESADS.EGraphics.eLayer.AddPolyGon(System.Drawing.PointF[],ESADS.EGraphics.eDrawType)">
+            <summary>
+            Adds a polygon to the layer.
+            </summary>
+        </member>
+        <member name="M:ESADS.EGraphics.eLayer.AddPolyGon(System.Drawing.PointF,System.Single,System.Int32,ESADS.EGraphics.eDrawType,System.Drawing.Drawing2D.HatchStyle)">
+            <summary>
+            Adds a regular polygon to the layer.
+            </summary>
+        </member>
+        <member name="M:ESADS.EGraphics.eLayer.AddDim(System.Drawing.PointF,System.Drawing.PointF,System.String,ESADS.EGraphics.eDimensionType,ESADS.EGraphics.eDimensionLinePosition,System.Single)">
+            <summary>
+            Adds Dimension to the drawing.
+            </summary>
+        </member>
+        <member name="M:ESADS.EGraphics.eLayer.AddDim(System.Drawing.PointF,System.Drawing.PointF,System.String,ESADS.EGraphics.eDimensionType,System.Single,ESADS.EGraphics.eDimensionLinePosition)">
+            <summary>
+            Adds Dimension to the drawing.
+            </summary>
+        </member>
+        <member name="M:ESADS.EGraphics.eLayer.AddHorDim(System.Double,System.Double,System.Double,System.String,System.Single,ESADS.EGraphics.eDimensionLinePosition)">
+            <summary>
+            Adds Dimension to the drawing.
+            </summary>
+        </member>
+        <member name="M:ESADS.EGraphics.eLayer.AddVerDim(System.Double,System.Double,System.Double,System.String,System.Single,ESADS.EGraphics.eDimensionLinePosition)">
+            <summary>
+            Adds Dimension to the drawing.
+            </summary>
+        </member>
+        <member name="M:ESADS.EGraphics.eLayer.AddCircle(System.Drawing.PointF,System.Double,ESADS.EGraphics.eDrawType)">
+            <summary>
+            Adds a circle to the layer.
+            </summary>
+        </member>
+        <member name="M:ESADS.EGraphics.eLayer.AddRectangle(System.Drawing.PointF,System.Double,System.Double,System.Drawing.Drawing2D.HatchStyle,ESADS.EGraphics.eDrawType)">
+            <summary>
+            Adds a rectangle to the layer.
+            </summary>
+        </member>
+        <member name="M:ESADS.EGraphics.eLayer.AddRectangle(System.Drawing.PointF,System.Double,System.Double)">
+            <summary>
+            Adds a rectangle to the layer.
+            </summary>
+        </member>
+        <member name="M:ESADS.EGraphics.eLayer.AddRectangle(ESADS.EGraphics.eRectangle)">
+            <summary>
+            Adds a rectangle to the layer.
+            </summary>
+        </member>
+        <member name="M:ESADS.EGraphics.eLayer.AddArc(System.Drawing.PointF,System.Double,System.Double,System.Double)">
+            <summary>
+            Adds an arc to the layer.
+            </summary>
+        </member>
+        <member name="M:ESADS.EGraphics.eLayer.AddArc(System.Double,System.Double,System.Double,System.Double,System.Double)">
+            <summary>
+            Adds an arc to the layer.
+            </summary>
+        </member>
+        <member name="M:ESADS.EGraphics.eLayer.AddDiagram(ESADS.Mechanics.Design.Column.eDColumn,ESADS.GUI.eModelForm)">
+            <summary>
+            Adds an interaction diagram for Column
+            </summary>
+            <param name="column"></param>
+            <param name="dwgForm"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ESADS.EGraphics.eLayer.AddLeader(ESADS.EGraphics.eLeaderType,System.String,System.Boolean,System.Drawing.PointF[])">
+            <summary>
+            Creates new instance of a leader to indicate a point. This constructor cannot be used to form an arc type leader.
+            </summary>
+            <param name="type">The type of leader to be drawn. It cannot be an arc type leader.</param>
+            <param name="text_left">The text_left to be drawn at the start of the leader.</param>
+            <param name="underline">Boolean value to indicate whether to underline the text_left or not.</param>
+            <param name="points">The sequence of points through which the leader passes.</param>
+        </member>
+        <member name="M:ESADS.EGraphics.eLayer.AddLeader(System.Drawing.PointF,System.Drawing.PointF,System.Single,ESADS.EGraphics.eLineTypes,System.String,ESADS.EGraphics.eLeaderCurveDirection,System.Boolean,System.Boolean,System.Boolean,System.Boolean)">
+            <summary>
+            Creates an arc type leader with the start and end points and with a given curvature value.
+            </summary>
+            <param name="startPoint">The start point of the leader where the text_left is to be placed.</param>
+            <param name="endPoint">The end point of the leader at the tip of the arrow.</param>
+            <param name="curvature">The curvature value for the arc from the startPoint to the end leader with a number between 0 and 90.</param>
+            <param name="lineType">The line type of the leader.</param>
+            <param name="text_left">The text_left to be written with the leader.</param>
+            <param name="underline">Boolean value whether to underline the text_left or not.</param>
+            <param name="circleText">Value indication wheter the text_left is circled or not.</param>
+            <param name="curveDirection">Value indicating the direction of the curve.</param>
+            <param name="suppressArrow">Value indicating whether the membDimension arrow is visible or not.</param>
+            <param name="suppressDot">Value indicating whether the dimesion dot is removed or not.</param>
+        </member>
+        <member name="M:ESADS.EGraphics.eLayer.AddJoint(ESADS.EGraphics.Beam.eGBeam,System.Drawing.PointF,ESADS.Mechanics.Analysis.Beam.eJoint,ESADS.EGraphics.eLayer,System.String,ESADS.EGraphics.Beam.eJointOrientation,ESADS.GUI.eModelForm)">
+            <summary>
+            Adds a ESADS.EGraphics.eGJoint object to the layer.
+            </summary>
+            <param name="location">location of the joint inidicating the point where the joint connect to the member.</param>
+            <param name="joint">The joint related to this joint drawing.</param>
+            <param name="orientation"> The alignment of the joint.</param>
+            <param name="dwgForm">The form on which the drawing is done.</param>
+        </member>
+        <member name="M:ESADS.EGraphics.eLayer.AddJoint(ESADS.EGraphics.Beam.eGBeam,System.Drawing.PointF,ESADS.Mechanics.Analysis.Beam.eJoint,ESADS.EGraphics.eLayer,System.String,ESADS.GUI.eModelForm)">
+            <summary>
+            Adds a ESADS.EGraphics.eGJoint object to the layer.
+            </summary>
+            <param name="location">location of the joint inidicating the point where the joint connect to the member.</param>
+            <param name="joint">The joint related to this joint drawing.</param>
+            <param name="dwgForm">The form on which the drawing is done.</param>
+        </member>
+        <member name="M:ESADS.EGraphics.eLayer.AddGrid(System.Drawing.PointF,System.String,ESADS.GUI.eModelForm,ESADS.EGraphics.eGridType,ESADS.EGraphics.eGridOrientation)">
+            <summary>
+            Add a grid to this layer.
+            </summary>
+            <param name="location">The location of the grid point where this grid pass.</param>      
+            <param name="text_left">The text_left to be displayed in the bubbles.</param>
+            <param name="dwgForm">The form on which the drawing is done.</param>
+            <param name="gridType">The orientation of the grid.</param>
+            <param name="gridOrientation">The layer on which this drawing found.</param>
+        </member>
+        <member name="M:ESADS.EGraphics.eLayer.AddRectangularLoad(ESADS.Mechanics.Analysis.Beam.eRectangularLoad,ESADS.EGraphics.Beam.eGMember,ESADS.GUI.eModelForm)">
+            <summary>
+            Adds a rectangular member drawing to the layer. It returns the created object for modification.
+            </summary>
+            <param name="member">The mechanics object associated with the drawing.</param>
+            <param name="load_Tri">The mechanics object associated with the drawing.</param>
+            <param name="location">The location of the far left intersection point with the member on which it is loaded/</param>
+            <param name="dwgForm">The form on which the member is going to be drawn on.</param>
+        </member>
+        <member name="M:ESADS.EGraphics.eLayer.Zoom(System.Drawing.PointF,System.Single)">
+            <summary>
+            Zoom all the drawing in this layer.
+            </summary>
+            <param name="ZoomCenter">The zoom center from which zooming is done.</param>
+            <param name="ZoomFactor">The zoom factor by which the drawing are enlarged.</param>
+        </member>
+        <member name="M:ESADS.EGraphics.eLayer.Pan(System.Single,System.Single)">
+            <summary>
+            Pans all the drawing in the layer by specified offset in both axises.
+            </summary>
+            <param name="XOffset">The x-offset of the by which the drawing is moved in x-direction.</param>
+            <param name="YOffset">The y-offset of the by which the drawing is moved in y-direction.</param>
+        </member>
+        <member name="M:ESADS.EGraphics.eLayer.Draw(System.Drawing.Graphics)">
+            <summary>
+            Draws all the drawings in the layer.
+            </summary>
+            <param name="g">Graphic object on which the drawing is going to be done.</param>
+        </member>
+        <member name="M:ESADS.EGraphics.eLayer.OnModified">
+            <summary>
+            Firs the Modified event when ever called.
+            </summary>
+        </member>
+        <member name="M:ESADS.EGraphics.eLayer.Move(System.Single,System.Single)">
+            <summary>
+            Moves this layer by the specified distance in both direction.
+            </summary>
+            <param name="XOffset">Distance ot be moved in X-direction.</param>
+            <param name="YOffset">Distance to be moved in Y-direction.</param>
+        </member>
+        <member name="M:ESADS.EGraphics.eLayer.AddTriangularLoad(ESADS.Mechanics.Analysis.Beam.eTriangularLoad,ESADS.EGraphics.Beam.eGMember,ESADS.GUI.eModelForm)">
+            <summary>
+            Adds a triangular member drawing to the layer. It returns the newly created object for further modification.
+            </summary>
+            <param name="load_Tri">The mechanics object associated with the drawing.</param>
+            <param name="location">The far left intersection point of the member with the member.</param>
+            <param name="dwgForm">The form on which the drawing is displayed.</param>
+        </member>
+        <member name="M:ESADS.EGraphics.eLayer.AddConcentratedForceLoad(ESADS.Mechanics.Analysis.Beam.eConcentratedForce,ESADS.EGraphics.Beam.eGMember,ESADS.GUI.eModelForm)">
+            <summary>
+            Adds a concentrated force member drawing to the layer. It returns the newly created object for further modification.
+            </summary>
+            <param name="member">The mechanics object connected to the drawing.</param>
+            <param name="load_Tri">The mechanics object associated with the drawing.</param>
+            <param name="location">The far left intersection point of the member with the member.</param>
+            <param name="dwgForm">The form on which the drawing is displayed.</param>
+        </member>
+        <member name="M:ESADS.EGraphics.eLayer.AddConcentratedMomentLoad(ESADS.Mechanics.Analysis.Beam.eConcentratedMoment,ESADS.EGraphics.Beam.eGMember,ESADS.GUI.eModelForm)">
+            <summary>
+            Adds a concentrated moment member drawing to the layer. It returns the newly created object for further modification.
+            </summary>
+            <param name="load_Tri">The mechanics object associated with the drawing.</param>
+            <param name="location">The far left intersection point of the member with the member.</param>
+            <param name="member">The mechanics object connected to the drawing.</param>
+            <param name="dwgForm">The form on which the drawing is displayed.</param>
+        </member>
+        <member name="M:ESADS.EGraphics.eLayer.AddTrapezoidalLoad(ESADS.Mechanics.Analysis.Beam.eTriangularLoad,ESADS.Mechanics.Analysis.Beam.eRectangularLoad,ESADS.EGraphics.Beam.eGMember,ESADS.GUI.eModelForm)">
+            <summary>
+            Adds a trapezoidal load drawing to the layer
+            </summary>
+        </member>
+        <member name="M:ESADS.EGraphics.eLayer.AddMember(ESADS.EGraphics.Beam.eGBeam,ESADS.Mechanics.Analysis.Beam.eAMember,System.Drawing.PointF,System.Drawing.PointF,ESADS.EGraphics.eLayer,ESADS.EGraphics.eLayer,ESADS.GUI.eModelForm)">
+            <summary>
+            Adds a member drawing to the layer and returns the object for immediate modification.
+            </summary>
+            <param name="member">The mechanics object connected to the drawing.</param>
+            <param name="location">The left end point of the member.</param>
+            <param name="dwgForm">The form on which the drawing is displayed.</param>
+        </member>
+        <member name="M:ESADS.EGraphics.eLayer.AddBreakLine(System.Drawing.PointF,System.Drawing.PointF)">
+            <summary>
+            Adds a break line to the layer.
+            </summary>
+            <param name="point1">The first point of the break line.</param>
+            <param name="point2">The second point of the break line.</param>
+        </member>
+        <member name="M:ESADS.EGraphics.eLayer.AddCurve(System.Drawing.PointF[])">
+            <summary>
+            Adds a curve to the layer.
+            </summary>
+            <param name="Points"> Array of System.Drawing.Point structures that represent the points that determine the curve.</param>       
+            <returns>Returns the spline object added.</returns>
+        </member>
+        <member name="M:ESADS.EGraphics.eLayer.AddDiagram(ESADS.EGraphics.Beam.eGBeam,ESADS.EGraphics.Beam.eDiagramType,ESADS.GUI.eModelForm)">
+            <summary>
+            Adds a diagram to this layer.
+            </summary>
+            <param name="beam">The Beam for which the diagram is going to be added.</param>
+            <param name="diagramType">The type of the diagram.</param>
+            <param name="dwgForm">The Form where the drawing is done.</param>
+            <returns></returns>
+        </member>
+        <member name="M:ESADS.EGraphics.eLayer.Remove(ESADS.EGraphics.eIDrawing)">
+            <summary>
+            Removes the given object from the layer if it exists.
+            </summary>
+            <param name="obj">The object to remove.</param>
+        </member>
+        <member name="M:ESADS.EGraphics.eLayer.OnRectangularSelectionEnded(ESADS.EGraphics.eRectangularSelectionEventArgs)">
+            <summary>
+            Fires the Rectangular Selection Event.
+            </summary>
+            <param name="e">The event argument at the occurence of the event.</param>
+        </member>
+        <member name="M:ESADS.EGraphics.eLayer.OnTurnedOn(ESADS.EGraphics.eLayerModifiedEventArgs)">
+            <summary>
+            Fires the 'TurnedOn' event.
+            </summary>
+            <param name="e">The event argument.</param>
+        </member>
+        <member name="M:ESADS.EGraphics.eLayer.OnTurnedOff(ESADS.EGraphics.eLayerModifiedEventArgs)">
+            <summary>
+            Fires the 'TurnedOff' event.
+            </summary>
+            <param name="e">The event argument.</param>
+        </member>
+        <member name="M:ESADS.EGraphics.eLayer.Add(ESADS.EGraphics.eIDrawing)">
+            <summary>
+            Adds any object that implements the eIDrawing interface
+            </summary>
+            <param name="obj">The dwg object</param>
+        </member>
+        <member name="P:ESADS.EGraphics.eLayer.Name">
+            <summary>
+            Gets or sets the name of the l
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.eLayer.LineType">
+            <summary>
+            Gets or sets the the line type of the layer.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.eLayer.LayerOn">
+            <summary>
+            Gets or sets the value indication wether the layer is on or off.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.eLayer.LineWeight">
+            <summary>
+            Gets or sets the lineType weight of the layer.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.eLayer.Color">
+            <summary>
+            Gets or sets the color of the layer.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.eLayer.TextStyle">
+            <summary>
+            Gets or sets the Font of the layer.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.eLayer.Item(System.Int32)">
+            <summary>
+            Gets the drawing object in this layer at the specified index .
+            </summary>
+            <param name="index">The index where the object found.</param>
+            <returns>If the object </returns>
+        </member>
+        <member name="P:ESADS.EGraphics.eLayer.DwgObjects">
+            <summary>
+            Gets the drawing objects in this layer.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.eLayer.PinPoint">
+            <summary>
+            Gets the resultant vector that tells all the transformations of the layer.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.eLayer.ZoomFactor">
+            <summary>
+            Gets the cumulative zoom factor that the layer is scaled with.
+            </summary>
+        </member>
+        <member name="E:ESADS.EGraphics.eLayer.Modified">
+            <summary>
+            Occurs when basic properties of the layer change.
+            </summary>
+        </member>
+        <member name="E:ESADS.EGraphics.eLayer.RectangularSelectionEnded">
+            <summary>
+            Occurs when the user uses a rectangle to select a number of objects.
+            </summary>
+        </member>
+        <member name="E:ESADS.EGraphics.eLayer.TurnedOn">
+            <summary>
+            Occurs when the layer is turned on.
+            </summary>
+        </member>
+        <member name="E:ESADS.EGraphics.eLayer.TurnedOff">
+            <summary>
+            Occurs when a layer is turned off.
+            </summary>
+        </member>
+        <member name="T:ESADS.EGraphics.eLine">
+            <summary>
+            Represents a line drawing object.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eLine.color">
+            <summary>
+            Holds a value for property 'Color'.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eLine.lineType">
+            <summary>
+            Holds a value for property 'LineType'.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eLine.lineWeigth">
+            <summary>
+            Holds a value for property 'LineWeigth'.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eLine.location">
+            <summary>
+            Holds the value of the 'TopLeft' property.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eLine.end">
+            <summary>
+            Holds the value of the 'BottomRight' property.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eLine.layer">
+            <summary>
+            Accesses the public property 'Layer'.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eLine.id">
+            <summary>
+            Hold the value for property 'ID'.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eLine.visible">
+            <summary>
+            Value of the 'Visible' property
+            </summary>
+        </member>
+        <member name="M:ESADS.EGraphics.eLine.#ctor(System.Drawing.PointF,System.Drawing.PointF,ESADS.EGraphics.eLayer,ESADS.EGraphics.eChangeBy)">
+            <summary>
+            Creates an instance of ESADS.EGraphics.eLine class given start point, end point and layer.
+            </summary>
+            <param name="start">TopLeft point or start of the lineType.</param>
+            <param name="end">BottomRight point of the lineType.</param>
+            <param name="layer">Layer of the lineType.</param>
+        </member>
+        <member name="M:ESADS.EGraphics.eLine.#ctor(System.Drawing.PointF,System.Drawing.PointF,ESADS.EGraphics.eLayer)">
+            <summary>
+            Creates an instance of ESADS.EGraphics.eLine class given start point, end point and layer.
+            </summary>
+            <param name="start">TopLeft point or start of the lineType.</param>
+            <param name="end">BottomRight point of the lineType.</param>
+            <param name="layer">Layer of the lineType.</param>
+        </member>
+        <member name="M:ESADS.EGraphics.eLine.Zoom(System.Drawing.PointF,System.Single)">
+            <summary>
+            Zooms the the lineType on which it is called for specified ZoomCenter and ZoomFactor.
+            </summary>
+            <param name="ZoomCenter">The zoom center from which the zooming is done.</param>
+            <param name="ZoomFactor">The zoom factor by which the lineType is elarged.</param>
+        </member>
+        <member name="M:ESADS.EGraphics.eLine.Pan(System.Single,System.Single)">
+            <summary>
+            Pans the line by the spcified offsets in x and y axis.
+            </summary>
+            <param name="XOffset">The x-distance by which the drawing is going to be moved.</param>
+            <param name="YOffset">The y-distance by which the drawing is going to be moved.</param>
+        </member>
+        <member name="M:ESADS.EGraphics.eLine.Draw(System.Drawing.Graphics)">
+            <summary>
+            Draws the line on which it is called.
+            </summary>
+            <param name="g">Graphic object on which the drawing is going to be done.</param>
+        </member>
+        <member name="M:ESADS.EGraphics.eLine.GetLength(System.Drawing.PointF,System.Drawing.PointF)">
+            <summary>
+            Returns the distance between two points.
+            </summary>
+            <param name="p1">TopLeft point.</param>
+            <param name="p2">BottomRight point.</param>
+            <returns></returns>
+        </member>
+        <member name="M:ESADS.EGraphics.eLine.layer_Modified(ESADS.EGraphics.eLayer,ESADS.EGraphics.eLayerModifiedEventArgs)">
+            <summary>
+            Event handler for ESADS.EGraphics.eLayer.Modifeid event;
+            </summary>
+            <param name="sender">The layer sending this event.</param>
+            <param name="e">Event argument containing all the necessary information related to the event.</param>
+        </member>
+        <member name="M:ESADS.EGraphics.eLine.OffSet(System.Single,System.Single)">
+            <summary>
+            Offset this line by the given offset distances in both axises.
+            </summary>
+            <param name="xOffSet">The x-Offset distance.</param>
+            <param name="yOffset">The y-Offset distance.</param>
+            <returns></returns>
+        </member>
+        <member name="M:ESADS.EGraphics.eLine.GetRegion(System.Single)">
+            <summary>
+            Returns the region of this line for the specified region thickness.
+            </summary>
+            <param name="thickness">Thickness of the region.</param>
+            <returns></returns>
+        </member>
+        <member name="P:ESADS.EGraphics.eLine.ID">
+            <summary>
+            Gets or sets the ID of this object.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.eLine.Location">
+            <summary>
+            Gets or sets the start point of the lineType.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.eLine.End">
+            <summary>
+            Gets or sets the end point of the lineType.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.eLine.Length">
+            <summary>
+            Gets the length of the lineType
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.eLine.Layer">
+            <summary>
+            Gets the layer of this line.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.eLine.Color">
+            <summary>
+            Gets or sets the color of the Line.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.eLine.LineType">
+            <summary>
+            Gets or sets the line type of the Line.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.eLine.LineWeight">
+            <summary>
+            Gets or sets the line weight of the Line.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.eLine.ZoomDashPattern">
+            <summary>
+            Gets or sets the value whether to zoom the dash patterns like a drawing.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.eLine.Visible">
+            <summary>
+            Gets or sets the value if the line is visible.
+            </summary>
+        </member>
+        <member name="T:ESADS.EGraphics.eLayers">
+            <summary>
+            A collection containing all the layers and necessary methods conserning graphics generally.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eLayers.maxZoomFactor">
+            <summary>
+            Holds a value for maximum zoom extent.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eLayers.minZoomFactor">
+            <summary>
+            Holds the minimum zoom extent.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eLayers.origin">
+            <summary>
+            Holds a value for public property 'Origin'.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eLayers.MasterZoomFactor">
+            <summary>
+            Holds the current zoom factor for all turned On layers.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eLayers.layers">
+            <summary>
+            Contains all lists of layers.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eLayers.isPan">
+            <summary>
+            Holds a value for public property 'IsPan'.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eLayers.mouseLocation">
+            <summary>
+            Represents the start of the mouse in the drawing area in dawing coordinated.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eLayers.dwgForm">
+            <summary>
+            Holds a value for public property 'UnitSystem'.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eLayers.scale">
+            <summary>
+            Holds the value the 'Scale' property.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eLayers.selectionRectangle">
+            <summary>
+            Represents the selection rectangle;
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eLayers.masterPinPoint">
+            <summary>
+            The main point that keeps layers aligned when turned back on.
+            </summary>
+        </member>
+        <member name="M:ESADS.EGraphics.eLayers.#ctor(System.Windows.Forms.Form)">
+            <summary>
+            Gets the layer on which this line objct is drawn.
+            </summary>
+            <param name="dwgForm"> The form on which drawing is done.</param>
+        </member>
+        <member name="M:ESADS.EGraphics.eLayers.ResetLayers">
+            <summary>
+            Removes all drawing in each layers.
+            </summary>
+        </member>
+        <member name="M:ESADS.EGraphics.eLayers.Add(ESADS.EGraphics.eLayer)">
+            <summary>
+            Adds a  layer to the collection.
+            </summary>
+        </member>
+        <member name="M:ESADS.EGraphics.eLayers.Add(System.String,System.Drawing.Color,ESADS.EGraphics.eLineTypes,System.Single,System.Drawing.Font)">
+            <summary>
+            Adds a layer in the collection with the specified properties.
+            </summary>
+            <param name="name">Name of the layer.</param>
+            <param name="color">Color of the layer.</param>
+            <param name="lineType">Color Type of the layer.</param>
+            <param name="lineWeight">Color Weight of the layer.</param>
+            <param name="font">Represents the text_left style.</param>
+        </member>
+        <member name="M:ESADS.EGraphics.eLayers.Contains(System.String)">
+            <summary>
+            Checks if the layer with the specified name exists in this layers collection.
+            </summary>
+            <param name="Name">Name of the layer.</param>
+            <returns></returns>
+        </member>
+        <member name="M:ESADS.EGraphics.eLayers.Add(System.String,System.Drawing.Color,ESADS.EGraphics.eLineTypes,System.Single)">
+            <summary>
+            Adds a layer in the collection with the specified properties.
+            </summary>
+            <param name="name">Name of the layer.</param>
+            <param name="color">Color of the layer.</param>
+            <param name="lineType">Color Type of the layer.</param>
+            <param name="lineWeight">Color Weight of the layer.</param>
+        </member>
+        <member name="M:ESADS.EGraphics.eLayers.Add(System.String,System.Drawing.Color)">
+            <summary>
+            Adds a layer with the specified color with unit line weight,Continious line Type and "Arail" Font
+            </summary>
+            <param name="name"></param>
+            <param name="color"></param>
+        </member>
+        <member name="M:ESADS.EGraphics.eLayers.Remove(System.String)">
+            <summary>
+            Removes the the layer with the specified name.
+            </summary>
+            <param name="name"> Name of the layer.</param>
+        </member>
+        <member name="M:ESADS.EGraphics.eLayers.Remove(System.Int32)">
+            <summary>
+            Removes a layer at specified index.
+            </summary>
+            <param name="index">The index of the layer to be removed.</param>
+        </member>
+        <member name="M:ESADS.EGraphics.eLayers.dwgForm_MouseWheel(System.Object,System.Windows.Forms.MouseEventArgs)">
+            <summary>
+            Event handler fro MouseWheel event of the drawing Form.
+            </summary>
+            <param name="sender">Object sending this event.</param>
+            <param name="e">Event argument containing information related to the event.</param>
+        </member>
+        <member name="M:ESADS.EGraphics.eLayers.dwgForm_MouseDown(System.Object,System.Windows.Forms.MouseEventArgs)">
+            <summary>
+            Event handler fro MouseDown event of the drawing Form.
+            </summary>
+            <param name="sender">Object sending this event.</param>
+            <param name="e">Event argument containing information related to the event.</param>
+        </member>
+        <member name="M:ESADS.EGraphics.eLayers.dwgForm_MouseMove(System.Object,System.Windows.Forms.MouseEventArgs)">
+            <summary>
+            Event handler fro MouseMove event of the drawing Form.
+            </summary>
+            <param name="sender">Object sending this event.</param>
+            <param name="e">Event argument containing information related to the event.</param>
+        </member>
+        <member name="M:ESADS.EGraphics.eLayers.dwgForm_Paint(System.Object,System.Windows.Forms.PaintEventArgs)">
+            <summary>
+            Event hadler for paint event of the drawing Form.
+            </summary>
+            <param name="sender">Object sending this event.</param>
+            <param name="e">Event argument containing information related to the event.</param>
+        </member>
+        <member name="M:ESADS.EGraphics.eLayers.GetLayerIndex(System.String)">
+            <summary>
+            Returns the index o the layer with the specified name.
+            </summary>
+            <param name="name">Name of the layer.</param>
+            <returns></returns>
+        </member>
+        <member name="M:ESADS.EGraphics.eLayers.CheckSimilarLayer(System.String)">
+            <summary>
+            Checks if there is no layer having similar name with new layer to be added. Returns true if layer exist and false otherwise.
+            </summary>
+            <param name="name">Name of the layer for which duplication is going to be checked.</param>
+            <returns></returns>
+        </member>
+        <member name="M:ESADS.EGraphics.eLayers.Move(System.Single,System.Single)">
+            <summary>
+            Moves all the drawing int the layer by the specified offsets in both axises.
+            </summary>
+            <param name="XOffset">X-offset to be moved.</param>
+            <param name="YOffset">Y-offset to be moved.</param>
+        </member>
+        <member name="M:ESADS.EGraphics.eLayers.RemoveAll">
+            <summary>
+            Removes all the layers in this collection.
+            </summary>
+        </member>
+        <member name="M:ESADS.EGraphics.eLayers.ResetZoomFactor">
+            <summary>
+            Resets the zoom extenst of all the drawing in this layer collection;
+            </summary>
+        </member>
+        <member name="M:ESADS.EGraphics.eLayers.Contain(System.String)">
+            <summary>
+            Checks if the layer with the specified name exists in this layers collection.
+            </summary>
+            <param name="Name">Name of the layer.</param>
+            <returns></returns>
+        </member>
+        <member name="M:ESADS.EGraphics.eLayers.Zoom(System.Drawing.PointF,System.Single)">
+            <summary>
+            Zooms all the layer in this collection.
+            </summary>
+            <param name="zoomCenter">Point from where zooming is done.</param>
+            <param name="zoomFactor">The scale by which the drawing is enlarged.</param>
+        </member>
+        <member name="M:ESADS.EGraphics.eLayers.Pan(System.Single,System.Single)">
+            <summary>
+            Pans all the layers in this collection.
+            </summary>
+            <param name="xOffset">X- distance by which the layers are moved.</param>
+            <param name="yOffset">Y- distance by which the layers are moved.</param>
+        </member>
+        <member name="P:ESADS.EGraphics.eLayers.DwgForm">
+            <summary>
+            Gets the drawing form where all the drawing take place.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.eLayers.IsPan">
+            <summary>
+            Gets or sets the value indicating wheither pan state is on or off.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.eLayers.Item(System.Int32)">
+            <summary>
+            Gets or sets the the layer at specified index.
+            </summary>
+            <param name="index">The index of the layer in the collection.</param>
+            <returns></returns>
+        </member>
+        <member name="P:ESADS.EGraphics.eLayers.Item(System.String)">
+            <summary>
+            Gets or sets the layer with the specified name.
+            </summary>
+            <param name="name">Name of the layer</param>
+            <returns></returns>
+        </member>
+        <member name="P:ESADS.EGraphics.eLayers.Count">
+            <summary>
+            Gets the number layers contained in this layer collection.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.eLayers.Origin">
+            <summary>
+            Sets the origin of the user coordinated relative to initial user coordinate system.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.eLayers.Scale">
+            <summary>
+            Gets or sets the scale of the drawing at the current zoom state.
+            </summary>
+        </member>
+        <member name="T:ESADS.EGraphics.eCircle">
+            <summary>
+            Represents a circular drawing object.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eCircle.zoomDashPatern">
+            <summary>
+            Hold a value for  property 'ZoomDashPatern'.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eCircle.radius">
+            <summary>
+            Accesses the public property 'Radiu'.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eCircle.location">
+            <summary>
+            Accesses the public property 'location'.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eCircle.layer">
+            <summary>
+            Accesses the public property 'Layer'.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eCircle.fillColor">
+            <summary>
+            Accesses the public property 'NegFillColor'.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eCircle.drawType">
+            <summary>
+            Accesses the public property 'DrawType'.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eCircle.hatchStyle">
+            <summary>
+            Holds a value for public property 'HatchStyle'.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eCircle.color">
+            <summary>
+            Holds a value for property 'Color'.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eCircle.lineType">
+            <summary>
+            Holds a value for property 'LineType'.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eCircle.lineWeigth">
+            <summary>
+            Holds a value for property 'LineWeigth'.
+            </summary>
+        </member>
+        <member name="M:ESADS.EGraphics.eCircle.#ctor(System.Drawing.PointF,System.Single,ESADS.EGraphics.eDrawType,System.Drawing.Drawing2D.HatchStyle,ESADS.EGraphics.eLayer)">
+             <summary>
+             Creaters an instance of ESADS.EGraphics.eCircle class from all the necessary parameters.
+             </summary>
+             <param name="location">The coordinate of the center of the circle.</param>
+             <param name="radius">radius of the circle.</param>
+             <param name="drawType">The draw startPoint of the circle,i.e. Draw or fill.</param>
+            <param name="hatchStyle">The hatch style if the circle is needed to be hatched.</param>
+             <param name="layer">layer of the circle.</param>
+        </member>
+        <member name="M:ESADS.EGraphics.eCircle.#ctor(System.Drawing.PointF,System.Single,ESADS.EGraphics.eDrawType,ESADS.EGraphics.eLayer)">
+            <summary>
+            Creaters an instance of ESADS.EGraphics.eCircle class from all the necessary parameters.
+            </summary>
+            <param name="location">The coordinate of the center of the circle.</param>
+            <param name="radius">radius of the circle.</param>
+            <param name="drawType">The draw startPoint of the circle,i.e. Draw or fill.</param>
+            <param name="layer">layer of the circle.</param>
+        </member>
+        <member name="M:ESADS.EGraphics.eCircle.#ctor(System.Drawing.PointF,System.Single,ESADS.EGraphics.eLayer)">
+            <summary>
+            Creaters an instance of ESADS.EGraphics.eCircle class from all the necessary parameters for drawing mode.
+            </summary>
+            <param name="location">The coordinate of the center of the circle.</param>
+            <param name="radius">radius of the circle.</param>
+            <param name="layer">layer of the circle.</param>
+        </member>
+        <member name="M:ESADS.EGraphics.eCircle.Zoom(System.Drawing.PointF,System.Single)">
+            <summary>
+            Zooms the circle on which it is called.
+            </summary>
+            <param name="ZoomCenter">The zoom center from which zooming is done.</param>
+            <param name="ZoomFactor">The factor by which the drawing is elarged.</param>
+        </member>
+        <member name="M:ESADS.EGraphics.eCircle.Pan(System.Single,System.Single)">
+            <summary>
+            Pans or moves the circle by the specifeid offesets in both axis.
+            </summary>
+            <param name="XOffset">The distance moved in x-direction</param>
+            <param name="YOffset">The distance moved in y-direction</param>
+        </member>
+        <member name="M:ESADS.EGraphics.eCircle.Draw(System.Drawing.Graphics)">
+            <summary>
+            Draws the circle on which it is called.
+            </summary>
+            <param name="g">The graphic object on which drawing is done.</param>
+        </member>
+        <member name="M:ESADS.EGraphics.eCircle.layer_Modified(ESADS.EGraphics.eLayer,ESADS.EGraphics.eLayerModifiedEventArgs)">
+            <summary>
+            Event handler for ESADS.EGraphics.eLayer.Modifeid event;
+            </summary>
+            <param name="sender">The layer sending this event.</param>
+            <param name="e">Event argument containing all the necessary information related to the event.</param>
+        </member>
+        <member name="M:ESADS.EGraphics.eCircle.GetRegion(System.Single)">
+            <summary>
+            Creates a region for this cirle with the specified thickness.
+            </summary>
+            <param name="thickness">The thickness of the region.</param>
+            <returns></returns>
+        </member>
+        <member name="P:ESADS.EGraphics.eCircle.ZoomDashPatern">
+            <summary>
+            Gets or sets the value indicating wheter the dash patern can be zoomed or not.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.eCircle.Radius">
+            <summary>
+            Gets or sets the radiu of the circle.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.eCircle.Location">
+            <summary>
+            Gets or sets the start of the center of the circle.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.eCircle.Layer">
+            <summary>
+            Gets the layer of the circle.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.eCircle.DrawType">
+            <summary>
+            Gets the drawing startPoint of the circle. i.e Draw or Fill.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.eCircle.FillColor">
+            <summary>
+            Gets or sets the fill color of the circle.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.eCircle.HatchStyle">
+            <summary>
+            Gets or sets the hatch style of the circle.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.eCircle.Color">
+            <summary>
+            Gets or sets the color of the Circle.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.eCircle.LineType">
+            <summary>
+            Gets or sets the line type of the Circle.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.eCircle.LineWeight">
+            <summary>
+            Gets or sets the line weight of the Circle.
+            </summary>
+        </member>
+        <member name="T:ESADS.EGraphics.eArrowHead">
+            <summary>
+            Represents the small triangular shape put to indicate the end of an arrow.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eArrowHead.location">
+            <summary>
+            Holds the value of the 'location' property.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eArrowHead.rotation">
+            <summary>
+            Holds the value of the 'Rotation' property.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eArrowHead.width">
+            <summary>
+            Holds the value of the 'Width' property.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eArrowHead.height">
+            <summary>
+            Holds the value of the 'Height' property.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eArrowHead.points">
+            <summary>
+            The three points of the arrow head corner.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eArrowHead.layer">
+            <summary>
+            Holds the value of the 'Layer' property.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eArrowHead.color">
+            <summary>
+            Holds a value for property 'Color'.
+            </summary>
+        </member>
+        <member name="M:ESADS.EGraphics.eArrowHead.#ctor(System.Drawing.PointF,System.Single,System.Single,System.Single,ESADS.EGraphics.eLayer)">
+            <summary>
+            Creates new instance of the eArrowHead to serve as a triangular arrowhead. The arrow points to the left with a rotation of 0 degree.
+            </summary>
+            <param name="location">The start of the head of the arrow head.</param>
+            <param name="rotation">The angle, measured in degrees by which the rotation of the body of the arrow head taking the start as the center. The angle is measured from the positive x-axis, counterclockwise positive.</param>
+            <param name="width">The base width of the arrow head.</param>
+            <param name="height">The height of the arrow, i.e. the distance from the arrow tip to the mid point of the base.</param>
+            <param name="layer">The layer on which to draw the arrow head.</param>
+        </member>
+        <member name="M:ESADS.EGraphics.eArrowHead.#ctor(System.Drawing.PointF,System.Single,System.Single,ESADS.EGraphics.eLayer)">
+            <summary>
+            Creates new instance of the eArrowHead to serve as a triangular arrowhead. The arrow points to the left with a rotation of 0 degree.
+            </summary>
+            <param name="location">The start of the head of the arrow head.</param>
+            <param name="rotation">The angle, measured in degrees by which the rotation of the body of the arrow head taking the start as the center. The angle is measured from the positive x-axis, counterclockwise positive.</param>
+            <param name="size">The size of the arrow.</param>
+            <param name="layer">The layer on which to draw the arrow head.</param>
+        </member>
+        <member name="M:ESADS.EGraphics.eArrowHead.Zoom(System.Drawing.PointF,System.Single)">
+            <summary>
+            Zooms the arrow head with respect to the zoom center give.
+            </summary>
+            <param name="ZoomCenter">The point from which the arrow head is to be zoomed.</param>
+            <param name="ZoomFactor">The scale factor to zoom the arrowhead with.</param>
+        </member>
+        <member name="M:ESADS.EGraphics.eArrowHead.Pan(System.Single,System.Single)">
+            <summary>
+            Pans the arrow head with the given x and y offset.
+            </summary>
+            <param name="Xoffset">Amount of offset in x direction.</param>
+            <param name="Yoffset">Amount of offset in y direction.</param>
+        </member>
+        <member name="M:ESADS.EGraphics.eArrowHead.SetCorners">
+            <summary>
+            Sets the corner points of an arrow head based on the current height, width, start and rotation.
+            </summary>
+        </member>
+        <member name="M:ESADS.EGraphics.eArrowHead.Draw(System.Drawing.Graphics)">
+            <summary>
+            Draws the arrow head on the given graphics object.
+            </summary>
+            <param name="g">The graphics object on which to draw the arrow head.</param>
+        </member>
+        <member name="M:ESADS.EGraphics.eArrowHead.layer_Modified(ESADS.EGraphics.eLayer,ESADS.EGraphics.eLayerModifiedEventArgs)">
+            <summary>
+            Event handler for ESADS.EGraphics.eLayer.Modifeid event;
+            </summary>
+            <param name="sender">The layer sending this event.</param>
+            <param name="e">Event argument containing all the necessary information related to the event.</param>
+        </member>
+        <member name="M:ESADS.EGraphics.eArrowHead.GetRegion">
+            <summary>
+            Gets the region enbounded by the arrow head.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.eArrowHead.Location">
+            <summary>
+            Gets or sets the start of the head of the arrow head.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.eArrowHead.Rotation">
+            <summary>
+            Gets or sets the angle, measured in degrees by which the rotation of the body of the arrow head taking the start as the center. The angle is measured from the positive x-axis, counter clockwise positive.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.eArrowHead.Width">
+            <summary>
+            Gets or sets the base width of the arrow head.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.eArrowHead.Height">
+            <summary>
+            Gets or sets the height of the arrow, i.e. the distance from the arrow tip to the mid point of the base.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.eArrowHead.Layer">
+            <summary>
+            Gets or setst the layer on which the arrow head is to be drawn on.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.eArrowHead.Color">
+            <summary>
+            Gets or sets the color of the ArrowHead.
+            </summary>
+        </member>
+        <member name="T:ESADS.EGraphics.eGrid">
+            <summary>
+            Represents a Grid lines.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eGrid.layer">
+            <summary>
+            Holds a value for property 'Layer'.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eGrid.location">
+            <summary>
+            Holds a value for property 'location'
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eGrid.color">
+            <summary>
+            Holds a value for property 'Color'.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eGrid.bubbleColor">
+            <summary>
+            Holds a value for property 'BubbleColor'.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eGrid.bubbleSize">
+            <summary>
+            Holds a value for property 'BubbleColor'.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eGrid.extLR">
+            <summary>
+            Holds a value for property 'ExtensionLineRatio'.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eGrid.offset">
+            <summary>
+            Holds a value for property 'OffsetDistance'.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eGrid.gridType">
+            <summary>
+            Holds a value for property 'GridType'.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eGrid.gridOrientation">
+            <summary>
+            Holds a value for property 'GridOrientation'.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eGrid.text">
+            <summary>
+            Holds a value for property 'Text'. The value is extracted from the eText class instance.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eGrid.lineWeight">
+            <summary>
+            Holds a value for property 'LineWeight'.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eGrid.dwgs">
+            <summary>
+            Contais all the drawing objects in this grid.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eGrid.gridReg">
+            <summary>
+            Represents the region of the Grid lines.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eGrid.textReg">
+            <summary>
+            Represents the region of the grid text_left.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eGrid.isActive">
+            <summary>
+            Holds a value indicating whether the grid is active or not.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eGrid.dwgFormColor">
+            <summary>
+            Holds the color of the drawing Form.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eGrid.txtBox">
+            <summary>
+            Text box used to display the grid text_left during editing.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eGrid.isSelected">
+            <summary>
+            Holds a value for property 'IsSelected'.
+            </summary>
+        </member>
+        <member name="M:ESADS.EGraphics.eGrid.#ctor(System.Drawing.PointF,ESADS.EGraphics.eLayer,System.String,ESADS.GUI.eModelForm,ESADS.EGraphics.eGridType,ESADS.EGraphics.eGridOrientation)">
+            <summary>
+            Creates an instance of ESADS.EGraphics.eGrid drawing from the given basic parameters
+            </summary>
+            <param name="location">The location of the grid point where this grid pass.</param>
+            <param name="layer">The type of grid. Vertical or Horizontal.</param>
+            <param name="text_left">The text_left to be displayed in the bubbles.</param>
+            <param name="dwgForm"> The drawing form on which drawing is done.</param>
+            <param name="gridType">The orientation of the grid.</param>
+            <param name="gridOrientation">The layer on which this drawing found.</param>
+        </member>
+        <member name="M:ESADS.EGraphics.eGrid.Zoom(System.Drawing.PointF,System.Single)">
+            <summary>
+            Zooms all the drawing objects in this gridOrientation.
+            </summary>
+        </member>
+        <member name="M:ESADS.EGraphics.eGrid.Pan(System.Single,System.Single)">
+            <summary>
+            Pans all the drawing objects in this gridOrientation.
+            </summary>
+        </member>
+        <member name="M:ESADS.EGraphics.eGrid.Draw(System.Drawing.Graphics)">
+            <summary>
+            Draws all the drawing objects in this gridOrientation.
+            </summary>
+        </member>
+        <member name="M:ESADS.EGraphics.eGrid.AddGridElements">
+            <summary>
+            Adds all elements ( drawing objects) to form the grid.
+            </summary>
+        </member>
+        <member name="M:ESADS.EGraphics.eGrid.dwgForm_MouseDoubleClick(System.Object,System.Windows.Forms.MouseEventArgs)">
+            <summary>
+            Handls the double click event of the drawing Form.
+            </summary>
+            <param name="sender">The sender of this event.</param>
+            <param name="e">Event argument containing all the necessary information related to the event.</param>
+        </member>
+        <member name="M:ESADS.EGraphics.eGrid.dwgForm_MouseMove(System.Object,System.Windows.Forms.MouseEventArgs)">
+            <summary>
+            Handls the MouseMove event of the drawing Form.
+            </summary>
+            <param name="sender">The sender of this event.</param>
+            <param name="e">Event argument containing all the necessary information related to the event.</param>
+        </member>
+        <member name="M:ESADS.EGraphics.eGrid.txt_KeyDown(System.Object,System.Windows.Forms.KeyEventArgs)">
+            <summary>
+            Hands the KeyDown event of the text_left box which allow editing the grid text_left.
+            </summary>
+            <param name="sender">Sender of the event.</param>
+            <param name="e">Event argument containing all the necessary information related to the event.</param>
+        </member>
+        <member name="M:ESADS.EGraphics.eGrid.dwgForm_MouseClick(System.Object,System.Windows.Forms.MouseEventArgs)">
+            <summary>
+            Handles the mouse click event handler of the Form containing this drawing.
+            </summary>
+            <param name="sender">Object sending this event.</param>
+            <param name="e">Event argument containing information realated to the event.</param>
+        </member>
+        <member name="M:ESADS.EGraphics.eGrid.FormRegions">
+            <summary>
+            Forms a region for the grid line and the grid text_left.
+            </summary>
+        </member>
+        <member name="M:ESADS.EGraphics.eGrid.dwgForm_KeyDown(System.Object,System.Windows.Forms.KeyEventArgs)">
+            <summary>
+            Handles the key down event handler of the Form containing this drawing.
+            </summary>
+            <param name="sender">Object sending this event.</param>
+            <param name="e">Event argument containing information realated to the event.</param>
+        </member>
+        <member name="M:ESADS.EGraphics.eGrid.ResetTextBox">
+            <summary>
+            Resets the location and the size of the text_left box used to edit the grid tex.
+            </summary>
+        </member>
+        <member name="M:ESADS.EGraphics.eGrid.GetTextLoc">
+            <summary>
+            Gets the location of the grid text_left.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ESADS.EGraphics.eGrid.ReleaseHandlers(ESADS.GUI.eModelForm)">
+            <summary>
+            Releases event handlers when the object is deleted.
+            </summary>
+        </member>
+        <member name="M:ESADS.EGraphics.eGrid.Select">
+            <summary>
+            Selects this grid.
+            </summary>
+        </member>
+        <member name="M:ESADS.EGraphics.eGrid.GetMaxOffset">
+            <summary>
+            Returns the maximum offset of the grid from the joint.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:ESADS.EGraphics.eGrid.IsSelected">
+            <summary>
+            Gets or sets the value indicating whether this grid is selected or not.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.eGrid.Color">
+            <summary>
+            Gets or sets  the color of grid lines.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.eGrid.Location">
+            <summary>
+            Gets or sets the location the joint on which this grid pass.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.eGrid.Layer">
+            <summary>
+            Gets or set the layer on which this grid found.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.eGrid.BubbleColor">
+            <summary>
+            Gets or sets the color of  the bubble.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.eGrid.TextColor">
+            <summary>
+            Gets or sets the color of the grid objs_texts.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.eGrid.TextStyle">
+            <summary>
+            Gets or sets the text_left style of grid objs_texts.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.eGrid.OffsetDistance">
+            <summary>
+            Gets or sets the offset distance of grid bubbls from the joints.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.eGrid.ExtensionLineRatio">
+            <summary>
+            Gets or sets the ration of extension line to offset distance.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.eGrid.BubbleSize">
+            <summary>
+            Gets or sets the radiu of bubles.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.eGrid.GridType">
+            <summary>
+            Gets or sets th type of the grid.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.eGrid.GridOrientation">
+            <summary>
+            Gets or sets the Orientation of the grid.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.eGrid.Text">
+            <summary>
+            Gets or sets the text_left of the grid.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.eGrid.LineWeight">
+            <summary>
+            Gets or sets the line weight of the grid lines.
+            </summary>
+        </member>
+        <member name="T:ESADS.EGraphics.eRectangularSelectorEventHandler">
+            <summary>
+            Represents event handler methods for eSelectionRectangle.SelectionEnded and eLayer.RectangularSelection events of Selection Rectangle and eLayer
+            </summary>
+        </member>
+        <member name="T:ESADS.EGraphics.eLeaderType">
+            <summary>
+            Specifies the startPoint of leader lines.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eLeaderType.Spline">
+            <summary>
+            Bizeir startPoint line based on the points provided.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eLeaderType.Straight">
+            <summary>
+            Set of straight lines running from the start to the end.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eLeaderType.Arc">
+            <summary>
+            The line is formed from an elliptical arc.
+            </summary>
+        </member>
+        <member name="T:ESADS.EGraphics.eLeaderCurveDirection">
+            <summary>
+            Defines the direction of fall of the curve when watching in the direction from the start to the end for an arc type leader.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eLeaderCurveDirection.ToTheRight">
+            <summary>
+            When the arc of a leader curves convex to the right hand side when observing from the start to the end of the leader.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eLeaderCurveDirection.ToTheLeft">
+            <summary>
+            When the arc of a leader curves convex to the left hand side when observing from the start to the end of the leader.
+            </summary>
+        </member>
+        <member name="T:ESADS.EGraphics.ePolygone">
+            <summary>
+            Represents any two dimensional closed shape.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.ePolygone.color">
+            <summary>
+            Holds a value for property 'Color'.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.ePolygone.lineType">
+            <summary>
+            Holds a value for property 'LineType'.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.ePolygone.lineWeigth">
+            <summary>
+            Holds a value for property 'LineWeigth'.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.ePolygone.points">
+            <summary>
+            The corner points of the polygon.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.ePolygone.location">
+            <summary>
+            Holds the value of the 'location' property.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.ePolygone.fillColor">
+            <summary>
+            Holds the value of the 'NegFillColor' property.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.ePolygone.layer">
+            <summary>
+            Holds the value of the 'Layer' property.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.ePolygone.hatchStyle">
+            <summary>
+            Holds the value of the 'HatchStyle' property.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.ePolygone.drawType">
+            <summary>
+            Holds the value of the 'DrawType' property.
+            </summary>
+        </member>
+        <member name="M:ESADS.EGraphics.ePolygone.#ctor(System.Drawing.PointF[],ESADS.EGraphics.eDrawType,ESADS.EGraphics.eLayer)">
+            <summary>
+            Creates a polygone formed from a number of points. 
+            </summary>
+            <param name="points">The corner points of the polygone.</param>
+            <param name="drawType">The way to drawType the polygon.</param>
+            <param name="layer">The layer on which to draw the polygone.</param>
+        </member>
+        <member name="M:ESADS.EGraphics.ePolygone.#ctor(System.Drawing.PointF,System.Single,System.Int32,ESADS.EGraphics.eDrawType,ESADS.EGraphics.eLayer,System.Drawing.Color,System.Drawing.Color,System.Drawing.Drawing2D.HatchStyle,ESADS.EGraphics.eLineTypes,System.Single)">
+            <summary>
+            Creates a polygone inscribed in a circle having and having a number of sides.
+            </summary>
+            <param name="center">The center of the inscribing circle</param>
+            <param name="radius">The radius of the inscribing circle.</param>
+            <param name="numberOfSides">The number of sides of the regular polygon.</param>
+            <param name="drawType">The way to draw the polygon, to fill it or just draw it.</param>
+            <param name="layer">The layer on which to draw the layer.</param>
+            <param name="color">The draw color of the polygone.</param>
+            <param name="fillColor">The color to fill the polygone.</param>
+            <param name="hatchStyle">The hatch style of the polygone.</param>
+            <param name="lineType">The line startPoint with which to draw the polygone.</param>
+            <param name="lineThickness">The thickness of the line.</param>
+        </member>
+        <member name="M:ESADS.EGraphics.ePolygone.#ctor(System.Drawing.PointF,System.Single,System.Int32,ESADS.EGraphics.eDrawType,ESADS.EGraphics.eLayer)">
+            <summary>
+            Creates a polygone inscribed in a circle having and having a number of sides.
+            </summary>
+            <param name="center">The center of the inscribing circle</param>
+            <param name="radius">The radius of the inscribing circle.</param>
+            <param name="numberOfSides">The number of sides of the regular polygon.</param>
+            <param name="drawType">The way to draw the polygon, to fill it or just draw it.</param>
+            <param name="layer">The layer on which to draw the layer.</param>
+        </member>
+        <member name="M:ESADS.EGraphics.ePolygone.Zoom(System.Drawing.PointF,System.Single)">
+            <summary>
+            Zooms the polygone with a given factor about an origin.
+            </summary>
+            <param name="ZoomCenter">The center of scaling.</param>
+            <param name="ZoomFactor">The scale factor to scale the polygone with.</param>
+        </member>
+        <member name="M:ESADS.EGraphics.ePolygone.Pan(System.Single,System.Single)">
+            <summary>
+            Pans the polygone with a given x and y offset.
+            </summary>
+            <param name="Xoffset">Amount of offset in x direction.</param>
+            <param name="Yoffset">Amount of offset in y direction.</param>
+        </member>
+        <member name="M:ESADS.EGraphics.ePolygone.Draw(System.Drawing.Graphics)">
+            <summary>
+            Draw the polygone given a graphics object.
+            </summary>
+            <param name="g">The graphics object on which to draw the polygone.</param>
+        </member>
+        <member name="M:ESADS.EGraphics.ePolygone.SetPoints(System.Drawing.PointF[])">
+            <summary>
+            Fills the corner points of the polygone.
+            </summary>
+            <param name="Points">The new corner points of the polygone.</param>
+        </member>
+        <member name="M:ESADS.EGraphics.ePolygone.SetInscribingCircle(System.Drawing.PointF,System.Single,System.Int32)">
+            <summary>
+            Sets the points to drawType a regular polygon inscribed in a given circle.
+            </summary>
+            <param name="Center">The center point of the inscribing circle.</param>
+            <param name="Radius">the radius of the inscribing circle.</param>
+            <param name="NumberOfSides">The number of sides of the regular polygone.</param>
+        </member>
+        <member name="M:ESADS.EGraphics.ePolygone.layer_Modified(ESADS.EGraphics.eLayer,ESADS.EGraphics.eLayerModifiedEventArgs)">
+            <summary>
+            Event handler for ESADS.EGraphics.eLayer.Modifeid event;
+            </summary>
+            <param name="sender">The layer sending this event.</param>
+            <param name="e">Event argument containing all the necessary information related to the event.</param>
+        </member>
+        <member name="P:ESADS.EGraphics.ePolygone.Points">
+            <summary>
+            Gets the point in this polygon.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.ePolygone.Location">
+            <summary>
+            Gets or setsThe center of the polygone
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.ePolygone.FillColor">
+            <summary>
+            Gets or sets the fill color of the polygone.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.ePolygone.Layer">
+            <summary>
+            Gets or sets the layer on which the polygone is drawn.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.ePolygone.HatchStyle">
+            <summary>
+            Gets or sets the way to hatch the area when the drawing is hatched.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.ePolygone.DrawType">
+            <summary>
+            Gets or sets the way to draw the polygone.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.ePolygone.Color">
+            <summary>
+            Gets or sets the color of the Dimension.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.ePolygone.LineType">
+            <summary>
+            Gets or sets the line type of the Dimension.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.ePolygone.LineWeight">
+            <summary>
+            Gets or sets the line weight of the Dimension.
+            </summary>
+        </member>
+        <member name="T:ESADS.EGraphics.eLineTypes">
+            <summary>
+            Specifies the way a line is drawn.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eLineTypes.Continuous">
+            <summary>
+            Solid continuous line without any gap.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eLineTypes.Center">
+            <summary>
+            One small dash followed by relatively longer dash.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eLineTypes.DotDot">
+            <summary>
+            Sequential dots.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eLineTypes.Dashed">
+            <summary>
+            Sequential dashs.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eLineTypes.DashDot">
+            <summary>
+            One dot followed by a dash.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eGridType.Horizontal">
+            <summary>
+            Represents a horizontal grid.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eGridType.Vertical">
+            <summary>
+            Represents a vertical grid.
+            </summary>
+        </member>
+        <member name="T:ESADS.EGraphics.eDimensionType">
+            <summary>
+            Defines the way to measure the distance between two poiints.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eDimensionType.LinearVertical">
+            <summary>
+            Represents a membDimension that measures the vertical difference between two points.(difference in y-coordinates.)
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eDimensionType.LinearHorizontal">
+            <summary>
+            Represents a membDimension that measures the horizontal difference between two points.(difference in x-coordinates.)
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eDimensionType.Aligned">
+            <summary>
+            Represents a membDimension that measures the length between two points .
+            </summary>
+        </member>
+        <member name="T:ESADS.EGraphics.eText">
+            <summary>
+            Represets a textual type of drawing.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eText.angle">
+            <summary>
+            Accesses the public property 'Angle'.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eText.text">
+            <summary>
+            Accesses the public property 'Text'.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eText.location">
+            <summary>
+            Accesses the public property 'location'.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eText.layer">
+            <summary>
+            Accesses the public property 'Layer'.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eText.rotationCenter">
+            <summary>
+            Holds a value for public property 'RotationCenter'.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eText.textStyle">
+            <summary>
+            Holds a value for property 'TextStyle'.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eText.color">
+            <summary>
+            Holds a value for public property 'Color'.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eText.visible">
+            <summary>
+            Value of 'Visible'
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eText.id">
+            <summary>
+            Hold a value for public property 'ID'.
+            </summary>
+        </member>
+        <member name="M:ESADS.EGraphics.eText.#ctor(System.String,System.Drawing.PointF,System.Single,ESADS.EGraphics.eLayer)">
+            <summary>
+            Creates an instance of ESADS.EGraphics.eText class from all necessary parameters.
+            </summary>
+            <param name="text_left">The text_left to be writen.</param>
+            <param name="location">The start of the top left corner of the bounding rectangle for the text_left.</param>
+            <param name="angle"> The ange of ration of the text_left in clockwise direction.</param>
+            <param name="layer"> The layer on which the drawing is going to be done.</param>
+        </member>
+        <member name="M:ESADS.EGraphics.eText.#ctor(System.String,System.Drawing.PointF,ESADS.EGraphics.eLayer)">
+            <summary>
+            Creates an instance of ESADS.EGraphics.eText class for a given text_left, text_left start and color assuming "Arial" text_left style.
+            </summary>
+            <param name="text_left">The text_left to be drawn.</param>
+            <param name="location">The start of the center of the rectangle containing the text_left.</param>
+            <param name="layer">The layer where the drawing is going to be drawn.</param>
+        </member>
+        <member name="M:ESADS.EGraphics.eText.Zoom(System.Drawing.PointF,System.Single)">
+            <summary>
+            Zooms the given text using specified zoom center and zoom factor.
+            </summary>
+            <param name="ZoomCenter">The zoom origin from which the zooming is done.</param>
+            <param name="ZoomFactor">The zoom factor by which the text is elarged.</param>
+        </member>
+        <member name="M:ESADS.EGraphics.eText.Pan(System.Single,System.Single)">
+            <summary>
+            Pans or moves the text using the specified offsets in both axises.
+            </summary>
+            <param name="Xoffset">The X-Offset by which the text start is moved from the original start in X-direction.</param>
+            <param name="Yoffset">The Y-Offset by which the text start is moved from the original start in Y-direction.</param>
+        </member>
+        <member name="M:ESADS.EGraphics.eText.Draw(System.Drawing.Graphics)">
+            <summary>
+            Draws the text_left in the specified graphic object.
+            </summary>
+            <param name="g">The graphic object on which the drawing is going to be drawn.</param>
+        </member>
+        <member name="M:ESADS.EGraphics.eText.GetTextLocation(System.Drawing.Graphics)">
+            <summary>
+            Returns the start of the string from 
+            </summary>
+            <param name="g">Graphic object used for measuring the string when it is drawn.</param>
+            <returns></returns>
+        </member>
+        <member name="M:ESADS.EGraphics.eText.layer_Modified(ESADS.EGraphics.eLayer,ESADS.EGraphics.eLayerModifiedEventArgs)">
+            <summary>
+            Event handler for ESADS.EGraphics.eLayer.Modifeid event;
+            </summary>
+            <param name="sender">The layer sending this event.</param>
+            <param name="e">Event argument containing all the necessary information related to the event.</param>
+        </member>
+        <member name="P:ESADS.EGraphics.eText.ID">
+            <summary>
+            Gets or sets the ID of this object.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.eText.Angle">
+            <summary>
+            Gets or sets the rotation angle of the text_left in clockwise direction.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.eText.Layer">
+            <summary>
+            Gets layer of the text_left on which it is drawn.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.eText.Text">
+            <summary>
+            Gets or sets text_left to be drawn.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.eText.Location">
+            <summary>
+            Gets or sets the start of the text_left.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.eText.RotationCenter">
+            <summary>
+            Gets or sets the rotation center of the text_left.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.eText.TextStyle">
+            <summary>
+            Gets or sets the text_left style of this Text.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.eText.Color">
+            <summary>
+            Gets or sets the color of the text_left.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.eText.Width">
+            <summary>
+            Gets the width of the text_left when drawn.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.eText.Height">
+            <summary>
+            Gets the height of the text_left when drawn.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.eText.Visible">
+            <summary>
+            Gets or sets if the texr is visible or not.
+            </summary>
+        </member>
+        <member name="T:ESADS.EGraphics.eLineType">
+            <summary>
+            Represents ESADS line type which contains information related to line type.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eLineType.lineType">
+            <summary>
+            Holds a value for the line type represented by this structure.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eLineType.changeBy">
+            <summary>
+            Holds a value for property 'ChangeLineTypeBy'.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eLineType.dashPatern">
+            <summary>
+            Holds a value for public property 'DashPatern'.
+            </summary>
+        </member>
+        <member name="M:ESADS.EGraphics.eLineType.#ctor(ESADS.EGraphics.eLineTypes,ESADS.EGraphics.eChangeBy)">
+            <summary>
+            Creates an instance of ESADS.EGraphics.eLineType structure from the given basic parameters.
+            </summary>
+            <param name="lineType">The enumeration representing the line type.</param>
+            <param name="changeBy">Represents the way by which the line type changes.</param>
+        </member>
+        <member name="M:ESADS.EGraphics.eLineType.#ctor(ESADS.EGraphics.eLineTypes,System.Single)">
+            <summary>
+            Creates an instance of ESADS.EGraphics.eLineType structure from the given basic parameters.
+            </summary>
+            <param name="lineType">The enumeration representing the line type.</param>
+            <param name="scale">The scale of the dash pattern</param>
+        </member>
+        <member name="M:ESADS.EGraphics.eLineType.op_Implicit(ESADS.EGraphics.eLineType)~ESADS.EGraphics.eLineTypes">
+            <summary>
+            Convers the ESADS.EGraphics.eLineType struct to ESADS.EGraphics.eLineTypes enumeration.
+            </summary>
+            <param name="lineType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ESADS.EGraphics.eLineType.SetLineType(ESADS.EGraphics.eLineTypes)">
+            <summary>
+            Sets the type of the line for this Color. 
+            </summary>
+            <param name="LineType">Type of line.</param>
+        </member>
+        <member name="M:ESADS.EGraphics.eLineType.Scale(System.Single)">
+            <summary>
+            Scales the dash patern of this line type by the specified scale factor.
+            </summary>
+            <param name="factor">The scale factor.</param>
+        </member>
+        <member name="M:ESADS.EGraphics.eLineType.GetDashPatern(ESADS.EGraphics.eLineTypes)">
+            <summary>
+            Returns the dash patern used for different line types.
+            </summary>
+            <param name="lineType">Line startPoint for which dash patern is going to be generated</param>
+            <returns></returns>
+        </member>
+        <member name="P:ESADS.EGraphics.eLineType.ChangeBy">
+            <summary>
+            Gets or set the value indicating how this color change.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.eLineType.Type">
+            <summary>
+            Gets the type chosen.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.eLineType.DashPatern">
+            <summary>
+            Gets the DashPatern for this line type.
+            </summary>
+        </member>
+        <member name="M:ESADS.EGraphics.eIGModel.Design">
+            <summary>
+            Design the component on which it is called.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.eIGModel.Layers">
+            <summary>
+            Gets layers collection in the component.
+            </summary>
+        </member>
+        <member name="T:ESADS.EGraphics.eRegion">
+            <summary>
+            Contains all necessary methods and data used to create and modify graphic region.
+            </summary>
+        </member>
+        <member name="T:ESADS.EGraphics.eLineWeight">
+            <summary>
+            Represents ESADS line weights which contains information related to line wheight of a line.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eLineWeight.changeBy">
+            <summary>
+            Holds a value for public property 'ChangeLineWeightBy'.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.eLineWeight.lineWeight">
+            <summary>
+            Holds a value for public property 'LineWeight'.
+            </summary>
+        </member>
+        <member name="M:ESADS.EGraphics.eLineWeight.#ctor(System.Single,ESADS.EGraphics.eChangeBy)">
+            <summary>
+            Creates an instance of ESADS.EGraphics.eLineWeight structure from the given parameters.
+            </summary>
+            <param name="thickness">Thickness of the line.</param>
+            <param name="changeBy">Value indicating the way how the lineweight change.</param>
+        </member>
+        <member name="M:ESADS.EGraphics.eLineWeight.#ctor(System.Single)">
+            <summary>
+            Creates an instance of ESADS.EGraphics.eLineWeight structure from the given parameters.
+            </summary>
+            <param name="thickness">Thickness of the line.</param>
+        </member>
+        <member name="M:ESADS.EGraphics.eLineWeight.op_Implicit(ESADS.EGraphics.eLineWeight)~System.Single">
+            <summary>
+            Convers the ESADS.EGraphics.eLineType struct to Syste.Float structure.
+            </summary>
+        </member>
+        <member name="M:ESADS.EGraphics.eLineWeight.SetLineWeight(System.Single)">
+            <summary>
+            Sets the line weight for this Color.
+            </summary>
+            <param name="thickness">Thickness of the line.</param>
+        </member>
+        <member name="P:ESADS.EGraphics.eLineWeight.ChangeBy">
+            <summary>
+            Gets or sets the way by which the line weight of a drawing object change.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.eLineWeight.LineWeight">
+            <summary>
+            Gets the line weight value.
+            </summary>
+        </member>
+        <member name="T:ESADS.EGraphics.eLayerModifiedEventHandler">
+            <summary>
+            Represents a method that handles ESADS.EGraphics.eLayer.Modified event.
+            </summary>
+        </member>
+    </members>
+</doc>

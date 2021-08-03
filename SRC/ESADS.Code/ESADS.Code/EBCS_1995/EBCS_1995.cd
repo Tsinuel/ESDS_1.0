@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="ESADS.Code.EBCS_1995.eDetailing" BaseTypeListCollapsed="true">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQCDBCBAAAAAAgAACAAAAAAAACAEIAACAAUAAAEA=</HashCode>
+      <FileName>EBCS_1995\eDetailing.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ESADS.Code.EBCS_1995.eServiceability" BaseTypeListCollapsed="true">
+    <Position X="5.75" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAEAAAAAAAAAA=</HashCode>
+      <FileName>EBCS_1995\eServiceability.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ESADS.Code.EBCS_1995.eFlexure" BaseTypeListCollapsed="true">
+    <Position X="0.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAABAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>EBCS_1995\eFlexure.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ESADS.Code.EBCS_1995.eMaterial">
+    <Position X="5.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAABAAAAAAAAAEQAACAAAIEAAACAAAAAAAAAAAA=</HashCode>
+      <FileName>EBCS_1995\eMaterial.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ESADS.Code.EBCS_1995.eBasisOfDesign">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAABAAAQIAUAAAAAAAAAAAAEAAQAAAAAQAAAAAAA=</HashCode>
+      <FileName>EBCS_1995\eBasisOfDesign.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ESADS.Code.EBCS_1995.eShear">
+    <Position X="2.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>EBCS_1995\eShear.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ESADS.Code.EBCS_1995.eCompression">
+    <Position X="0.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>EBCS_1995\eCompression.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ESADS.Code.EBCS_1995.ePunching">
+    <Position X="0.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAA=</HashCode>
+      <FileName>EBCS_1995\ePunching.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ESADS.Code.EBCS_1995.eTorsion">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>EBCS_1995\eTorsion.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ESADS.Code.eAppendixA" Collapsed="true">
+    <Position X="8.5" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAAAgAAAAAAAAQAAAAAAABAAAAAAAAAAAAAA=</HashCode>
+      <FileName>EBCS_1995\eAppendixA.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

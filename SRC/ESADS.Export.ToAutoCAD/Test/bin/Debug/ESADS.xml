@@ -1,0 +1,125 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ESADS</name>
+    </assembly>
+    <members>
+        <member name="T:ESADS.eUtility">
+            <summary>
+            Contains static methods used to convert measurments from one unit system to the other and other utility methods.
+            </summary>
+        </member>
+        <member name="F:ESADS.eUtility.SystemForceUnit">
+            <summary>
+            The force unit used in the calculations in the background. All other units are converted to this for use in low level libraries(eg. ESADS_Mechanics) 
+            </summary>
+        </member>
+        <member name="F:ESADS.eUtility.SystemLengthUnit">
+            <summary>
+            The length unit used in the calculations in the background. All other units are converted to this for use in low level libraries(eg. ESADS_Mechanics) 
+            </summary>
+        </member>
+        <member name="M:ESADS.eUtility.Convert(System.Double,ESADS.eLengthUnits,ESADS.eLengthUnits)">
+            <summary>
+            Converts length from one unit system to the other.
+            </summary>
+            <param name="Length">Length that is goint to be converted from one unit system to the other.</param>
+            <param name="InputUnit">The current unit system of the measurment.</param>
+            <param name="OutputUnit">The unit system to which the measurment is going to be converted.</param>
+            <returns></returns>
+        </member>
+        <member name="M:ESADS.eUtility.Convert(System.Double,ESADS.eForceUints,ESADS.eForceUints)">
+            <summary>
+            Converts force from one unit system to the other.
+            </summary>
+            <param name="Force">Force that is going to be converted from one unit system to the other.</param>
+            <param name="InputUnit">The current unit system of the measurment.</param>
+            <param name="OutputUnit">The unit system to which the measurment is going to be converted.</param>
+            <returns></returns>
+        </member>
+        <member name="M:ESADS.eUtility.Convert(System.Double,ESADS.eLengthUnits,ESADS.eForceUints,ESADS.eLengthUnits,ESADS.eForceUints)">
+            <summary>
+            Converts stress from one unit system to the other.
+            </summary>
+            <param name="Stress">The magnitude of the stress that is going to be converted.</param>
+            <param name="InputLengthUnit">Length unit used in the input stress.</param>
+            <param name="InputFoceUnit">Force unit used in the input stress.</param>
+            <param name="OutPutLengthUnit">Length unit system used in the out put stress.</param>
+            <param name="OutPutForceUnit">Force unit system used in the out put stress.</param>
+            <returns></returns>
+        </member>
+        <member name="M:ESADS.eUtility.Convert(System.Double,ESADS.eLengthUnits,ESADS.eLengthUnits,ESADS.eForceUints,ESADS.eForceUints)">
+            <summary>
+            Converts moment from one unit sytem to the other.
+            </summary>
+            <param name="Moment">The magnitude of moment that is going to be converted.</param>
+            <param name="InputlengthUnit">Length unit system used in the input moment.</param>
+            <param name="OutPutLengthUnit">Length unit system used in the output moment.</param>
+            <param name="InputForceUnit">Force unit system used in the input moment.</param>
+            <param name="OutPutForceUnit">Force unit system used in the output moment.</param>
+            <returns></returns>
+        </member>
+        <member name="M:ESADS.eUtility.Sort(System.Double[],System.Boolean)">
+            <summary>
+            Sorts the one dimensional double array in the specified order.
+            </summary>
+            <param name="array">The array to be sorted.</param>
+            <param name="inAscendignOrder">True to sort in ascending order, otherwise false.</param>
+        </member>
+        <member name="T:ESADS.eLengthUnits">
+            <summary>
+            Specifies different unit systems used to measure length.
+            </summary>
+        </member>
+        <member name="F:ESADS.eLengthUnits.m">
+            <summary>
+            Represents Metric unit system, meter.
+            </summary>
+        </member>
+        <member name="F:ESADS.eLengthUnits.cm">
+            <summary>
+            Represents Metric units system, centimeter.
+            </summary>
+        </member>
+        <member name="F:ESADS.eLengthUnits.mm">
+            <summary>
+            Represents Metric units system, millimeter.
+            </summary>
+        </member>
+        <member name="F:ESADS.eLengthUnits.ft">
+            <summary>
+            Represents Imperial units system, feet.
+            </summary>
+        </member>
+        <member name="F:ESADS.eLengthUnits.In">
+            <summary>
+            Represents Imperial units system, inch.
+            </summary>
+        </member>
+        <member name="T:ESADS.eForceUints">
+            <summary>
+            Specifies different unit systems used to measure force.
+            </summary>
+        </member>
+        <member name="F:ESADS.eForceUints.KN">
+            <summary>
+            Represents Metric unit system, KiloNewton.
+            </summary>
+        </member>
+        <member name="F:ESADS.eForceUints.N">
+            <summary>
+            Represents Metric unit system, Newton.
+            </summary>
+        </member>
+        <member name="F:ESADS.eForceUints.lb">
+            <summary>
+            Represents Imperial unit system, Pound.
+            </summary>
+        </member>
+        <member name="F:ESADS.eForceUints.Kip">
+            <summary>
+            Represents Imperial unit system, Kilo Pounds
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,268 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="ESADS.EGraphics.eArc" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAoICAAKCCRAAqAkEAKCAKAAAAAIAACEgEAAhAAAEAg=</HashCode>
+      <FileName>eArc.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ESADS.EGraphics.eArrowHead" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACQBAAAAqQAUAKAAEACAAAAAACEAAAAhAAAAAA=</HashCode>
+      <FileName>eArrowHead.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ESADS.EGraphics.eCircle" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="5.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAIAAAQCAAAAiABEAIAAYACAAAIAACUCAAAlAwAAAA=</HashCode>
+      <FileName>eCircle.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ESADS.EGraphics.eCurve" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="7.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAACACAAAggAAEAIAAAgCAAAIAACEAAAAhAAAAAA=</HashCode>
+      <FileName>eCurve.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ESADS.EGraphics.eDimension" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="0.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AUJIAMBCCCcSEgAmUwKAAAgAABALAAGcgUIQjABDAAA=</HashCode>
+      <FileName>eDimension.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ESADS.EGraphics.eGraphicsException" Collapsed="true">
+    <Position X="2.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>eGraphicsException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ESADS.EGraphics.eLayer" Collapsed="true">
+    <Position X="4" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QhoYBBQQioEAAgAFOJIADCwEAXQsAiGAAAoDmBRDAAA=</HashCode>
+      <FileName>eLayer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ESADS.EGraphics.eLayerModifiedEventArgs" Collapsed="true">
+    <Position X="5.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAACAAAAAAAAAAAACwAAAAoAACAAAIAgAQCAAA=</HashCode>
+      <FileName>eLayerModifiedEventArgs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ESADS.EGraphics.eLayers" Collapsed="true">
+    <Position X="7.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAIBCQABAMAAIgAAOIIIBAQCwATAgAAAKBiABAiYAAg=</HashCode>
+      <FileName>eLayers.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ESADS.EGraphics.eLeader" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="0.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAIIAECyCiAAogBgEIIIgIEgwIAJAADMAQI4jAACMAA=</HashCode>
+      <FileName>eLeader.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ESADS.EGraphics.eLine" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="2.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAKICAASCAAAgiAAFAIAAIBCAAAIAACMAAAAjAAAAgg=</HashCode>
+      <FileName>eLine.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ESADS.EGraphics.ePolygone" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="4" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAACSCgAAggABEAIAAYACAAAIAACUCAAAlAgAAgA=</HashCode>
+      <FileName>ePolygone.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ESADS.EGraphics.eRectangle" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="5.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAIAAAYDAAAAoQBUAKAAcACAAAIAACUCAAAlAgQAEA=</HashCode>
+      <FileName>eRectangle.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ESADS.EGraphics.eRectangularSelectionEventArgs" Collapsed="true">
+    <Position X="7.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAACAAgAAgAAAAAAAAAAAAAAAAQAAAAEAAAAAAAAA=</HashCode>
+      <FileName>eRectangularSelectionEventArgs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ESADS.EGraphics.eSelectionRectangle" Collapsed="true">
+    <Position X="2.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAwQAAAAAAAiAIEAAAACAAABAAgAAAAERAAAAAgIA=</HashCode>
+      <FileName>eSelectionRectangle.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ESADS.EGraphics.eText" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="4" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAYBAIAggAAEAIAAEACAAAAAACMAEoAjABCAgA=</HashCode>
+      <FileName>eText.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ESADS.EGraphics.eRegion" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="0.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAgAAAAgIBEAICAQACAAAAAACUCAAAlAgAAAA=</HashCode>
+      <FileName>eRegion.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ESADS.EGraphics.eBreakLine" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAACAKAAAggAAEIYAAIgEAACIAQCEAAEAhAAAAAA=</HashCode>
+      <FileName>eBreakLine.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Struct Name="ESADS.EGraphics.eAxisIcon" Collapsed="true">
+    <Position X="0.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAgAAEYIAAAACACBAAACAIAAAgAAAAAA=</HashCode>
+      <FileName>eAxisIcon.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="ESADS.EGraphics.eColor" Collapsed="true">
+    <Position X="2.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAQAAAAAAAAAAAAAAAAgCAAAooAAAAAiA=</HashCode>
+      <FileName>eColor.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="ESADS.EGraphics.eLineType" Collapsed="true">
+    <Position X="4" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACAAAAAAAAAIAAQAAAAAAAgAAAQIAASAAAAM=</HashCode>
+      <FileName>eLineType.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="ESADS.EGraphics.eLineWeight" Collapsed="true">
+    <Position X="5.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAAAAAAAAAAAAgAAEAIAgAAAAIAAAAAAAA=</HashCode>
+      <FileName>eLineWeight.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="ESADS.EGraphics.eTextStyle" Collapsed="true">
+    <Position X="7.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAABABAAAAAAEAAAAAACAAAQAAgAAAAIgAAAAAAA=</HashCode>
+      <FileName>eTextStyle.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Interface Name="ESADS.EGraphics.eIDrawing" Collapsed="true">
+    <Position X="0.5" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAgAAEAIAAAAAAAAAAAAEAAAAgAAAAAA=</HashCode>
+      <FileName>eIDrawing.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="ESADS.EGraphics.eIGModel" Collapsed="true">
+    <Position X="2.25" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAACAAAAAAAAAAAAAAAAAAEAAAAAAAAAAA=</HashCode>
+      <FileName>eIGModel.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="ESADS.EGraphics.eChangeBy" Collapsed="true">
+    <Position X="0.5" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAQAAIAAAAAAAAAAAAAA=</HashCode>
+      <FileName>eChangeBy.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ESADS.EGraphics.eDimensionLinePosition" Collapsed="true">
+    <Position X="2.25" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAABAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>eDimensionLinePosition.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ESADS.EGraphics.eDimensionType" Collapsed="true">
+    <Position X="4" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAACEAAAAABAAAAAAA=</HashCode>
+      <FileName>eDimensionType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ESADS.EGraphics.eDrawType" Collapsed="true">
+    <Position X="5.75" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAgAAAAAAAAAAAAADCEAAAAAAAAAAAAA=</HashCode>
+      <FileName>eDrawType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ESADS.EGraphics.eLeaderCurveDirection" Collapsed="true">
+    <Position X="0.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAACAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>eLeaderCurveDirection.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ESADS.EGraphics.eLeaderType" Collapsed="true">
+    <Position X="2.25" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAAAAAAAAAAAAAEAAAAAAAIAAAAAAAAAAAAA=</HashCode>
+      <FileName>eLeaderType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ESADS.EGraphics.eLineTypes" Collapsed="true">
+    <Position X="4" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAQIAQA=</HashCode>
+      <FileName>eLineTypes.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ESADS.EGraphics.eGridOrientation" Collapsed="true">
+    <Position X="8.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>eGridOrientation.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ESADS.EGraphics.eGridType" Collapsed="true">
+    <Position X="7.75" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAABAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>eGridType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Delegate Name="ESADS.EGraphics.eLayerModifiedEventHandler" Collapsed="true">
+    <Position X="0.5" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAA=</HashCode>
+      <FileName>eLayerModifiedEventHandler.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="ESADS.EGraphics.eRectangularSelectorEventHandler" Collapsed="true">
+    <Position X="2.25" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAEAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>eRectangularSelectorEventHandler.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

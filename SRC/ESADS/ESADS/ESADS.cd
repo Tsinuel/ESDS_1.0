@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="ESADS.eUtility" Collapsed="true">
+    <Position X="2.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIBAoAAAAAAAEAAAAIAQACQAAAAAECAAAAAAAgAAAAA=</HashCode>
+      <FileName>eUtility.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ESADS.eApplication" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAI=</HashCode>
+      <FileName>eApplication.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ESADS.eDocumentModifiedEventArgs" Collapsed="true">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>eDocumentModifiedEventArgs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ESADS.eUnitChangedEventArgs" Collapsed="true">
+    <Position X="0.5" Y="1.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Properties" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAIAAAAAAAAAAABAAAIAQAAAAAAA=</HashCode>
+      <FileName>eUnitChangedEventArgs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ESADS.eDocument" Collapsed="true">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIQAAABEIAAAQJAAQAYAQEAEABAAEJiQiBAIgAA=</HashCode>
+      <FileName>eDocument.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="ESADS.ePoint" Collapsed="true">
+    <Position X="0.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAMAAAAAAAAAAAAAAAAAAAAAABAAAAAAABgAAAAYiA=</HashCode>
+      <FileName>ePoint.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Enum Name="ESADS.eLengthUnits" Collapsed="true">
+    <Position X="2.25" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAUAAAAAAAAAAAAAAAAAAgEAAAAAACA=</HashCode>
+      <FileName>eForceUnits.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ESADS.eForceUints" Collapsed="true">
+    <Position X="0.5" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAEAAAAAQAAAAAAAAgAAAAAAAAABAAAAA=</HashCode>
+      <FileName>eLengthUnits.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Delegate Name="ESADS.eDocumentModifiedEventHandler" Collapsed="true">
+    <Position X="0.5" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAACAAAAAAA=</HashCode>
+      <FileName>eDocumentModifiedEventHandler.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="ESADS.eUnitChangedEventHandler" Collapsed="true">
+    <Position X="2.25" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAIAAAAAAAAAA=</HashCode>
+      <FileName>eUnitChangedEventHandler.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

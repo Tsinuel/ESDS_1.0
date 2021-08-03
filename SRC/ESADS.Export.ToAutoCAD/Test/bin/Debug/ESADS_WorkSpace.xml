@@ -1,0 +1,761 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ESADS_WorkSpace</name>
+    </assembly>
+    <members>
+        <member name="T:ESADS.WorkSpace.eBeamInputDialogValues">
+            <summary>
+            Contins all the required infromation from NewBeamDialog.
+            </summary>
+        </member>
+        <member name="F:ESADS.WorkSpace.eBeamInputDialogValues.sectionName">
+            <summary>
+            Accesess the public property 'SectionName'.
+            </summary>
+        </member>
+        <member name="F:ESADS.WorkSpace.eBeamInputDialogValues.width">
+            <summary>
+            Accesess the public property 'Width'.
+            </summary>
+        </member>
+        <member name="F:ESADS.WorkSpace.eBeamInputDialogValues.depth">
+            <summary>
+            Accesess the public property 'Depth'.
+            </summary>
+        </member>
+        <member name="F:ESADS.WorkSpace.eBeamInputDialogValues.effectiveSpanLength">
+            <summary>
+            Accesess the public property 'EffectiveSpanLength'.
+            </summary>
+        </member>
+        <member name="F:ESADS.WorkSpace.eBeamInputDialogValues.spanType">
+             <summary>
+            Accesess the public property 'SpanType'.
+             </summary>
+        </member>
+        <member name="F:ESADS.WorkSpace.eBeamInputDialogValues.isDoublyReinforced">
+            <summary>
+            Accesses the public property 'IsDoublyReinforced'.
+            </summary>
+        </member>
+        <member name="F:ESADS.WorkSpace.eBeamInputDialogValues.designWithSLSdepth">
+            <summary>
+            Access the public property 'DesignWithSLSdepth'.
+            </summary>
+        </member>
+        <member name="F:ESADS.WorkSpace.eBeamInputDialogValues.concreteName">
+            <summary>
+            Access the public property 'ConcreteName'.
+            </summary>
+        </member>
+        <member name="F:ESADS.WorkSpace.eBeamInputDialogValues.concrete">
+            <summary>
+            Holds the value of the 'Concrete' property
+            </summary>
+        </member>
+        <member name="F:ESADS.WorkSpace.eBeamInputDialogValues.steel">
+            <summary>
+            Holds the value of the 'Steel' property
+            </summary>
+        </member>
+        <member name="F:ESADS.WorkSpace.eBeamInputDialogValues.steelName">
+            <summary>
+            Access the public property 'SteelName'.
+            </summary>
+        </member>
+        <member name="F:ESADS.WorkSpace.eBeamInputDialogValues.designMoment">
+            <summary>
+            Access the public property 'DesignMoment'.
+            </summary>
+        </member>
+        <member name="F:ESADS.WorkSpace.eBeamInputDialogValues.classOfWork">
+            <summary>
+            Holds the value of the 'ClassWork' property of the dialog
+            </summary>
+        </member>
+        <member name="F:ESADS.WorkSpace.eBeamInputDialogValues.concreteCover">
+            <summary>
+            Holds the value of the 'ConcreteCover' property of the dialog.
+            </summary>
+        </member>
+        <member name="F:ESADS.WorkSpace.eBeamInputDialogValues.maximumAggregateSize">
+            <summary>
+            Holds the value of the 'MaximumAggregateSize' property
+            </summary>
+        </member>
+        <member name="F:ESADS.WorkSpace.eBeamInputDialogValues.barConstraints">
+            <summary>
+            Holds the value of the 'BarConstraints' property.
+            </summary>
+        </member>
+        <member name="F:ESADS.WorkSpace.eBeamInputDialogValues.mainStirrup">
+            <summary>
+            Holds the value of the 'MainStirrup' property.
+            </summary>
+        </member>
+        <member name="F:ESADS.WorkSpace.eBeamInputDialogValues.linkStirrup">
+            <summary>
+            Holds the value of the 'LinkStirrup' property.
+            </summary>
+        </member>
+        <member name="F:ESADS.WorkSpace.eBeamInputDialogValues.relativeStirrupPosition">
+            <summary>
+            Holds the value of the 'RelativeStirrupPosition' property.
+            </summary>
+        </member>
+        <member name="F:ESADS.WorkSpace.eBeamInputDialogValues.exposureType">
+            <summary>
+            Holds the value of the 'ExposureType' property.
+            </summary>
+        </member>
+        <member name="F:ESADS.WorkSpace.eBeamInputDialogValues.formWorkIncreament">
+            <summary>
+            Holds the value of the 'FormWorkIncreament' property
+            </summary>
+        </member>
+        <member name="M:ESADS.WorkSpace.eBeamInputDialogValues.#ctor(System.String,ESADS.WorkSpace.eDefineMaterialDialogValues)">
+            <summary>
+            Creates instance of this class initializing its properties with difault value.
+            </summary>
+            <param name="sectionName">The name of the rectToDraw section being designed.</param>
+            <param name="definedMaterials">The materials defined beforehand.</param>
+        </member>
+        <member name="M:ESADS.WorkSpace.eBeamInputDialogValues.FillGeneralProperties(System.String,System.Double,System.Double,System.Double,ESADS.Code.eSpanType,System.Double,System.Boolean,System.Boolean,ESADS.Code.eClassWork)">
+            <summary>
+            Fills the properties of the dialog box residing on the tab page, 'General'.
+            </summary>
+            <param name="SectionName">the name of the rectToDraw section</param>
+            <param name="Width">The width of the rectToDraw.</param>
+            <param name="Depth">The gross depth of the rectToDraw.</param>
+            <param name="EffectiveSpanLength">The effective span length of the rectToDraw section.</param>
+            <param name="SpanType">The span type of the rectToDraw being designed.</param>
+            <param name="DesignMoment">The design moment for which the section is going to be designed for.</param>
+            <param name="IsDoublyReinforced">Condition if the rectToDraw is to be designed as doubly reinforced or not.</param>
+            <param name="DesignWithSLS_Depth">Condition if the rectToDraw is to be designed with the SLS depth with doubly reinforced design.</param>
+            <param name="ClassWork">The class of work in which the rectToDraw is going to be disigned and constructed.</param>
+        </member>
+        <member name="M:ESADS.WorkSpace.eBeamInputDialogValues.FillConcreteProperties(System.String,ESADS.WorkSpace.eNewMaterialDialogValues,ESADS.Code.eExposureType,System.Double,System.Double,System.Double)">
+            <summary>
+            Fills the properties of concrete from the 'Concrete' tab page of the dialog.
+            </summary>
+            <param name="ConcreteName">the name of the concrete chosen by the user among those found in the defined materials list.</param>
+            <param name="Concrete">The concrete used in the design of the section.</param>
+            <param name="ExposureType">the exposure type chosen by the user.</param>
+            <param name="ConcreteCover">the cover to reinforcement defined by the user.</param>
+            <param name="MaximumAggregateSize">the maximum aggregate size defined by the user for the concrete mix/</param>
+            <param name="FormWorkIncreament">The formwork size increament value</param>
+        </member>
+        <member name="M:ESADS.WorkSpace.eBeamInputDialogValues.FillSteelProperties(System.String,ESADS.WorkSpace.eNewMaterialDialogValues,ESADS.Code.eReinforcement[],ESADS.Code.eReinforcement,ESADS.Code.eReinforcement,ESADS.Mechanics.eRelativeStirrupPosition)">
+            <summary>
+            Fills the properties of steelName from the 'Reinforcement' tab page of the dialog
+            </summary>
+            <param name="steelName">The name of the steel chosen by the user for this design from the defined materials.</param>
+            <param name="Steel">The steel used in the design of the section</param>
+            <param name="barConstraints">The set of bars defined by the user to be constraints of bar choice in the design.</param>
+            <param name="mainStirrup">The main stirrup holding the longitudinal bars defined by the user.</param>
+            <param name="linkStirrup">The link stirrup defined by the user.</param>
+            <param name="relativeStirrupPosition">The relative stirrup position to the longitudinal bar.</param>
+        </member>
+        <member name="M:ESADS.WorkSpace.eBeamInputDialogValues.Search(System.Collections.Generic.List{ESADS.WorkSpace.eNewMaterialDialogValues},ESADS.WorkSpace.eNewMaterialDialogValues@,System.String[])">
+            <summary>
+            Searches for a list of names of the material from defined ones. It returns the name of the first material it found, otherwise the name of the first material defined.
+            </summary>
+            <param name="MaterialList">The material list from which the name is to be searched.</param>
+            <param name="Name">List of name in decreasing order of preference, to be searched for in the defined materials list.</param>
+            <returns></returns>
+        </member>
+        <member name="P:ESADS.WorkSpace.eBeamInputDialogValues.SectionName">
+            <summary>
+            Gets or sets the name of the rectToDraw section being designed.
+            </summary>
+        </member>
+        <member name="P:ESADS.WorkSpace.eBeamInputDialogValues.Width">
+            <summary>
+            Gets the width of the rectToDraw.
+            </summary>
+        </member>
+        <member name="P:ESADS.WorkSpace.eBeamInputDialogValues.Depth">
+            <summary>
+            Gets the depth of the rectToDraw.
+            </summary>
+        </member>
+        <member name="P:ESADS.WorkSpace.eBeamInputDialogValues.EffectiveSpanLength">
+            <summary>
+            Gets the effectiveSpanLength span legth for the rectToDraw.
+            </summary>
+        </member>
+        <member name="P:ESADS.WorkSpace.eBeamInputDialogValues.SpanType">
+            <summary>
+            Gets the span type of the rectToDraw.
+            </summary>
+        </member>
+        <member name="P:ESADS.WorkSpace.eBeamInputDialogValues.IsDoublyReinforced">
+            <summary>
+            Gets the if the rectToDraw is doubly reinforced.
+            </summary>
+        </member>
+        <member name="P:ESADS.WorkSpace.eBeamInputDialogValues.DesignWithSLSdepth">
+            <summary>
+            Gets if the rectToDraw is desinged as doubly reinforced using servisability limit state depth requirment.
+            </summary>
+        </member>
+        <member name="P:ESADS.WorkSpace.eBeamInputDialogValues.ConcreteName">
+            <summary>
+            Gets the Concrete Name used in the design of the rectToDraw, that is found in the defined materials.
+            </summary>
+        </member>
+        <member name="P:ESADS.WorkSpace.eBeamInputDialogValues.Concrete">
+            <summary>
+            Gets the concrete material used in the design of this section
+            </summary>
+        </member>
+        <member name="P:ESADS.WorkSpace.eBeamInputDialogValues.SteelName">
+            <summary>
+            Gets the steelName name used in the design of the rectToDraw, that is found in the defined materials.
+            </summary>
+        </member>
+        <member name="P:ESADS.WorkSpace.eBeamInputDialogValues.Steel">
+            <summary>
+            Gets the steel material used in the design of the section
+            </summary>
+        </member>
+        <member name="P:ESADS.WorkSpace.eBeamInputDialogValues.DesignMoment">
+            <summary>
+            Gets the design moment used in the design of the rectToDraw.
+            </summary>       
+        </member>
+        <member name="P:ESADS.WorkSpace.eBeamInputDialogValues.ClassOfWork">
+            <summary>
+            Gets the class work displayed in the dialog box.
+            </summary>
+        </member>
+        <member name="P:ESADS.WorkSpace.eBeamInputDialogValues.ConcreteCover">
+            <summary>
+            Gets the concreteName cover to reinforcements displayed in the dialog box.
+            </summary>
+        </member>
+        <member name="P:ESADS.WorkSpace.eBeamInputDialogValues.MaximumAggregateSize">
+            <summary>
+            Gets the maximum aggregate size in the concreteName mix.
+            </summary>
+        </member>
+        <member name="P:ESADS.WorkSpace.eBeamInputDialogValues.BarConstraints">
+            <summary>
+            Gets the set of the predefined bars to be applied in the design.
+            </summary>
+        </member>
+        <member name="P:ESADS.WorkSpace.eBeamInputDialogValues.MainStirrup">
+            <summary>
+            Gets the main stirrup displayed in the dialogbox.
+            </summary>
+        </member>
+        <member name="P:ESADS.WorkSpace.eBeamInputDialogValues.LinkStirrup">
+            <summary>
+            Gets the link stirrup displayed in the dialog box.
+            </summary>
+        </member>
+        <member name="P:ESADS.WorkSpace.eBeamInputDialogValues.RelativeStirrupPosition">
+            <summary>
+            Gets the relativeStirrupPosition stirrup position displayed in the dialog box.
+            </summary>
+        </member>
+        <member name="P:ESADS.WorkSpace.eBeamInputDialogValues.ExposureType">
+            <summary>
+            Gets the exposure type defined by the user for the rectToDraw.
+            </summary>
+        </member>
+        <member name="P:ESADS.WorkSpace.eBeamInputDialogValues.FormWorkIncreament">
+            <summary>
+            Gets the difference between one formwork size and the next.
+            </summary>
+        </member>
+        <member name="T:ESADS.WorkSpace.eInputChangedEventHandler">
+            <summary>
+            Handler for the change of Geometric, Load and Material inputs of a model.
+            </summary>
+            <param name="sender">The form that handled witnessed the occurance of the event.</param>
+            <param name="e">The gathered information at the occurance point of the event.</param>
+        </member>
+        <member name="T:ESADS.WorkSpace.eDataValueUndefinedException">
+            <summary>
+            Exceptions occuring when an attempt is made to access undefined data value, eg. out enum values.
+            </summary>
+        </member>
+        <member name="T:ESADS.WorkSpace.eNewMaterialDialogValues">
+            <summary>
+            Holds the whole information needed to define the state of NewMaterialDialog
+            </summary>
+        </member>
+        <member name="M:ESADS.WorkSpace.eNewMaterialDialogValues.#ctor(ESADS.Code.eMaterialType,ESADS.eForceUints,ESADS.eLengthUnits)">
+            <summary>
+            Creates the instance of the NewMaterialDialogValues dialog values
+            </summary>
+            <param name="MaterialType">The material type that the dialog is going to manage</param>
+            <param name="windowForceUnit">The force unit used in the main form.</param>
+            <param name="windowLengthUnit">The length unit used in the main form.</param>
+        </member>
+        <member name="F:ESADS.WorkSpace.eNewMaterialDialogValues.materialType">
+            <summary>
+            Holds the value of the MaterialType property
+            </summary>
+        </member>
+        <member name="F:ESADS.WorkSpace.eNewMaterialDialogValues.concreteCharactersticCompressiveStrength">
+            <summary>
+            Holds the value of the ConcreteCharactersticCompressiveStrength property
+            </summary>
+        </member>
+        <member name="F:ESADS.WorkSpace.eNewMaterialDialogValues.concreteCharactersticTensileStrength">
+            <summary>
+            Holds the value of the ConcreteCharactersticTensileStrength property
+            </summary>
+        </member>
+        <member name="F:ESADS.WorkSpace.eNewMaterialDialogValues.grade">
+            <summary>
+            Holds the value of the Grade property
+            </summary>
+        </member>
+        <member name="F:ESADS.WorkSpace.eNewMaterialDialogValues.modulusOfElasticity">
+            <summary>
+            Holds the value of the ModulusOfElasticity property
+            </summary>
+        </member>
+        <member name="F:ESADS.WorkSpace.eNewMaterialDialogValues.name">
+            <summary>
+            Holds the value of the Name property
+            </summary>
+        </member>
+        <member name="F:ESADS.WorkSpace.eNewMaterialDialogValues.steelCharactersticYieldStrength">
+            <summary>
+            Holds the value of the SteelCharactersticYieldStrength property
+            </summary>
+        </member>
+        <member name="F:ESADS.WorkSpace.eNewMaterialDialogValues.unitWeight">
+            <summary>
+            Holds the value of the UnitWeight property
+            </summary>
+        </member>
+        <member name="F:ESADS.WorkSpace.eNewMaterialDialogValues.dialogForceUnit">
+            <summary>
+            Holds the value of the DialogForceUnit property
+            </summary>
+        </member>
+        <member name="F:ESADS.WorkSpace.eNewMaterialDialogValues.dialogLengthUnit">
+            <summary>
+            Holds the value of the DialogLengthUnit property
+            </summary>
+        </member>
+        <member name="M:ESADS.WorkSpace.eNewMaterialDialogValues.FillProperties(ESADS.Code.eConcreteGrade,ESADS.eForceUints,ESADS.eLengthUnits)">
+            <summary>
+            Saves the other properties of the concreteName dialog values for the concrete grade passed.
+            </summary>
+            <param name="ConcreteGrade">The cocnrete grade to initialize the dialog with.</param>
+            <param name="DialogForceUnit">The dialog force unit applied in the dialog box</param>
+            <param name="DialogLengthUnit">The dialog length unit applied in the dialog box.</param>
+        </member>
+        <member name="M:ESADS.WorkSpace.eNewMaterialDialogValues.FillProperties(System.String,ESADS.eForceUints,ESADS.eLengthUnits,System.Double,System.Double,System.Double,System.Double)">
+            <summary>
+            Saves the dialog values for a concrete material with user defined properties.
+            </summary>
+            <param name="Name">The name of the defined concrete.</param>
+            <param name="DialogForceUnit">The force unit applied in the dialog.</param>
+            <param name="DialogLengthUnit">The length unit applied in the dialog.</param>
+            <param name="UnitWeight">The unit weight of the concrete defined.</param>
+            <param name="ModulusOfElasticity">The modulus of elasticity of the user defined concrete.</param>
+            <param name="ConcreteCharactersticCompressiveStrength">The characterstic compressive strength of the user defined concrete.</param>
+            <param name="ConcreteCharactersticTensileStrength">The characterstic tensile strength of the user defined concrete.</param>
+        </member>
+        <member name="M:ESADS.WorkSpace.eNewMaterialDialogValues.FillProperties(ESADS.Code.eSteelGrade,ESADS.eForceUints,ESADS.eLengthUnits)">
+            <summary>
+            Saves the other properties of the steelName dialog values for the steelName grade passed.
+            </summary>
+            <param name="SteelGrade">The steelName grade to initialize the dialog with.</param>
+            <param name="DialogForceUnit">The dialog force unit applied in the dialog box</param>
+            <param name="DialogLengthUnit">The dialog length unit applied in the dialog box.</param>
+        </member>
+        <member name="M:ESADS.WorkSpace.eNewMaterialDialogValues.FillProperties(System.String,ESADS.eForceUints,ESADS.eLengthUnits,System.Double,System.Double,System.Double)">
+            <summary>
+            Saves the properties of a user defined steel.
+            </summary>
+            <param name="Name">The name of the user defined steel.</param>
+            <param name="DialogForceUnit">The force unit applied in the dialog.</param>
+            <param name="DialogLengthUnit">The length unit applied in the dialog.</param>
+            <param name="UnitWeight">The unit weight of the steel.</param>
+            <param name="ModulusOfElasticity">The modulus of elasticity of the steel.</param>
+            <param name="SteelCharactersticYieldStrength">The characterstic yield strngth of the steel defined by the user.</param>
+        </member>
+        <member name="M:ESADS.WorkSpace.eNewMaterialDialogValues.GetDeepCopy">
+            <summary>
+            Gets the deep copy of this instance without any reference relation with this instance
+            </summary>
+        </member>
+        <member name="P:ESADS.WorkSpace.eNewMaterialDialogValues.MaterialType">
+            <summary>
+            Gets the material type managed by the dialog
+            </summary>
+        </member>
+        <member name="P:ESADS.WorkSpace.eNewMaterialDialogValues.DialogForceUnit">
+            <summary>
+            Gets the force unit defined used by the dialog
+            </summary>
+        </member>
+        <member name="P:ESADS.WorkSpace.eNewMaterialDialogValues.DialogLengthUnit">
+            <summary>
+            Gets the length unit defined used by the dialog
+            </summary>
+        </member>
+        <member name="P:ESADS.WorkSpace.eNewMaterialDialogValues.Name">
+            <summary>
+            Gets the name of the material managed by the dialog
+            </summary>
+        </member>
+        <member name="P:ESADS.WorkSpace.eNewMaterialDialogValues.UnitWeight">
+            <summary>
+            Gets the unit weight of the material managed by the dialog box.
+            </summary>
+        </member>
+        <member name="P:ESADS.WorkSpace.eNewMaterialDialogValues.ModulusOfElasticity">
+            <summary>
+            Gets the modulus of elasticity of the material managed by the dialog box.
+            </summary>
+        </member>
+        <member name="P:ESADS.WorkSpace.eNewMaterialDialogValues.ConcreteCharactersticCompressiveStrength">
+            <summary>
+            Gets the characterstic compressive strength of cocrete managed by the dialog. Its value is zero if the material managed by the dialog is steelName
+            </summary>
+        </member>
+        <member name="P:ESADS.WorkSpace.eNewMaterialDialogValues.ConcreteCharactersticTensileStrength">
+            <summary>
+            Gets the characterstic tensile strength of cocrete managed by the dialog. Its value is zero if the material managed by the dialog is steelName
+            </summary>
+        </member>
+        <member name="P:ESADS.WorkSpace.eNewMaterialDialogValues.SteelCharactersticYieldStrength">
+            <summary>
+            Gets the characterstic yield strength of the steelName managed by the dialog. Its value is zero if the managed material is concreteName.
+            </summary>
+        </member>
+        <member name="P:ESADS.WorkSpace.eNewMaterialDialogValues.Grade">
+            <summary>
+            Gets the grade of the material managed by the dialog. Cast this object to the corresponding enum(eConcreteGrade or eSteelGrade)
+            </summary>
+        </member>
+        <member name="T:ESADS.WorkSpace.eTypeOfDesign">
+            <summary>
+            The type of design applied in the whole process
+            </summary>
+        </member>
+        <member name="F:ESADS.WorkSpace.eTypeOfDesign.Educational">
+            <summary>
+            Type of design suited for educational experimentation and practice. It goes through ralatively detailed procedures.
+            </summary>
+        </member>
+        <member name="F:ESADS.WorkSpace.eTypeOfDesign.NonEducational">
+            <summary>
+            Type of design suited for design in non-educational purpose. It focuses on the alternatives of output and input for the designer rather than the detailed procedures
+            </summary>
+        </member>
+        <member name="T:ESADS.WorkSpace.eOptionsDialogValues">
+            <summary>
+            Holds all the information needed to initialize or receive output to/fr
+            </summary>
+        </member>
+        <member name="F:ESADS.WorkSpace.eOptionsDialogValues.forceUnit">
+            <summary>
+            The force unit applied throughout the GUI system
+            </summary>
+        </member>
+        <member name="F:ESADS.WorkSpace.eOptionsDialogValues.lengthUnit">
+            <summary>
+            The length unit applied throughout the GUI system
+            </summary>
+        </member>
+        <member name="F:ESADS.WorkSpace.eOptionsDialogValues.typeOfDesign">
+            <summary>
+            The type of design applied
+            </summary>
+        </member>
+        <member name="F:ESADS.WorkSpace.eOptionsDialogValues.generateSummaryTextForProcedures">
+            <summary>
+            If true the detail summary will be generated specially suited for educational purpose
+            </summary>
+        </member>
+        <member name="F:ESADS.WorkSpace.eOptionsDialogValues.displayTheInputDataWithOutput">
+            <summary>
+            If true the input is displayed together with the output
+            </summary>
+        </member>
+        <member name="F:ESADS.WorkSpace.eOptionsDialogValues.showDrawingsOnly">
+            <summary>
+            If true the output drawing is displayed without any label
+            </summary>
+        </member>
+        <member name="F:ESADS.WorkSpace.eOptionsDialogValues.generateSummaryTextDocument">
+            <summary>
+            If true a brief summary of the whole design is generated in text format. This is specially suited for report purposes.
+            </summary>
+        </member>
+        <member name="P:ESADS.WorkSpace.eOptionsDialogValues.LengthUnit">
+            <summary>
+            Gets or sets the length unit applied throughout the GUI system
+            </summary>
+        </member>
+        <member name="P:ESADS.WorkSpace.eOptionsDialogValues.ForceUnit">
+            <summary>
+            Gets or sets the force unit applied throughout the GUI system
+            </summary>
+        </member>
+        <member name="P:ESADS.WorkSpace.eOptionsDialogValues.TypeOfDesign">
+            <summary>
+            Gets or sets the type of design applied
+            </summary>
+        </member>
+        <member name="P:ESADS.WorkSpace.eOptionsDialogValues.GenerateSummaryTextForProcedures">
+            <summary>
+            If true the detail summary will be generated specially suited for educational purpose
+            </summary>
+        </member>
+        <member name="P:ESADS.WorkSpace.eOptionsDialogValues.DisplayTheInputDataWithOutput">
+            <summary>
+            If true the input is displayed together with the output
+            </summary>
+        </member>
+        <member name="P:ESADS.WorkSpace.eOptionsDialogValues.ShowDrawingsOnly">
+            <summary>
+            If true the output drawing is displayed without any label
+            </summary>
+        </member>
+        <member name="P:ESADS.WorkSpace.eOptionsDialogValues.GenerateSummaryTextDocument">
+            <summary>
+            If true a brief summary of the whole design is generated in text format. This is specially suited for report purposes.
+            </summary>
+        </member>
+        <member name="T:ESADS.WorkSpace.eNewModelDialogValues">
+            <summary>
+            Contains all the necessary information taken from NewModelDialog or needed for NewModelDialog.
+            </summary>
+        </member>
+        <member name="F:ESADS.WorkSpace.eNewModelDialogValues.lengthUnit">
+            <summary>
+            Accesses the public property 'LengthUnit'.
+            </summary>
+        </member>
+        <member name="F:ESADS.WorkSpace.eNewModelDialogValues.forceUnit">
+            <summary>
+            Accesses the public property 'ForceUnit'.
+            </summary>
+        </member>
+        <member name="F:ESADS.WorkSpace.eNewModelDialogValues.structureType">
+            <summary>
+            Accesses the public property 'StructureType'.
+            </summary>
+        </member>
+        <member name="F:ESADS.WorkSpace.eNewModelDialogValues.projectInfo">
+            <summary>
+            Accesses the public property 'ProjectInfo'.
+            </summary>
+        </member>
+        <member name="M:ESADS.WorkSpace.eNewModelDialogValues.#ctor(ESADS.eLengthUnits,ESADS.eForceUints,ESADS.Code.eStructureType,ESADS.WorkSpace.eProjectInformationDialogValue,System.Boolean)">
+            <summary>
+            Creates an instance of eNewModelDialogValues class given all its required parameters.
+            </summary>
+            <param name="lengthUnit">The length unit used in the NewModel dialog.</param>
+            <param name="forceUnit">The force unit used in the NewModel Dialog.</param>
+            <param name="structureType">The type of structure selected.</param>
+            <param name="projectInfo">The project information.</param>
+            <param name="isStructureSelected">True if structure is selected and false if not selected</param>
+        </member>
+        <member name="P:ESADS.WorkSpace.eNewModelDialogValues.LengthUnit">
+            <summary>
+            Gets or sets the Length unit used in the NewModelDialog.
+            </summary>
+        </member>
+        <member name="P:ESADS.WorkSpace.eNewModelDialogValues.ForceUnit">
+            <summary>
+            Gets or sets the Force unit used in the NewModelDialog.
+            </summary>
+        </member>
+        <member name="P:ESADS.WorkSpace.eNewModelDialogValues.StructureType">
+            <summary>
+            Gets or sets the structure type used in the NewModelDialog.
+            </summary>
+        </member>
+        <member name="P:ESADS.WorkSpace.eNewModelDialogValues.ProjectInfo">
+            <summary>
+            Gets or sets the project information in the NewModelDialog.
+            </summary>
+        </member>
+        <member name="T:ESADS.WorkSpace.eProjectInformationDialogValue">
+            <summary>
+            Stors all the necessary information about the project.
+            </summary>
+        </member>
+        <member name="M:ESADS.WorkSpace.eProjectInformationDialogValue.#ctor(System.Windows.Forms.DataGridView)">
+            <summary>
+            Creates an instance of this class for a given DataGridVeiw.
+            </summary>
+            <param name="projectInfo">The DataGridView that contain information about the project</param>
+        </member>
+        <member name="M:ESADS.WorkSpace.eProjectInformationDialogValue.FillProjectInfo(System.Windows.Forms.DataGridView)">
+            <summary>
+            Fills the information from the data grid veiw to a two dimensional string array.
+            </summary>
+            <param name="projectInfo">The data gried veiw that is going to be copied to a string array.</param>
+        </member>
+        <member name="P:ESADS.WorkSpace.eProjectInformationDialogValue.ProjectInfo">
+            <summary>
+            Gets the project information that is extracted from Project Inoramatoin Dialog.
+            </summary>
+        </member>
+        <member name="T:ESADS.WorkSpace.eDefineMaterialDialogValues">
+            <summary>
+            Holds the whole information needed to define the state of DefineMaterial dialog
+            </summary>
+        </member>
+        <member name="F:ESADS.WorkSpace.eDefineMaterialDialogValues.concreteItems">
+            <summary>
+            The concreteName items defined by the dialog when the last changes have been saved or the dialog was loaded
+            </summary>
+        </member>
+        <member name="F:ESADS.WorkSpace.eDefineMaterialDialogValues.steelItems">
+            <summary>
+            The steelName items defined by the dialog when the last changes have been saved or the dialog was loaded
+            </summary>
+        </member>
+        <member name="M:ESADS.WorkSpace.eDefineMaterialDialogValues.#ctor">
+            <summary>
+            Creates a set of materials filled with the system default concrete and steel materials.
+            </summary>
+        </member>
+        <member name="M:ESADS.WorkSpace.eDefineMaterialDialogValues.GetDeepCopy">
+            <summary>
+            Gets the deep copy of this instance without any reference relation with this instance
+            </summary>
+        </member>
+        <member name="M:ESADS.WorkSpace.eDefineMaterialDialogValues.Reset(ESADS.Code.eMaterialType)">
+            <summary>
+            Resets the collection of the specified material to system default.
+            </summary>
+            <param name="MaterialType">The type of the material to be reset.</param>
+        </member>
+        <member name="M:ESADS.WorkSpace.eDefineMaterialDialogValues.GetDefaultCollection(ESADS.Code.eMaterialType)">
+            <summary>
+            Gets a system default collection of the specified material type.
+            </summary>
+            <param name="MaterialType">The material type to get the default collection of.</param>
+            <returns></returns>
+        </member>
+        <member name="P:ESADS.WorkSpace.eDefineMaterialDialogValues.ConcreteItems">
+            <summary>
+            Gets or sets the concreteName items defined by the dialog when the last changes have been saved or the dialog was loaded
+            </summary>
+        </member>
+        <member name="P:ESADS.WorkSpace.eDefineMaterialDialogValues.SteelItems">
+            <summary>
+            Gets or sets the steelName items defined by the dialog when the last changes have been saved or the dialog was loaded
+            </summary>
+        </member>
+        <member name="T:ESADS.WorkSpace.eBeamManager">
+            <summary>
+            Manages the interaction of the GUI with its corresponding Mechanics class.
+            </summary>
+        </member>
+        <member name="F:ESADS.WorkSpace.eBeamManager.beam">
+            <summary>
+            Holds the value of the Beam property
+            </summary>
+        </member>
+        <member name="F:ESADS.WorkSpace.eBeamManager.beamForm">
+            <summary>
+            Holds the value of the BeamForm property
+            </summary>
+        </member>
+        <member name="F:ESADS.WorkSpace.eBeamManager.output">
+            <summary>
+            Holds the value of the Output property.
+            </summary>
+        </member>
+        <member name="M:ESADS.WorkSpace.eBeamManager.#ctor(ESADS.GUI.FormsAndDialogs.eModelForm)">
+            <summary>
+            Creates the object that manages the interaction of a mechanics class instance and a GUI form. The form to be managed must be provided before anything can proceed.
+            </summary>
+            <param name="beamForm">The model form to be managed by this instance.</param>
+        </member>
+        <member name="M:ESADS.WorkSpace.eBeamManager.InitializeMechanicsComponents">
+            <summary>
+            Initializes the important class members with the necessary inputs.
+            </summary>
+        </member>
+        <member name="M:ESADS.WorkSpace.eBeamManager.GetConcreteByName(System.String)">
+            <summary>
+            Gets the concrete from the defined materials list by searching it with its name.
+            </summary>
+            <param name="Name">The name of the concrete to be searched for.</param>
+            <returns></returns>
+        </member>
+        <member name="M:ESADS.WorkSpace.eBeamManager.GetSteelByName(System.String)">
+            <summary>
+            Gets the concrete from the defined materials list by searching it with its name.
+            </summary>
+            <param name="Name">The name of the concrete to be searched for.</param>
+            <returns></returns>
+        </member>
+        <member name="M:ESADS.WorkSpace.eBeamManager.RunDesign">
+            <summary>
+            Initializes the mechanics components of the rectToDraw and then runs the design.
+            </summary>
+        </member>
+        <member name="M:ESADS.WorkSpace.eBeamManager.ConvertSteel(ESADS.WorkSpace.eNewMaterialDialogValues)">
+            <summary>
+            Converts steel material from dialog values to eSteel structures which are usable by the mechanics library.
+            </summary>
+            <param name="SteelDialogValues">The dialog values holding the properties of the steel.</param>
+            <returns>The eSteel instance for the definition of the steel.</returns>
+        </member>
+        <member name="M:ESADS.WorkSpace.eBeamManager.ConvertConcrete(ESADS.WorkSpace.eNewMaterialDialogValues)">
+            <summary>
+            Converts concrete material from dialog values to eConcrete structures which are usable by the mechanics library.
+            </summary>
+            <param name="ConcreteDialogValues">The dialog values holding the properties of the concrete.</param>
+            <returns>The concrete instance for the definition of the concrete.</returns>
+        </member>
+        <member name="M:ESADS.WorkSpace.eBeamManager.ConvertBar(ESADS.Code.eReinforcement)">
+            <summary>
+            Converts a single reinforcement bar from nominal size to actual diameter.
+            </summary>
+            <param name="Reinforcement">The bar to be converted.</param>
+            <returns>The diameter of the bar in system unit.</returns>
+        </member>
+        <member name="M:ESADS.WorkSpace.eBeamManager.ConvertBars(ESADS.Code.eReinforcement[])">
+            <summary>
+            Converts a number of bars from their nominal diameter designation to an array of their diameters in the system units.
+            </summary>
+            <param name="Reinforcements">Collection of the bars to be converted.</param>
+            <returns>Array of diameters of bars sorted in descending order of diameters.</returns>
+        </member>
+        <member name="E:ESADS.WorkSpace.eBeamManager.AllCombinationsCongested">
+            <summary>
+            Occurs when the mechanics class fires AllCombinationsCongested event.
+            </summary>
+        </member>
+        <member name="E:ESADS.WorkSpace.eBeamManager.SLS_DepthFailed">
+            <summary>
+            Occurs when the mechanics class fires SLSdepthFailed event.
+            </summary>
+        </member>
+        <member name="E:ESADS.WorkSpace.eBeamManager.SymetricCombinationNotFound">
+            <summary>
+            Occurs when the mechanics class fires SymmetricCombinationNotFound event.
+            </summary>
+        </member>
+        <member name="P:ESADS.WorkSpace.eBeamManager.BeamForm">
+            <summary>
+            Gets the form associated with this manager.
+            </summary>
+        </member>
+        <member name="P:ESADS.WorkSpace.eBeamManager.Output">
+            <summary>
+            Gets the design output of the rectToDraw concerned.
+            </summary>
+        </member>
+    </members>
+</doc>

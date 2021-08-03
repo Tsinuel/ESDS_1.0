@@ -1,0 +1,5 @@
+C:\Users\Abiy\Documents\Visual Studio 2010\Projects\ESADS.GUI.MainForm\ESADS.GUI.MainForm\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Users\Abiy\Documents\Visual Studio 2010\Projects\ESADS.GUI.MainForm\ESADS.GUI.MainForm\obj\x86\Release\ESADS.GUI.MainForm.eMainForm.resources
+C:\Users\Abiy\Documents\Visual Studio 2010\Projects\ESADS.GUI.MainForm\ESADS.GUI.MainForm\obj\x86\Release\ESADS.GUI.MainForm.Properties.Resources.resources
+C:\Users\Abiy\Documents\Visual Studio 2010\Projects\ESADS.GUI.MainForm\ESADS.GUI.MainForm\obj\x86\Release\GenerateResource.read.1.tlog
+C:\Users\Abiy\Documents\Visual Studio 2010\Projects\ESADS.GUI.MainForm\ESADS.GUI.MainForm\obj\x86\Release\GenerateResource.write.1.tlog

@@ -1,0 +1,252 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ESADS.Mechanics.Analysis</name>
+    </assembly>
+    <members>
+        <member name="M:ESADS.Mechanics.Analysis.eLoadCombination.#ctor(System.String,System.Double,System.Double)">
+            <summary>
+            Creates a new Load Combination object given all the load factors  and the name.
+            </summary>
+            <param name="name">The name of the combination.</param>
+            <param name="permanentLoadFactor">The partial safety factor for permanent load.</param>
+            <param name="variableLoadFactor">The partial safety factor for variable load.</param>
+        </member>
+        <member name="M:ESADS.Mechanics.Analysis.eLoadCombination.#ctor">
+            <summary>
+            Creates a new load combination object with the minimum load factors given in the code.
+            </summary>
+        </member>
+        <member name="M:ESADS.Mechanics.Analysis.eLoadCombination.GetFactored(ESADS.Code.eActionType,System.Double)">
+            <summary>
+            Gets the factored load given the unfactored load and action type.
+            </summary>
+            <param name="ActionType">The type of action of the load.</param>
+            <param name="UnfactoredLoad">The unfactored magnitud of the load.</param>
+        </member>
+        <member name="P:ESADS.Mechanics.Analysis.eLoadCombination.Name">
+            <summary>
+            Gets or sets the name of the load combination.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Analysis.eLoadCombination.PermanentLoadFactor">
+            <summary>
+            Gets the safety factor for the permanent load in the combination.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Analysis.eLoadCombination.VariableLoadFactor">
+            <summary>
+            Gets the safety  factor for the variable load in the combination.
+            </summary>
+        </member>
+        <member name="T:ESADS.Mechanics.Analysis.eMath">
+            <summary>
+            Constains all static methods to analyze matrix operation,geometry,calculus and other matimatical computations.
+            </summary>
+        </member>
+        <member name="M:ESADS.Mechanics.Analysis.eMath.Superpose(System.Double[],System.Double[],System.Boolean)">
+            <summary>
+            Adds or substructs two columen or row matrixes.
+            </summary>
+            <param name="mtrx1">The first matrix to be added or substructed.</param>
+            <param name="mtrx2">The second matrix to be added or substructed.</param>
+            <param name="add">Value indicating wether addition or sebstruction is done. True for addition and false for substruction.</param>
+            <returns></returns>
+        </member>
+        <member name="M:ESADS.Mechanics.Analysis.eMath.Multiply(System.Double[0:,0:],System.Double[])">
+            <summary>
+            Multiply one two dimensional matrix with other one dimensional matrix.
+            </summary>
+            <param name="mtrx1">The first two dimensional matrix to be multiplied. </param>
+            <param name="mtrx2">The second one dimensional matrix to be multiplied.</param>
+        </member>
+        <member name="M:ESADS.Mechanics.Analysis.eMath.Inverse(System.Double[0:,0:])">
+            <summary>
+            Returns the inverse of a square matrix if invertible.
+            </summary>
+            <param name="Matrix">The matrix to be inverted.</param>
+        </member>
+        <member name="M:ESADS.Mechanics.Analysis.eMath.ReduceDiagonal(System.Double[0:,0:])">
+            <summary>
+            Reduces the diagonal elements of the matrix to unity.
+            </summary>
+            <param name="Matrix"></param>
+        </member>
+        <member name="M:ESADS.Mechanics.Analysis.eMath.ReduceUpperPart(System.Double[0:,0:])">
+            <summary>
+            
+            </summary>
+            <param name="Matrix"></param>
+        </member>
+        <member name="M:ESADS.Mechanics.Analysis.eMath.ReduceLowerPart(System.Double[0:,0:])">
+            <summary>
+            
+            </summary>
+            <param name="Matrix"></param>
+        </member>
+        <member name="M:ESADS.Mechanics.Analysis.eMath.Solve(System.Double[0:,0:],System.Double[])">
+            <summary>
+            Solves a linear system of equations given the coefficient matrix and the constant matrix.
+            </summary>
+            <param name="CoefficientMatrix">The matrix 'A' in the equation 'AX = B'</param>
+            <param name="ConstantMatrix">The matrix B in the above equation.</param>
+            <returns></returns>
+        </member>
+        <member name="M:ESADS.Mechanics.Analysis.eMath.CheckPivotElement(System.Double[0:,0:],System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="Matrix"></param>
+            <param name="Index"></param>
+        </member>
+        <member name="M:ESADS.Mechanics.Analysis.eMath.RowInterchange(System.Double[0:,0:],System.Int32,System.Int32)">
+            <summary>
+            Interchanges the two rows of the matrix given.
+            </summary>
+            <param name="Matrix">The matrix whose two rows are to be interchanged.</param>
+            <param name="Index1">The index of the first row to be interchanged.</param>
+            <param name="Index2">The index of the second row to be interchanged.</param>
+        </member>
+        <member name="M:ESADS.Mechanics.Analysis.eMath.RowAdd(System.Double[0:,0:],System.Int32,System.Int32,System.Double)">
+            <summary>
+            Adds a constant multiple of a row to another row.
+            </summary>
+            <param name="Matrix">The matrix whose one row is to be added to a constant multiple of other row of itself.</param>
+            <param name="Index1">The index of the row which is going to receive the sum of itself and a constant multiple of another row.</param>
+            <param name="Index2">The index of the row which is goint to multiplied by a constant and added to another row.</param>
+            <param name="Constant">The constant to multiply the second row with.</param>
+        </member>
+        <member name="M:ESADS.Mechanics.Analysis.eMath.RowMult(System.Double[0:,0:],System.Int32,System.Double)">
+            <summary>
+            Multiplies a row with a non zero constant.
+            </summary>
+            <param name="Matrix">The matrix whose single row is going to be multiplied by a constant.</param>
+            <param name="Index">The index of the row to be multiplied by the constant.</param>
+            <param name="Constant">The constant to multiply the row with.</param>
+        </member>
+        <member name="M:ESADS.Mechanics.Analysis.eMath.GetMaxOf(System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double@,System.Double@,System.Double@)">
+            <summary>
+            Gets the maximum positive value of a function when approximated by a degree three polynomial within the interval between the first and the last point given to approximate the function.
+            </summary>
+            <param name="x1">X coordinate of first point</param>
+            <param name="y1">Y coordinate of first point</param>
+            <param name="x2">X coordinate of second point</param>
+            <param name="y2">Y coordinate of second point</param>
+            <param name="x3">X coordinate of third point</param>
+            <param name="y3">Y coordinate of third point</param>
+            <param name="x4">X coordinate of fourth point</param>
+            <param name="y4">Y coordinate of fourth point</param>
+            <param name="MaxNegative">The maximum negative value of the function within the interval.</param>
+            <param name="X_atMaxNeg">The x value at the maximum negative y value.</param>
+            <param name="X_atMaxPos">The x value at the maximum positive y value.</param>
+        </member>
+        <member name="M:ESADS.Mechanics.Analysis.eMath.GetMaxOf(System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double@,System.Double@,System.Double@)">
+            <summary>
+            Gets the maximum positive value of a function when approximated by a degree three polynomial within the interval between the first and the last point given to approximate the function.
+            </summary>
+            <param name="x1">X coordinate of first point</param>
+            <param name="y1">Y coordinate of first point</param>
+            <param name="x2">X coordinate of second point</param>
+            <param name="y2">Y coordinate of second point</param>
+            <param name="x3">X coordinate of third point</param>
+            <param name="y3">Y coordinate of third point</param>
+            <param name="MaxNegative">The maximum negative value of the function within the interval.</param>
+            <param name="X_atMaxNeg">The x value at the maximum negative y value.</param>
+            <param name="X_atMaxPos">The x value at the maximum positive y value.</param>
+        </member>
+        <member name="M:ESADS.Mechanics.Analysis.eMath.GetZeroOf(System.Double,System.Double,System.Double,System.Double,System.Double,System.Double)">
+            <summary>
+            Gets the x coordinates within an interval where a degree three polynomial function has a value of zero. The function doesn't change the sign of the slope within the range.
+            </summary>
+            <param name="a">Coeficient of x to the power of three.</param>
+            <param name="b">Coeficient of x square.</param>
+            <param name="c">Coeficient of x.</param>
+            <param name="d">constant.</param>
+            <param name="x1">left boundary of the interval.</param>
+            <param name="x2">right boundary of the interval.</param>
+        </member>
+        <member name="M:ESADS.Mechanics.Analysis.eMath.GetZeroOf(System.Double,System.Double,System.Double,System.Double,System.Double)">
+            <summary>
+            Gets the x coordinates within an interval where a degree two(parabola) polynomial function has a value of zero
+            </summary>
+            <param name="a">Coeficient of x squared.</param>
+            <param name="b">Coeficient of x.</param>
+            <param name="c">Constant</param>
+            <param name="X1">left boundary of the interval.</param>
+            <param name="X2">right boundary of the interval.</param>
+            <remarks>If there is no solution within  the interval the returned array will contain the value 'double.NaN' </remarks>
+        </member>
+        <member name="M:ESADS.Mechanics.Analysis.eMath.GetZeroOf(System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double)">
+            <summary>
+            Gets all the zeros of a degree three polynomial within a given range of interval. The polynomial is represented by four points from it.
+            </summary>
+        </member>
+        <member name="M:ESADS.Mechanics.Analysis.eMath.GetFunction(System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double)">
+            <summary>
+            Gets the constants of a degree three polynomial given four ordered pairs.
+            </summary>
+        </member>
+        <member name="M:ESADS.Mechanics.Analysis.eMath.GetFunction(System.Double,System.Double,System.Double,System.Double,System.Double,System.Double)">
+            <summary>
+            Gets the constants of a degree two polynomial given three ordered pairs.
+            </summary>
+        </member>
+        <member name="M:ESADS.Mechanics.Analysis.eMath.GetDiff(System.Double,System.Double,System.Double,System.Double)">
+            <summary>
+            Returns the divid difference from given two pair coordinates
+            </summary>
+            <param name="x1">The x-coordinate of the first point.</param>
+            <param name="y1">The y-coordinate of the first point.</param>
+            <param name="x2">The x-coordinate of the second point.</param>
+            <param name="y2">The y-coordinate of the second point.</param>
+            <returns></returns>
+        </member>
+        <member name="M:ESADS.Mechanics.Analysis.eMath.GetDiff(System.Double,System.Double,System.Double,System.Double,System.Double,System.Double)">
+            <summary>
+            Returns the divid difference from given three pair coordinates
+            </summary>
+            <param name="x1">The x-coordinate of the first point.</param>
+            <param name="y1">The y-coordinate of the first point.</param>
+            <param name="x2">The x-coordinate of the second point.</param>
+            <param name="y2">The y-coordinate of the second point.</param>
+            <param name="x3">The x-coordinate of the third point.</param>
+            <param name="y3">The y-coordinate of the third point.</param>
+            <returns></returns>
+        </member>
+        <member name="M:ESADS.Mechanics.Analysis.eMath.Muller(System.Double,System.Double,System.Double,System.Double,System.Double,System.Double)">
+            <summary>
+            Returns the Muller's iterative quadratic formula result for the given parameters.
+            </summary>
+            <param name="x1">Bound from the left.</param>
+            <param name="x2">Bound rom the right.</param>
+            <param name="a">Varaible in Mullers formula. </param>
+            <param name="b">Varaible in Mullers formula.</param>
+            <param name="c">Varaible in Mullers formula.</param>
+            <param name="x">The most resent aproximation of the root in the iteration.</param>
+            <returns></returns>
+        </member>
+        <member name="M:ESADS.Mechanics.Analysis.eMath.GetZeros(System.Double,System.Double,System.Double,System.Double,System.Double,System.Double)">
+            <summary>
+            Returns the zeros of dgree three polynomial int the given interval.
+            </summary>
+            <param name="a">Coeficient of x to the power of three.</param>
+            <param name="b">Coeficient of x square.</param>
+            <param name="c">Coeficient of x.</param>
+            <param name="d">constant.</param>
+            <param name="x1">The left bound.</param>
+            <param name="x2">The right bound.</param>
+            <returns>Returns null if no zero found on the given interval.</returns>
+        </member>
+        <member name="M:ESADS.Mechanics.Analysis.eMath.F(System.Double,System.Double,System.Double,System.Double,System.Double)">
+            <summary>
+            Returns the ordinate for given absisa of dgree three polynomial.
+            </summary>
+            <param name="a">Coeficient of x to the power of three.</param>
+            <param name="b">Coeficient of x square.</param>
+            <param name="c">Coeficient of x.</param>
+            <param name="d">constant.</param>
+            <param name="x">value where the polynomial is to be evaluated.</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

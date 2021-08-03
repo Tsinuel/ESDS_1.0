@@ -1,0 +1,758 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ESADS.Code</name>
+    </assembly>
+    <members>
+        <member name="T:ESADS.Code.eSpanType">
+            <summary>
+            The type of span of beam or slab depending on the type of connection to neighbours.
+            </summary>
+        </member>
+        <member name="F:ESADS.Code.eSpanType.SimplySupported">
+            <summary>
+            There is no moment continuity in all direction. 
+            </summary>
+        </member>
+        <member name="F:ESADS.Code.eSpanType.EndSpan">
+            <summary>
+            There is moment continuity in one direction and no one in the other.
+            </summary>
+        </member>
+        <member name="F:ESADS.Code.eSpanType.InteriorSpan">
+            <summary>
+            There is moment continuity in every direction.
+            </summary>
+        </member>
+        <member name="F:ESADS.Code.eSpanType.Cantilever">
+            <summary>
+            There is moment continuity in one direction and no connection(free end) in the other.
+            </summary>
+        </member>
+        <member name="T:ESADS.Code.eConcreteGrade">
+            <summary>
+            Used to specify different types of grade of concrete interms of its characterstic compressive cube strength.
+            </summary>
+            <remarks>Allowable Grades in Class I and Class II Work are different, therefore there must be 
+            FindDesnCompStrength condition to handle this. This enumertion totaly include the domains of both ClassI Works</remarks>
+        </member>
+        <member name="F:ESADS.Code.eConcreteGrade.C5">
+            <summary>
+            Concrete having characterstic compressive cube strength of 5MPa.
+            </summary>
+        </member>
+        <member name="F:ESADS.Code.eConcreteGrade.C15">
+            <summary>
+            Concrete having characterstic compressive cube strength of 15MPa.
+            </summary>
+        </member>
+        <member name="F:ESADS.Code.eConcreteGrade.C20">
+            <summary>
+            Concrete having characterstic compressive cube strength of 20MPa.
+            </summary>
+        </member>
+        <member name="F:ESADS.Code.eConcreteGrade.C25">
+            <summary>
+            Concrete having characterstic compressive cube strength of 25MPa.
+            </summary>
+        </member>
+        <member name="F:ESADS.Code.eConcreteGrade.C30">
+            <summary>
+            Concrete having characterstic compressive cube strength of 30MPa.
+            </summary>
+        </member>
+        <member name="F:ESADS.Code.eConcreteGrade.C40">
+            <summary>
+            Concrete having characterstic compressive cube strength of 40MPa.
+            </summary>
+        </member>
+        <member name="F:ESADS.Code.eConcreteGrade.C50">
+            <summary>
+            Concrete having characterstic compressive cube strength of 50MPa.
+            </summary>
+        </member>
+        <member name="F:ESADS.Code.eConcreteGrade.C60">
+            <summary>
+            Concrete having characterstic compressive cube strength of 60MPa.
+            </summary>
+        </member>
+        <member name="F:ESADS.Code.eConcreteGrade.Custom">
+            <summary>
+            User defined concrete grade.
+            </summary>
+        </member>
+        <member name="T:ESADS.Code.EBCS_1995.eDetailing">
+            <summary>
+            Contains the provisions given in Chapter 7 - Detailing Provision of EBCS-2-1995
+            </summary>
+        </member>
+        <member name="M:ESADS.Code.EBCS_1995.eDetailing.Get_ρ_min(ESADS.Code.eStructureType,ESADS.Code.eSteelGrade)">
+            <summary>
+            Gets the minimum geometrical ratio of reinforcement
+            </summary>
+            <param name="TypeOfStructure">The type of structure, defined in eStructureType, under consideration</param>
+            <param name="SteelGrade">The steel grade, defined in eSteelGrade, used in the specified structure at the particular position whose minimum reinforcement ratio is to be computed.</param>
+        </member>
+        <member name="M:ESADS.Code.EBCS_1995.eDetailing.GetMinSpacing(System.Double,System.Double)">
+            <summary>
+            Gets the minimum spacing of longitudinal reinforcements in beam[Sec. 7.1.4.3 of EBCS-2, 1995]
+            </summary>
+            <param name="BiggestBarDia">The maximum size of bar used</param>
+            <param name="MaxAggSize">The maximum aggregate size of the concrete used</param>
+        </member>
+        <member name="M:ESADS.Code.EBCS_1995.eDetailing.GetMinConcreteCover(ESADS.Code.eExposureType)">
+            <summary>
+            Returns the minimum concrete cover used for a given exposure type as per [EBCS-1995,EBCS-2,Sec 7.1.3.]. 
+            </summary>
+            <param name="ExposureType">Type of exposure for the beam.</param>
+            <returns></returns>
+        </member>
+        <member name="T:ESADS.Code.EBCS_1995.eServiceability">
+            <summary>
+            Contains the provision given in Chapter 5-Serviceability Limit States of EBCS-2-1995
+            </summary>
+        </member>
+        <member name="M:ESADS.Code.EBCS_1995.eServiceability.Get_β_a(ESADS.Code.eStructureType,ESADS.Code.eSpanType)">
+            <summary>
+            Gets the constant given in Table 5.1 of EBCS -2 1995
+            </summary>
+            <param name="TypeOfStructure">The type of structure, defined in eStructureType, under consideration.</param>
+            <param name="TypeOfSpan">The type of span, defined in eSpanType, whose coefficient is to be determined.</param>
+        </member>
+        <member name="M:ESADS.Code.EBCS_1995.eServiceability.GetMinEffDepth(ESADS.Code.eSteelGrade,System.Double,ESADS.Code.eSpanType,ESADS.Code.eStructureType)">
+            <summary>
+            Gets the minimum depth requirement stated in Sec 5.2.3 of EBCS-2-1995
+            </summary>
+            <param name="SteelGrade">The grade of steel to be used</param>
+            <param name="EffectiveSpan">The effective span in meter and for two way slabs it is the shorter span.</param>
+            <param name="TypeOfSpan">Is one of the types of span defined by the eTypeOfSpan enumeration</param>
+            <param name="TypeOfStructure">Is one of the types of structures defined by the eTypeOfStructure enumeration</param>
+        </member>
+        <member name="T:ESADS.Code.eMaterialType">
+            <summary>
+            Set of materials defined in the building code.
+            </summary>
+        </member>
+        <member name="F:ESADS.Code.eMaterialType.Concrete">
+            <summary>
+            Is a material made from a mixture of aggregates and cement and moulded into a shape.
+            </summary>
+        </member>
+        <member name="F:ESADS.Code.eMaterialType.ReinforcingSteel">
+            <summary>
+            Is the material composed into RC to impart tensile strength capacity for concrete
+            </summary>
+        </member>
+        <member name="T:ESADS.Code.eSteelGrade">
+            <summary>
+            Specifies the available grades of steel based of EBCS
+            </summary>
+        </member>
+        <member name="F:ESADS.Code.eSteelGrade.S300">
+            <summary>
+            Represents the grade of steel with characterstic strength of 300MPa
+            </summary>
+        </member>
+        <member name="F:ESADS.Code.eSteelGrade.S400">
+            <summary>
+            Represents the grade of steel with characterstic strength of 400MPa
+            </summary>
+        </member>
+        <member name="F:ESADS.Code.eSteelGrade.S460">
+            <summary>
+            Represents the grade of steel with characterstic strength of 460MPa
+            </summary>
+        </member>
+        <member name="F:ESADS.Code.eSteelGrade.Custom">
+            <summary>
+            User defined steel grade.
+            </summary>
+        </member>
+        <member name="T:ESADS.Code.EBCS_1995.eCompression">
+            <summary>
+            Contains the provisions given in Chapter 4-Ultimate Limit States of EBCS-2-1995 concerning compression.
+            </summary>
+        </member>
+        <member name="T:ESADS.Code.eClassWork">
+            <summary>
+            Concrete works are classification as either Class I or II depending on the quality of workmanship and
+            the competence of the supervisors directing the works.[Sec.1.2.1 of EBCS-2-1995]
+            </summary>
+        </member>
+        <member name="F:ESADS.Code.eClassWork.ClassI">
+            <summary>
+            Works carried out under the direction of appropriately qualified supervisors ensuring the 
+            attainment of level of quality control envisaged in Chapter 9 of EBCS-2-1995.[Sec. 1.2.1 of EBCS-2-1995]
+            </summary>
+        </member>
+        <member name="F:ESADS.Code.eClassWork.ClassII">
+            <summary>
+            Works with a lower level of quality control which are permissible only for single story buildings.
+            </summary>
+        </member>
+        <member name="T:ESADS.Code.EBCS_1995.ePunching">
+            <summary>
+            Contains the provisions given in Chapter 4-Ultimate Limit States of EBCS-2-1995 concerning punching.
+            </summary>
+        </member>
+        <member name="T:ESADS.Code.EBCS_1995.eMaterial">
+            <summary>
+            Contains provisions given in Chapter 2-Data on concrete and steel of EBCS-2-1995.
+            </summary>
+        </member>
+        <member name="M:ESADS.Code.EBCS_1995.eMaterial.Get_f_ck(ESADS.Code.eConcreteGrade,ESADS.Code.eConcreteTestSpecimenType)">
+            <summary>
+            Gets the characterstic cylinder compressive concrete strength [Sec. 2.3 of EBCS-2-1995]
+            </summary>
+            <param name="Grade">The grade of concrete, defined in eConcreteGrade, whose characterstic compressive strength is to be computed.</param>
+            <param name="TypeOfTestSpecimen">The type of concrete test specimen, defined in eConcreteTestSpecimenType, used to determine the characterstic compressive strength of the concrete.</param>
+        </member>
+        <member name="M:ESADS.Code.EBCS_1995.eMaterial.Get_f_ck(ESADS.Code.eConcreteGrade)">
+            <summary>
+            Gets the characterstic compressive strength of concrete based on the grade and type of test specimen [Sec. 2.3 of EBCS-2-1995]
+            </summary>
+            <param name="Grade">The grade of concrete, defined in eConcreteGrade, whose characterstic compressive strength is to be computed.</param>
+        </member>
+        <member name="M:ESADS.Code.EBCS_1995.eMaterial.Get_f_ctk(ESADS.Code.eConcreteGrade)">
+            <summary>
+            Gets the characterstic concrete tensile strength[Sec. 2.4 of EBCS-2-1995]
+            </summary>
+            <param name="Grade">The grade of concrete, defined in eConcreteGrade, whose characterstic tensile strength is to be computed.</param>
+        </member>
+        <member name="M:ESADS.Code.EBCS_1995.eMaterial.Get_f_ctk(ESADS.Code.eConcreteGrade,ESADS.Code.eConcreteTestSpecimenType)">
+            <summary>
+            Gets the characterstic concrete tensile strength[Sec. 2.4 of EBCS-2-1995]
+            </summary>
+            <param name="Grade">The grade of concrete, defined in eConcreteGrade, whose characterstic tensile strength is to be computed.</param>
+            <param name="TypeOfTestSpecimen">The type of concrete test specimen, defined in eConcreteTestSpecimenType, used to determine the characterstic tensile strength of the concrete.</param>
+        </member>
+        <member name="M:ESADS.Code.EBCS_1995.eMaterial.Get_f_yk(ESADS.Code.eSteelGrade)">
+            <summary>
+            Gets the characterstic steel strength
+            </summary>
+            <param name="Grade">The grade of steel, defined in eSteelGrade, whose characterstic  strength is to be determined.</param>
+        </member>
+        <member name="M:ESADS.Code.EBCS_1995.eMaterial.Get_ConcModOfElasticity(ESADS.Code.eConcreteGrade)">
+            <summary>
+            Gets the modulus of elasticity of the selected material.
+            </summary>
+            <param name="ConcreteGrade">The grade of concrete, defined in eConcreteGrade, whose modulus of elasticity is to be computed.</param>
+            <returns>The modulus of elasticity of concrete</returns>
+        </member>
+        <member name="M:ESADS.Code.EBCS_1995.eMaterial.Get_ConcUnitWeight(ESADS.Code.eConcreteType)">
+            <summary>
+            Gets the unit weight of concrete based on its type[Table 2.1 of EBCS-1-1995]
+            </summary>
+            <param name="TypeOfConcrete">The type of concrete, defined in eConcreteType, whose unit weight is to be computed.</param>
+            <returns>The unit weight of the specified concrete in Kg/mm^3</returns>
+        </member>
+        <member name="M:ESADS.Code.EBCS_1995.eMaterial.GetSteelUnitWeight">
+            <summary>
+            Gets the Unit weight of Steel in system units. [Sec. 2.8.1  of EBCS-2-1995]
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ESADS.Code.EBCS_1995.eMaterial.GetSteelModulusOfElasticity">
+            <summary>
+            Gets the Modulus of elasticity of steel in system units [Sec.2.9.4.1 of EBCS-2-1995]
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:ESADS.Code.eActionCondition">
+            <summary>
+            Contains the action conditions specified on Table 3.3 of EBCS-2-1995
+            </summary>
+        </member>
+        <member name="F:ESADS.Code.eActionCondition.Favourable">
+            <summary>
+            Favourable action condition
+            </summary>
+        </member>
+        <member name="F:ESADS.Code.eActionCondition.Unfavourable">
+            <summary>
+            Unfavourable action condition
+            </summary>
+        </member>
+        <member name="T:ESADS.Code.eStructureType">
+            <summary>
+            Defines the type of structure(Organized combination of connected parts designed to provide some measure of rigidity.
+            [Sec. 1.1.3 of EBCS-1-1995])
+            </summary>
+        </member>
+        <member name="F:ESADS.Code.eStructureType.Beam">
+            <summary>
+            A structural component mainly working in bending through the agency of vertical forces
+            and that transmits to the bearing points the loads that are applied to it.
+            </summary>
+        </member>
+        <member name="F:ESADS.Code.eStructureType.Column">
+            <summary>
+            A structural component mainly working in axial force and bending and transmits load vertically.
+            </summary>
+        </member>
+        <member name="F:ESADS.Code.eStructureType.Slab">
+            <summary>
+            An element generally parallelepipedic of small thickness in comparison with its surface, used as
+            inspection cover, in pavement, cover of box culvert, deck of bridge, etc.
+            </summary>
+        </member>
+        <member name="F:ESADS.Code.eStructureType.Footing">
+            <summary>
+            A substructure used to transfer superstructure load from column to the underlying soil.
+            </summary>
+        </member>
+        <member name="T:ESADS.Code.EBCS_1995.eShear">
+            <summary>
+            Contains the provisions given in Chapter 4-Ultimate Limit States of EBCS-2-1995 concerning flexure.
+            </summary>
+        </member>
+        <member name="T:ESADS.Code.eConcreteType">
+            <summary>
+            The classification of concrete based on their physical property like weight, density etc.
+            </summary>
+        </member>
+        <member name="F:ESADS.Code.eConcreteType.LightWeight">
+            <summary>
+            Concrete with relatively lighter in weight.
+            </summary>
+        </member>
+        <member name="F:ESADS.Code.eConcreteType.NormalWeight">
+            <summary>
+            Concrete applied for most constructions
+            </summary>
+        </member>
+        <member name="F:ESADS.Code.eConcreteType.HeavyWeight">
+            <summary>
+            Concrete with a relatively heavier made with heavier aggregate.
+            </summary>
+        </member>
+        <member name="F:ESADS.Code.eConcreteType.ReinforcedAndPrestressed">
+            <summary>
+            Concrete used in Reinforced and prestressed construction.
+            </summary>
+        </member>
+        <member name="F:ESADS.Code.eConcreteType.Unhardened">
+            <summary>
+            Fresh concrete before hardening.
+            </summary>
+        </member>
+        <member name="F:ESADS.Code.eConcreteType.UserDefined">
+            <summary>
+            Concrete type defined by user specifying the unit weight.
+            </summary>
+        </member>
+        <member name="T:ESADS.Code.eDesignSituation">
+            <summary>
+            Those sets of physical conditions representing a certain time interval for which the design will demonstrate that relevant limit states are not exceeded. [Section 3.3.1 of EBCS -2, 1995], [Section 1.1.3.2 of EBCS-1, 1995]
+            </summary>
+            <remarks>
+            See Section 3.3.1 of EBCS-2, 1995
+            See also Section 1.1.3.2 of EBCS -1, 1995 for definition
+            </remarks>
+        </member>
+        <member name="F:ESADS.Code.eDesignSituation.Accidental">
+            <summary>
+            Design situation involving exceptional conditions of the structure or its exposure, e.g. fire, explosion, impact or local failure. [Sec. 1.1.3.2 of EBCS-1, 1995]
+            </summary>
+        </member>
+        <member name="F:ESADS.Code.eDesignSituation.PersistentAndTransient">
+            <summary>
+            Applying both persistent and transient conditions. Persistent means Design situation which is relevant during a period of the same order as the design working life of the structure. Generally it refers to conditions of normal use. [Sec 1.1.3.2 of EBCS -1, 1995]. Transient means Design situation which is relevant during a period much shorter that the design working life of the structure and which as a high probability of occurrence. It refers to temporary conditions of the structure, of use, or exposure, e.g. during construction or repair. [Sec 1.1.3.2 of EBCS-1, 1995].
+            </summary>
+        </member>
+        <member name="T:ESADS.Code.eLimitStateType">
+            <summary>
+            Holds the types of limit states
+            </summary>
+        </member>
+        <member name="F:ESADS.Code.eLimitStateType.SLS">
+            <summary>
+            serviceability limit state
+            </summary>
+        </member>
+        <member name="F:ESADS.Code.eLimitStateType.ULS">
+            <summary>
+            ultimate limit state
+            </summary>
+        </member>
+        <member name="T:ESADS.Code.eReinforcement">
+            <summary>
+            Set of steel rods incorporated into the concrete to ensure its tensile strength. Those available in the code are 
+            mentioned here.
+            </summary>
+        </member>
+        <member name="F:ESADS.Code.eReinforcement.Φ6">
+            <summary>
+            Reinforcemnt bar with 6mm diameter.
+            </summary>
+        </member>
+        <member name="F:ESADS.Code.eReinforcement.Φ8">
+            <summary>
+            Reinforcemnt bar with 8mm diameter.
+            </summary>
+        </member>
+        <member name="F:ESADS.Code.eReinforcement.Φ10">
+            <summary>
+            Reinforcemnt bar with 10mm diameter.
+            </summary>
+        </member>
+        <member name="F:ESADS.Code.eReinforcement.Φ12">
+            <summary>
+            Reinforcemnt bar with 12mm diameter.
+            </summary>
+        </member>
+        <member name="F:ESADS.Code.eReinforcement.Φ14">
+            <summary>
+            Reinforcemnt bar with 14mm diameter.
+            </summary>
+        </member>
+        <member name="F:ESADS.Code.eReinforcement.Φ16">
+            <summary>
+            Reinforcemnt bar with 16mm diameter.
+            </summary>
+        </member>
+        <member name="F:ESADS.Code.eReinforcement.Φ20">
+            <summary>
+            Reinforcemnt bar with 20mm diameter.
+            </summary>
+        </member>
+        <member name="F:ESADS.Code.eReinforcement.Φ24">
+            <summary>
+            Reinforcemnt bar with 24mm diameter.
+            </summary>
+        </member>
+        <member name="F:ESADS.Code.eReinforcement.Φ26">
+            <summary>
+            Reinforcemnt bar with 26mm diameter.
+            </summary>
+        </member>
+        <member name="F:ESADS.Code.eReinforcement.Φ28">
+            <summary>
+            Reinforcemnt bar with 28mm diameter.
+            </summary>
+        </member>
+        <member name="F:ESADS.Code.eReinforcement.Φ32">
+            <summary>
+            Reinforcemnt bar with 32mm diameter.
+            </summary>
+        </member>
+        <member name="T:ESADS.Code.EBCS_1995.eBasisOfDesign">
+            <summary>
+            Contains the provisions given in Chapter 3, Basis of Design of EBCS-2, 1995
+            </summary>
+        </member>
+        <member name="F:ESADS.Code.EBCS_1995.eBasisOfDesign.ε_c_max_bending">
+            <summary>
+            Is the maximum compressive strain of concrete in bending(simple or compound) [Sec. 4.2.1.1 of EBCS-2-1995]
+            </summary>
+        </member>
+        <member name="F:ESADS.Code.EBCS_1995.eBasisOfDesign.ε_s_max">
+            <summary>
+            Is the maximum steel tensile strain.
+            </summary>
+        </member>
+        <member name="F:ESADS.Code.EBCS_1995.eBasisOfDesign.ε_c_max_axial">
+            <summary>
+            Is the maximum compressive strain of concrete in axial compression
+            </summary>
+        </member>
+        <member name="M:ESADS.Code.EBCS_1995.eBasisOfDesign.GetMaterialPartialSafetyFactor(ESADS.Code.eMaterialType,ESADS.Code.eDesignSituation,ESADS.Code.eClassWork)">
+            <summary>
+            Gets the ultimate limit state partial safety factors for the specified 
+            material based on the classwork and design situation.[Sec. 3.5.3.1 of EBCS-2-1995]
+            </summary>
+            <param name="Material">The type of material defined in eMaterialType 
+            enumeration whose partial safety factor is to be determined.</param>
+            <param name="DesignSituation">The design situation defined in 
+            eDesignSituation enumeration in which the material is going to be used</param>
+            <param name="ClassWork">The class of work defined in eClassWork 
+            enumeration that expresses the quality of work of the design.</param>
+            <returns>The ultimate limit state partial safety factor of the selected material.</returns>
+        </member>
+        <member name="M:ESADS.Code.EBCS_1995.eBasisOfDesign.GetMaterialPartialSafetyFactor(ESADS.Code.eLimitStateType,ESADS.Code.eMaterialType,ESADS.Code.eDesignSituation,ESADS.Code.eClassWork)">
+            <summary>
+            Gets the partial safety factors for the specified material based on the type of 
+            limit state, classwork and design situation.[Sec. 3.5.3 of EBCS-2-1995]
+            </summary>
+            <param name="TypeOfDesign">The type of design to be conducted with the safety factor returned.</param>
+            <param name="Material">The type of material defined in eMaterialType enumeration whose partial safety factor 
+            is to be determined.</param>
+            <param name="DesignSituation">The design situation defined in eDesignSituation enumeration in which the 
+            material is going to be used</param>
+            <param name="ClassWork">The class of work defined in eClassWork enumeration that expresses the quality of
+            work of the design.</param>
+            <returns>The partial safety factor of the selected material</returns>
+        </member>
+        <member name="M:ESADS.Code.EBCS_1995.eBasisOfDesign.GetMaterialPartialSafetyFactor(ESADS.Code.eMaterialType,ESADS.Code.eClassWork)">
+            <summary>
+            Gets the partial safety factor for the specified material taking the design situation as Persistent and Transient and the limit state type as Ultimate limit state.
+            </summary>
+            <param name="Material">
+            The type of material defined in eMaterialType enumeration whose partial safety factor 
+            is to be determined.
+            </param>
+            <param name="ClassWork">
+            The class of work defined in eClassWork enumeration that expresses the quality of
+            work of the design.
+            </param>
+        </member>
+        <member name="M:ESADS.Code.EBCS_1995.eBasisOfDesign.Get_f_cd(ESADS.Code.eConcreteGrade,ESADS.Code.eClassWork,ESADS.Code.eDesignSituation)">
+            <summary>
+            Gets the compressive strength of concrete based on the class of work according to Sec. 3.5.4.1 if EBCS-2-1995
+            </summary>
+            <param name="ConcreteGrade">The grade of concrete, defined in eConcreteGrade whose design strength is going to be 
+            computed.</param>
+            <param name="ClassWork">The class of the work defined in eClassWork enumeration</param>
+            <param name="DesignSituation">The design situation, defined in eDesignSituation, in which the concrete is going to
+            be used.</param>
+            <returns>The design compressive strength of concrete</returns>
+        </member>
+        <member name="M:ESADS.Code.EBCS_1995.eBasisOfDesign.Get_f_cd(ESADS.Code.eConcreteGrade,ESADS.Code.eClassWork)">
+            <summary>
+            Gets the compressive strength of concrete based on the class of work according to Sec. 3.5.4.1 if EBCS-2-1995
+            </summary>
+            <param name="ConcreteGrade">The grade of concrete, defined in eConcreteGrade whose design strength is going to 
+            be computed.</param>
+            <param name="ClassWork">The class of the work defined in eClassWork enumeration</param>
+        </member>
+        <member name="M:ESADS.Code.EBCS_1995.eBasisOfDesign.Get_f_cd(ESADS.Code.eConcreteGrade,ESADS.Code.eClassWork,ESADS.Code.eDesignSituation,ESADS.Code.eConcreteTestSpecimenType)">
+            <summary>
+            Gets the compressive strength of concrete [Sec. 3.5.4 of EBCS -2-1995]
+            </summary>
+            <param name="ConcreteGrade">The grade of concrete, defined in eConcreteGrade whose design strength is going to be 
+            computed.</param>
+            <param name="ClassWork">The class of work, defined in eClassWork, in which the concrete is going to be used.</param>
+            <param name="DesignSituation">The design situation, defined in eDesignSituation, in which the concrete is going to 
+            be used.</param>
+            <param name="TypeOfTestSpecimen">The type of concrete test specimen, defined in eConcreteTestSpecimenType, used to 
+            test the characterstic strength of the concrete.</param>
+        </member>
+        <member name="M:ESADS.Code.EBCS_1995.eBasisOfDesign.Get_f_cd(System.Double,ESADS.Code.eClassWork)">
+            <summary>
+            Gets the desing compressive strength for given characterstic compressive strength and class work of the constraction.
+            </summary>
+            <param name="CharactersticCompressiveConcStrgth">Characterstic compressive strength of the concrete.</param>
+            <param name="ClassWork">Class work of the constraction.</param>
+            <returns></returns>
+        </member>
+        <member name="M:ESADS.Code.EBCS_1995.eBasisOfDesign.Get_f_c(ESADS.Code.eConcreteGrade,System.Double,ESADS.Code.eClassWork)">
+            <summary>
+            Gets the compressive stress of concrete depending on its grade and the amount of strain. Returns zero if out of limits.
+            It considers cylinderical concrete test specimen with Persistent and Transient design situation.
+            [Fig. 4.2 of EBCS-2-1995]
+            </summary>
+            <param name="ConcreteGrade">The grade of concrete, difined in eConcreteGrade, whose compressive stress is desired.</param>
+            <param name="AmountOfStrain">The amount of compressive strain of concrete expressed in positive number.</param>
+            <param name="ClassWork">The class of work, defined in eClassWork, in which the concrete is going to be used</param>
+            <returns>The design compressive strength of concrete as positive value. If the strain is greater than the maximum 
+            value specified by the code, is zero or negative(which means the concrete is in tension), zero is returned as there 
+            is no compressive stress in all these cases.</returns>
+        </member>
+        <member name="M:ESADS.Code.EBCS_1995.eBasisOfDesign.Get_f_c(ESADS.Code.eConcreteGrade,System.Double,ESADS.Code.eClassWork,ESADS.Code.eDesignSituation)">
+            <summary>
+            Gets the compressive stress of concrete depending on its grade and the amount of strain. Returns zero if out of limits.
+            It considers the concrete test specimen as cylinderical.
+            [Fig. 4.2 of EBCS-2-1995]
+            </summary>
+            <param name="ConcreteGrade">The grade of concrete defined in eConcreteGrade, whose stress is to be computed.</param>
+            <param name="AmountOfStrain">The amount of compressive strain of concrete expressed in positive number.</param>
+            <param name="ClassWork">The class of work, defined in eClassWork, in which the concrete is going to be used</param>
+            <param name="DesignSituation">The design situation, defined in eDesignSituation, in which the concrete is used.</param>
+            <returns>The design compressive strength of concrete as positive value. If the strain is greater than the maximum 
+            value specified by the code, is zero or negative(which means the concrete is in tension), zero is returned as there is
+            no compressive stress in all these cases.</returns>
+        </member>
+        <member name="M:ESADS.Code.EBCS_1995.eBasisOfDesign.Get_f_c(ESADS.Code.eConcreteGrade,System.Double,ESADS.Code.eClassWork,ESADS.Code.eDesignSituation,ESADS.Code.eConcreteTestSpecimenType)">
+            <summary>
+            Gets the compressive stress of concrete depending on its grade and the amount of strain. Returns zero if out of limits.
+            [Fig. 4.2 of EBCS-2-1995]
+            </summary>
+            <param name="ConcreteGrade">The grade of concrete defined in eConcreteGrade, whose stress is to be computed.</param>
+            <param name="AmountOfStrain">The amount of compressive strain of concrete expressed in positive number.</param>
+            <param name="ClassWork">The class of work, defined in eClassWork, in which the concrete is going to be used</param>
+            <param name="DesignSituation">The design situation, defined in eDesignSituation, in which the concrete is used.</param>
+            <param name="TypeOfTestSpecimen">The type of concrete test specimen, defined in eConcreteTestSpecimenType, to test the
+            concrete characterstic strength.</param>
+            <returns>The design compressive strength of concrete as positive value. If the strain is greater than the maximum 
+            value specified by the code, is zero or negative(which means the concrete is in tension), zero is returned as there 
+            is no compressive stress in all these cases.</returns>
+        </member>
+        <member name="M:ESADS.Code.EBCS_1995.eBasisOfDesign.Get_f_c(System.Double,System.Double)">
+            <summary>
+            Gets the compressive stress of concrete depending on its grade and the amount of strain. Returns zero if out of limits.
+            </summary>
+            <param name="AmountOfStrain">The amount of compressive strain of concrete expressed in positive number.</param>
+            <param name="f_cd">The design compressive strength of concrete whose stress is to be computed.</param>
+            <returns>
+            The design compressive strength of concrete as positive value. If the strain is greater than the maximum 
+            value specified by the code, is zero or negative(which means the concrete is in tension), zero is returned as there 
+            is no compressive stress in all these cases.
+            </returns>
+        </member>
+        <member name="M:ESADS.Code.EBCS_1995.eBasisOfDesign.Get_f_ctd(ESADS.Code.eConcreteGrade,ESADS.Code.eClassWork)">
+            <summary>
+            Gets the design tensile strength of concrete as per Sec. 3.5.4 of EBCS-2-1995
+            </summary>
+            <param name="Grade">The grade of concrete, defined in eConcreteGrade, whose  design tensile strength is to be computed.</param>
+            <param name="ClassWork">The class of work, defined in eClassWork, in which the concrete concerned is found in.</param>
+        </member>
+        <member name="M:ESADS.Code.EBCS_1995.eBasisOfDesign.Get_f_ctd(ESADS.Code.eConcreteGrade,ESADS.Code.eClassWork,ESADS.Code.eConcreteTestSpecimenType)">
+            <summary>
+            Gets the design tensile strength of concrete as per Sec. 3.5.4 of EBCS-2-1995
+            </summary>
+            <param name="Grade">The grade of concrete, defined in eConcreteGrade, whose  design tensile strength is to be computed.</param>
+            <param name="ClassWork">The class of work, defined in eClassWork, in which the concrete concerned is found in.</param>
+            <param name="TypeOfTestSpecimen">The type of concrete test specimen, defined in eConcreteTestSpecimenType, used for determination of the characterstic strength of the concrete</param>
+        </member>
+        <member name="M:ESADS.Code.EBCS_1995.eBasisOfDesign.Get_f_ctd(ESADS.Code.eConcreteGrade,ESADS.Code.eClassWork,ESADS.Code.eConcreteTestSpecimenType,ESADS.Code.eDesignSituation)">
+            <summary>
+            Gets the design tensile strength of concrete as per Sec. 3.5.4 of EBCS-2-1995
+            </summary>
+            <param name="Grade">The grade of concrete, defined in eConcreteGrade, whose  design tensile strength is to be computed.</param>
+            <param name="ClassWork">The class of work, defined in eClassWork, in which the concrete concerned is found in.</param>
+            <param name="TypeOfTestSpecimen">The type of concrete test specimen, defined in eConcreteTestSpecimenType, used for determination of the characterstic strength of the concrete</param>
+            <param name="DesignSituation">The design situation, defined in eDesignSituation, in which the concrete concerned is found in.</param>
+        </member>
+        <member name="M:ESADS.Code.EBCS_1995.eBasisOfDesign.Get_f_ctd(System.Double,ESADS.Code.eClassWork)">
+            <summary>
+            Returns the Design tesile strength of a concrete for a given characterstic concrete tensile strength and class work of constraction.
+            </summary>
+            <param name="CharactersticConcreteTensileStrength">Characterstic concrete tensile strength.</param>
+            <param name="ClassWork">Class work of the constraction.</param>
+            <returns></returns>
+        </member>
+        <member name="M:ESADS.Code.EBCS_1995.eBasisOfDesign.Get_f_yd(ESADS.Code.eSteelGrade,ESADS.Code.eClassWork,ESADS.Code.eDesignSituation)">
+            <summary>
+            Gets the design strength of steel
+            </summary>
+            <param name="Grade">The grade of steel, defined in eSteelGrade, whose design strength is to be calculated</param>
+            <param name="ClassWork">The class of work, defined in eClassWork, in which the steel concerned is to be used.</param>
+            <param name="DesignSituation">The design situation, defined in eDesignSituation, in which the concerned steel is found.</param>
+        </member>
+        <member name="M:ESADS.Code.EBCS_1995.eBasisOfDesign.Get_f_yd(ESADS.Code.eSteelGrade,ESADS.Code.eClassWork)">
+            <summary>
+            Gets the design strength of steel
+            </summary>
+            <param name="Grade">The grade of steel, defined in eSteelGrade, whose design strength is to be calculated</param>
+            <param name="ClassWork">The class of work, defined in eClassWork, in which the steel concerned is to be used.</param>
+        </member>
+        <member name="M:ESADS.Code.EBCS_1995.eBasisOfDesign.Get_f_yd(System.Double,ESADS.Code.eClassWork)">
+            <summary>
+            Returns the design yeild strength of a steel reinforcement for a given characterstic yeild strength and classwork.
+            </summary>
+            <param name="CharactersticYeildStrength">The characterstic strength of the steel.</param>
+            <param name="ClassWork">The class work of the construction.</param>
+            <returns></returns>
+        </member>
+        <member name="M:ESADS.Code.EBCS_1995.eBasisOfDesign.GetActionPartialSafetyFactor(ESADS.Code.eActionType,ESADS.Code.eActionCondition,ESADS.Code.eDesignSituation)">
+            <summary>
+            Gets the limit state partial safety factor for the specified action type [Table 3.3 of EBCS-2-1995]
+            </summary>
+            <param name="ActionType">The type of action, defined in eActionType, whose partial safety factor is to be determined.</param>
+            <param name="ActionCondition">The condition of aciton, defined in eActionCondition</param>
+            <param name="DesignSituation">The design situation, defined in eDesignSituation</param>
+        </member>
+        <member name="M:ESADS.Code.EBCS_1995.eBasisOfDesign.GetActionPartialSafetyFactor(ESADS.Code.eActionType)">
+            <summary>
+            Gets the limit state partial safety factor for the specified action type [Table 3.3 of EBCS-2-1995]
+            </summary>
+            <param name="ActionType">The type of action, defined in eActionType, whose partial safety factor is to be determined.</param>
+        </member>
+        <member name="M:ESADS.Code.EBCS_1995.eBasisOfDesign.GetActionPartialSafetyFactor(ESADS.Code.eActionType,ESADS.Code.eDesignSituation)">
+            <summary>
+            Gets the limit state partial safety factor for the specified action type [Table 3.3 of EBCS-2-1995]
+            </summary>
+            <param name="ActionType">The type of action, defined in eActionType, whose partial safety factor is to be determined.</param>
+            <param name="DesignSituation">The design situation, defined in eDesignSituation</param>
+        </member>
+        <member name="M:ESADS.Code.EBCS_1995.eBasisOfDesign.GetActionPartialSafetyFactor(ESADS.Code.eActionType,ESADS.Code.eActionCondition)">
+            <summary>
+            Gets the limit state partial safety factor for the specified action type [Table 3.3 of EBCS-2-1995]
+            </summary>
+            <param name="ActionType">The type of action, defined in eActionType, whose partial safety factor is to be determined.</param>
+            <param name="ActionCondition">The type of action condition, defined in eActionCondition</param>
+        </member>
+        <member name="T:ESADS.Code.EBCS_1995.eTorsion">
+            <summary>
+            Contains the provisions given in Chapter 4 Ultimate Limit States of EBCS-2-1995 concerning flexure.
+            </summary>
+        </member>
+        <member name="T:ESADS.Code.eConcreteTestSpecimenType">
+            <summary>
+            Defines the types of test specimen to test the compressive strength of concrete.
+            </summary>
+        </member>
+        <member name="F:ESADS.Code.eConcreteTestSpecimenType.Cube">
+            <summary>
+            200mm sized cubical test specimen
+            </summary>
+        </member>
+        <member name="F:ESADS.Code.eConcreteTestSpecimenType.Cylinder">
+            <summary>
+            150mm diameter and 300mm high cylinderical test specimen
+            </summary>
+        </member>
+        <member name="T:ESADS.Code.eExposureType">
+            <summary>
+            Enumerates the varies Enviromental exposure conditions for Deciding the minimum reinforcement Cover
+            </summary>
+        </member>
+        <member name="F:ESADS.Code.eExposureType.Mild">
+            <summary>
+            Represents Exposures in Dry Enviroment: Interior of a building Normal Habituation office 
+            [EBCS _1995  7.1.3 Concrete Cover to Reinforcement,Table 7.2 Minimum Cover Requirements for Concrete Members]
+            </summary>
+        </member>
+        <member name="F:ESADS.Code.eExposureType.Moderate">
+            <summary>
+            Represents Exposures in Humid environment:Interior components (e.g. laundries); exterior components;components 
+            in non-aggressive soil and/or in water[EBCS1995 Table 7.2 Minimum Cover Requirements for Concrete Members]
+            </summary>
+        </member>
+        <member name="F:ESADS.Code.eExposureType.Severe">
+            <summary>
+            Represents Exposures Sever Enviromental Condition[EBCS1995 Table 7.2 Minimum Cover Requirements for Concrete Members]]
+            </summary>
+        </member>
+        <member name="T:ESADS.Code.EBCS_1995.eFlexure">
+            <summary>
+            Contains the provisions given in Chapter 4-Ultimate Limit States of EBCS-2-1995 concerning flexure.
+            </summary>
+        </member>
+        <member name="F:ESADS.Code.EBCS_1995.eFlexure.StressApprxFactor">
+            <summary>
+            A coefficient to estimate the actual parabolic stress distribution with rectangular one.
+            </summary>
+        </member>
+        <member name="M:ESADS.Code.EBCS_1995.eFlexure.Get_k_x_max(System.Double)">
+            <summary>
+            Gets the maximum x/d value[Sec. 3.7.9 of EBCS 2, 1995]
+            </summary>
+            <param name="PercentageRedistribution">The moment after redistribution. For example 0.9 for 10% redistribution</param>
+        </member>
+        <member name="M:ESADS.Code.EBCS_1995.eFlexure.Get_k_x_max">
+            <summary>
+            Gets the maximum x/d value taking the 0% redistribution. [Sec. 3.7.9 of EBCS 2, 1995]
+            </summary>
+        </member>
+        <member name="T:ESADS.Code.eActionType">
+            <summary>
+            Action is the Force(load) applied to the structure(direct action) or an imposed or constrained deformation 
+            or an imposed acceleration[Sec. 1.1.3 of EBCS-1-1995].
+            </summary>
+        </member>
+        <member name="F:ESADS.Code.eActionType.Permanent">
+            <summary>
+            Action which is likely to act throughout a given design situation and for which the variation in magnitude 
+            with time is negligible in relation to the mean value, or for which the variation is always in the same 
+            direction (monotonic) until the action attains a certain limit value.
+            </summary>
+        </member>
+        <member name="F:ESADS.Code.eActionType.Variable">
+            <summary>
+            Action, which is unlikely to act throughout a given design situation or for which the variation in magnitude
+            with time is neither negligible in relation to the mean value nor monotonic.
+            </summary>
+        </member>
+    </members>
+</doc>

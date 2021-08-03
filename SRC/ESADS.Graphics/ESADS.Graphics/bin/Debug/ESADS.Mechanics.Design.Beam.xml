@@ -1,0 +1,1869 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ESADS.Mechanics.Design.Beam</name>
+    </assembly>
+    <members>
+        <member name="T:ESADS.Mechanics.Design.Beam.eDFlexureSection">
+            <summary>
+            Represents a beam cross section which is going to be design for flexure.
+            </summary>
+        </member>
+        <member name="T:ESADS.Mechanics.Design.Beam.eDSection">
+            <summary>
+            Represents a base class for sections to be designed.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.Beam.eDSection.name">
+            <summary>
+            Hold a value for public property 'Name'.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.Beam.eDSection.D">
+            <summary>
+            Holds the value of porperty 'Depth'.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.Beam.eDSection.d">
+            <summary>
+            Holds the value of porperty 'EffectiveDepht'.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.Beam.eDSection.b">
+            <summary>
+            Holds the value of porperty 'Width'.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.Beam.eDSection.designCompleted">
+            <summary>
+            Hold value for property 'DesignCompleted'.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.Beam.eDSection.intervals">
+            <summary>
+            Holds the value of the 'Intervals' property.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.Beam.eDSection.beam">
+            <summary>
+            Holds the value of the 'Beam'.
+            </summary>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.Beam.eDSection.#ctor(ESADS.Mechanics.Design.Beam.eDBeam,System.Double,System.Double)">
+            <summary>
+            Creates an instance of ESADS.Mechanics.Design.eDSection class for a given basic parameters.
+            </summary>
+            <param name="beam">The beam bearing the section</param>
+            <param name="width">Width of the section.</param>
+            <param name="depth">Depth of the section.</param>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.Beam.eDSection.#ctor(ESADS.Mechanics.Design.Beam.eDBeam,System.String,System.Double,System.Double)">
+            <summary>
+            Creates an instance of ESADS.Mechanics.Design.eDSection class for a given basic parameters.
+            </summary>
+            <param name="beam">The beam bearing the section</param>
+            <param name="name">Name of the section.</param>
+            <param name="width">Width of the section.</param>
+            <param name="depth">Depth of the section.</param>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.Beam.eDSection.Design">
+            <summary>
+            Designs this section.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.Beam.eDSection.Name">
+            <summary>
+            Gets or sets the name of the section.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.Beam.eDSection.c">
+            <summary>
+            Gets the concrete used for this section and the whole beam.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.Beam.eDSection.s">
+            <summary>
+            Gets the steel used for this section and the whole beam.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.Beam.eDSection.Width">
+            <summary>
+            Gets or sets the width of the section.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.Beam.eDSection.Depth">
+            <summary>
+            Gets or sets the depth of the section.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.Beam.eDSection.EffectiveDepth">
+            <summary>
+            Gets the effective depth of the section.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.Beam.eDSection.DesignCompleted">
+            <summary>
+            Gets the value indicating whether the design is completed or not.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.Beam.eDSection.Intervals">
+            <summary>
+            Gets or sets the coordinate intervals of the beam in which the section is defined. The first dimension is for the number of intervals while the second is for the start and end of the interval.
+            </summary>
+            <summary>
+            Gets or sets the ordered pairs representing the start and end coordinate of the length overwhich the section applies.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.Beam.eDSection.Beam">
+            <summary>
+            Gets the parent beam of the section
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.Beam.eDSection.stirrupD">
+            <summary>
+            Gets the diameter of the stirrup used.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.Beam.eDFlexureSection.depthTolerance">
+            <summary>
+            Specifies the tolerance to which depth revision is significantly not important.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.Beam.eDFlexureSection.compCombination">
+            <summary>
+            Accesses the public property 'CompCombination'.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.Beam.eDFlexureSection.effectiveSLSdepth">
+            <summary>
+            Accesses the public property 'EffectiveSLSdepth'.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.Beam.eDFlexureSection.spanType">
+            <summary>
+            Accesses the public property 'SpanType'.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.Beam.eDFlexureSection.tensCombination">
+            <summary>
+            Accesses the public property 'TensCombination'.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.Beam.eDFlexureSection.sectionType">
+            <summary>
+            Holds a value for property 'SectionType'.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.Beam.eDFlexureSection.moment">
+            <summary>
+            Holds the value of the 'Moment'.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.Beam.eDFlexureSection.extendFrom">
+            <summary>
+            Holds the value of 'ExtendFrom'
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.Beam.eDFlexureSection.member">
+            <summary>
+            Holds the value of 'Member'.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.Beam.eDFlexureSection.isOverReinforced">
+            <summary>
+            Holds the value of 'IsOverReinforced'.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.Beam.eDFlexureSection.failed">
+            <summary>
+            Holds the value of 'SectionFailed'.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.Beam.eDFlexureSection.location">
+            <summary>
+            Holds the value of 'Location'.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.Beam.eDFlexureSection.X">
+            <summary>
+            Holds the value of 'NeutralAxisDepth'.
+            </summary>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.Beam.eDFlexureSection.#ctor(ESADS.Mechanics.Design.Beam.eDBeam,System.Double,System.Double)">
+            <summary>
+            Creates an instance of ESADS.Mechanics.Design.eDFlexureSection class for a given basic parameters.
+            </summary>
+            <param name="beam">The beam bearing the section</param>
+            <param name="width">Width of the section.</param>
+            <param name="depth">Depth of the section.</param>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.Beam.eDFlexureSection.#ctor(ESADS.Mechanics.Design.Beam.eDBeam,System.Double,System.Double,System.Double)">
+            <summary>
+            Creates an instance of ESADS.Mechanics.Design.eDFlexureSection class for a given basic parameters.
+            </summary>
+            <param name="beam">The beam bearing the section</param>
+            <param name="width">Width of the section.</param>
+            <param name="depth">Depth of the section.</param>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.Beam.eDFlexureSection.#ctor(ESADS.Mechanics.Design.Beam.eDBeam,System.String,System.Double,System.Double)">
+            <summary>
+            Creates an instance of ESADS.Mechanics.Design.eDFlexureSection class for a given basic parameters.
+            </summary>
+            <param name="beam">The beam bearing the section</param>
+            <param name="sectionName">Name of the section.</param>
+            <param name="width">Width of the section.</param>
+            <param name="depth">Depth of the section.</param>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.Beam.eDFlexureSection.#ctor(ESADS.Mechanics.Design.Beam.eDBeam,System.String,System.Double,System.Double,System.Double)">
+            <summary>
+            Creates an instance of ESADS.Mechanics.Design.eDFlexureSection class for a given basic parameters.
+            </summary>
+            <param name="beam">The beam bearing the section</param>
+            <param name="sectionName">Name of the section.</param>
+            <param name="width">Width of the section.</param>
+            <param name="depth">Depth of the section.</param>
+            <param name="moment">The moment used to design this cross section.</param>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.Beam.eDFlexureSection.GetNutralAxisDepth(System.Double)">
+            <summary>
+            Returns the depth of the nutral axis from moment for section to be designed.
+            </summary>
+            <param name="Moment">Magnitude of moment used for singly reinforced part.</param>
+            <returns></returns>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.Beam.eDFlexureSection.GetNutralAxisDepth">
+            <summary>
+            Gets the location of the nutral axis for already designed cross section.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.Beam.eDFlexureSection.CheckAreaLimits(System.Double@,System.Double)">
+            <summary>
+            Checks if the given area satisfies the minimum requirments.
+            </summary>
+            <param name="As">Area of steel to be checked for minimum requirments.</param>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.Beam.eDFlexureSection.GetMaxAreaOfSteel">
+            <summary>
+            Returns the maximum area of steel.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.Beam.eDFlexureSection.Design">
+            <summary>
+            Designs the beam on which it is called.
+            </summary>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.Beam.eDFlexureSection.CheckDepthTolerance(System.Double,System.Double)">
+            <summary>
+            Checks if a given NewDepth is within specified tolerance of a given OldDepth.
+            </summary>
+            <param name="OldDepth">The previous depth.</param>
+            <param name="NewDepth">The new depth.</param>
+            <returns></returns>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.Beam.eDFlexureSection.GetMaxSteelRatio">
+            <summary>
+            Returns the maxismum possible steel ratio to make a beam section dectile.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.Beam.eDFlexureSection.GetULSdepth(System.Double)">
+            <summary>
+            Returns the ultimate limit state depth required.
+            </summary>
+            <param name="ReductionFactor">The reduction factor by which steel ratio is going to be reduced.</param>
+            <returns></returns>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.Beam.eDFlexureSection.GetSteelRatio(System.Double)">
+            <summary>
+            Returns the steel ration for a given moment capacity and effective depth.
+            </summary>
+            <param name="Md">The moment capacity of the section if it is singly reinforced.</param>
+            <returns></returns>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.Beam.eDFlexureSection.GetMomentCapacity">
+            <summary>
+            Returns the singly reinforced moment capacity.
+            </summary>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.Beam.eDFlexureSection.GetAreaOfSteel(System.Double)">
+            <summary>
+            Returns the area of steel required for a given moment capacity.
+            </summary>
+            <param name="Moment">The moment for which the steel is going to be calcualated.</param>
+            <returns></returns>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.Beam.eDFlexureSection.GetAreaOfSteel(System.Double,System.Double)">
+            <summary>
+            Returns the secondary tensile area of steel that makes couple with top compressive steel.
+            </summary>
+            <param name="SecondaryMoment">Secondary moment caried by the coupled tensile and compresive areas of steel.</param>
+            <param name="dcPrim">The distance between top compresion fiber and the centroid of compresive area of steel.</param>
+            <returns></returns>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.Beam.eDFlexureSection.GetAreaOfSteel(System.Double,System.Double,System.Double)">
+            <summary>
+            Returns the area of compressive steel required to resist secondary moment coupling with bottom tensile reinforcement.
+            </summary>
+            <param name="SecondaryMoment">Secondary moment caried by the coupled tensile and compresive areas of steel.</param>
+            <param name="dcPrim">The distance between top compresion fiber and the centroid of compresive area of steel.</param>
+            <param name="X">Depth of nutral axis.</param>
+            <returns></returns>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.Beam.eDFlexureSection.GetCompSteelStress(System.Double,System.Double)">
+            <summary>
+            Returns the stress in compresion area of steel.
+            </summary>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.Beam.eDFlexureSection.GetCracked_I(System.Boolean)">
+            <summary>
+            Returns the cracked moment of area for this beam section.
+            </summary>
+            <param name="slabBeam">True if the beam is embeded in the slab and false other wise.</param>
+            <returns></returns>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.Beam.eDFlexureSection.GetEffWidth">
+            <summary>
+            Returns the effective width of the beam on which logtudinal shearBar are going to be distributed.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.Beam.eDFlexureSection.Equals(System.Object)">
+            <summary>
+            Tests an object is the same as this flexure section.
+            </summary>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.Beam.eDFlexureSection.GetSteelRatio">
+            <summary>
+            Returns the steel ratio of the section after the completion of the design of the section.
+            </summary>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.Beam.eDFlexureSection.GetAs_calc(System.Boolean)">
+            <summary>
+            Gets the area of steel calculated theorotically.
+            </summary>
+            <param name="tensile">Value indicating if the concerned area of steel is that of tensile or not.</param>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.Beam.eDFlexureSection.GetAs_used(System.Boolean)">
+            <summary>
+            Gets the area of steel actually used in the section.
+            </summary>
+            <param name="tensile">Value indicating if the concerned area of steel is that of tensile or not.</param>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.Beam.eDFlexureSection.FillLongitudinalBars">
+            <summary>
+            Fills all the longitudinal bars that represent the section.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.Beam.eDFlexureSection.DepthTolerance">
+            <summary>
+            Gets the depth tolerance to be used in the design.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.Beam.eDFlexureSection.SectionType">
+            <summary>
+            Gets or sets the type of the section.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.Beam.eDFlexureSection.CompresionComb">
+            <summary>
+            Gets compresion shearBar combination.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.Beam.eDFlexureSection.TensileComb">
+            <summary>
+            Gets tensile shearBar combination.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.Beam.eDFlexureSection.EffSLS_Depth">
+            <summary>
+            Gets the effective servisability limit state depth.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.Beam.eDFlexureSection.Moment">
+            <summary>
+            Gets or sets the design flexural moment of the section
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.Beam.eDFlexureSection.IsNegative">
+            <summary>
+            Gets the value if the flexure section designed with negative moment.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.Beam.eDFlexureSection.minBarDiam">
+            <summary>
+            Gets the smaller shearBar diameter
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.Beam.eDFlexureSection.maxBarDiam">
+            <summary>
+            Gets the larger shearBar diameter.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.Beam.eDFlexureSection.M">
+            <summary>
+            Holds the value of the moment
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.Beam.eDFlexureSection.ExtendFrom">
+            <summary>
+            Gets or sets the section from which compression shearBar extend.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.Beam.eDFlexureSection.Member">
+            <summary>
+            Gets or sets the member bearing the flexure section.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.Beam.eDFlexureSection.EffectiveDepth">
+            <summary>
+            Gets the governing effective depth of the section from ULS and SLS depths.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.Beam.eDFlexureSection.Bar1">
+            <summary>
+            Gets the diameter of the larger preferred shearBar.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.Beam.eDFlexureSection.Bar2">
+            <summary>
+            Gets the diameter of the smaller preferred shearBar. It will have a value of 0 if one shearBar is used for the design.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.Beam.eDFlexureSection.IsOverReninforced">
+            <summary>
+            Gets the value whether the section is overrinforced or not.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.Beam.eDFlexureSection.Failed">
+            <summary>
+            Gets the value if the section has failed in ultimate limit state with the provided gross depth.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.Beam.eDFlexureSection.Location">
+            <summary>
+            Gets or sets the exact location of the maximum moment. Coordinate measured from the start of the beam.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.Beam.eDFlexureSection.NeutralAxisDepth">
+            <summary>
+            Gets the neutral axis depth of the section.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.Beam.eDFlexureSection.FailureNote">
+            <summary>
+            Gets the reason for failure if the section has failed.
+            </summary>
+        </member>
+        <member name="T:ESADS.Mechanics.Design.Beam.eSectionType">
+            <summary>
+            Represents the type of the section which is identified based on the location of the section.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.Beam.eSectionType.Support">
+            <summary>
+            Represents the section at supportSxn_Right.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.Beam.eSectionType.Span">
+            <summary>
+            Represents the section at span.
+            </summary>
+        </member>
+        <member name="T:ESADS.Mechanics.Design.Beam.eIBar">
+            <summary>
+            Represents barType1 used in the reinforced structures.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.Beam.eIBar.Diameter">
+            <summary>
+            Gets or sets the  the diameter of the shearBar.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.Beam.eIBar.Name">
+            <summary>
+            Gets or sests the name of the shearBar.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.Beam.eLongtBar.diameter">
+            <summary>
+            Hold a value for property 'Diameter'.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.Beam.eLongtBar.lengths">
+            <summary>
+            Hold a value for property 'Lengths'.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.Beam.eLongtBar.name">
+            <summary>
+            Hold a value for property 'Name'.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.Beam.eLongtBar.isInCompression">
+            <summary>
+            Holds the value of 'IsInCompression'.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.Beam.eLongtBar.section">
+            <summary>
+            Holds the value of 'Section'.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.Beam.eLongtBar.number">
+            <summary>
+            Holds the value of 'Number'.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.Beam.eLongtBar.isBent">
+            <summary>
+            Holds the value of 'IsBent'.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.Beam.eLongtBar.bentOnTheLeft">
+            <summary>
+            Holds the value of 'BentOnTheLeft'.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.Beam.eLongtBar.bentOnTheRight">
+            <summary>
+            Holds the value of 'BentOnTheRight'.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.Beam.eLongtBar.start">
+            <summary>
+            Holds the value of 'Start'.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.Beam.eLongtBar.end">
+            <summary>
+            Holds the value of 'End'.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.Beam.eLongtBar.isInSpan">
+            <summary>
+            Holds the value of 'IsInSpan'.
+            </summary>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.Beam.eLongtBar.#ctor(System.Double,ESADS.Mechanics.Design.Beam.eDFlexureSection,System.Int32,System.Boolean,System.Boolean,System.Boolean)">
+            <summary>
+            Creates new instance of a longitudinal bar structure.
+            </summary>
+            <param name="diameter">The diameter of the longitudinal bar.</param>
+            <param name="section">The flexure section in which the longitudinal bar is primarily found.</param>
+            <param name="number">The number of such flexural bars represented by this longitudinal bars.</param>
+            <param name="isInCompression">Value indicating whether the bar is in compression or not.</param>
+            <param name="isInSpan">Value indicating if the bar is basically found in the span section of  a member.</param>
+            <param name="isOnLeft">Value indicating if the bar is found on the left support section of the member it is found in.</param>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.Beam.eLongtBar.FillLengthLimits">
+            <summary>
+            Fills the length limits for the bar.
+            </summary>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.Beam.eLongtBar.FillAnchorageLengths">
+            <summary>
+            Fills the anchorage lengths for the bar.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.Beam.eLongtBar.Diameter">
+            <summary>
+            Gets or sets the diamter of the Bar.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.Beam.eLongtBar.Area">
+            <summary>
+            Gets the area of the single Bar.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.Beam.eLongtBar.Length">
+            <summary>
+            Gets the total length of the shearBar.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.Beam.eLongtBar.Lengths">
+            <summary>
+            Gets the lengths of each segment.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.Beam.eLongtBar.Name">
+            <summary>
+            Gets the name or the mark of the shearBar.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.Beam.eLongtBar.IsTop">
+            <summary>
+            Gets the value if the bar is found at the top of the section
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.Beam.eLongtBar.IsInCompression">
+            <summary>
+            Gets the value if the bar is compression bar.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.Beam.eLongtBar.Section">
+            <summary>
+            Gets the flexure section  which bears this bar.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.Beam.eLongtBar.Number">
+            <summary>
+            Gets the number of this bar.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.Beam.eLongtBar.IsBent">
+            <summary>
+            Gets the value if the bar is a bent bar or not.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.Beam.eLongtBar.BentOnTheLeft">
+            <summary>
+            Gets or sets the value if the bar is bent on its left end.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.Beam.eLongtBar.BentOnTheRight">
+            <summary>
+            Gets or sets the value if the bar is bent on its right end.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.Beam.eLongtBar.IsInSpan">
+            <summary>
+            Gets the value if the bar is founded in the span section of a member.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.Beam.eLongtBar.Start">
+            <summary>
+            Gets or sets the start point of the reinforcement as distance from the left most point of the whole beam.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.Beam.eLongtBar.End">
+            <summary>
+            Gets or sets the end point of the reinforcement as a distance from the left most end of the whole beam.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.Beam.eDBeam.beam_Analysis">
+            <summary>
+            Holds the value of the 'Beam_Analysis' property.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.Beam.eDBeam.members">
+            <summary>
+            Holds all the members for the whole beam.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.Beam.eDBeam.shearSections">
+            <summary>
+            Holds the value of the 'ShearSections' property.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.Beam.eDBeam.numOfShearSxns">
+            <summary>
+            Holds the value of the 'NumberOfShearSections'.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.Beam.eDBeam.numOfNegativeSxns">
+            <summary>
+            Holds the value of the 'NumOfNegativeSxns' property.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.Beam.eDBeam.numOfPositiveSxns">
+            <summary>
+            Holds the value of the 'NumOfPositiveSxns' property.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.Beam.eDBeam.posSections">
+            <summary>
+            positive flexure sections
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.Beam.eDBeam.negSections">
+            <summary>
+            negative flexure sections
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.Beam.eDBeam.mainBar1">
+            <summary>
+            Holds the value of 'MainBar1'
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.Beam.eDBeam.mainBar2">
+            <summary>
+            Holds the value of 'MainBar2'
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.Beam.eDBeam.stirrupBar">
+            <summary>
+            Holds the value of 'StirrupBar'
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.Beam.eDBeam.basicBar">
+            <summary>
+            Holds the value of 'BasicBar'.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.Beam.eDBeam.exposureType">
+            <summary>
+            Holds the value of 'ExposureType'
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.Beam.eDBeam.reinfCover">
+            <summary>
+            Holds the value of 'ReinfCover'
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.Beam.eDBeam.stirrupPosin">
+            <summary>
+            Holds the value of 'StirrupPosn'
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.Beam.eDBeam.maxAggSize">
+            <summary>
+            Holds the value of 'MaxAggSize'
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.Beam.eDBeam.classWork">
+            <summary>
+            Holds the value of 'ClassWork'.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.Beam.eDBeam.concrete">
+            <summary>
+            Holds the value of 'Concrete'
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.Beam.eDBeam.steel">
+            <summary>
+            Holds the value of 'Steel'.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.Beam.eDBeam.useTwoBars">
+            <summary>
+            Holds the value of 'UseTwoBars'.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.Beam.eDBeam.longitudinalBars">
+            <summary>
+            Holds the value of 'LongitudinalBars'.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.Beam.eDBeam.supportCompBarCuttingLength">
+            <summary>
+            Holds the value of 'SupportCompBarCuttingLength'.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.Beam.eDBeam.supportTensBarCuttingLength">
+            <summary>
+            Holds the value of 'SupportTensBarCuttingLength'.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.Beam.eDBeam.defaultSection">
+            <summary>
+            Holds the value of 'DefaultSection'.
+            </summary>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.Beam.eDBeam.#ctor(ESADS.Mechanics.Analysis.eABeam,ESADS.Mechanics.Design.Beam.eBeamSection)">
+            <summary>
+            Creates new instance of the ESADS.Mechnincs.Design.eDBeam class instance
+            </summary>
+            <param name="beam">The analysis component of the beam to be designed.</param>
+            <param name="defaultSection">The default cross-section of the members.</param>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.Beam.eDBeam.Design">
+            <summary>
+            Runs the design of the whole beam.
+            </summary>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.Beam.eDBeam.CreateShearSections">
+            <summary>
+            Creates all the necessary shear sections making them ready to be designed.
+            </summary>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.Beam.eDBeam.MergeAdjacentSections">
+            <summary>
+            Merges adjacent shear sections with equal design shear so that they may be designed together as one.
+            </summary>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.Beam.eDBeam.MixPoints(System.Double[],System.Double[],System.Double,System.Double,System.Double,System.Double,System.Double)">
+            <summary>
+            Mixes all critical shear points in a member to create a sorted array of pair of numbers(coordinate and shear).
+            </summary>
+            <param name="x_zero">points on the member where the shaer is zero. Measured from the start of the member.</param>
+            <param name="x_c">points where the shear is equal to the concrete shear capacity of the member.</param>
+            <param name="Vc">Concrete shear capacity of the member assuming the flexure section at the middle of the member.</param>
+            <param name="V_Left">The shear force at d distance from the face of the left support.</param>
+            <param name="V_Right">The shear force at d distance form the face of the right support.</param>
+            <param name="x_V_left">The distance from the center of the left support to a point d distance far from the face of the left support.</param>
+            <param name="x_V_right">The distance form the center of the right support to a point, d distance from the face of the right support.</param>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.Beam.eDBeam.CreateFlexureSections">
+            <summary>
+            Creates all the necessary moment sections for the whole beam.
+            </summary>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.Beam.eDBeam.AssociateSections">
+            <summary>
+            Bonds negative sections to positive section from which bars extend.
+            </summary>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.Beam.eDBeam.ReduceNumber">
+            <summary>
+            Reduces the number of flexure sections to that chosen by the user.
+            </summary>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.Beam.eDBeam.EliminateSimilar">
+            <summary>
+            Elliminates similar flexure sections both from the negative and positive flexure sections.
+            </summary>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.Beam.eDBeam.SortSections">
+            <summary>
+            Sorts both positive and negative flexure section in increasing order of design moment.
+            </summary>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.Beam.eDBeam.GetFlexureSectionAt(System.Double,System.Boolean)">
+            <summary>
+            Gets the flexure section used to design the moment at a given X_Coordinates coordinate.
+            </summary>
+            <param name="X">The distance from the left end of  the beam.</param>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.Beam.eDBeam.CreateLongitudinalBars">
+            <summary>
+            Creates all longitudinal bars for a completed design.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.Beam.eDBeam.Beam_Analysis">
+            <summary>
+            Gets the analysis component of the continuous beam
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.Beam.eDBeam.Members">
+            <summary>
+            Gets the members holding the design properties needed by the sections.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.Beam.eDBeam.ShearSections">
+            <summary>
+            Gets the flexure design sections.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.Beam.eDBeam.NumOfShearSxns">
+            <summary>
+            Gets or sets the number of shear sections in the beam.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.Beam.eDBeam.NumOfNegativeSxns">
+            <summary>
+            Gets or sets the total number of negative moment sections in the beam.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.Beam.eDBeam.NumOfPositiveSxns">
+            <summary>
+            Gets or sets the total sections designed with different positive moment.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.Beam.eDBeam.NegativeFlexSxns">
+            <summary>
+            Gets the collection of flexure sections with negative moment.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.Beam.eDBeam.PositiveFlexSxns">
+            <summary>
+            Gets the collection of flexure sections with positive moment.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.Beam.eDBeam.MainBar1">
+            <summary>
+            Gets or sets one of the user shearBar choices.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.Beam.eDBeam.MainBar2">
+            <summary>
+            Gets or sets second user shearBar choices.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.Beam.eDBeam.StirupBar">
+            <summary>
+            Gets or sets the user chosen reinforcement shearBar for stirrup.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.Beam.eDBeam.BasicBar">
+            <summary>
+            Gets or sets longitudinal shearBar type to be provided at corners to hold stirrups in place.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.Beam.eDBeam.ExposureType">
+            <summary>
+            Gets or sets the user chosen exposure type of the beam to be used to determine the concrete cover for the reinforcements.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.Beam.eDBeam.ReinfCover">
+            <summary>
+            Gets or sets the reinforcement cover. It throws exception if the dimension is less than the minimum value required by EBCS for the exposure type of the beam.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.Beam.eDBeam.StirrupPosn">
+            <summary>
+            Gets or sets the relative position of the stirup to the longitudinal shearBar.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.Beam.eDBeam.MaxAggSize">
+            <summary>
+            Gets or sets the maximum aggregate size of the concrete mix used.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.Beam.eDBeam.ClassWork">
+            <summary>
+            Gets or sets the class work of the beam
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.Beam.eDBeam.Concrete">
+            <summary>
+            Gets or sets the concrete material used to design the whole beam.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.Beam.eDBeam.Steel">
+            <summary>
+            Gets or sets the steel material used to design the whole beam.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.Beam.eDBeam.UseTwoBars">
+            <summary>
+            Gets or sets the value whether to use two shearBar per section.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.Beam.eDBeam.LongitudinalBars">
+            <summary>
+            Gets the collection of longitudinal bars throughout the beam.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.Beam.eDBeam.SupportCompBarCuttingLength">
+            <summary>
+            Gets or sets the ratio the length of compression bars at supports to the length of that member.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.Beam.eDBeam.SupportTensBarCuttingLength">
+            <summary>
+            Gets or sets the ratio the length of tensile bars at supports to the length of that member.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.Beam.eDBeam.DefaultSection">
+            <summary>
+            Gets or sets the section assigned to members by default if no section is provided.
+            </summary>
+        </member>
+        <member name="T:ESADS.Mechanics.Design.Beam.eCombination">
+            <summary>
+            Contains information related to combination of longitudinal bar1 in rows along an effective width.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.Beam.eCombination.rows">
+            <summary>
+            Accesses the public property 'Rows'.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.Beam.eCombination.area">
+            <summary>
+            Accesses the public property 'Area'.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.Beam.eCombination.effectivedepth">
+            <summary>
+            Accesses the public property 'EffectiveDepth'.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.Beam.eCombination.section">
+            <summary>
+            Holds the section for which shearBar arrangment is being done.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.Beam.eCombination.longtBar1">
+            <summary>
+            Holds the value of 'LongtBar1'.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.Beam.eCombination.longtBar2">
+            <summary>
+            Holds the value of 'LongtBar2'.
+            </summary>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.Beam.eCombination.#ctor(ESADS.Mechanics.Design.Beam.eDFlexureSection,System.Boolean)">
+             <summary>
+             Creates an instance of eCombination class provided all the rows in a combination.
+             </summary>
+            <param name="maxBarDiam">The diameter of the maximum shearBar diameter to be used in the combination.</param>
+            <param name="minBarDiam">The diameter of the minimum shearBar diameter to be used in the combination.</param>
+            <param name="section">The section for which the shearBar combination is going to be done.</param>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.Beam.eCombination.#ctor(ESADS.Mechanics.Design.Beam.eDFlexureSection,ESADS.Mechanics.Design.Beam.eXBar[],System.Boolean)">
+            <summary>
+            
+            </summary>
+            <param name="minBarDiam"></param>
+            <param name="maxBarDiam"></param>
+            <param name="section"></param>
+            <param name="extendedBars"></param>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.Beam.eCombination.FillArea">
+            <summary>
+            Fills the Area property of a Combination.
+            </summary>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.Beam.eCombination.FillEffectiveDepth">
+            <summary>
+            Fills the Effective Width property of a combination.
+            </summary>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.Beam.eCombination.FillCombinations(System.Double,System.Double,System.Double)">
+            <summary>
+            Fills the most economical combination.
+            </summary>
+            <param name="AsCalc">Calculated area of steel.</param>
+            <param name="AsMax">Maximum area of steel.</param>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.Beam.eCombination.FillCombinations(System.Double,System.Double,System.Double,System.Double)">
+            <summary>
+            Returns the most economical combination for a given shearBar diameters and calculated area of steel.
+            </summary>
+            <param name="diam1">Diameter of the first shearBar.</param>
+            <param name="diam2">Diameter of the second shearBar.</param>
+            <param name="AsCalc">Calculated area of steel for which combinations are going to be generated.</param>
+            <param name="AsMax">Maximum area of steel.</param>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.Beam.eCombination.FillCombinations(System.Double,System.Double)">
+            <summary>
+            Returns the most economical combination for a given shearBar diameters and calculated area of steel.
+            </summary>
+            <param name="diam1">Diameter of the first shearBar.</param>
+            <param name="AsCalc">Calculated area of steel for which combinations are going to be generated.</param>
+            <param name="AsMax">Maximum area of steel.</param>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.Beam.eCombination.ArrangeIntoRows(System.Double[])">
+            <summary>
+            Arranges a given combination in to rows.
+            </summary>
+            <param name="comb">Combination to be arranged. The array should have four elements, the first two, diameters of the involved shearBar, the other two, 
+            their respective number.</param>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.Beam.eCombination.FillRows(System.Collections.Generic.List{System.Double[]},System.Double)">
+            <summary>
+            Fills the rows of the combination.
+            </summary>
+            <param name="rows">List containing information related to the rows.</param>
+            <param name="minSpacing">The minimum spacing shearBar.</param>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.Beam.eCombination.GetArea(System.Double[])">
+             <summary>
+             Returns the area of shearBar for a given combination.
+             </summary>
+            <param name="comb">Combination for which the area is to be calculated.</param>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.Beam.eCombination.GetBarPerWidth(System.Double,System.Double,System.Double,System.Int32)">
+            <summary>
+            Returns the nubmer of maximum possible shearBar that can be arraged in the given effective width.
+            </summary>
+            <param name="b_eff">Effective width on which the shearBar to be arranged.</param>
+            <param name="diam">Diameter of the shearBar to be arranged.</param>
+            <param name="minSpacing">Minimum spacing of shearBar.</param>
+            <returns></returns>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.Beam.eCombination.GetRemainingWidth(System.Double,System.Double,System.Double,System.Int32)">
+            <summary>
+            Returns the effective width on which shearBar can be distrubuted.
+            </summary>
+            <param name="diam">Diameter of the shearBar to be distributed.</param>
+            <param name="minSpacing">Minimum clear spacing between two shearBar.</param>
+            <param name="initialWidth">Initial width where the shearBar are distributed.</param>
+            <param name="numOfBars">Number of shearBar distributed in the intitial width.</param>
+            <returns></returns>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.Beam.eCombination.CheckConjustion(System.Double)">
+            <summary>
+            Checks if the effective depth of the last row is below the nutral axis depth.
+            </summary>
+            <param name="X">Location of nutral axis.</param>
+            <returns></returns>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.Beam.eCombination.GetNumberOf(System.Double)">
+            <summary>
+            Gets the number of the specified bar diameter in this combination.
+            </summary>
+            <param name="D">The diameter of the bar to be counted.</param>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.Beam.eCombination.FillLongtBars">
+            <summary>
+            Fills the longitudinal bars that represent the combination.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.Beam.eCombination.Rows">
+            <summary>
+            Gets the all the Rows in the Combination.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.Beam.eCombination.Area">
+            <summary>
+            Gets the area of the Combination.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.Beam.eCombination.EffectiveDepth">
+            <summary>
+            Gets the Effective Width of the Combination.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.Beam.eCombination.Section">
+            <summary>
+            Gets or sets the flexure section that bears this combination.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.Beam.eCombination.LongtBar1">
+            <summary>
+            Gets the longitudinal bar that represents all the bars with barType1.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.Beam.eCombination.LongtBar2">
+            <summary>
+            Gets the longitudinal bar that represents all the bars with barType2.
+            </summary>
+        </member>
+        <member name="T:ESADS.Mechanics.Design.Beam.eCombination.eRow">
+            <summary>
+            Contains information related a row of longitudinal barType1 residing in a combination.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.Beam.eCombination.eRow.barType1">
+            <summary>
+            Holds the value of the property 'BarType1'.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.Beam.eCombination.eRow.barType2">
+            <summary>
+            Holds the value of the 'BarType2' property.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.Beam.eCombination.eRow.effectiveWidth">
+            <summary>
+            The effective width on which to place all the shearBar of the row together with the spacing between them.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.Beam.eCombination.eRow.bars">
+            <summary>
+            All the shearBar of the row.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.Beam.eCombination.eRow.isBottomRow">
+            <summary>
+            Holds the value of the 'IsBottomRow' property.
+            </summary>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.Beam.eCombination.eRow.#ctor(ESADS.Mechanics.Design.Beam.eXBar,ESADS.Mechanics.Design.Beam.eXBar,System.Int32,System.Int32,System.Double,System.Boolean,System.Double,System.Double,ESADS.Mechanics.Design.Beam.eRelativeStirrupPosition)">
+            <summary>
+            Creates an instance of 'eRow' class given X-Coordinates , Y- Coordinates and used diameters in a row.
+            </summary>
+            <param name="barType1">The bigger type of shearBar used in the row.</param>
+            <param name="barType2">The smaller type of the shearBar to be used in the row.</param>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.Beam.eCombination.eRow.#ctor(ESADS.Mechanics.Design.Beam.eXBar,ESADS.Mechanics.Design.Beam.eXBar,System.Int32,System.Int32)">
+            <summary>
+            Creates an instance of 'eRow' class given X-Coordinates , Y- Coordinates and used diameters in a row.
+            </summary>
+            <param name="barType1">The bigger type of shearBar used in the row.</param>
+            <param name="barType2">The smaller type of the shearBar to be used in the row.</param>
+            <param name="numOfBarType1">The number of shearBar type 1 in the row.</param>
+            <param name="numOfBarType2">The number of shearBar type 2 in the row.</param>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.Beam.eCombination.eRow.Arrange(System.Double[])">
+            <summary>
+            Arranges the shearBar of the row that is not at the bottom into the most symmetric arrangement on predefined X_Coordinates coordinates.
+            </summary>
+            <param name="numOfBar1">The number of barType1 in addition to those in the prerequisite shearBar.</param>
+            <param name="numOfBar2">The number of barType2 in addition to those in the prerequisite shearBar.</param>
+            <param name="x_Coordinates">The x coordinates of the bottom most row in the order from the left most to the right most.</param>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.Beam.eCombination.eRow.GetStress">
+            <summary>
+            Gets the average stress on the reinforcement steel all over the row.
+            </summary>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.Beam.eCombination.eRow.GetExtraCapacity">
+            <summary>
+            Gets the number of shearBar with the bigger available diameter that can be added to the existing prerequisite shearBar.
+            </summary>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.Beam.eCombination.eRow.GetXcoordinates">
+            <summary>
+            Gets the x coordinates of the shearBar in the row in the order from the left most to the right most.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.Beam.eCombination.eRow.BarType1">
+            <summary>
+            Gets the bigger shearBar used in the row.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.Beam.eCombination.eRow.Area">
+            <summary>
+            Gets the total steel area of the row.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.Beam.eCombination.eRow.EffectiveDepth">
+            <summary>
+            Gets the Effective depth of the row measured from the furthest compressive concrete fiber.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.Beam.eCombination.eRow.BarType2">
+            <summary>
+            Gets the smaller shearBar used in the row.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.Beam.eCombination.eRow.IsBottomRow">
+            <summary>
+            Gets or sets the value if the row is the furthest row from the opposite concrete fibre.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.Beam.eCombination.eRow.Bars">
+            <summary>
+            Gets the shearBar of the row.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.Beam.eCombination.eRow.RowNumb">
+            <summary>
+            Gets or set the number of the row as counted from the bottom.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.Beam.eBeamSection.depth">
+            <summary>
+            Holds the value of 'Depth'.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.Beam.eBeamSection.width">
+            <summary>
+            Holds the value of 'Width'.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.Beam.eBeamSection.name">
+            <summary>
+            Holds the value of 'Name'.
+            </summary>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.Beam.eBeamSection.#ctor(System.String,System.Double,System.Double)">
+            <param name="name">The name of the section.</param>
+            <param name="depth">The depth of the section.</param>
+            <param name="width">The width of the section.</param>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.Beam.eBeamSection.GetArea">
+            <summary>
+            Gets the area of the section.
+            </summary>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.Beam.eBeamSection.GetMomentOfInertia">
+            <summary>
+            Gets the moment of inertia of the section.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.Beam.eBeamSection.Depth">
+            <summary>
+            Gets or sets the depth of the section.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.Beam.eBeamSection.Width">
+            <summary>
+            Gets or sets the width of the section.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.Beam.eBeamSection.Name">
+            <summary>
+            Gets or sets the name of the section.
+            </summary>
+        </member>
+        <member name="T:ESADS.Mechanics.Design.Beam.eDMember">
+            <summary>
+            Represents a member in continious beam structure used for design purpose.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.Beam.eDMember.member_Analysis">
+            <summary>
+            Holds a value for property 'Member_Analysis'.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.Beam.eDMember.shearSection">
+            <summary>
+            Holds the value of the 'ShearSection' property.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.Beam.eDMember.numOfShearSxns">
+            <summary>
+            Holds the value of the 'NumOfShearSxns' property.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.Beam.eDMember.beam">
+            <summary>
+            Holds the value of 'Beam'.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.Beam.eDMember.spanType">
+            <summary>
+            Holds the value of 'SpanType'.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.Beam.eDMember.effectiveSpan">
+            <summary>
+            Holds the value of 'EffectiveSpanLength'.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.Beam.eDMember.supportSxn_Left">
+            <summary>
+            Holds the value of 'SupportSxn_Left'.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.Beam.eDMember.supportSxn_Right">
+            <summary>
+            Holds the value of 'SupportSxn_Right'.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.Beam.eDMember.spanSxn">
+            <summary>
+            Holds the value of 'SpanSxn'.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.Beam.eDMember.section">
+            <summary>
+            Holds the value of 'Section'.
+            </summary>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.Beam.eDMember.#ctor(ESADS.Mechanics.Design.Beam.eDBeam,ESADS.Mechanics.Analysis.eAMember)">
+            <summary>
+            Creates a new design component of a continuous beam from the beam to be designed and the analysis component of the member.
+            </summary>
+            <param name="beam">The design beam object bearing this member.</param>
+            <param name="member_Analysis">The analysis member attached to this design member.</param>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.Beam.eDMember.#ctor(ESADS.Mechanics.Design.Beam.eDBeam,ESADS.Mechanics.Analysis.eAMember,ESADS.Mechanics.Design.Beam.eBeamSection)">
+            <summary>
+            Creates a new design component of a member from the beam, analysis component of the member and the cross-section of the member.
+            </summary>
+            <param name="beam">The design beam object bearing this member.</param>
+            <param name="member_Analysis">The analysis member attached to this design member.</param>
+            <param name="section">Represents the cross-section of the member.</param>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.Beam.eDMember.SetSpanType(ESADS.Code.eSpanType)">
+            <summary>
+            Sets the span type of member
+            </summary>
+            <param name="type">The span type to assign.</param>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.Beam.eDMember.FillLongtBars">
+            <summary>
+            Fills the longitudinal bars.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.Beam.eDMember.Concrete">
+            <summary>
+            Gets the concrete material used for this member and the whole beam.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.Beam.eDMember.Steel">
+            <summary>
+            Gets or the steel material used fo this member and for the whole beam.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.Beam.eDMember.Depth">
+            <summary>
+            Gets or set the depth of this member.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.Beam.eDMember.Width">
+            <summary>
+            Gets or set the width of this member.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.Beam.eDMember.Member_Analysis">
+            <summary>
+            Gets or sets the member used in the anaysis.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.Beam.eDMember.ShearSection">
+            <summary>
+            Gets the representative shear section of the member that holds the concrete shear capacity.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.Beam.eDMember.NumOfShearSxns">
+            <summary>
+            Gets or sets the maximum number of shear sections taken wihtin the member.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.Beam.eDMember.Beam">
+            <summary>
+            Gets the beam bearing this member.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.Beam.eDMember.SpanType">
+            <summary>
+            Gets the span type of the member.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.Beam.eDMember.EffectiveSpanLength">
+            <summary>
+            Gets or sets the effective span length of the member.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.Beam.eDMember.SupportSxn_Left">
+            <summary>
+            Gets or sets the flexure section of the member at the left end of the member.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.Beam.eDMember.SupportSxn_Right">
+            <summary>
+            Gets or sets the flexure section of the member at the right end of the member.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.Beam.eDMember.SpanSxn">
+            <summary>
+            Gets or sets the flexure section of the member at the span.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.Beam.eDMember.Section">
+            <summary>
+            Gets or sets the section of the member.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.Beam.eShearBarTypes.EnclosingStirrup">
+            <summary>
+            Shear shearBar that inclose all shearBar in the beam.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.Beam.eShearBarTypes.InnerStirrup">
+            <summary>
+            Inner stirrups that added to give aditional shear strength in Enclosing stirrup.
+            </summary>
+        </member>
+        <member name="T:ESADS.Mechanics.Design.Beam.eFailureTypes">
+            <summary>
+            Enumerates all possible types of beam failurs.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.Beam.eFailureTypes.AllCombinationsCongested">
+            <summary>
+            Represents failur by congestion.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.Beam.eFailureTypes.NoSymetricCombination">
+            <summary>
+            Represents failur in which all combinations are not symetrical.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.Beam.eFailureTypes.SLS">
+            <summary>
+            Represents failur due to servisability limit state .
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.Beam.eFailureTypes.Shear">
+            <summary>
+            Represents failur due to shear ultimate limit state.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.Beam.eFailureTypes.OverReiforced">
+            <summary>
+            Represents failur when calculated area of steel is above maximum area of steel allowed.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.Beam.eShearBar.diameter">
+            <summary>
+            Hold a value for property 'Diameter'.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.Beam.eShearBar.length">
+            <summary>
+            Hold a value for property 'Length'.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.Beam.eShearBar.lengths">
+            <summary>
+            Hold a value for property 'Lengths'.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.Beam.eShearBar.spacing">
+            <summary>
+            Hold a value for property 'BarSpacing'.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.Beam.eShearBar.name">
+            <summary>
+            Hold a value for property 'Name'.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.Beam.eShearBar.barType">
+            <summary>
+            Holds a value for property 'BarType'.
+            </summary>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.Beam.eShearBar.#ctor(ESADS.Mechanics.Design.Beam.eShearBarTypes,ESADS.Mechanics.Design.Beam.eDShearSection)">
+            <summary>
+            Creates an instance of ESAD.Mechanics.Design.eShearBar structure for a given name and shear section.
+            </summary>
+            <param name="name">Name of the shearBar.</param>
+            <param name="section">Name of the section.</param>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.Beam.eShearBar.FillDetails(System.Double,System.Double,System.Double)">
+            <summary>
+            Fills all the necessary details for this shearBar.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.Beam.eShearBar.Diameter">
+            <summary>
+            Gets or sets the diamter of the shearBar.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.Beam.eShearBar.Spacing">
+            <summary>
+            Gets the spacing of the shearBar.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.Beam.eShearBar.Length">
+            <summary>
+            Gets the total length of the shearBar.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.Beam.eShearBar.Lengths">
+            <summary>
+            Gets the lengths of each segment.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.Beam.eShearBar.Name">
+            <summary>
+            Gets the name or the mark of the shearBar.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.Beam.eShearBar.BarType">
+            <summary>
+            Gets the type of the shear shearBar used.
+            </summary>
+        </member>
+        <member name="T:ESADS.Mechanics.Design.Beam.eXBar">
+            <summary>
+            Contains information related to reinforcement shearBar.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.Beam.eXBar.diameter">
+            <summary>
+            Accesses public property 'Diameter'.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.Beam.eXBar.area">
+            <summary>
+            Accesses public property 'Area'.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.Beam.eXBar.xCoord">
+            <summary>
+            Accesses public property 'XCoord'.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.Beam.eXBar.yCoord">
+            <summary>
+            Accesses public property 'YCoord'.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.Beam.eXBar.name">
+            <summary>
+            Accesses the 'Name' property.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.Beam.eXBar.row">
+            <summary>
+            Holds a value for property 'Row'.
+            </summary>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.Beam.eXBar.#ctor(System.Double,System.Double,System.Double)">
+            <summary>
+            Creates an instance of eBar class given Diameter,X-Coordinate and Y-Coordinate.
+            </summary>
+            <param name="diameter">Diameter of the shearBar.</param>
+            <param name="xCoord">X-Coordinate of the shearBar.</param>
+            <param name="yCoord">Y-Coordinate of the shearBar.</param>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.Beam.eXBar.#ctor(System.Double)">
+            <summary>
+            Creates an instance of ESADS.Mechanics.Design.eXBar struct from given shearBar diameter.
+            </summary>
+            <param name="diameter">Diameter of the shearBar.</param>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.Beam.eXBar.GetArea(System.Double)">
+            <summary>
+            Returns the area of a shearBar for the given diameter.
+            </summary>
+            <param name="diameter">Diameter of the shearBar.</param>
+            <returns></returns>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.Beam.eXBar.FillDetails">
+            <summary>
+            Fills the detail of shearBar.
+            </summary>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.Beam.eXBar.GetDiam(ESADS.Code.eReinforcement)">
+            <summary>
+            Gets the diameter of the given shearBar.
+            </summary>
+            <param name="Bar">The shearBar whose diamter is to be determined.</param>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.Beam.eXBar.Diameter">
+            <summary>
+            Gets the Diameter of a Bar.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.Beam.eXBar.Area">
+            <summary>
+            Gets the area of a shearBar.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.Beam.eXBar.XCoord">
+            <summary>
+            Gets the X-Coordinate of a shearBar.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.Beam.eXBar.YCoord">
+            <summary>
+            Gets the Y- Coordinate of a shearBar.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.Beam.eXBar.Name">
+            <summary>
+            Gets or sets the name of the shearBar.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.Beam.eXBar.Length">
+            <summary>
+            Gets or sets the total length of the shearBar.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.Beam.eXBar.Lengths">
+            <summary>
+            Gets or sets the lengths of each segments.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.Beam.eXBar.Row">
+            <summary>
+            Gets or sets the row of this shearBar counted from the bottom row.
+            </summary>
+        </member>
+        <member name="T:ESADS.Mechanics.Design.Beam.eDShearSection">
+            <summary>
+            Represents a beam cross section that is to be design for shear.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.Beam.eDShearSection.numberOfBars">
+            <summary>
+            Holds the value of 'NumberOfBars'.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.Beam.eDShearSection.shearBar">
+            <summary>
+            Hold a value for property 'Bar'.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.Beam.eDShearSection.shear">
+            <summary>
+            Holds the value of the 'Shear'
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.Beam.eDShearSection.flexureSection">
+            <summary>
+            Holds the value of 'FlexureSection'
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.Beam.eDShearSection.areaOfSteel">
+            <summary>
+            Holds the value of 'AreaOfSteel'.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.Beam.eDShearSection.barSpacing">
+            <summary>
+            Holds the value of 'BarSpacing'.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.Beam.eDShearSection.failedInDiagComp">
+            <summary>
+            Holds the value of 'FailedInDiagonalCompression'.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.Beam.eDShearSection.barConjested">
+            <summary>
+            Holds the value of 'BarConjested'.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.Beam.eDShearSection.V_c">
+            <summary>
+            The concrete shear capacity of the section.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.Beam.eDShearSection.preceision">
+            <summary>
+            Holds the value of 'Preceision'.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.Beam.eDShearSection.trensverseSpacingExceeded">
+            <summary>
+            Holds the value of 'TransverseSpacingExceeded'.
+            </summary>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.Beam.eDShearSection.#ctor(ESADS.Mechanics.Design.Beam.eDBeam,System.String,System.Double,System.Double)">
+            <summary>
+            Creates an instance of ESADS.Mechanics.Design.eDShearSection class for a given basic parameters.
+            </summary>
+            <param name="beam">The beam bearing the section</param>
+            <param name="sectionName">Name of the section.</param>
+            <param name="width">Width of the section.</param>
+            <param name="depth">Depth of the section.</param>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.Beam.eDShearSection.#ctor(ESADS.Mechanics.Design.Beam.eDBeam,System.String,System.Double,System.Double,System.Double)">
+            <summary>
+            Creates an instance of ESADS.Mechanics.Design.eDShearSection class for a given basic parameters.
+            </summary>
+            <param name="beam">The beam bearing the section</param>
+            <param name="sectionName">Name of the section.</param>
+            <param name="width">Width of the section.</param>
+            <param name="depth">Depth of the section.</param>
+            <param name="shear">The shear force used to design this cross section.</param>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.Beam.eDShearSection.Design">
+            <summary>
+            Designs the section for shear on which it is called.
+            </summary>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.Beam.eDShearSection.FillBarSpacing(System.Double)">
+            <summary>
+            Fills shear reinforcement bar spacing for the shear force to be carried by the reinforcement.
+            </summary>
+            <param name="V_s">The portion of the shear force to be carried by the steel.</param>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.Beam.eDShearSection.GetConcShearCapacity(ESADS.Mechanics.Design.Beam.eDFlexureSection,System.Double)">
+            <summary>
+            Gets the shear capacity of the concrete without reinforcement.
+            </summary>
+            <param name="flexSection">The flexure section designed at which the capacity is to be computed.</param>
+            <param name="fctd">The design tensile capacity of the concrete.</param>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.Beam.eDShearSection.CheckDiagonalCompression">
+            <summary>
+            Checks if the section's diagonal compression capacity of the concrete.
+            </summary>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.Beam.eDShearSection.CheckSpacing">
+            <summary>
+            Checks if the spacing of the reinforcement is within the limits.
+            </summary>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.Beam.eDShearSection.GetSectionCapacity">
+            <summary>
+            Gets the section's ultimate shear capacity.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.Beam.eDShearSection.ShearBar">
+            <summary>
+            Gets shear bar used in this shear design section.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.Beam.eDShearSection.FailureNote">
+            <summary>
+            Gets the failure note associated with the failure if the section has failed.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.Beam.eDShearSection.BarSpacing">
+            <summary>
+            Gets the longitudinal spacing of shear reinforcements.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.Beam.eDShearSection.V">
+            <summary>
+            Gets the shear of the section
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.Beam.eDShearSection.Shear">
+            <summary>
+            Gets or sets the Shear force to design the shear section.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.Beam.eDShearSection.FlexureSection">
+            <summary>
+            Gets or sets the flexure section at the shear design section
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.Beam.eDShearSection.AreaOfSteel">
+            <summary>
+            Gets the area of shear reinforcement in mm^2 per mm.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.Beam.eDShearSection.NumberOfBars">
+            <summary>
+            Gets the total number of shearBar distributed over all intervals.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.Beam.eDShearSection.FailedInDiagonalCompression">
+            <summary>
+            Gets the value if the shear section has failedInDiagComp in diagonal compression of concrete.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.Beam.eDShearSection.BarConjested">
+            <summary>
+            Gets the value if the shear bars are conjested (spacing below the minimum required).
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.Beam.eDShearSection.Preceision">
+            <summary>
+            Gets or sets the value of the precesion of stirrup bar spacing.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.Beam.eDShearSection.TransverseSpacingExceeded">
+            <summary>
+            Gets the value if the maximum spacing of shear reinforcement legs permitted by the code has been exceeded.
+            </summary>
+        </member>
+        <member name="T:ESADS.Mechanics.Design.Beam.eRelativeStirrupPosition">
+            <summary>
+            Specifies the orientation of of stirrups holding the logtudinal barType1.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.Beam.eRelativeStirrupPosition.StirrupAtBottom">
+            <summary>
+            Specifies Orientation with bottom stirrup and top longtudinal shearBar.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.Beam.eRelativeStirrupPosition.StirrupAtTop">
+            <summary>
+            Specifies Orientation with top stirrup and bottom longtudinal shearBar.
+            </summary>
+        </member>
+        <member name="T:ESADS.Mechanics.Design.Beam.eImposibleSteelRatioException">
+            <summary>
+            Exception thrown when the actual steel ratios are one bellow the absolute minimum and one above the absolute maximum steel ratio or when both are above the absolute maximum steel ratio.
+            </summary>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.Beam.eImposibleSteelRatioException.#ctor">
+            <summary>
+            Initializes an instance of ESADS_Mechanics.eImposibleSteelRatioException class.
+            </summary>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.Beam.eImposibleSteelRatioException.#ctor(System.String,System.Double,System.Double,System.Double)">
+             <summary>
+             Initializes an instance of ESADS_Mechanics.eImposibleSteelRatioException class for specified exception message.
+             </summary>
+             <param name="message">The error message that explains the reason for the exception.</param>
+            <param name="steelRatio1">The smallest reinforcement ratio that is calculated from mechanics requirment.</param>
+            <param name="steelRatio2">The largest reinforcement ratio that is calculated from mechanics requirment.</param>
+            <param name="steelRatioMax">The largest reinforcement ratio that is provided in the code.</param>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.Beam.eImposibleSteelRatioException.#ctor(System.String,System.Exception)">
+            <summary>
+            Initializes an instance of ESADS_Mechanics.eImposibleSteelRatioException class with specified error message and 
+             a reference to the inner exception that is the cause of this exception.
+            </summary>
+             <param name="message">The error message that explains the reason for the exception.</param>
+             <param name="innerException"> The exception that is the cause of the current exception, or a null reference.</param>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.Beam.eImposibleSteelRatioException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Initializes an instance of ESADS_Mechanics.eImposibleSteelRatioException class with serialize data.
+            </summary>
+            <param name="info">The System.Runtime.Serialization.SerializationInfo that holds the serialized object data about the exception being thrown.</param>
+            <param name="context"> The System.Runtime.Serialization.StreamingContext that contains contextual information about the source or destination.</param>
+        </member>
+    </members>
+</doc>

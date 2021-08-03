@@ -1,0 +1,765 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="ESADS.EGraphics.Beam.eBeamDetail">
+    <Position X="8.25" Y="21" Width="1.5" />
+    <Members>
+      <Field Name="beam_Design" Hidden="true" />
+      <Field Name="beam_Graphics" Hidden="true" />
+      <Field Name="dimensionShown" Hidden="true" />
+      <Field Name="flexureSections" Hidden="true" />
+      <Method Name="GenerateDwgObjects" Hidden="true" />
+      <Field Name="layer_Beam" Hidden="true" />
+      <Field Name="layer_Dimensions" Hidden="true" />
+      <Field Name="layer_FlexureBars" Hidden="true" />
+      <Field Name="layer_FlexureLabels" Hidden="true" />
+      <Field Name="layer_ShearBars" Hidden="true" />
+      <Field Name="layer_ShearLabels" Hidden="true" />
+      <Field Name="layer_Text" Hidden="true" />
+      <Field Name="layers" Hidden="true" />
+      <Field Name="location" Hidden="true" />
+      <Field Name="objs_beamLayer" Hidden="true" />
+      <Field Name="objs_dim" Hidden="true" />
+      <Field Name="objs_flexure" Hidden="true" />
+      <Field Name="objs_flexureLabels" Hidden="true" />
+      <Field Name="objs_shearBars" Hidden="true" />
+      <Field Name="objs_shearLabels" Hidden="true" />
+      <Field Name="objs_texts" Hidden="true" />
+      <Field Name="overallHeght" Hidden="true" />
+      <Field Name="overallWidth" Hidden="true" />
+      <Method Name="Reset" Hidden="true" />
+      <Field Name="size" Hidden="true" />
+    </Members>
+    <AssociationLine Name="Beam_Graphics" Type="ESADS.EGraphics.Beam.eGBeam" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="8.688" Y="21" />
+        <Point X="8.688" Y="20.5" />
+        <Point X="11.5" Y="20.5" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="FlexureSections" Type="ESADS.EGraphics.Beam.eGFlexureSection" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="9.125" Y="22.995" />
+        <Point X="9.125" Y="24.812" />
+        <Point X="10" Y="24.812" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>EAwACBAAIACABAAIgKICAAACQEBAQEAAAQAgBGAoCAg=</HashCode>
+      <FileName>eBeamDetail.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Beam_Graphics" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="FlexureSections" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="ESADS.EGraphics.Beam.eDiagram">
+    <Position X="8.75" Y="14.5" Width="1.5" />
+    <Members>
+      <Method Name="AddDrawings" Hidden="true" />
+      <Method Name="AddLables" Hidden="true" />
+      <Method Name="AddMaxPoints" Hidden="true" />
+      <Method Name="AddPoint" Hidden="true" />
+      <Method Name="AddPolygons" Hidden="true" />
+      <Method Name="AddSectionIntervalPoints" Hidden="true" />
+      <Method Name="AddSlices" Hidden="true" />
+      <Method Name="AddZeroPoints" Hidden="true" />
+      <Method Name="ArrageDiagram" Hidden="true" />
+      <Field Name="arranged" Hidden="true" />
+      <Field Name="axisColor" Hidden="true" />
+      <Field Name="axisMarkPoints" Hidden="true" />
+      <Field Name="axisMarks" Hidden="true" />
+      <Field Name="beam" Hidden="true" />
+      <Field Name="diagramStyle" Hidden="true" />
+      <Field Name="diagramType" Hidden="true" />
+      <Method Name="DrawAxisMarks" Hidden="true" />
+      <Method Name="dwgForm_MouseClick" Hidden="true" />
+      <Method Name="dwgForm_MouseDoubleClick" Hidden="true" />
+      <Method Name="dwgForm_MouseMove" Hidden="true" />
+      <Method Name="dwgForm_UnitChanged" Hidden="true" />
+      <Field Name="dwgs" Hidden="true" />
+      <Method Name="F" Hidden="true" />
+      <Property Name="forceUnit" Hidden="true" />
+      <Field Name="function" Hidden="true" />
+      <Method Name="GetColor" Hidden="true" />
+      <Method Name="GetMinPoint" Hidden="true" />
+      <Method Name="GetPoints" Hidden="true" />
+      <Method Name="InitializeComponets" Hidden="true" />
+      <Field Name="interval" Hidden="true" />
+      <Field Name="lables" Hidden="true" />
+      <Field Name="layer" Hidden="true" />
+      <Property Name="lengthUnit" Hidden="true" />
+      <Field Name="lineType" Hidden="true" />
+      <Field Name="lineWeight" Hidden="true" />
+      <Field Name="location" Hidden="true" />
+      <Field Name="negColor" Hidden="true" />
+      <Field Name="oreintation" Hidden="true" />
+      <Field Name="posColor" Hidden="true" />
+      <Field Name="precision" Hidden="true" />
+      <Field Name="prevLocation" Hidden="true" />
+      <Method Name="ReDrawDiagram" Hidden="true" />
+      <Field Name="region" Hidden="true" />
+      <Method Name="ReleaseHandlers" Hidden="true" />
+      <Method Name="RemovRepeated" Hidden="true" />
+      <Field Name="scaleFactor" Hidden="true" />
+      <Field Name="showLables" Hidden="true" />
+      <Field Name="textStyle" Hidden="true" />
+      <Field Name="trace" Hidden="true" />
+      <Field Name="tracelable" Hidden="true" />
+      <Field Name="zoomState" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Private" Collapsed="true" />
+      <Compartment Name="Internal" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>GAKIYBiCCABSEwIAUvJCAAnS0iBIiBeEBEIVlSACHAA=</HashCode>
+      <FileName>eDiagram.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Beam" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="ESADS.EGraphics.Beam.eGBeam">
+    <Position X="11.5" Y="12.75" Width="2.25" />
+    <Members>
+      <Field Name="beam_Analysis" Hidden="true" />
+      <Field Name="beam_Design" Hidden="true" />
+      <Field Name="bMD" Hidden="true" />
+      <Field Name="defaultEI" Hidden="true" />
+      <Field Name="defaultJoint" Hidden="true" />
+      <Field Name="detail" Hidden="true" />
+      <Field Name="diagramStyle" Hidden="true" />
+      <Field Name="dimensionsShown" Hidden="true" />
+      <Field Name="document" Hidden="true" />
+      <Property Name="Document" Hidden="true" />
+      <Field Name="dwgForm" Hidden="true" />
+      <Method Name="dwgForm_KeyDown" Hidden="true" />
+      <Method Name="dwgForm_MouseClick" Hidden="true" />
+      <Method Name="dwgForm_MouseMove" Hidden="true" />
+      <Method Name="dwgForm_UnitChanged" Hidden="true" />
+      <Field Name="extent_V" Hidden="true" />
+      <Method Name="FillExtentValues" Hidden="true" />
+      <Method Name="GetMaxNegativeOffset" Hidden="true" />
+      <Method Name="GetOverallWidth" Hidden="true" />
+      <Method Name="GetShortestMember" Hidden="true" />
+      <Field Name="hGrid" Hidden="true" />
+      <Method Name="InitializeComponents" Hidden="true" />
+      <Field Name="joints" Hidden="true" />
+      <Field Name="layers" Hidden="true" />
+      <Property Name="lengthUnit" Hidden="true" />
+      <Field Name="LoadDimensionsShown" Hidden="true" />
+      <Field Name="location" Hidden="true" />
+      <Field Name="longestMemb" Hidden="true" />
+      <Property Name="LongestMemberLength" Hidden="true" />
+      <Field Name="maxMagnitude" Hidden="true" />
+      <Property Name="MaxNegOffset" Hidden="true" />
+      <Method Name="Member_ReloadDimension" Hidden="true" />
+      <Method Name="Member_Resize" Hidden="true" />
+      <Field Name="memberInputOn" Hidden="true" />
+      <Field Name="members" Hidden="true" />
+      <Field Name="membStarted" Hidden="true" />
+      <Method Name="NumericKeyPressed" Hidden="true" />
+      <Method Name="OnChanged" Hidden="true" />
+      <Method Name="SelectAll" Hidden="true" />
+      <Field Name="sFD" Hidden="true" />
+      <Field Name="tempMemb" Hidden="true" />
+      <Field Name="textBox" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Private" Collapsed="true" />
+      <Compartment Name="Internal" Collapsed="true" />
+    </Compartments>
+    <AssociationLine Name="Members" Type="ESADS.EGraphics.Beam.eGMember" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="11.688" Y="12.75" />
+        <Point X="11.688" Y="11.125" />
+        <Point X="14.25" Y="11.125" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="Detail" Type="ESADS.EGraphics.Beam.eBeamDetail" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="11.719" Y="20.753" />
+        <Point X="11.719" Y="22" />
+        <Point X="9.75" Y="22" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="Beam_Analysis" Type="ESADS.Mechanics.Analysis.Beam.eABeam" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="13.75" Y="17.5" />
+        <Point X="15.438" Y="17.5" />
+        <Point X="15.438" Y="16.999" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>ACoIEAACBSBemhYCdIMCQCACgVoMygwGYEAc9GIAiEA=</HashCode>
+      <FileName>eGBeam.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="BMD" />
+      <Property Name="SFD" />
+      <Property Name="Detail" />
+      <Property Name="Beam_Analysis" />
+      <Property Name="Beam_Design" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="Joints" />
+      <Property Name="Members" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="ESADS.EGraphics.Beam.eGConcentratedForce">
+    <Position X="21" Y="12.25" Width="2.75" />
+    <Members>
+      <Field Name="arrowHead" Hidden="true" />
+      <Method Name="Beam_Changed" Hidden="true" />
+      <Method Name="ChangeHighLight" Hidden="true" />
+      <Method Name="ChangeSelect" Hidden="true" />
+      <Method Name="CreateRegion" Hidden="true" />
+      <Method Name="dwgForm_KeyDown" Hidden="true" />
+      <Method Name="dwgForm_MouseDoubleClick" Hidden="true" />
+      <Property Name="forceUnit" Hidden="true" />
+      <Method Name="GenerateDwgObjects" Hidden="true" />
+      <Field Name="grip" Hidden="true" />
+      <Method Name="grip_Move" Hidden="true" />
+      <Method Name="grip_TurnedOff" Hidden="true" />
+      <Method Name="grip_TurnedOn" Hidden="true" />
+      <Method Name="InitializeComponents" Hidden="true" />
+      <Field Name="isOnJoint" Hidden="true" />
+      <Field Name="joint" Hidden="true" />
+      <Property Name="lengthUnit" Hidden="true" />
+      <Field Name="line" Hidden="true" />
+      <Field Name="load" Hidden="true" />
+      <Method Name="load_Changed" Hidden="true" />
+      <Method Name="load_Changed_ForJoint" Hidden="true" />
+      <Method Name="member_Resize" Hidden="true" />
+      <Method Name="memberDWG_LocationChanged" Hidden="true" />
+      <Method Name="ReleaseHandlers" Hidden="true" />
+      <Field Name="text" Hidden="true" />
+    </Members>
+    <InheritanceLine Type="ESADS.EGraphics.Beam.eGLoad" FixedToPoint="true">
+      <Path>
+        <Point X="28.25" Y="11.299" />
+        <Point X="28.25" Y="11.875" />
+        <Point X="22.688" Y="11.875" />
+        <Point X="22.688" Y="12.25" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>ACGEmAAAKIwgEgAAFJIAAABigBAAAAAIAAAQmgAAAAA=</HashCode>
+      <FileName>eGConcentratedForce.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Load" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="ESADS.EGraphics.Beam.eGConcentratedMoment">
+    <Position X="24.25" Y="12.25" Width="3" />
+    <Members>
+      <Field Name="arc" Hidden="true" />
+      <Field Name="arrowHead" Hidden="true" />
+      <Method Name="Beam_Changed" Hidden="true" />
+      <Method Name="ChangeHighLight" Hidden="true" />
+      <Method Name="ChangeSelect" Hidden="true" />
+      <Method Name="CreateRegion" Hidden="true" />
+      <Method Name="dwgForm_KeyDown" Hidden="true" />
+      <Method Name="dwgForm_MouseDoubleClick" Hidden="true" />
+      <Property Name="forceUnit" Hidden="true" />
+      <Method Name="GenerateDwgObjects" Hidden="true" />
+      <Field Name="grip" Hidden="true" />
+      <Method Name="grip_Move" Hidden="true" />
+      <Method Name="grip_TurnedOff" Hidden="true" />
+      <Method Name="grip_TurnedOn" Hidden="true" />
+      <Method Name="InitializeComponents" Hidden="true" />
+      <Field Name="isOnJoint" Hidden="true" />
+      <Field Name="joint" Hidden="true" />
+      <Property Name="lengthUnit" Hidden="true" />
+      <Field Name="load" Hidden="true" />
+      <Method Name="member_Resize" Hidden="true" />
+      <Method Name="memberDWG_LocationChanged" Hidden="true" />
+      <Method Name="ReleaseHandlers" Hidden="true" />
+      <Field Name="text" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>ACAEkAAAKIwgEgAAFJIAAABigBAAAAAIAAAQkgAAAAA=</HashCode>
+      <FileName>eGConcentratedMoment.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Load" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="ESADS.EGraphics.Beam.eGFlexureSection">
+    <Position X="10" Y="22.5" Width="1.75" />
+    <Members>
+      <Field Name="beam_Graphics" Hidden="true" />
+      <Field Name="beamLayerObjects" Hidden="true" />
+      <Field Name="color" Hidden="true" />
+      <Field Name="dimensionShown" Hidden="true" />
+      <Field Name="dimObjects" Hidden="true" />
+      <Field Name="flexureLabelsObjects" Hidden="true" />
+      <Field Name="flexureObjects" Hidden="true" />
+      <Method Name="GenerateDwgObjects" Hidden="true" />
+      <Field Name="height" Hidden="true" />
+      <Field Name="layer_Beam" Hidden="true" />
+      <Field Name="layer_Dimensions" Hidden="true" />
+      <Field Name="layer_FlexureBars" Hidden="true" />
+      <Field Name="layer_FlexureLabels" Hidden="true" />
+      <Field Name="layer_ShearBars" Hidden="true" />
+      <Field Name="layer_ShearLabels" Hidden="true" />
+      <Field Name="layer_Text" Hidden="true" />
+      <Field Name="location" Hidden="true" />
+      <Field Name="section" Hidden="true" />
+      <Field Name="shearLabels" Hidden="true" />
+      <Field Name="shearObjects" Hidden="true" />
+      <Field Name="size" Hidden="true" />
+      <Field Name="texts" Hidden="true" />
+      <Field Name="width" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Private" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>kAAAADEAJACAggQAUKIAAEACQECBAASEAQAggKEIAAA=</HashCode>
+      <FileName>eGFlexureSection.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ESADS.EGraphics.Beam.eGJoint">
+    <Position X="15.25" Y="18.75" Width="2" />
+    <Members>
+      <Method Name="AddFixed" Hidden="true" />
+      <Method Name="AddHinge" Hidden="true" />
+      <Method Name="AddPin" Hidden="true" />
+      <Method Name="AddRoller" Hidden="true" />
+      <Method Name="AddVerticalGuidedRoller" Hidden="true" />
+      <Method Name="AddVerticalRoller" Hidden="true" />
+      <Field Name="beam" Hidden="true" />
+      <Method Name="beam_Changed" Hidden="true" />
+      <Field Name="color" Hidden="true" />
+      <Method Name="DeleteGrid" Hidden="true" />
+      <Field Name="dwgBackColor" Hidden="true" />
+      <Method Name="dwgForm_KeyDown" Hidden="true" />
+      <Method Name="dwgForm_MouseClick" Hidden="true" />
+      <Method Name="dwgForm_MouseMove" Hidden="true" />
+      <Field Name="dwgs" Hidden="true" />
+      <Method Name="FormRegion" Hidden="true" />
+      <Method Name="GenerateDwgObjects" Hidden="true" />
+      <Field Name="grid" Hidden="true" />
+      <Field Name="gridPointColor" Hidden="true" />
+      <Field Name="gridPointRadius" Hidden="true" />
+      <Field Name="isSelected" Hidden="true" />
+      <Field Name="joint" Hidden="true" />
+      <Method Name="joint_TypeChanged" Hidden="true" />
+      <Field Name="jointSnapRadius" Hidden="true" />
+      <Field Name="lable" Hidden="true" />
+      <Field Name="layer" Hidden="true" />
+      <Method Name="layer_Modified" Hidden="true" />
+      <Method Name="layer_RectangularSelection" Hidden="true" />
+      <Field Name="lineType" Hidden="true" />
+      <Field Name="lineWeight" Hidden="true" />
+      <Field Name="loadLayer" Hidden="true" />
+      <Field Name="loads" Hidden="true" />
+      <Field Name="location" Hidden="true" />
+      <Field Name="orientation" Hidden="true" />
+      <Field Name="region" Hidden="true" />
+      <Method Name="ReleaseHandlers" Hidden="true" />
+      <Method Name="SelectAll" Hidden="true" />
+      <Field Name="size" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>IACJEhgQqSJAmoAYGpNAAAgSwhIIwlCUAAAAlQAIAAg=</HashCode>
+      <FileName>eGJoint.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Beam" />
+      <Property Name="Grid" />
+      <Property Name="Joint" />
+      <Property Name="Orientation" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="ESADS.EGraphics.Beam.eGLoad">
+    <Position X="27.25" Y="6.5" Width="2" />
+    <Members>
+      <Method Name="ChangeHighLight" Hidden="true" />
+      <Method Name="ChangeSelect" Hidden="true" />
+      <Method Name="CreateRegion" Hidden="true" />
+      <Field Name="dwgForm" Hidden="true" />
+      <Method Name="dwgForm_KeyDown" Hidden="true" />
+      <Method Name="dwgForm_MouseClick" Hidden="true" />
+      <Method Name="dwgForm_MouseDoubleClick" Hidden="true" />
+      <Method Name="dwgForm_MouseMove" Hidden="true" />
+      <Method Name="dwgForm_UnitChanged" Hidden="true" />
+      <Property Name="forceUnit" Hidden="true" />
+      <Method Name="GenerateDwgObjects" Hidden="true" />
+      <Method Name="InitializeComponents" Hidden="true" />
+      <Field Name="isHighlighted" Hidden="true" />
+      <Field Name="isSelected" Hidden="true" />
+      <Field Name="layer" Hidden="true" />
+      <Method Name="layer_RectangularSelection" Hidden="true" />
+      <Property Name="lengthUnit" Hidden="true" />
+      <Field Name="location" Hidden="true" />
+      <Field Name="member" Hidden="true" />
+      <Method Name="member_Resize" Hidden="true" />
+      <Method Name="memberDWG_LocationChanged" Hidden="true" />
+      <Method Name="NumericKeyPressed" Hidden="true" />
+      <Method Name="OnMagnitudeChanged" Hidden="true" />
+      <Method Name="OnMoveEnd" Hidden="true" />
+      <Method Name="OnMoveStart" Hidden="true" />
+      <Field Name="region" Hidden="true" />
+      <Method Name="ReleaseHandlers" Hidden="true" />
+      <Field Name="size" Hidden="true" />
+      <Field Name="textBox" Hidden="true" />
+      <Field Name="visible" Hidden="true" />
+      <Field Name="zoomFactor" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>ACCEEAAQIAQCkgACEoMAACBSgJBIgAAMKAAQnkAAAAA=</HashCode>
+      <FileName>eGLoad.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ESADS.EGraphics.Beam.eGMember">
+    <Position X="14.25" Y="6" Width="2" />
+    <Members>
+      <Field Name="beam" Hidden="true" />
+      <Field Name="changeBy" Hidden="true" />
+      <Method Name="ChangeSelect" Hidden="true" />
+      <Method Name="CreateRegion" Hidden="true" />
+      <Method Name="DeleteComponenets" Hidden="true" />
+      <Field Name="dimLayer" Hidden="true" />
+      <Method Name="dimLayer_TurnedOn" Hidden="true" />
+      <Field Name="dwgForm" Hidden="true" />
+      <Method Name="dwgForm_KeyDown" Hidden="true" />
+      <Method Name="dwgForm_MouseClick" Hidden="true" />
+      <Method Name="dwgForm_MouseDoubleClick" Hidden="true" />
+      <Method Name="dwgForm_MouseMove" Hidden="true" />
+      <Method Name="dwgForm_UnitChanged" Hidden="true" />
+      <Field Name="extlnth" Hidden="true" />
+      <Method Name="GenerateDWGobjects" Hidden="true" />
+      <Method Name="HideLoadDimensions" Hidden="true" />
+      <Method Name="InitializeComponents" Hidden="true" />
+      <Field Name="isHighlighted" Hidden="true" />
+      <Field Name="isSelected" Hidden="true" />
+      <Field Name="jointClearance" Hidden="true" />
+      <Field Name="label" Hidden="true" />
+      <Field Name="layer" Hidden="true" />
+      <Method Name="layer_RectangularSelection" Hidden="true" />
+      <Property Name="lengthUnit" Hidden="true" />
+      <Field Name="line" Hidden="true" />
+      <Method Name="Load_MagnitudeChanged" Hidden="true" />
+      <Method Name="Load_MoveEnd" Hidden="true" />
+      <Method Name="Load_MoveStart" Hidden="true" />
+      <Field Name="loadDimensions" Hidden="true" />
+      <Field Name="loadLayer" Hidden="true" />
+      <Field Name="loads" Hidden="true" />
+      <Property Name="MaxNegOffset" Hidden="true" />
+      <Field Name="membDimension" Hidden="true" />
+      <Field Name="member" Hidden="true" />
+      <Field Name="member_Design" Hidden="true" />
+      <Method Name="OnLocationChanged" Hidden="true" />
+      <Method Name="OnResize" Hidden="true" />
+      <Field Name="region" Hidden="true" />
+      <Method Name="ReleaseHandlers" Hidden="true" />
+      <Method Name="ReloadDimensions" Hidden="true" />
+      <Method Name="ReloadDimensionsBasic" Hidden="true" />
+      <Field Name="scaleFactor" Hidden="true" />
+      <Method Name="SelectAll" Hidden="true" />
+      <Field Name="showLoadDimensions" Hidden="true" />
+      <Method Name="ShowLoadDimensions" Hidden="true" />
+      <Field Name="showSectionName" Hidden="true" />
+      <Field Name="size" Hidden="true" />
+      <Field Name="textBox" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Private" Collapsed="true" />
+      <Compartment Name="Internal" Collapsed="true" />
+    </Compartments>
+    <AssociationLine Name="Beam" Type="ESADS.EGraphics.Beam.eGBeam" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="14.25" Y="11.438" />
+        <Point X="13.188" Y="11.438" />
+        <Point X="13.188" Y="12.75" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>oAOBMIAQBCQGkhACWIJwJARTxJAAyEIEKgJXlAEgAQA=</HashCode>
+      <FileName>eGMember.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Beam" />
+      <Property Name="Member_Design" />
+      <Property Name="Member_Analysis" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="Loads" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="ESADS.EGraphics.Beam.eGRectangularLoad">
+    <Position X="28.25" Y="12.25" Width="1.75" />
+    <Members>
+      <Method Name="Beam_Changed" Hidden="true" />
+      <Method Name="ChangeHighLight" Hidden="true" />
+      <Method Name="ChangeSelect" Hidden="true" />
+      <Method Name="CreateRegion" Hidden="true" />
+      <Method Name="dwgForm_KeyDown" Hidden="true" />
+      <Method Name="dwgForm_MouseDoubleClick" Hidden="true" />
+      <Field Name="dwgObjects" Hidden="true" />
+      <Field Name="endPt" Hidden="true" />
+      <Method Name="GenerateDwgObjects" Hidden="true" />
+      <Field Name="grip_Left" Hidden="true" />
+      <Method Name="grip_Left_Move" Hidden="true" />
+      <Method Name="grip_Left_TurnedOff" Hidden="true" />
+      <Method Name="grip_Left_TurnedOn" Hidden="true" />
+      <Field Name="grip_middle" Hidden="true" />
+      <Method Name="grip_middle_Move" Hidden="true" />
+      <Method Name="grip_middle_TurnedOff" Hidden="true" />
+      <Method Name="grip_middle_TurnedOn" Hidden="true" />
+      <Field Name="grip_Right" Hidden="true" />
+      <Method Name="grip_Right_Move" Hidden="true" />
+      <Method Name="grip_Right_TurnedOff" Hidden="true" />
+      <Method Name="grip_Right_TurnedOn" Hidden="true" />
+      <Method Name="InitializeComponents" Hidden="true" />
+      <Field Name="load" Hidden="true" />
+      <Method Name="member_Resize" Hidden="true" />
+      <Method Name="memberDWG_LocationChanged" Hidden="true" />
+      <Method Name="ReleaseHandlers" Hidden="true" />
+      <Field Name="text" Hidden="true" />
+      <Field Name="topLine" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>ECgEkAAAIIQAEiAAEBIAIgBAgjAAAAAOMAAQ4gIAAAA=</HashCode>
+      <FileName>eGRectangularLoad.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Load" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="ESADS.EGraphics.Beam.eGrid">
+    <Position X="21" Y="19.75" Width="1.75" />
+    <Members>
+      <Field Name="bubbleColor" Hidden="true" />
+      <Field Name="bubbleSize" Hidden="true" />
+      <Field Name="color" Hidden="true" />
+      <Method Name="dwgForm_KeyDown" Hidden="true" />
+      <Method Name="dwgForm_MouseClick" Hidden="true" />
+      <Method Name="dwgForm_MouseDoubleClick" Hidden="true" />
+      <Method Name="dwgForm_MouseMove" Hidden="true" />
+      <Field Name="dwgFormColor" Hidden="true" />
+      <Field Name="dwgs" Hidden="true" />
+      <Field Name="extLR" Hidden="true" />
+      <Method Name="FormRegions" Hidden="true" />
+      <Method Name="GetTextLoc" Hidden="true" />
+      <Field Name="gridOrientation" Hidden="true" />
+      <Field Name="gridReg" Hidden="true" />
+      <Field Name="gridType" Hidden="true" />
+      <Field Name="isActive" Hidden="true" />
+      <Field Name="isSelected" Hidden="true" />
+      <Field Name="layer" Hidden="true" />
+      <Method Name="layer_RectangularSelectionEnded" Hidden="true" />
+      <Field Name="lineWeight" Hidden="true" />
+      <Field Name="location" Hidden="true" />
+      <Field Name="offset" Hidden="true" />
+      <Method Name="ResetTextBox" Hidden="true" />
+      <Field Name="text" Hidden="true" />
+      <Field Name="textReg" Hidden="true" />
+      <Method Name="txt_KeyDown" Hidden="true" />
+      <Field Name="txtBox" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AFCAACAQBgAAEgQIWNIAkBjSgBAIkACMECIA3BACAAA=</HashCode>
+      <FileName>eGrid.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="GridOrientation" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="ESADS.EGraphics.Beam.eGTrapezoidalLoad">
+    <Position X="31" Y="12.25" Width="1.75" />
+    <Members>
+      <Method Name="AcceptMagnitude" Hidden="true" />
+      <Method Name="Beam_Changed" Hidden="true" />
+      <Method Name="ChangeHighLight" Hidden="true" />
+      <Method Name="ChangeSelect" Hidden="true" />
+      <Method Name="CreateRegion" Hidden="true" />
+      <Method Name="dwgForm_KeyDown" Hidden="true" />
+      <Method Name="dwgForm_MouseDoubleClick" Hidden="true" />
+      <Field Name="dwgObjects" Hidden="true" />
+      <Field Name="endPt" Hidden="true" />
+      <Method Name="GenerateDwgObjects" Hidden="true" />
+      <Field Name="grip_Left" Hidden="true" />
+      <Method Name="grip_Left_Move" Hidden="true" />
+      <Method Name="grip_Left_TurnedOff" Hidden="true" />
+      <Method Name="grip_Left_TurnedOn" Hidden="true" />
+      <Field Name="grip_middle" Hidden="true" />
+      <Method Name="grip_middle_Move" Hidden="true" />
+      <Method Name="grip_middle_TurnedOff" Hidden="true" />
+      <Method Name="grip_middle_TurnedOn" Hidden="true" />
+      <Field Name="grip_Right" Hidden="true" />
+      <Method Name="grip_Right_Move" Hidden="true" />
+      <Method Name="grip_Right_TurnedOff" Hidden="true" />
+      <Method Name="grip_Right_TurnedOn" Hidden="true" />
+      <Method Name="InitializeComponents" Hidden="true" />
+      <Field Name="load_Rect" Hidden="true" />
+      <Field Name="load_Tri" Hidden="true" />
+      <Method Name="member_Resize" Hidden="true" />
+      <Method Name="memberDWG_LocationChanged" Hidden="true" />
+      <Method Name="ReleaseHandlers" Hidden="true" />
+      <Field Name="text_left" Hidden="true" />
+      <Field Name="text_right" Hidden="true" />
+      <Field Name="topLine" Hidden="true" />
+    </Members>
+    <AssociationLine Name="Load_Rect" Type="ESADS.Mechanics.Analysis.Beam.eRectangularLoad" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="31.375" Y="15.176" />
+        <Point X="31.375" Y="16.688" />
+        <Point X="29.75" Y="16.688" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="Load_Tri" Type="ESADS.Mechanics.Analysis.Beam.eTriangularLoad" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="32.312" Y="15.176" />
+        <Point X="32.312" Y="16.688" />
+        <Point X="33.25" Y="16.688" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>ECgkMAAAIQQAEiACEBJAIgBAwjAAAAAGMAAQ4gIAIAA=</HashCode>
+      <FileName>eGTrapezoidalLoad.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Load_Rect" />
+      <Property Name="Load_Tri" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="ESADS.EGraphics.Beam.eGTriangularLoad">
+    <Position X="33.5" Y="12.25" Width="1.75" />
+    <Members>
+      <Method Name="Beam_Changed" Hidden="true" />
+      <Method Name="ChangeHighLight" Hidden="true" />
+      <Method Name="ChangeSelect" Hidden="true" />
+      <Method Name="CreateRegion" Hidden="true" />
+      <Method Name="dwgForm_KeyDown" Hidden="true" />
+      <Method Name="dwgForm_MouseDoubleClick" Hidden="true" />
+      <Field Name="dwgObjects" Hidden="true" />
+      <Field Name="endPt" Hidden="true" />
+      <Method Name="GenerateDwgObjects" Hidden="true" />
+      <Field Name="grip_Left" Hidden="true" />
+      <Method Name="grip_Left_Move" Hidden="true" />
+      <Method Name="grip_Left_TurnedOff" Hidden="true" />
+      <Method Name="grip_Left_TurnedOn" Hidden="true" />
+      <Field Name="grip_middle" Hidden="true" />
+      <Method Name="grip_Middle_Move" Hidden="true" />
+      <Method Name="grip_Middle_TurnedOff" Hidden="true" />
+      <Method Name="grip_Middle_TurnedOn" Hidden="true" />
+      <Field Name="grip_Right" Hidden="true" />
+      <Method Name="grip_Right_Move" Hidden="true" />
+      <Method Name="grip_Right_TurnedOff" Hidden="true" />
+      <Method Name="grip_Right_TurnedOn" Hidden="true" />
+      <Method Name="InitializeComponents" Hidden="true" />
+      <Field Name="load" Hidden="true" />
+      <Method Name="member_Resize" Hidden="true" />
+      <Method Name="memberDWG_LocationChanged" Hidden="true" />
+      <Method Name="ReleaseHandlers" Hidden="true" />
+      <Field Name="text" Hidden="true" />
+      <Field Name="topLine" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>ECgEkAAAIIQAEiAAEBIAIgBAgjAAAAAOMAAQ4gIAAAA=</HashCode>
+      <FileName>eGTriangularLoad.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Load" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="ESADS.Mechanics.Analysis.Beam.eABeam">
+    <Position X="14.25" Y="12" Width="2.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="ESADS.Mechanics.Design.Beam.eDBeam">
+    <Position X="17.75" Y="16.25" Width="2.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ESADS.Mechanics.Analysis.Beam.eJoint">
+    <Position X="12.25" Y="21.25" Width="2.25" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="ESADS.Mechanics.Analysis.Beam.eConcentratedForce">
+    <Position X="21" Y="16" Width="2.75" />
+    <InheritanceLine Type="ESADS.Mechanics.Analysis.Beam.eLoad" FixedToPoint="true">
+      <Path>
+        <Point X="28.75" Y="19.5" />
+        <Point X="28.75" Y="19.125" />
+        <Point X="22.375" Y="19.125" />
+        <Point X="22.375" Y="17.653" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier />
+  </Class>
+  <Class Name="ESADS.Mechanics.Analysis.Beam.eRectangularLoad">
+    <Position X="27.75" Y="15.75" Width="2" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="ESADS.Mechanics.Analysis.Beam.eLoad">
+    <Position X="27.75" Y="19.5" Width="2" />
+    <Members>
+      <Field Name="actionType" Hidden="true" />
+      <Field Name="fixedEndForces" Hidden="true" />
+      <Field Name="loadType" Hidden="true" />
+      <Field Name="member" Hidden="true" />
+      <Field Name="start" Hidden="true" />
+    </Members>
+    <TypeIdentifier />
+  </Class>
+  <Class Name="ESADS.Mechanics.Analysis.Beam.eConcentratedMoment">
+    <Position X="24.25" Y="15.75" Width="2.75" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="ESADS.Mechanics.Analysis.Beam.eTriangularLoad">
+    <Position X="33.25" Y="15.75" Width="2.5" />
+    <InheritanceLine Type="ESADS.Mechanics.Analysis.Beam.eLoad" ManuallyRouted="true" FixedFromPoint="true">
+      <Path>
+        <Point X="28.75" Y="19.5" />
+        <Point X="28.75" Y="19.125" />
+        <Point X="34.5" Y="19.125" />
+        <Point X="34.5" Y="18.475" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier />
+  </Class>
+  <Class Name="ESADS.Mechanics.Design.Beam.eDMember">
+    <Position X="8.75" Y="7" Width="2.25" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="ESADS.Mechanics.Analysis.Beam.eAMember">
+    <Position X="17.25" Y="8.25" Width="2.75" />
+    <AssociationLine Name="Loads" Type="ESADS.Mechanics.Analysis.Beam.eLoad" ManuallyRouted="true">
+      <Path>
+        <Point X="18.625" Y="15.451" />
+        <Point X="18.625" Y="15.722" />
+        <Point X="20.75" Y="15.722" />
+        <Point X="20.75" Y="19.447" />
+        <Point X="27.375" Y="19.447" />
+        <Point X="27.375" Y="21.634" />
+        <Point X="27.75" Y="21.634" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier />
+    <ShowAsCollectionAssociation>
+      <Property Name="Loads" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Enum Name="ESADS.EGraphics.Beam.eJointOrientation">
+    <Position X="15.25" Y="25.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAIAAAAAIAAAAAAAAAAAAAAAAABAAAA=</HashCode>
+      <FileName>eJointOrientation.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ESADS.EGraphics.Beam.eGridOrientation">
+    <Position X="19" Y="25.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>eGridOrientation.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Comic Sans MS" Size="9" />
+</ClassDiagram>

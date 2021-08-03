@@ -1,0 +1,244 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" GroupingSetting="Access">
+  <Class Name="ESADS.Mechanics.Design.Column.eUniaxial">
+    <Position X="2.25" Y="7.5" Width="1.5" />
+    <Members>
+      <Method Name="AddMdPd" Hidden="true" />
+      <Method Name="ChangeAsAndM" Hidden="true" />
+      <Method Name="DetailType1" Hidden="true" />
+      <Method Name="eUniaxial" Hidden="true" />
+      <Method Name="GetCompAndTensDivisions" Hidden="true" />
+      <Method Name="GetX" Hidden="true" />
+      <Method Name="GetXb" Hidden="true" />
+      <Method Name="InitializeAs" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAEACAAWECAAIAAAAAAAAEAAQEACAQAAAAA=</HashCode>
+      <FileName>eUniaxial.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ESADS.Mechanics.Design.Column.eBiaxial">
+    <Position X="7" Y="7.75" Width="1.5" />
+    <Members>
+      <Method Name="AddMdPd" Hidden="true" />
+      <Method Name="ChangeAsAndM" Hidden="true" />
+      <Method Name="ChangeTetaAndR" Hidden="true" />
+      <Method Name="DetailType1" Hidden="true" />
+      <Method Name="eBiaxial" Hidden="true" />
+      <Method Name="GetMy" Hidden="true" />
+      <Method Name="GetP" Hidden="true" />
+      <Method Name="GetR" Hidden="true" />
+      <Method Name="GetTeta" Hidden="true" />
+      <Method Name="GetX" Hidden="true" />
+      <Method Name="InitializeAs" Hidden="true" />
+      <Method Name="InitializeTeta" Hidden="true" />
+      <Method Name="InitializeTetaAndR" Hidden="true" />
+      <Field Name="my" Hidden="true" />
+      <Field Name="r" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAAAgAGAAEADABIAAAEAAAAEAAQEAJASAAAQA=</HashCode>
+      <FileName>eBiaxial.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ESADS.Mechanics.Design.Column.eDColumn">
+    <Position X="4.75" Y="3.75" Width="1.5" />
+    <Members>
+      <Field Name="action" Hidden="true" />
+      <Method Name="AddMdPd" Hidden="true" />
+      <Property Name="As" Hidden="true" />
+      <Field Name="AsCalc" Hidden="true" />
+      <Field Name="Ass" Hidden="true" />
+      <Field Name="b" Hidden="true" />
+      <Field Name="barsInX" Hidden="true" />
+      <Field Name="barsInY" Hidden="true" />
+      <Field Name="bprim" Hidden="true" />
+      <Property Name="Bprim" Hidden="true" />
+      <Field Name="BtoHRatio" Hidden="true" />
+      <Field Name="C" Hidden="true" />
+      <Method Name="CalculateAs" Hidden="true" />
+      <Method Name="ChangeXandP" Hidden="true" />
+      <Method Name="CheckPrecision" Hidden="true" />
+      <Property Name="CompletionState" Hidden="true" />
+      <Field Name="compState" Hidden="true" />
+      <Field Name="conc" Hidden="true" />
+      <Field Name="cover" Hidden="true" />
+      <Field Name="desingAndDetail" Hidden="true" />
+      <Method Name="DetailType1" Hidden="true" />
+      <Method Name="DetailType2" Hidden="true" />
+      <Method Name="DetailType3" Hidden="true" />
+      <Property Name="Dprim" Hidden="true" />
+      <Method Name="eDColumn" Hidden="true" />
+      <Field Name="exposureType" Hidden="true" />
+      <Method Name="FillAss" Hidden="true" />
+      <Method Name="FillMinCover" Hidden="true" />
+      <Method Name="FillType4" Hidden="true" />
+      <Method Name="FindEcoDiam" Hidden="true" />
+      <Method Name="GetActualMinSpacing" Hidden="true" />
+      <Method Name="GetAreaDiff" Hidden="true" />
+      <Method Name="GetAs" Hidden="true" />
+      <Method Name="GetAsInCompZone" Hidden="true" />
+      <Method Name="GetAsMax" Hidden="true" />
+      <Method Name="GetAsMin" Hidden="true" />
+      <Method Name="GetAss" Hidden="true" />
+      <Method Name="GetAxialAs" Hidden="true" />
+      <Method Name="GetBarArea" Hidden="true" />
+      <Method Name="GetEcoDiam" Hidden="true" />
+      <Method Name="GetInteractionDiag" Hidden="true" />
+      <Method Name="GetMaxAxialCapacity" Hidden="true" />
+      <Method Name="GetMaxNumbOfBars" Hidden="true" />
+      <Method Name="GetMx" Hidden="true" />
+      <Method Name="GetNearest" Hidden="true" />
+      <Method Name="GetNumberOfBars" Hidden="true" />
+      <Method Name="GetNumbOfBar" Hidden="true" />
+      <Method Name="GetPatX" Hidden="true" />
+      <Method Name="GetReinforcements" Hidden="true" />
+      <Method Name="GetTotalNumbOfBars" Hidden="true" />
+      <Method Name="GetUnitArea" Hidden="true" />
+      <Field Name="h" Hidden="true" />
+      <Field Name="hprim" Hidden="true" />
+      <Property Name="Hprim" Hidden="true" />
+      <Method Name="InitializeXandP" Hidden="true" />
+      <Method Name="Interchange" Hidden="true" />
+      <Method Name="Interpolate" Hidden="true" />
+      <Field Name="mainBarDiam" Hidden="true" />
+      <Field Name="maxDiam" Hidden="true" />
+      <Property Name="MaxDiam" Hidden="true" />
+      <Property Name="MaxDim" Hidden="true" />
+      <Field Name="maxSpacing" Hidden="true" />
+      <Field Name="minDiam" Hidden="true" />
+      <Field Name="minSpacing" Hidden="true" />
+      <Field Name="mx" Hidden="true" />
+      <Field Name="p" Hidden="true" />
+      <Field Name="precision" Hidden="true" />
+      <Property Name="Precision" Hidden="true" />
+      <Field Name="S" Hidden="true" />
+      <Method Name="SetAreasOfReinf" Hidden="true" />
+      <Method Name="SetDetailingData" Hidden="true" />
+      <Method Name="SetHandBprim" Hidden="true" />
+      <Method Name="SetHprimAndBprim" Hidden="true" />
+      <Method Name="SetXandTeta" Hidden="true" />
+      <Field Name="stirrupDiam" Hidden="true" />
+      <Field Name="typeOfDetail" Hidden="true" />
+      <Method Name="UseArea" Hidden="true" />
+      <Property Name="UseEcoDiam" Hidden="true" />
+      <Field Name="useEconomicalBar" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>pQEhDgFwYQGgGIAOCClQRVVAmgCUaFOkccERxyDqFmc=</HashCode>
+      <FileName>C:\Users\Abiy\Documents\Etabs Exercise\eDColumn.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Concrete" />
+      <Property Name="Steel" />
+      <Property Name="CocreteSection" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="Reinforcements" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="ESADS.Mechanics.Design.eConcrete">
+    <Position X="2.25" Y="5.5" Width="1.5" />
+    <Members>
+      <Property Name="ConcreteType" Hidden="true" />
+      <Property Name="E" Hidden="true" />
+      <Method Name="eConcrete" Hidden="true" />
+      <Method Name="Equals" Hidden="true" />
+      <Property Name="fck" Hidden="true" />
+      <Property Name="Grade" Hidden="true" />
+      <Property Name="MaxAgrtSize" Hidden="true" />
+      <Property Name="Name" Hidden="true" />
+      <Method Name="op_Inequality" Hidden="true" />
+      <Method Name="op_Equality" Hidden="true" />
+      <Method Name="SetClassWork" Hidden="true" />
+      <Method Name="ToString" Hidden="true" />
+      <Property Name="UnitWeight" Hidden="true" />
+      <Property Name="εb" Hidden="true" />
+    </Members>
+    <TypeIdentifier />
+  </Class>
+  <Class Name="ESADS.Mechanics.Design.eSteel">
+    <Position X="2.25" Y="3.5" Width="1.5" />
+    <Members>
+      <Property Name="E" Hidden="true" />
+      <Method Name="Equals" Hidden="true" />
+      <Method Name="eSteel" Hidden="true" />
+      <Property Name="Grade" Hidden="true" />
+      <Property Name="Name" Hidden="true" />
+      <Method Name="op_Inequality" Hidden="true" />
+      <Method Name="op_Equality" Hidden="true" />
+      <Method Name="SetClassWork" Hidden="true" />
+      <Method Name="ToString" Hidden="true" />
+      <Property Name="UnitWeight" Hidden="true" />
+    </Members>
+    <TypeIdentifier />
+  </Class>
+  <Struct Name="ESADS.Mechanics.Design.Column.eConc">
+    <Position X="7" Y="3.25" Width="1.5" />
+    <Members>
+      <Field Name="a" Hidden="true" />
+      <Field Name="A" Hidden="true" />
+      <Field Name="b" Hidden="true" />
+      <Field Name="c" Hidden="true" />
+      <Method Name="ConvertDgreeToRad" Hidden="true" />
+      <Method Name="ConvertRadToDegree" Hidden="true" />
+      <Method Name="eConc" Hidden="true" />
+      <Field Name="fcd" Hidden="true" />
+      <Method Name="FillAreaAndCentroids" Hidden="true" />
+      <Method Name="FillParameters" Hidden="true" />
+      <Method Name="GetAreaOfR1" Hidden="true" />
+      <Method Name="GetAreaOfR2" Hidden="true" />
+      <Method Name="GetX" Hidden="true" />
+      <Method Name="GetY" Hidden="true" />
+      <Field Name="h" Hidden="true" />
+      <Field Name="m" Hidden="true" />
+      <Field Name="mx" Hidden="true" />
+      <Field Name="my" Hidden="true" />
+      <Field Name="nc" Hidden="true" />
+      <Field Name="t" Hidden="true" />
+      <Property Name="X" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>CACAggAQAAAAEIAAABAAACAAAAIAABCgY0QAIQAAQBI=</HashCode>
+      <FileName>eConc.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="ESADS.Mechanics.Design.Column.eAs">
+    <Position X="7" Y="5.25" Width="1.5" />
+    <Members>
+      <Field Name="As" Hidden="true" />
+      <Field Name="b" Hidden="true" />
+      <Field Name="c" Hidden="true" />
+      <Method Name="eAs" Hidden="true" />
+      <Field Name="Ecb" Hidden="true" />
+      <Field Name="Ecc" Hidden="true" />
+      <Field Name="Es" Hidden="true" />
+      <Method Name="FillParameters" Hidden="true" />
+      <Method Name="FillZ" Hidden="true" />
+      <Method Name="GetEcu" Hidden="true" />
+      <Method Name="GetX" Hidden="true" />
+      <Method Name="GetY" Hidden="true" />
+      <Field Name="h" Hidden="true" />
+      <Method Name="IsAboveNA" Hidden="true" />
+      <Field Name="m" Hidden="true" />
+      <Field Name="mx" Hidden="true" />
+      <Field Name="my" Hidden="true" />
+      <Field Name="Ns" Hidden="true" />
+      <Field Name="nx" Hidden="true" />
+      <Field Name="S" Hidden="true" />
+      <Field Name="teta" Hidden="true" />
+      <Field Name="x" Hidden="true" />
+      <Field Name="y" Hidden="true" />
+      <Field Name="z" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>BAAAAggQAAAAFAAAABAAAAAAAACAQAWAYwBgAQDAYFI=</HashCode>
+      <FileName>eAs.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

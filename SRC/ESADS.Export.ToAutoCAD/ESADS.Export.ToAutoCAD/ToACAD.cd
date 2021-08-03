@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="ESADS.Export.ToAutoCAD.eExportColumn" Collapsed="true">
+    <Position X="5.5" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AARAAAAAEAAAEAQAAAAIBQAAACQAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>eExportColumn.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ESADS.Export.ToAutoCAD.eExportFooting" Collapsed="true">
+    <Position X="3.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>eExportFooting.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ESADS.Export.ToAutoCAD.eExportBeam" Collapsed="true">
+    <Position X="3.75" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>eExportBeam.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ESADS.Export.ToAutoCAD.eExportSlab" Collapsed="true">
+    <Position X="5.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>eExportSlab.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ESADS.Export.ToAutoCAD.eAcExport" Collapsed="true">
+    <Position X="1.75" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgEIAAAAAEAAAADAAAIAAACAABAAAAAACIAAABAAAA=</HashCode>
+      <FileName>eAcExport.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

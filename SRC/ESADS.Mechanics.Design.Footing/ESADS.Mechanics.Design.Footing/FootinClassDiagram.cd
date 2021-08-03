@@ -1,0 +1,171 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="ESADS.Mechanics.Design.Footing.eDFooting">
+    <Position X="6" Y="9.5" Width="1.5" />
+    <Members>
+      <Field Name="B" Hidden="true" />
+      <Field Name="barDiam" Hidden="true" />
+      <Property Name="BarDiam" Hidden="true" />
+      <Field Name="Bbar" Hidden="true" />
+      <Field Name="Bc" Hidden="true" />
+      <Field Name="bSteelRatio" Hidden="true" />
+      <Field Name="C" Hidden="true" />
+      <Property Name="CalcAsB" Hidden="true" />
+      <Property Name="CalcAsL" Hidden="true" />
+      <Method Name="CalculateDepthAndAs" Hidden="true" />
+      <Method Name="CheckAchorageLength" Hidden="true" />
+      <Method Name="CheckDepth" Hidden="true" />
+      <Method Name="CheckPrecision" Hidden="true" />
+      <Field Name="columnDiam" Hidden="true" />
+      <Property Name="ColumnDiameter" Hidden="true" />
+      <Field Name="columnType" Hidden="true" />
+      <Property Name="Combinations" Hidden="true" />
+      <Field Name="combs" Hidden="true" />
+      <Field Name="completionState" Hidden="true" />
+      <Property Name="CompletionState" Hidden="true" />
+      <Field Name="considerSelfWeight" Hidden="true" />
+      <Property Name="ConsiderSelfWeight" Hidden="true" />
+      <Field Name="cover" Hidden="true" />
+      <Field Name="d" Hidden="true" />
+      <Field Name="D" Hidden="true" />
+      <Property Name="Deff" Hidden="true" />
+      <Property Name="DepthIncrement" Hidden="true" />
+      <Method Name="DesignGivenSpacing" Hidden="true" />
+      <Field Name="dIncr" Hidden="true" />
+      <Method Name="eDFooting" Hidden="true" />
+      <Field Name="exposureType" Hidden="true" />
+      <Method Name="FillBars" Hidden="true" />
+      <Method Name="FillBearingStress" Hidden="true" />
+      <Method Name="FillCombinations" Hidden="true" />
+      <Method Name="FillEffectiveDepths" Hidden="true" />
+      <Method Name="FillToBars" Hidden="true" />
+      <Method Name="GetArea" Hidden="true" />
+      <Method Name="GetAs" Hidden="true" />
+      <Method Name="GetAsProvided" Hidden="true" />
+      <Method Name="GetBV" Hidden="true" />
+      <Method Name="GetBVrd" Hidden="true" />
+      <Method Name="GetEcentricity" Hidden="true" />
+      <Method Name="GetEcoComb" Hidden="true" />
+      <Method Name="GetEcoDiam" Hidden="true" />
+      <Method Name="GetLAvailInBdxn" Hidden="true" />
+      <Method Name="GetLAvailInLdxn" Hidden="true" />
+      <Method Name="GetLb" Hidden="true" />
+      <Method Name="GetLV" Hidden="true" />
+      <Method Name="GetLVrd" Hidden="true" />
+      <Method Name="GetMB" Hidden="true" />
+      <Method Name="GetML" Hidden="true" />
+      <Method Name="GetNoOfBars" Hidden="true" />
+      <Method Name="GetPractSpacing" Hidden="true" />
+      <Method Name="GetProvidedSteelRatio" Hidden="true" />
+      <Method Name="GetSpacing" Hidden="true" />
+      <Method Name="GetSteelRatio" Hidden="true" />
+      <Method Name="GetSteelRation" Hidden="true" />
+      <Method Name="GetStress" Hidden="true" />
+      <Method Name="GetVp" Hidden="true" />
+      <Method Name="GetVprd" Hidden="true" />
+      <Field Name="hookLength" Hidden="true" />
+      <Property Name="HookLength" Hidden="true" />
+      <Method Name="InitializeForDesign" Hidden="true" />
+      <Field Name="isDepthGiven" Hidden="true" />
+      <Field Name="L" Hidden="true" />
+      <Field Name="Lbar" Hidden="true" />
+      <Field Name="Lc" Hidden="true" />
+      <Field Name="lengthIncrement" Hidden="true" />
+      <Field Name="logSideHorizontal" Hidden="true" />
+      <Property Name="LongSideHorizontal" Hidden="true" />
+      <Field Name="lSteelRatio" Hidden="true" />
+      <Property Name="MaxAggrSize" Hidden="true" />
+      <Field Name="maxBarDiam" Hidden="true" />
+      <Field Name="maxSpacing" Hidden="true" />
+      <Field Name="Mb" Hidden="true" />
+      <Field Name="minBarDiam" Hidden="true" />
+      <Field Name="minSpacing" Hidden="true" />
+      <Field Name="Ml" Hidden="true" />
+      <Field Name="p" Hidden="true" />
+      <Property Name="ProvAsB" Hidden="true" />
+      <Property Name="ProvAsL" Hidden="true" />
+      <Field Name="qav" Hidden="true" />
+      <Field Name="qu" Hidden="true" />
+      <Field Name="S" Hidden="true" />
+      <Field Name="sIncrmt" Hidden="true" />
+      <Field Name="spacing" Hidden="true" />
+      <Property Name="SpacingIncrement" Hidden="true" />
+      <Field Name="useDiameter" Hidden="true" />
+      <Property Name="UseDiameter" Hidden="true" />
+      <Field Name="useMaxHookLength" Hidden="true" />
+      <Property Name="UseMaxHookLength" Hidden="true" />
+      <Field Name="useSpacing" Hidden="true" />
+      <Property Name="UseSpacing" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>JU2GViUZYBmJSSCRFEkEUHRLABAoCIMkMEyBlz3Bpss=</HashCode>
+      <FileName>eDFooting.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Concrete" />
+      <Property Name="Steel" />
+      <Property Name="LBar" />
+      <Property Name="BBar" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="ESADS.Mechanics.Design.eSteel">
+    <Position X="9" Y="11" Width="1.5" />
+    <Members>
+      <Property Name="E" Hidden="true" />
+      <Method Name="Equals" Hidden="true" />
+      <Method Name="eSteel" Hidden="true" />
+      <Property Name="Name" Hidden="true" />
+      <Method Name="op_Inequality" Hidden="true" />
+      <Method Name="op_Equality" Hidden="true" />
+      <Method Name="ToString" Hidden="true" />
+      <Property Name="UnitWeight" Hidden="true" />
+    </Members>
+    <TypeIdentifier />
+  </Class>
+  <Class Name="ESADS.Mechanics.Design.eConcrete">
+    <Position X="9" Y="6.25" Width="1.5" />
+    <Members>
+      <Method Name="eConcrete" Hidden="true" />
+      <Method Name="Equals" Hidden="true" />
+      <Method Name="op_Inequality" Hidden="true" />
+      <Method Name="op_Equality" Hidden="true" />
+    </Members>
+    <TypeIdentifier />
+  </Class>
+  <Struct Name="ESADS.Mechanics.Design.Footing.eFBar" BaseTypeListCollapsed="true">
+    <Position X="3" Y="10.75" Width="1.5" />
+    <Members>
+      <Field Name="achorType" Hidden="true" />
+      <Field Name="calcSpacing" Hidden="true" />
+      <Field Name="cover" Hidden="true" />
+      <Field Name="d" Hidden="true" />
+      <Field Name="diam" Hidden="true" />
+      <Field Name="displayS" Hidden="true" />
+      <Property Name="DisplaySpacing" Hidden="true" />
+      <Method Name="eFBar" Hidden="true" />
+      <Property Name="EffD" Hidden="true" />
+      <Field Name="fDim" Hidden="true" />
+      <Property Name="FDim" Hidden="true" />
+      <Method Name="FillBarNumber" Hidden="true" />
+      <Method Name="GetBandSapacing" Hidden="true" />
+      <Method Name="GetOutSideBandSpacing" Hidden="true" />
+      <Field Name="lAvail" Hidden="true" />
+      <Property Name="LAvailable" Hidden="true" />
+      <Field Name="lbRation" Hidden="true" />
+      <Property Name="Legths" Hidden="true" />
+      <Field Name="lengthIncrement" Hidden="true" />
+      <Field Name="lengths" Hidden="true" />
+      <Field Name="name" Hidden="true" />
+      <Property Name="Name" Hidden="true" />
+      <Field Name="number" Hidden="true" />
+      <Property Name="Number" Hidden="true" />
+      <Field Name="provSpacing" Hidden="true" />
+      <Method Name="SetEffD" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>ACMAACAQAAAAUJAAQGgQBARAgIEEAICEIAABAgAoAAA=</HashCode>
+      <FileName>eFBar.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" GroupingSetting="Alphabetical">
+  <Class Name="ESADS.Mechanics.Analysis.Slab.eASlab" Collapsed="true">
+    <Position X="6" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAKAAACAAAAAAgAAAAIAEAAAAIAgAAABEAAAAQAAABA=</HashCode>
+      <FileName>eASlab.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ESADS.Mechanics.Analysis.Slab.eASLoad" Collapsed="true">
+    <Position X="2.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EBAAAACAAAAAgAAAAAAAAAQAAAAEEAAAAQCIABEAgAA=</HashCode>
+      <FileName>eASLoad.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ESADS.Mechanics.Analysis.Slab.eASBeam" Collapsed="true">
+    <Position X="6" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAEAAAAAAA=</HashCode>
+      <FileName>eASBeam.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ESADS.Mechanics.Analysis.Slab.eSLineLoad" Collapsed="true">
+    <Position X="1.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>eSLineLoad.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ESADS.Mechanics.Analysis.Slab.eSAreaLoad" Collapsed="true">
+    <Position X="3.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAAAAAAAAAAAIAAAAAAAAAAACAIAAAAAAE=</HashCode>
+      <FileName>eSAreaLoad.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ESADS.Mechanics.Analysis.Slab.eSPointLoad" Collapsed="true">
+    <Position X="7.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>eSPointLoad.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ESADS.Mechanics.Analysis.Slab.eAOneWayPanel" Collapsed="true">
+    <Position X="1.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAA=</HashCode>
+      <FileName>eAOneWayPanel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ESADS.Mechanics.Analysis.Slab.eATwoWayPanel" Collapsed="true">
+    <Position X="3.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAwAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>eATwoWayPanel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ESADS.Mechanics.Analysis.Slab.eAPanel" Collapsed="true">
+    <Position X="2.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAA=</HashCode>
+      <FileName>eAPanel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ESADS.Mechanics.Analysis.Slab.eASBMember" Collapsed="true">
+    <Position X="7.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAIAAgCCACAAQAAgQEAAAkBAAAAAAAAgQQAAIVEAAAE=</HashCode>
+      <FileName>eASBMember.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="ESADS.Mechanics.Analysis.Slab.ePanelAction" Collapsed="true">
+    <Position X="6" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAIAAAAAAAAAAAAgAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ePanelAction.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ESADS.Mechanics.Analysis.Slab.eOrientation" Collapsed="true">
+    <Position X="7.75" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAABAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>eOrientation.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ESADS.Mechanics.Analysis.Slab.eSlabLoadTypes" Collapsed="true">
+    <Position X="7.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAgAAAAEAAAAAAAAAAAAAAAAAAIA=</HashCode>
+      <FileName>eSlabLoadTypes.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ESADS.Mechanics.Analysis.Slab.eCalculateDesignLoadAs" Collapsed="true">
+    <Position X="6" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAgAAAAA=</HashCode>
+      <FileName>eCalculateDesignLoadAs.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

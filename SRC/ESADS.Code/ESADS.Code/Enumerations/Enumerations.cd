@@ -1,0 +1,213 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="ESADS.Code.EBCS_1995.eBasisOfDesign" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAABAAAQIAUAAAAAAAAAAAAEAAQAAAAAQAAAAAAA=</HashCode>
+      <FileName>EBCS_1995\eBasisOfDesign.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ESADS.Code.EBCS_1995.eCompression" Collapsed="true">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>EBCS_1995\eCompression.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ESADS.Code.EBCS_1995.eDetailing" Collapsed="true">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQCDBCBAAAAAAgAACAAAAAAAACAEIAACAAUAAAEA=</HashCode>
+      <FileName>EBCS_1995\eDetailing.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ESADS.Code.EBCS_1995.eFlexure" Collapsed="true">
+    <Position X="5.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAABAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>EBCS_1995\eFlexure.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ESADS.Code.EBCS_1995.eMaterial" Collapsed="true">
+    <Position X="7.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAABAAAAAAAAAEQAACAAAIEAAACAAAAAAAAAAAA=</HashCode>
+      <FileName>EBCS_1995\eMaterial.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ESADS.Code.EBCS_1995.ePunching" Collapsed="true">
+    <Position X="0.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAA=</HashCode>
+      <FileName>EBCS_1995\ePunching.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ESADS.Code.EBCS_1995.eServiceability" Collapsed="true">
+    <Position X="2.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAEAAAAAAAAAA=</HashCode>
+      <FileName>EBCS_1995\eServiceability.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ESADS.Code.EBCS_1995.eShear" Collapsed="true">
+    <Position X="4" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>EBCS_1995\eShear.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ESADS.Code.EBCS_1995.eSpecialStructures" Collapsed="true">
+    <Position X="5.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAA=</HashCode>
+      <FileName>EBCS_1995\eSpecialStructures.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ESADS.Code.EBCS_1995.eTorsion" Collapsed="true">
+    <Position X="7.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>EBCS_1995\eTorsion.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ESADS.Code.Properties.Settings" Collapsed="true">
+    <Position X="0.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ESADS.Code.eActionsOnStructure">
+    <Position X="9.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAA=</HashCode>
+      <FileName>eActionsOnStructure.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="ESADS.Code.eClassWork" Collapsed="true">
+    <Position X="5.75" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Enumerations\eClassWork.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ESADS.Code.eConcreteGrade" Collapsed="true">
+    <Position X="7.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAgAAAAAAAAAAAAAIAAAAAAAEAAAAAAACAAAAA=</HashCode>
+      <FileName>Enumerations\eConcreteGrade.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ESADS.Code.eMaterialType" Collapsed="true">
+    <Position X="4" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAQAAQAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Enumerations\eMaterial.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ESADS.Code.eConcreteType" Collapsed="true">
+    <Position X="2.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAQAAAAAAAAAAAAEAAAAAAAAAAAAAAgAAAEAAAEAAA=</HashCode>
+      <FileName>Enumerations\eConcreteType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ESADS.Code.eDesignSituation" Collapsed="true">
+    <Position X="4" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAACAAAAAAAAAA=</HashCode>
+      <FileName>Enumerations\eDesignSituation.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ESADS.Code.eExposureType" Collapsed="true">
+    <Position X="5.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACEAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Enumerations\eExposureType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ESADS.Code.eSteelGrade" Collapsed="true">
+    <Position X="2.25" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAAAgAAAAAAAAAAAAAAAAABAAAAAAAAAAAAA=</HashCode>
+      <FileName>Enumerations\eSteelGrade.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ESADS.Code.eConcreteTestSpecimenType" Collapsed="true">
+    <Position X="0.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAA=</HashCode>
+      <FileName>Enumerations\eConcreteTestSpecimenType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ESADS.Code.eLimitStateType" Collapsed="true">
+    <Position X="0.5" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Enumerations\eLimitStateType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ESADS.Code.eSpanType" Collapsed="true">
+    <Position X="0.5" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAQAAAAAAAAEAAAAAAAAAEAAAAAAAAAAAAQAAA=</HashCode>
+      <FileName>Enumerations\eSpanType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ESADS.Code.eActionType" Collapsed="true">
+    <Position X="2.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAQAAAAAAAA=</HashCode>
+      <FileName>Enumerations\eActionType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ESADS.Code.eActionCondition" Collapsed="true">
+    <Position X="0.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAgAAAAA=</HashCode>
+      <FileName>Enumerations\eActionCondition.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ESADS.Code.eReinforcement" Collapsed="true">
+    <Position X="5.75" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BBAAAAAAAgAAAAAAAAQAAAAAAAIAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Enumerations\eReinforcement.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ESADS.Code.eAnchorageType" Collapsed="true">
+    <Position X="4" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAA=</HashCode>
+      <FileName>Enumerations\eAnchorageType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ESADS.Code.eFootingType" Collapsed="true">
+    <Position X="7.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAEA=</HashCode>
+      <FileName>Enumerations\eFootingType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ESADS.Code.eSlabSupports" Collapsed="true">
+    <Position X="7.5" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgEAAAIBAICAAAAAgEAAAAAAAAAAAAAAAAAABAAA=</HashCode>
+      <FileName>Enumerations\eSlabSupports.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ESADS.Code.eLoadCategories" Collapsed="true">
+    <Position X="2.25" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAAAAAAgBAAAAAAIAQAAAAAEAYAAAAAiEAAAA=</HashCode>
+      <FileName>eLoadCategories.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ESADS.Code.eStructureType" Collapsed="true">
+    <Position X="4" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAABAAAIAQAAAAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>Enumerations\eStructureType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

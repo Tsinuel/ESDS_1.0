@@ -1,0 +1,545 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="ESADS.Mechanics.Analysis.eAMember">
+    <Position X="18.25" Y="4.25" Width="1.5" />
+    <Members>
+      <Field Name="beam" Hidden="true" />
+      <Field Name="displacements" Hidden="true" />
+      <Field Name="fEForces" Hidden="true" />
+      <Field Name="fEJoint" Hidden="true" />
+      <Field Name="forces" Hidden="true" />
+      <Field Name="IE" Hidden="true" />
+      <Field Name="length" Hidden="true" />
+      <Field Name="loads" Hidden="true" />
+      <Field Name="member_Design" Hidden="true" />
+      <Field Name="mSM" Hidden="true" />
+      <Field Name="nEJoint" Hidden="true" />
+      <Field Name="selfWeight" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <AssociationLine Name="Beam" Type="ESADS.Mechanics.Analysis.eABeam" FixedFromPoint="true">
+      <Path>
+        <Point X="18.25" Y="5.188" />
+        <Point X="16.25" Y="5.188" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="Member_Design" Type="ESADS.Mechanics.Design.eDMember" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="19.75" Y="5.312" />
+        <Point X="22.506" Y="5.312" />
+        <Point X="22.506" Y="13.598" />
+        <Point X="21.5" Y="13.598" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>MEgAKAgQCRgJEAAgIEBEFABARCCAEEAAAAhPBiAoRYA=</HashCode>
+      <FileName>eAMember.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="NEJoint" />
+      <Property Name="FEJoint" />
+      <Property Name="Beam" />
+      <Property Name="Member_Design" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="Loads" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="ESADS.Mechanics.Analysis.eJoint" Collapsed="true">
+    <Position X="18.25" Y="2.25" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>QAAAAUAAAEAACUBAAAgAAQQAAACFQUAgAQDAIAAAAAA=</HashCode>
+      <FileName>eJoint.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Type" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="ESADS.Mechanics.Analysis.eABeam">
+    <Position X="14.75" Y="1.5" Width="1.5" />
+    <Members>
+      <Method Name="AddSelfWeight" Hidden="true" />
+      <Field Name="analysisCompleted" Hidden="true" />
+      <Field Name="beam_Design" Hidden="true" />
+      <Field Name="canBeAnalysed" Hidden="true" />
+      <Field Name="canBeDesigned" Hidden="true" />
+      <Method Name="CheckConcurency" Hidden="true" />
+      <Field Name="considerSelfWeight" Hidden="true" />
+      <Method Name="CountContiniouMembers" Hidden="true" />
+      <Method Name="CountReactions" Hidden="true" />
+      <Field Name="DK" Hidden="true" />
+      <Field Name="DU" Hidden="true" />
+      <Method Name="Fill_DK" Hidden="true" />
+      <Method Name="Fill_QK" Hidden="true" />
+      <Method Name="Fill_SSM" Hidden="true" />
+      <Method Name="Fill_SSM_Index" Hidden="true" />
+      <Method Name="FillBackResults" Hidden="true" />
+      <Method Name="IsStable" Hidden="true" />
+      <Field Name="joints" Hidden="true" />
+      <Field Name="K11" Hidden="true" />
+      <Field Name="K12" Hidden="true" />
+      <Field Name="K21" Hidden="true" />
+      <Field Name="K22" Hidden="true" />
+      <Field Name="loadCombination" Hidden="true" />
+      <Field Name="members" Hidden="true" />
+      <Method Name="PartitionSSM" Hidden="true" />
+      <Field Name="QK" Hidden="true" />
+      <Field Name="QU" Hidden="true" />
+      <Method Name="RemoveSelfWeight" Hidden="true" />
+      <Field Name="SSM" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <AssociationLine Name="Beam_Design" Type="ESADS.Mechanics.Design.eDBeam" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="15.188" Y="5.363" />
+        <Point X="15.188" Y="8" />
+        <Point X="12" Y="8" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>EIABCAJAAbIAACAAAEAAhABKA0EQUkQggUBEBwEAAQA=</HashCode>
+      <FileName>eABeam.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="LoadCombination" />
+      <Property Name="Beam_Design" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="Joints" />
+      <Property Name="Members" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="ESADS.Mechanics.Analysis.eLoad">
+    <Position X="26.5" Y="2" Width="1.5" />
+    <Members>
+      <Field Name="actionType" Hidden="true" />
+      <Field Name="fixedEndForces" Hidden="true" />
+      <Field Name="loadCombination" Hidden="true" />
+      <Field Name="loadType" Hidden="true" />
+      <Field Name="magnitude" Hidden="true" />
+      <Field Name="member" Hidden="true" />
+      <Field Name="start" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>EFAAAAACASAAAAAghAAAAAAAAAAIEAAACQAAABEBAAA=</HashCode>
+      <FileName>eLoad.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="ActionType" />
+      <Property Name="LoadType" />
+      <Property Name="Member" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="ESADS.Mechanics.Analysis.eConcentratedForce">
+    <Position X="24.5" Y="6.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>eConsForce.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ESADS.Mechanics.Analysis.eConcentratedMoment">
+    <Position X="22.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>eConsMoment.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ESADS.Mechanics.Analysis.eRectangularLoad">
+    <Position X="28.75" Y="6.5" Width="1.5" />
+    <Members>
+      <Field Name="end" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AEIAAAACAAAAAAAAgAAAAAAAAAAAEAAAAAAAAAAAAAA=</HashCode>
+      <FileName>eRectangularLoad.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ESADS.Mechanics.Analysis.eTriangularLoad">
+    <Position X="26.5" Y="6.5" Width="1.75" />
+    <Members>
+      <Field Name="end" Hidden="true" />
+      <Field Name="orientation" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AEIBAAACAQAAAAAAgAAAAAAAAAAAEAAAAAAAAAAAAAA=</HashCode>
+      <FileName>eTriangularLoad.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Orientation" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="ESADS.Mechanics.Analysis.eLoadCombination">
+    <Position X="11.75" Y="0.5" Width="1.5" />
+    <Members>
+      <Field Name="name" Hidden="true" />
+      <Field Name="permanentLoadFactor" Hidden="true" />
+      <Field Name="variableLoadFactor" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAQAAAAAAAAAAAAAQAAAAEBAAAAAAAAIAAAEA=</HashCode>
+      <FileName>eLoadCombination.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ESADS.Mechanics.Design.eDMember">
+    <Position X="20" Y="12.25" Width="1.5" />
+    <AssociationLine Name="Concrete" Type="ESADS.Mechanics.Design.eConcrete" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="20.375" Y="12.25" />
+        <Point X="20.375" Y="8.719" />
+        <Point X="17.5" Y="8.719" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="Steel" Type="ESADS.Mechanics.Design.eSteel" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="20.938" Y="12.25" />
+        <Point X="20.938" Y="8.031" />
+        <Point X="17.5" Y="8.031" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="Member_Analysis" Type="ESADS.Mechanics.Analysis.eAMember" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="21.5" Y="13.074" />
+        <Point X="21.875" Y="13.074" />
+        <Point X="21.875" Y="6.188" />
+        <Point X="19.75" Y="6.188" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="ShearSection" Type="ESADS.Mechanics.Design.eDShearSection" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="21.312" Y="14.574" />
+        <Point X="21.312" Y="21.242" />
+        <Point X="14.378" Y="21.242" Type="JumpStart" />
+        <Point X="14.212" Y="21.242" Type="JumpEnd" />
+        <Point X="13.798" Y="21.242" Type="JumpStart" />
+        <Point X="13.632" Y="21.242" Type="JumpEnd" />
+        <Point X="10.125" Y="21.242" />
+        <Point X="10.125" Y="19.25" />
+        <Point X="9.75" Y="19.25" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="Beam" Type="ESADS.Mechanics.Design.eDBeam" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="20.188" Y="12.25" />
+        <Point X="20.188" Y="10.5" />
+        <Point X="12" Y="10.5" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="SupportSxn_Left" Type="ESADS.Mechanics.Design.eDFlexureSection" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="20.438" Y="14.574" />
+        <Point X="20.438" Y="19.241" />
+        <Point X="14.75" Y="19.241" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="SupportSxn_Right" Type="ESADS.Mechanics.Design.eDFlexureSection" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="20.75" Y="14.574" />
+        <Point X="20.75" Y="19.688" />
+        <Point X="14.75" Y="19.688" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="SpanSxn" Type="ESADS.Mechanics.Design.eDFlexureSection" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="21" Y="14.574" />
+        <Point X="21" Y="20.415" />
+        <Point X="14.75" Y="20.415" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="LongtBar1_Span" Type="ESADS.Mechanics.Design.eLongBar" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="20" Y="12.562" />
+        <Point X="19.625" Y="12.562" />
+        <Point X="19.625" Y="12.5" />
+        <Point X="16.25" Y="12.5" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier />
+    <ShowAsAssociation>
+      <Property Name="Concrete" />
+      <Property Name="Steel" />
+      <Property Name="Member_Analysis" />
+      <Property Name="ShearSection" />
+      <Property Name="Beam" />
+      <Property Name="SpanType" />
+      <Property Name="SupportSxn_Left" />
+      <Property Name="SupportSxn_Right" />
+      <Property Name="SpanSxn" />
+      <Property Name="LongtBar1_LeftSupp" />
+      <Property Name="LongtBar1_RightSupp" />
+      <Property Name="LongtBar2_LeftSupp" />
+      <Property Name="LongtBar2_RightSupp" />
+      <Property Name="LongtBar1_Span" />
+      <Property Name="LongtBar2_Span" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="ESADS.Mechanics.Design.eDBeam">
+    <Position X="10.5" Y="7.75" Width="1.5" />
+    <AssociationLine Name="Beam_Analysis" Type="ESADS.Mechanics.Analysis.eABeam" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="10.812" Y="7.75" />
+        <Point X="10.812" Y="3.062" />
+        <Point X="14.75" Y="3.062" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="BasicBar" Type="ESADS.Code.eReinforcement" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="11.188" Y="7.75" />
+        <Point X="11.188" Y="5.389" />
+        <Point X="12.75" Y="5.389" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="LongitudinalBars" Type="ESADS.Mechanics.Design.eLongBar" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="11.938" Y="11.036" />
+        <Point X="11.938" Y="11.411" />
+        <Point X="15.625" Y="11.411" />
+        <Point X="15.625" Y="12" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-1.387" Y="0.155" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="MainBar1" Type="ESADS.Code.eReinforcement" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="10.996" Y="7.75" />
+        <Point X="10.996" Y="4.312" />
+        <Point X="12.75" Y="4.312" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="MainBar2" Type="ESADS.Code.eReinforcement" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="11.375" Y="7.75" />
+        <Point X="11.375" Y="6" />
+        <Point X="12.75" Y="6" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="Members" Type="ESADS.Mechanics.Design.eDMember" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="12" Y="10.875" />
+        <Point X="20" Y="10.875" />
+        <Point X="20" Y="12.25" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="NegativeFlexSxns" Type="ESADS.Mechanics.Design.eDFlexureSection" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="11.438" Y="11.036" />
+        <Point X="11.438" Y="18.125" />
+        <Point X="13.25" Y="18.125" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="PositiveFlexSxns" Type="ESADS.Mechanics.Design.eDFlexureSection" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="11.609" Y="11.036" />
+        <Point X="11.609" Y="17.562" />
+        <Point X="13.25" Y="17.562" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="StirupBar" Type="ESADS.Code.eReinforcement" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="11.688" Y="7.75" />
+        <Point X="11.688" Y="6.625" />
+        <Point X="12.75" Y="6.625" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier />
+    <ShowAsAssociation>
+      <Property Name="Beam_Analysis" />
+      <Property Name="BasicBar" />
+      <Property Name="ClassWork" />
+      <Property Name="Concrete" />
+      <Property Name="ExposureType" />
+      <Property Name="MainBar1" />
+      <Property Name="MainBar2" />
+      <Property Name="Steel" />
+      <Property Name="StirupBar" />
+      <Property Name="StirrupPosn" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="LongitudinalBars" />
+      <Property Name="Members" />
+      <Property Name="NegativeFlexSxns" />
+      <Property Name="PositiveFlexSxns" />
+      <Property Name="ShearSections" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="ESADS.Mechanics.Design.eDFlexureSection">
+    <Position X="13.25" Y="17" Width="1.5" />
+    <AssociationLine Name="ExtendFrom" Type="ESADS.Mechanics.Design.eDFlexureSection" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="13.25" Y="19.938" />
+        <Point X="13" Y="19.938" />
+        <Point X="13" Y="19.313" />
+        <Point X="13.25" Y="19.313" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="Member" Type="ESADS.Mechanics.Design.eDMember" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="14.75" Y="18.438" />
+        <Point X="20.125" Y="18.438" />
+        <Point X="20.125" Y="14.574" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier />
+    <ShowAsAssociation>
+      <Property Name="SectionType" />
+      <Property Name="CompresionComb" />
+      <Property Name="ExtendFrom" />
+      <Property Name="Member" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="ESADS.Mechanics.Design.eDShearSection">
+    <Position X="8.25" Y="15.5" Width="1.5" />
+    <AssociationLine Name="FlexureSection" Type="ESADS.Mechanics.Design.eDFlexureSection" FixedToPoint="true">
+      <Path>
+        <Point X="9.75" Y="18.562" />
+        <Point X="13.25" Y="18.562" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier />
+    <ShowAsAssociation>
+      <Property Name="FlexureSection" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="ESADS.Mechanics.Design.eCombination">
+    <Position X="13.25" Y="22" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Struct Name="ESADS.Mechanics.Design.eCombination.eRow">
+        <TypeIdentifier />
+      </Struct>
+    </NestedTypes>
+    <TypeIdentifier />
+    <ShowAsAssociation>
+      <Property Name="Section" />
+    </ShowAsAssociation>
+  </Class>
+  <Struct Name="ESADS.Mechanics.Design.eConcrete" Collapsed="true">
+    <Position X="16" Y="8.5" Width="1.5" />
+    <AssociationLine Name="Grade" Type="ESADS.Code.eConcreteGrade" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="17.188" Y="9.062" />
+        <Point X="17.188" Y="9.312" />
+        <Point X="18.25" Y="9.312" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="ConcreteType" Type="ESADS.Code.eConcreteType" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="16.5" Y="9.062" />
+        <Point X="16.5" Y="10.031" />
+        <Point X="18.25" Y="10.031" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier />
+    <ShowAsAssociation>
+      <Property Name="Grade" />
+      <Property Name="ConcreteType" />
+    </ShowAsAssociation>
+  </Struct>
+  <Struct Name="ESADS.Mechanics.Design.eSteel" Collapsed="true">
+    <Position X="16" Y="7.75" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier />
+    <ShowAsAssociation>
+      <Property Name="Grade" />
+    </ShowAsAssociation>
+  </Struct>
+  <Struct Name="ESADS.Mechanics.Design.eLongBar">
+    <Position X="14.75" Y="12" Width="1.5" />
+    <TypeIdentifier />
+    <ShowAsAssociation>
+      <Property Name="Section" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Struct>
+  <Enum Name="ESADS.Mechanics.Analysis.eJointType" Collapsed="true">
+    <Position X="18.25" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAQCEEAAAAAAIAAAAAAAAABCAAI=</HashCode>
+      <FileName>eJointType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ESADS.Code.eSpanType" Collapsed="true">
+    <Position X="23" Y="14.5" Width="1.5" />
+    <TypeIdentifier />
+  </Enum>
+  <Enum Name="ESADS.Code.eSteelGrade" Collapsed="true">
+    <Position X="16" Y="6.5" Width="1.5" />
+    <TypeIdentifier />
+  </Enum>
+  <Enum Name="ESADS.Mechanics.Design.eSectionType">
+    <Position X="13.25" Y="15.25" Width="1.5" />
+    <TypeIdentifier />
+  </Enum>
+  <Enum Name="ESADS.Code.eConcreteGrade" Collapsed="true">
+    <Position X="18.25" Y="9" Width="1.5" />
+    <TypeIdentifier />
+  </Enum>
+  <Enum Name="ESADS.Code.eConcreteType" Collapsed="true">
+    <Position X="18.25" Y="9.75" Width="1.5" />
+    <TypeIdentifier />
+  </Enum>
+  <Enum Name="ESADS.Mechanics.Analysis.eTriangularLoadOrientation" Collapsed="true">
+    <Position X="26.5" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAEAAA=</HashCode>
+      <FileName>eTriangularLoadOrientation.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ESADS.Code.eActionType" Collapsed="true">
+    <Position X="26.5" Y="0.75" Width="1.5" />
+    <TypeIdentifier />
+  </Enum>
+  <Enum Name="ESADS.Mechanics.Analysis.eLoadType" Collapsed="true">
+    <Position X="24" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAQAAAAAAQBAAAAAQAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>eLoadType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ESADS.Code.eReinforcement">
+    <Position X="12.75" Y="4" Width="1.5" />
+    <TypeIdentifier />
+  </Enum>
+  <Enum Name="ESADS.Code.eClassWork">
+    <Position X="8.25" Y="11.5" Width="1.5" />
+    <TypeIdentifier />
+  </Enum>
+  <Enum Name="ESADS.Code.eExposureType" Collapsed="true">
+    <Position X="7.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier />
+  </Enum>
+  <Enum Name="ESADS.Mechanics.Design.eRelativeStirrupPosition" Collapsed="true">
+    <Position X="7.75" Y="8" Width="1.5" />
+    <TypeIdentifier />
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

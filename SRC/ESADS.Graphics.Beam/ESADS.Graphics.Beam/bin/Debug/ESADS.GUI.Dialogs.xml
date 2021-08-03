@@ -1,0 +1,873 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ESADS.GUI.Dialogs</name>
+    </assembly>
+    <members>
+        <member name="F:ESADS.GUI.eOptionsDialog.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:ESADS.GUI.eOptionsDialog.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:ESADS.GUI.eOptionsDialog.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="T:ESADS.GUI.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:ESADS.GUI.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:ESADS.GUI.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:ESADS.GUI.Properties.Resources._fixed">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ESADS.GUI.Properties.Resources.Beam_3D">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ESADS.GUI.Properties.Resources.Beam_Curtailment">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ESADS.GUI.Properties.Resources.Beam_Icon">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ESADS.GUI.Properties.Resources.Beam_Icon1">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ESADS.GUI.Properties.Resources.Capture">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ESADS.GUI.Properties.Resources.clearSelection">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ESADS.GUI.Properties.Resources.column">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ESADS.GUI.Properties.Resources.Crossed_Pin_Footing2">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ESADS.GUI.Properties.Resources.delete">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ESADS.GUI.Properties.Resources.exit">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ESADS.GUI.Properties.Resources.Fixed_Footing2">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ESADS.GUI.Properties.Resources.Fixed_Footing3">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ESADS.GUI.Properties.Resources.footing_full">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ESADS.GUI.Properties.Resources.Footing_sd">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ESADS.GUI.Properties.Resources.hinge">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ESADS.GUI.Properties.Resources.icon_pan">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ESADS.GUI.Properties.Resources.icon_reload">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ESADS.GUI.Properties.Resources.icon_Shade_EdgeOnly">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ESADS.GUI.Properties.Resources.iDropButton">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ESADS.GUI.Properties.Resources.Opposite_pin_Footing">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ESADS.GUI.Properties.Resources.pin">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ESADS.GUI.Properties.Resources.Pin_footing">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ESADS.GUI.Properties.Resources.pin1">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ESADS.GUI.Properties.Resources.reinf">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ESADS.GUI.Properties.Resources.reinforcement">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ESADS.GUI.Properties.Resources.roller">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ESADS.GUI.Properties.Resources.roller1">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ESADS.GUI.Properties.Resources.select">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ESADS.GUI.Properties.Resources.SLAB">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ESADS.GUI.Properties.Resources.Slab_curtailment">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ESADS.GUI.Properties.Resources.third_ESADSfull">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ESADS.GUI.Properties.Resources.vertical_roller">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ESADS.GUI.Properties.Resources.zoomIn">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ESADS.GUI.Properties.Resources.zoomOut">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ESADS.GUI.Properties.Resources.zoomSelection">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="P:ESADS.GUI.Properties.Resources.ZPDIR10F">
+            <summary>
+              Looks up a localized resource of type System.Drawing.Bitmap.
+            </summary>
+        </member>
+        <member name="F:ESADS.GUI.eProgress.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:ESADS.GUI.eProgress.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:ESADS.GUI.eProgress.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:ESADS.GUI.eNewMaterialDialog.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:ESADS.GUI.eNewMaterialDialog.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:ESADS.GUI.eNewMaterialDialog.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:ESADS.GUI.eNewMaterialDialog.#ctor(ESADS.Code.eMaterialType,ESADS.eLengthUnits,ESADS.eForceUints)">
+            <summary>
+            Creates a new dialog box with empty parameters
+            </summary>
+            <paparam name="MaterialType">The type of material to be created by the dialog box.</paparam>
+            <param name="forceUnit">The window force unit chosen by the user in the main form.</param>
+            <param name="lengthUnit">The window length unit chosen by the user in the main form.</param>
+        </member>
+        <member name="M:ESADS.GUI.eNewMaterialDialog.#ctor(ESADS.Mechanics.Design.eConcrete,ESADS.eLengthUnits,ESADS.eForceUints)">
+            <summary>
+            Creates a new dialog box in modify mode recieving the dialog box values of the material to be defined.
+            </summary>
+        </member>
+        <member name="M:ESADS.GUI.eNewMaterialDialog.#ctor(ESADS.Mechanics.Design.eSteel,ESADS.eLengthUnits,ESADS.eForceUints)">
+            <summary>
+            Creates a new dialog box in modify mode recieving the dialog box values of the material to be defined.
+            </summary>
+        </member>
+        <member name="F:ESADS.GUI.eAssingSlabLoad.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:ESADS.GUI.eAssingSlabLoad.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:ESADS.GUI.eAssingSlabLoad.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:ESADS.GUI.eAssignBeamLoadDialog.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:ESADS.GUI.eAssignBeamLoadDialog.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:ESADS.GUI.eAssignBeamLoadDialog.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="P:ESADS.GUI.eAssignBeamLoadDialog.AssignOption">
+            <summary>
+            Gets the assign option chosen by the user.
+            </summary>
+        </member>
+        <member name="P:ESADS.GUI.eAssignBeamLoadDialog.LoadType">
+            <summary>
+            Gets the type of laod from those supported by this version of ESADS.
+            </summary>
+        </member>
+        <member name="P:ESADS.GUI.eAssignBeamLoadDialog.Magnitude_Left">
+            <summary>
+            Gets the magnitude at the left end of a trapezoidal load if it is the one chosen.
+            </summary>
+        </member>
+        <member name="P:ESADS.GUI.eAssignBeamLoadDialog.Magnitude_Right">
+            <summary>
+            Gets the magnitude at the right end of a trapezoidal load if is the one chosen by the user.
+            </summary>
+        </member>
+        <member name="P:ESADS.GUI.eAssignBeamLoadDialog.Magnitude">
+            <summary>
+            Gets the magnitude of the load for all load types except trapezoidal.
+            </summary>
+        </member>
+        <member name="P:ESADS.GUI.eAssignBeamLoadDialog.Start">
+            <summary>
+            Gets the distance from the left end of the member to the point of start of the load.
+            </summary>
+        </member>
+        <member name="P:ESADS.GUI.eAssignBeamLoadDialog.End">
+            <summary>
+            Gets the distance from the right end to the end of the member.
+            </summary>
+        </member>
+        <member name="P:ESADS.GUI.eAssignBeamLoadDialog.Orientation">
+            <summary>
+            Gets the orientation of the load for triangular laod.
+            </summary>
+        </member>
+        <member name="P:ESADS.GUI.eAssignBeamLoadDialog.Factored">
+            <summary>
+            Gets the value if the load is factored or not.
+            </summary>
+        </member>
+        <member name="P:ESADS.GUI.eAssignBeamLoadDialog.ActionType">
+            <summary>
+            Gets the type of action given in EBCS.
+            </summary>
+        </member>
+        <member name="P:ESADS.GUI.eAssignBeamLoadDialog.AbsoluteDistance">
+            <summary>
+            Gets the value if the load distances are measured as absolute distances or not(i.e. relative to the member length).
+            </summary>
+        </member>
+        <member name="F:ESADS.GUI.eAssignBeamJointLoadDialog.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:ESADS.GUI.eAssignBeamJointLoadDialog.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:ESADS.GUI.eAssignBeamJointLoadDialog.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:ESADS.GUI.eAdvancedSelectionDialog.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:ESADS.GUI.eAdvancedSelectionDialog.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:ESADS.GUI.eAdvancedSelectionDialog.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:ESADS.GUI.eUniformColumnReiforcementDialog.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:ESADS.GUI.eUniformColumnReiforcementDialog.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:ESADS.GUI.eUniformColumnReiforcementDialog.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:ESADS.GUI.eModifyBeamSection.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:ESADS.GUI.eModifyBeamSection.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:ESADS.GUI.eModifyBeamSection.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:ESADS.GUI.eColumnOutputDialog.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:ESADS.GUI.eColumnOutputDialog.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:ESADS.GUI.eColumnOutputDialog.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:ESADS.GUI.eColumnDesignInputDialog.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:ESADS.GUI.eColumnDesignInputDialog.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:ESADS.GUI.eColumnDesignInputDialog.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:ESADS.GUI.eStartUpPictureForm.developersDescription">
+            <summary>
+            Contains all the necessary information about each developer.
+            </summary>
+        </member>
+        <member name="F:ESADS.GUI.eStartUpPictureForm.developerDescIndex">
+            <summary>
+            The index of the developer that is currently displayed.
+            </summary>
+        </member>
+        <member name="F:ESADS.GUI.eStartUpPictureForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:ESADS.GUI.eStartUpPictureForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:ESADS.GUI.eStartUpPictureForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:ESADS.GUI.eNewModelDialog.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:ESADS.GUI.eNewModelDialog.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:ESADS.GUI.eNewModelDialog.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="P:ESADS.GUI.eNewModelDialog.StructureType">
+            <summary>
+            Gets the structure type chosen by the user
+            </summary>
+        </member>
+        <member name="P:ESADS.GUI.eNewModelDialog.ProjectInformation">
+            <summary>
+            Gets the project information of the chosen structure
+            </summary>
+        </member>
+        <member name="F:ESADS.GUI.eEditGridSpacingDialog.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:ESADS.GUI.eEditGridSpacingDialog.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:ESADS.GUI.eEditGridSpacingDialog.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:ESADS.GUI.eDefineMaterialDialog.#ctor(ESADS.eDocument,ESADS.Code.eMaterialType)">
+            <summary>
+            Creates new instance of the define materials dialog box.
+            </summary>
+            <param name="Values">values to be managed by the dialog box.</param>
+        </member>
+        <member name="M:ESADS.GUI.eDefineMaterialDialog.CheckDataValidity">
+            <summary>
+            Chcecks if the data entered is valid.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ESADS.GUI.eDefineMaterialDialog.InitializeCustomComponents">
+            <summary>
+            Initializes the members of the dialog box with the values in Values property.
+            </summary>
+        </member>
+        <member name="M:ESADS.GUI.eDefineMaterialDialog.ResetCollection(ESADS.Code.eMaterialType)">
+            <summary>
+            Resets the collection to its original values.
+            </summary>
+            <param name="MaterialType"></param>
+        </member>
+        <member name="M:ESADS.GUI.eDefineMaterialDialog.ItemIsNotFoundIn(System.String,System.Windows.Forms.ListBox.ObjectCollection)">
+            <summary>
+            Checks if an item is not found a collection considering their name.
+            </summary>
+            <param name="Item">The name of the material to be checked for duplicateness.</param>
+            <param name="Collection">collection to be checked for duplicate.</param>
+            <returns>Returns true if there is no item with the same name as the item.</returns>
+            <see cref="!:eDefineMaterialDialog.Sort"/>
+        </member>
+        <member name="M:ESADS.GUI.eDefineMaterialDialog.ItemIsNotFoundIn(System.String,System.Windows.Forms.ListBox.ObjectCollection,System.Int32)">
+            <summary>
+            Checks if an item is not found a collection except the element at a specified index considering their names.
+            </summary>
+            <param name="Item">The name of the material to be checked for duplicateness.</param>
+            <param name="MatList">collection to be checked for duplicate.</param>
+            <returns>Returns true if there is no item with the same name as the item.</returns>
+        </member>
+        <member name="F:ESADS.GUI.eDefineMaterialDialog.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:ESADS.GUI.eDefineMaterialDialog.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:ESADS.GUI.eDefineMaterialDialog.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:ESADS.GUI.eDefineBeamSectionDialog.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:ESADS.GUI.eDefineBeamSectionDialog.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:ESADS.GUI.eDefineBeamSectionDialog.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:ESADS.GUI.ProjectInformationDialog.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:ESADS.GUI.ProjectInformationDialog.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:ESADS.GUI.ProjectInformationDialog.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="M:ESADS.GUI.ProjectInformationDialog.FillRowHeadNumbers">
+            <summary>
+            Fills the rows header text with their proper number order.
+            </summary>
+        </member>
+        <member name="M:ESADS.GUI.ProjectInformationDialog.FillNullData">
+            <summary>
+            Fills all null cells with empty sting value.
+            </summary>
+        </member>
+        <member name="P:ESADS.GUI.ProjectInformationDialog.ProjectInformation">
+            <summary>
+            Get the project information filled in the table.
+            </summary>
+        </member>
+        <member name="F:ESADS.GUI.eNewSlabDialog.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:ESADS.GUI.eNewSlabDialog.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:ESADS.GUI.eNewSlabDialog.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:ESADS.GUI.eNewBeamDialog.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:ESADS.GUI.eNewBeamDialog.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:ESADS.GUI.eNewBeamDialog.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:ESADS.GUI.eNewFootingDialog.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:ESADS.GUI.eNewFootingDialog.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:ESADS.GUI.eNewFootingDialog.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:ESADS.GUI.eModelForm.document">
+            <summary>
+            Holds a value for public property 'Document'.
+            </summary>
+        </member>
+        <member name="M:ESADS.GUI.eModelForm.#ctor(ESADS.eDocument)">
+            <summary>
+            Creates new form for a model according to the preferences passed through the parameter.
+            </summary>
+            <param name="input">The inputs required for the design of a beam. Some of them may be modified later.</param>
+            <param name="preferences">The preferences of the user for the whole design process.</param>
+            <param name="projectInfo">The information summary of the design defined by the user.</param>
+        </member>
+        <member name="M:ESADS.GUI.eModelForm.OnUnitChanged(ESADS.eUnitChangedEventArgs)">
+            <summary>
+            Fires the 'UnitChanged' event.
+            </summary>
+            <param name="e">The event argument holding the changes.</param>
+        </member>
+        <member name="F:ESADS.GUI.eModelForm.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:ESADS.GUI.eModelForm.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:ESADS.GUI.eModelForm.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="E:ESADS.GUI.eModelForm.UnitChanged">
+            <summary>
+            Occurs when the window unit is changed by the user.
+            </summary>
+        </member>
+        <member name="P:ESADS.GUI.eModelForm.Document">
+            <summary>
+            Gets the document of the related to this Model form.
+            </summary>
+        </member>
+        <member name="P:ESADS.GUI.eModelForm.ObjFoundBelowClickPt">
+            <summary>
+            Gets or sets the value if a drawing object was found below the last click point.
+            </summary>
+        </member>
+        <member name="P:ESADS.GUI.eModelForm.Locked">
+            <summary>
+            Gets or sets the value if a beam is locked so that the analysis result may not be lost due to changes to the input.
+            </summary>
+        </member>
+        <member name="P:ESADS.GUI.eModelForm.EditingText">
+            <summary>
+            Gets or sets the value if a drawing text is being edited in a temporary text box.
+            </summary>
+        </member>
+        <member name="F:ESADS.GUI.eLayersDialog.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:ESADS.GUI.eLayersDialog.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:ESADS.GUI.eLayersDialog.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:ESADS.GUI.eLayersDialog.layers">
+            <summary>
+            Holds the value of the layers after the changes have been validated.
+            </summary>
+        </member>
+        <member name="F:ESADS.GUI.eLayersDialog.fonts">
+            <summary>
+            Temporary storage for fonts
+            </summary>
+        </member>
+        <member name="P:ESADS.GUI.eLayersDialog.Layers">
+            <summary>
+            Gets the layers after the acceptance of the last changes 
+            </summary>
+        </member>
+        <member name="F:ESADS.GUI.eBeamSectionDialog.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:ESADS.GUI.eBeamSectionDialog.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:ESADS.GUI.eBeamSectionDialog.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:ESADS.GUI.eAssignJointDialog.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:ESADS.GUI.eAssignJointDialog.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:ESADS.GUI.eAssignJointDialog.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:ESADS.GUI.eExportToAutoCAD2007Dialog.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:ESADS.GUI.eExportToAutoCAD2007Dialog.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:ESADS.GUI.eExportToAutoCAD2007Dialog.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:ESADS.GUI.eCurtailmentRules.components">
+            <summary>
+            Required designer variable.
+            </summary>
+        </member>
+        <member name="M:ESADS.GUI.eCurtailmentRules.Dispose(System.Boolean)">
+            <summary>
+            Clean up any resources being used.
+            </summary>
+            <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        </member>
+        <member name="M:ESADS.GUI.eCurtailmentRules.InitializeComponent">
+            <summary>
+            Required method for Designer support - do not modify
+            the contents of this method with the code editor.
+            </summary>
+        </member>
+        <member name="F:ESADS.GUI.eAssignOptions.Add">
+            <summary>
+            Add to existing items
+            </summary>
+        </member>
+        <member name="F:ESADS.GUI.eAssignOptions.Replace">
+            <summary>
+            Replace existing items
+            </summary>
+        </member>
+        <member name="F:ESADS.GUI.eAssignOptions.Remove">
+            <summary>
+            Remove all existing items
+            </summary>
+        </member>
+    </members>
+</doc>

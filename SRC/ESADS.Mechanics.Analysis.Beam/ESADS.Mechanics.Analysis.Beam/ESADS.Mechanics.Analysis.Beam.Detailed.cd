@@ -1,0 +1,281 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="ESADS.Mechanics.Analysis.Beam.eABeam">
+    <Position X="26.75" Y="4" Width="2.5" />
+    <Members>
+      <Method Name="AddSelfWeight" Hidden="true" />
+      <Field Name="analysisCompleted" Hidden="true" />
+      <Field Name="beam_Design" Hidden="true" />
+      <Field Name="canBeAnalysed" Hidden="true" />
+      <Field Name="canBeDesigned" Hidden="true" />
+      <Method Name="CheckConcurency" Hidden="true" />
+      <Field Name="considerSelfWeight" Hidden="true" />
+      <Method Name="CountContiniouMembers" Hidden="true" />
+      <Method Name="CountReactions" Hidden="true" />
+      <Field Name="DK" Hidden="true" />
+      <Field Name="DU" Hidden="true" />
+      <Method Name="Fill_DK" Hidden="true" />
+      <Method Name="Fill_QK" Hidden="true" />
+      <Method Name="Fill_SSM" Hidden="true" />
+      <Method Name="Fill_SSM_Index" Hidden="true" />
+      <Method Name="FillBackResults" Hidden="true" />
+      <Method Name="IsStable" Hidden="true" />
+      <Field Name="joints" Hidden="true" />
+      <Field Name="K11" Hidden="true" />
+      <Field Name="K12" Hidden="true" />
+      <Field Name="K21" Hidden="true" />
+      <Field Name="K22" Hidden="true" />
+      <Field Name="loadCombination" Hidden="true" />
+      <Field Name="members" Hidden="true" />
+      <Method Name="PartitionSSM" Hidden="true" />
+      <Field Name="QK" Hidden="true" />
+      <Field Name="QU" Hidden="true" />
+      <Method Name="RemoveSelfWeight" Hidden="true" />
+      <Field Name="SSM" Hidden="true" />
+      <Field Name="useConstantEI" Hidden="true" />
+    </Members>
+    <AssociationLine Name="Joints" Type="ESADS.Mechanics.Analysis.Beam.eJoint" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="27.953" Y="8.198" />
+        <Point X="27.953" Y="10.336" />
+        <Point X="29.75" Y="10.336" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="Members" Type="ESADS.Mechanics.Analysis.Beam.eAMember" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="27.094" Y="8.198" />
+        <Point X="27.094" Y="9.038" />
+        <Point X="26.5" Y="9.038" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.23" Y="-0.334" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="LoadCombination" Type="ESADS.Mechanics.Analysis.eLoadCombination" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="26.75" Y="4.625" />
+        <Point X="24.938" Y="4.625" />
+        <Point X="24.938" Y="5.25" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>EIABCAJAAbIAACAQAEAAhABKA0EQUkQwgUBEBwEAAQA=</HashCode>
+      <FileName>eABeam.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Beam_Design" />
+      <Property Name="LoadCombination" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="Joints" />
+      <Property Name="Members" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="ESADS.Mechanics.Analysis.Beam.eAMember">
+    <Position X="23.75" Y="8.25" Width="2.75" />
+    <Members>
+      <Method Name="AddSelfWeight" Hidden="true" />
+      <Field Name="beam" Hidden="true" />
+      <Field Name="displacements" Hidden="true" />
+      <Field Name="fEForces" Hidden="true" />
+      <Field Name="fEJoint" Hidden="true" />
+      <Method Name="FillFEF_forJoints" Hidden="true" />
+      <Method Name="FillMemberDisplacements" Hidden="true" />
+      <Method Name="FillSpanType" Hidden="true" />
+      <Field Name="forces" Hidden="true" />
+      <Method Name="Joint_SupportWidthChanged" Hidden="true" />
+      <Method Name="Joint_TypeChanged" Hidden="true" />
+      <Field Name="length" Hidden="true" />
+      <Field Name="loads" Hidden="true" />
+      <Field Name="member_Design" Hidden="true" />
+      <Field Name="mSM" Hidden="true" />
+      <Field Name="nEJoint" Hidden="true" />
+      <Method Name="RefreshSelfWeight" Hidden="true" />
+      <Method Name="RemoveSelfWieght" Hidden="true" />
+      <Field Name="selfWeight" Hidden="true" />
+      <Field Name="start" Hidden="true" />
+    </Members>
+    <AssociationLine Name="Beam" Type="ESADS.Mechanics.Analysis.Beam.eABeam" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="25.125" Y="8.25" />
+        <Point X="25.125" Y="7.875" />
+        <Point X="26.75" Y="7.875" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="FEJoint" Type="ESADS.Mechanics.Analysis.Beam.eJoint" FixedToPoint="true">
+      <Path>
+        <Point X="26.5" Y="10.793" />
+        <Point X="29.75" Y="10.793" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="NEJoint" Type="ESADS.Mechanics.Analysis.Beam.eJoint" FixedToPoint="true">
+      <Path>
+        <Point X="26.5" Y="11.707" />
+        <Point X="29.75" Y="11.707" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="Loads" Type="ESADS.Mechanics.Analysis.Beam.eLoad" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="25.812" Y="14.65" />
+        <Point X="25.812" Y="15.438" />
+        <Point X="27.25" Y="15.438" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>MEoAKAgQCTgJAAAgIEBEFABARCCAEEAAAAhPBiAoRYA=</HashCode>
+      <FileName>eAMember.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Beam" />
+      <Property Name="FEJoint" />
+      <Property Name="NEJoint" />
+      <Property Name="Member_Design" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="Loads" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="ESADS.Mechanics.Analysis.Beam.eConcentratedForce">
+    <Position X="28.25" Y="17.75" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>eConcentratedForce.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ESADS.Mechanics.Analysis.Beam.eConcentratedMoment">
+    <Position X="22" Y="17.75" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>eConcentratedMoment.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ESADS.Mechanics.Analysis.Beam.eJoint">
+    <Position X="29.75" Y="9.25" Width="2.25" />
+    <Members>
+      <Field Name="beam" Hidden="true" />
+      <Field Name="fE_Forces" Hidden="true" />
+      <Property Name="FE_Forces" Hidden="true" />
+      <Field Name="finalDisp" Hidden="true" />
+      <Field Name="initialDisp" Hidden="true" />
+      <Field Name="loadObjs" Hidden="true" />
+      <Field Name="loads" Hidden="true" />
+      <Field Name="reactions" Hidden="true" />
+      <Method Name="ResetMatrices" Hidden="true" />
+      <Field Name="sSMIndex" Hidden="true" />
+      <Field Name="supportWidth" Hidden="true" />
+      <Field Name="type" Hidden="true" />
+    </Members>
+    <AssociationLine Name="Beam" Type="ESADS.Mechanics.Analysis.Beam.eABeam" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="29.75" Y="9.821" />
+        <Point X="28.812" Y="9.821" />
+        <Point X="28.812" Y="8.198" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>QAAIAUAAAEAACUBAAAhAAQQIQACFQUAgAQDAIAAAAgA=</HashCode>
+      <FileName>eJoint.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Beam" />
+      <Property Name="ConstrainedAxis" />
+      <Property Name="Type" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="ESADS.Mechanics.Analysis.Beam.eLoad">
+    <Position X="27.25" Y="13.75" Width="2" />
+    <Members>
+      <Field Name="actionType" Hidden="true" />
+      <Method Name="eLoad" Hidden="true" />
+      <Field Name="fixedEndForces" Hidden="true" />
+      <Field Name="loadCombination" Hidden="true" />
+      <Field Name="loadType" Hidden="true" />
+      <Field Name="magnitude" Hidden="true" />
+      <Field Name="member" Hidden="true" />
+      <Method Name="OnChanged" Hidden="true" />
+      <Field Name="start" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>EFAAAAACASAAAAAghAAAAAAAAAAIEAAACQAAABEBAAA=</HashCode>
+      <FileName>eLoad.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Member" />
+      <Property Name="LoadType" />
+      <Property Name="ActionType" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="ESADS.Mechanics.Analysis.Beam.eRectangularLoad">
+    <Position X="25.5" Y="17.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AEIAAAACAAAAAAAAgAAAAAAAAAAAEAAAAAAAAAAAAAA=</HashCode>
+      <FileName>eRectangularLoad.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ESADS.Mechanics.Analysis.Beam.eTriangularLoad">
+    <Position X="31.75" Y="17.75" Width="2.5" />
+    <Members>
+      <Field Name="end" Hidden="true" />
+      <Field Name="orientation" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AEIBAAACAQAAAAAAgAAAAAAAAAAAEAAAAAAAAAAAAAA=</HashCode>
+      <FileName>eTriangularLoad.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Orientation" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="ESADS.Mechanics.Design.Beam.eDMember">
+    <Position X="19.75" Y="8.25" Width="2.25" />
+    <TypeIdentifier />
+    <ShowAsAssociation>
+      <Property Name="Member_Analysis" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="ESADS.Mechanics.Design.Beam.eDBeam">
+    <Position X="32.5" Y="2.75" Width="2.5" />
+    <TypeIdentifier />
+    <ShowAsAssociation>
+      <Property Name="Beam_Analysis" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ESADS.Mechanics.Analysis.eLoadCombination">
+    <Position X="23.25" Y="5.25" Width="2.5" />
+    <TypeIdentifier />
+  </Class>
+  <Enum Name="ESADS.Mechanics.Analysis.Beam.eConstrainedAxis">
+    <Position X="33.5" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAABAAgAAAAAAEAAAAAAAAAAAAAEAIAA=</HashCode>
+      <FileName>eConstrainedAxis.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ESADS.Mechanics.Analysis.Beam.eJointType">
+    <Position X="33.5" Y="13" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAQCEEAAAAAAIAAAAAAAAABCAAI=</HashCode>
+      <FileName>eJointType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ESADS.Mechanics.Analysis.Beam.eLoadType">
+    <Position X="30.5" Y="15.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAQAAAAAAQBAAAAAQAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>eLoadType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ESADS.Mechanics.Analysis.Beam.eTriangularLoadOrientation">
+    <Position X="33" Y="15.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAEAAA=</HashCode>
+      <FileName>eTriangularLoadOrientation.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ESADS.Code.eActionType">
+    <Position X="30.5" Y="14" Width="1.5" />
+    <TypeIdentifier />
+  </Enum>
+  <Font Name="Comic Sans MS" Size="9" />
+</ClassDiagram>

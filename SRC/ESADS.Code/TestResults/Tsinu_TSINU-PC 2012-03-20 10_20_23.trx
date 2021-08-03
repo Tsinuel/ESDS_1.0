@@ -1,0 +1,492 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="14dff98c-7680-4f0b-ae0f-713de71f449b" name="Tsinu@TSINU-PC 2012-03-20 10:20:23" runUser="Tsinu-PC\Tsinu" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="c420f1cf-1a7b-400b-9356-9130c85e3804">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="Tsinu_TSINU-PC 2012-03-20 10_20_23">
+      <DeploymentItem filename="D:\Accademics\Projects and Assignments\ESADS\ESADS\ESADS_Code\ESADS_Code\bin\Debug\ESADS_Code.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2012-03-20T10:20:23.3480113+03:00" queuing="2012-03-20T10:20:27.4852480+03:00" start="2012-03-20T10:20:28.0232787+03:00" finish="2012-03-20T10:20:32.1065123+03:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="33" executed="33" error="0" failed="18" timeout="0" aborted="0" inconclusive="15" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="Get_f_ctdTest2" storage="d:\accademics\projects and assignments\esads\esads\esads_code\testproject1\bin\debug\testproject1.dll" id="40b06917-98e0-bb75-9771-968edef86f9c">
+      <Execution id="f8a012f1-c5dd-4691-9f15-3cf116553290" />
+      <TestMethod codeBase="D:/Accademics/Projects and Assignments/ESADS/ESADS/ESADS_Code/TestProject1/bin/Debug/TestProject1.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject1.eBasisOfDesignTest, TestProject1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Get_f_ctdTest2" />
+    </UnitTest>
+    <UnitTest name="Get_ρ_minTest" storage="d:\accademics\projects and assignments\esads\esads\esads_code\testproject1\bin\debug\testproject1.dll" id="2a1943cf-01a9-eff0-173f-dd4db8b7c5ac">
+      <Execution id="bb389ac5-e74b-4307-ad9e-e577524a2caf" />
+      <TestMethod codeBase="D:/Accademics/Projects and Assignments/ESADS/ESADS/ESADS_Code/TestProject1/bin/Debug/TestProject1.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject1.eDetailingTest, TestProject1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Get_ρ_minTest" />
+    </UnitTest>
+    <UnitTest name="DefaultTest" storage="d:\accademics\projects and assignments\esads\esads\esads_code\testproject1\bin\debug\testproject1.dll" id="d7fad077-e0f3-3f44-c686-b22908c89485">
+      <Execution id="5a11ff00-5759-4e9f-bfb0-cbd2486377cc" />
+      <TestMethod codeBase="D:/Accademics/Projects and Assignments/ESADS/ESADS/ESADS_Code/TestProject1/bin/Debug/TestProject1.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject1.SettingsTest, TestProject1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="DefaultTest" />
+    </UnitTest>
+    <UnitTest name="GetActionPartialSafetyFactorTest1" storage="d:\accademics\projects and assignments\esads\esads\esads_code\testproject1\bin\debug\testproject1.dll" id="a94c496f-e59b-ca99-06aa-4f82e09b87cf">
+      <Execution id="12666ce3-e8b6-4e29-b9fd-46552b56c969" />
+      <TestMethod codeBase="D:/Accademics/Projects and Assignments/ESADS/ESADS/ESADS_Code/TestProject1/bin/Debug/TestProject1.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject1.eBasisOfDesignTest, TestProject1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GetActionPartialSafetyFactorTest1" />
+    </UnitTest>
+    <UnitTest name="Get_f_cdTest1" storage="d:\accademics\projects and assignments\esads\esads\esads_code\testproject1\bin\debug\testproject1.dll" id="eddf5950-f027-5410-e704-232aa222efa0">
+      <Execution id="5f91ac74-37f2-45ef-aa2a-8dcf92de2763" />
+      <TestMethod codeBase="D:/Accademics/Projects and Assignments/ESADS/ESADS/ESADS_Code/TestProject1/bin/Debug/TestProject1.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject1.eBasisOfDesignTest, TestProject1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Get_f_cdTest1" />
+    </UnitTest>
+    <UnitTest name="Get_f_ctdTest1" storage="d:\accademics\projects and assignments\esads\esads\esads_code\testproject1\bin\debug\testproject1.dll" id="1a663aaf-4cc5-ee0c-d0e5-57d7cc972376">
+      <Execution id="8db0be46-9b42-4af2-9e35-7b652bbadc70" />
+      <TestMethod codeBase="D:/Accademics/Projects and Assignments/ESADS/ESADS/ESADS_Code/TestProject1/bin/Debug/TestProject1.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject1.eBasisOfDesignTest, TestProject1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Get_f_ctdTest1" />
+    </UnitTest>
+    <UnitTest name="Get_f_ykTest" storage="d:\accademics\projects and assignments\esads\esads\esads_code\testproject1\bin\debug\testproject1.dll" id="3185bbdb-e766-d311-1fe8-cb00511a143f">
+      <Execution id="803dbfc6-c3cd-4978-9929-5cca5f884f2c" />
+      <TestMethod codeBase="D:/Accademics/Projects and Assignments/ESADS/ESADS/ESADS_Code/TestProject1/bin/Debug/TestProject1.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject1.eMaterialTest, TestProject1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Get_f_ykTest" />
+    </UnitTest>
+    <UnitTest name="SettingsConstructorTest" storage="d:\accademics\projects and assignments\esads\esads\esads_code\testproject1\bin\debug\testproject1.dll" id="d20a6002-7d61-15b1-251e-f95d8ab926e3">
+      <Execution id="3e643033-1507-4b42-a6c6-578df291ff0b" />
+      <TestMethod codeBase="D:/Accademics/Projects and Assignments/ESADS/ESADS/ESADS_Code/TestProject1/bin/Debug/TestProject1.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject1.SettingsTest, TestProject1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="SettingsConstructorTest" />
+    </UnitTest>
+    <UnitTest name="Get_ConcUnitWeightTest" storage="d:\accademics\projects and assignments\esads\esads\esads_code\testproject1\bin\debug\testproject1.dll" id="59390a1b-aec8-b61a-3cf8-9865c531d3aa">
+      <Execution id="a270bdf6-2e89-4689-bba1-f99cf74edf7e" />
+      <TestMethod codeBase="D:/Accademics/Projects and Assignments/ESADS/ESADS/ESADS_Code/TestProject1/bin/Debug/TestProject1.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject1.eMaterialTest, TestProject1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Get_ConcUnitWeightTest" />
+    </UnitTest>
+    <UnitTest name="Get_f_cTest" storage="d:\accademics\projects and assignments\esads\esads\esads_code\testproject1\bin\debug\testproject1.dll" id="e9d353d6-5c8b-23b7-393b-6e196225da29">
+      <Execution id="519cf476-bf14-4acc-8610-2c1d9c371353" />
+      <TestMethod codeBase="D:/Accademics/Projects and Assignments/ESADS/ESADS/ESADS_Code/TestProject1/bin/Debug/TestProject1.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject1.eBasisOfDesignTest, TestProject1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Get_f_cTest" />
+    </UnitTest>
+    <UnitTest name="Get_f_cTest2" storage="d:\accademics\projects and assignments\esads\esads\esads_code\testproject1\bin\debug\testproject1.dll" id="5fafb4d7-e81d-7438-72c6-950053cacaa2">
+      <Execution id="6ba48cfc-e3b8-4171-b2ce-b1ead98092d7" />
+      <TestMethod codeBase="D:/Accademics/Projects and Assignments/ESADS/ESADS/ESADS_Code/TestProject1/bin/Debug/TestProject1.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject1.eBasisOfDesignTest, TestProject1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Get_f_cTest2" />
+    </UnitTest>
+    <UnitTest name="Get_f_cdTest2" storage="d:\accademics\projects and assignments\esads\esads\esads_code\testproject1\bin\debug\testproject1.dll" id="586169e9-2da5-0d3b-87e7-aa7d9412a9bd">
+      <Execution id="6acd6011-2c1c-49ff-ba9d-9909003bea91" />
+      <TestMethod codeBase="D:/Accademics/Projects and Assignments/ESADS/ESADS/ESADS_Code/TestProject1/bin/Debug/TestProject1.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject1.eBasisOfDesignTest, TestProject1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Get_f_cdTest2" />
+    </UnitTest>
+    <UnitTest name="Get_f_cdTest" storage="d:\accademics\projects and assignments\esads\esads\esads_code\testproject1\bin\debug\testproject1.dll" id="b9022940-6858-2caa-133a-13b249f86206">
+      <Execution id="4b4d36f0-6b77-4f21-a90e-fab631f40678" />
+      <TestMethod codeBase="D:/Accademics/Projects and Assignments/ESADS/ESADS/ESADS_Code/TestProject1/bin/Debug/TestProject1.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject1.eBasisOfDesignTest, TestProject1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Get_f_cdTest" />
+    </UnitTest>
+    <UnitTest name="Get_f_ctkTest" storage="d:\accademics\projects and assignments\esads\esads\esads_code\testproject1\bin\debug\testproject1.dll" id="fdfba5c8-b9b4-79df-2189-2bf92b3d245a">
+      <Execution id="cd88b0d2-506c-4ed5-9268-ad187e73b0a7" />
+      <TestMethod codeBase="D:/Accademics/Projects and Assignments/ESADS/ESADS/ESADS_Code/TestProject1/bin/Debug/TestProject1.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject1.eMaterialTest, TestProject1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Get_f_ctkTest" />
+    </UnitTest>
+    <UnitTest name="Get_f_ckTest1" storage="d:\accademics\projects and assignments\esads\esads\esads_code\testproject1\bin\debug\testproject1.dll" id="85422c4a-13fa-0c22-2424-32a1880c79fa">
+      <Execution id="33e6c312-2b64-4e4b-b3bc-358885914886" />
+      <TestMethod codeBase="D:/Accademics/Projects and Assignments/ESADS/ESADS/ESADS_Code/TestProject1/bin/Debug/TestProject1.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject1.eMaterialTest, TestProject1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Get_f_ckTest1" />
+    </UnitTest>
+    <UnitTest name="Get_f_ydTest1" storage="d:\accademics\projects and assignments\esads\esads\esads_code\testproject1\bin\debug\testproject1.dll" id="e5ba1c5e-5209-c7bb-263c-9271befff433">
+      <Execution id="ebd5af08-c610-4f1b-a46c-18455895d2a4" />
+      <TestMethod codeBase="D:/Accademics/Projects and Assignments/ESADS/ESADS/ESADS_Code/TestProject1/bin/Debug/TestProject1.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject1.eBasisOfDesignTest, TestProject1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Get_f_ydTest1" />
+    </UnitTest>
+    <UnitTest name="GetMaterialPartialSafetyFactorTest1" storage="d:\accademics\projects and assignments\esads\esads\esads_code\testproject1\bin\debug\testproject1.dll" id="aa67cec5-e509-84f2-8568-aee3774e35a4">
+      <Execution id="d6a58f11-7707-4ad0-a4f6-f8bd65fa23d5" />
+      <TestMethod codeBase="D:/Accademics/Projects and Assignments/ESADS/ESADS/ESADS_Code/TestProject1/bin/Debug/TestProject1.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject1.eBasisOfDesignTest, TestProject1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GetMaterialPartialSafetyFactorTest1" />
+    </UnitTest>
+    <UnitTest name="GetMinSpacingTest" storage="d:\accademics\projects and assignments\esads\esads\esads_code\testproject1\bin\debug\testproject1.dll" id="425185e0-e7fb-3cd7-aac4-f34641bc7a59">
+      <Execution id="036c378b-ec42-4ea3-802f-58049820abad" />
+      <TestMethod codeBase="D:/Accademics/Projects and Assignments/ESADS/ESADS/ESADS_Code/TestProject1/bin/Debug/TestProject1.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject1.eDetailingTest, TestProject1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GetMinSpacingTest" />
+    </UnitTest>
+    <UnitTest name="Get_f_ckTest" storage="d:\accademics\projects and assignments\esads\esads\esads_code\testproject1\bin\debug\testproject1.dll" id="ac265684-17da-1b0e-db9d-a108c3c96730">
+      <Execution id="1c90fe60-9af9-4e83-b38c-c4ea0ff7f8ae" />
+      <TestMethod codeBase="D:/Accademics/Projects and Assignments/ESADS/ESADS/ESADS_Code/TestProject1/bin/Debug/TestProject1.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject1.eMaterialTest, TestProject1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Get_f_ckTest" />
+    </UnitTest>
+    <UnitTest name="Get_f_ctdTest" storage="d:\accademics\projects and assignments\esads\esads\esads_code\testproject1\bin\debug\testproject1.dll" id="b3e33a18-17c3-db7b-dede-67906a0a9d8a">
+      <Execution id="9010d19c-8125-4831-91d8-8ee1853aba7e" />
+      <TestMethod codeBase="D:/Accademics/Projects and Assignments/ESADS/ESADS/ESADS_Code/TestProject1/bin/Debug/TestProject1.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject1.eBasisOfDesignTest, TestProject1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Get_f_ctdTest" />
+    </UnitTest>
+    <UnitTest name="GetActionPartialSafetyFactorTest3" storage="d:\accademics\projects and assignments\esads\esads\esads_code\testproject1\bin\debug\testproject1.dll" id="b0603b3f-a3e8-2a4e-c25f-5436749c646c">
+      <Execution id="5f3dd761-fc70-4625-829f-dd47b7567bd5" />
+      <TestMethod codeBase="D:/Accademics/Projects and Assignments/ESADS/ESADS/ESADS_Code/TestProject1/bin/Debug/TestProject1.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject1.eBasisOfDesignTest, TestProject1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GetActionPartialSafetyFactorTest3" />
+    </UnitTest>
+    <UnitTest name="Get_ConcModOfElasticityTest" storage="d:\accademics\projects and assignments\esads\esads\esads_code\testproject1\bin\debug\testproject1.dll" id="db80eb3e-51df-e3e7-e768-251d2615d56a">
+      <Execution id="51120e4f-dcd0-4675-92ff-64d5eadc2293" />
+      <TestMethod codeBase="D:/Accademics/Projects and Assignments/ESADS/ESADS/ESADS_Code/TestProject1/bin/Debug/TestProject1.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject1.eMaterialTest, TestProject1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Get_ConcModOfElasticityTest" />
+    </UnitTest>
+    <UnitTest name="GetMaterialPartialSafetyFactorTest" storage="d:\accademics\projects and assignments\esads\esads\esads_code\testproject1\bin\debug\testproject1.dll" id="2e6de8b5-0627-7c7d-3776-44264f79b8ab">
+      <Execution id="dd1927a8-b6cc-49c3-baf9-d420ececfad4" />
+      <TestMethod codeBase="D:/Accademics/Projects and Assignments/ESADS/ESADS/ESADS_Code/TestProject1/bin/Debug/TestProject1.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject1.eBasisOfDesignTest, TestProject1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GetMaterialPartialSafetyFactorTest" />
+    </UnitTest>
+    <UnitTest name="Get_k_x_maxTest1" storage="d:\accademics\projects and assignments\esads\esads\esads_code\testproject1\bin\debug\testproject1.dll" id="7570dfe5-d01c-8e44-cdd1-09a7b429fd7a">
+      <Execution id="26e27482-138b-4362-897e-4a6f7ca77bea" />
+      <TestMethod codeBase="D:/Accademics/Projects and Assignments/ESADS/ESADS/ESADS_Code/TestProject1/bin/Debug/TestProject1.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject1.eFlexureTest, TestProject1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Get_k_x_maxTest1" />
+    </UnitTest>
+    <UnitTest name="Get_f_ctkTest1" storage="d:\accademics\projects and assignments\esads\esads\esads_code\testproject1\bin\debug\testproject1.dll" id="f65dcba7-f2ed-8db1-3bee-2ce03c9e2aed">
+      <Execution id="fae83c45-e5a1-4c08-b292-48426a7a90f1" />
+      <TestMethod codeBase="D:/Accademics/Projects and Assignments/ESADS/ESADS/ESADS_Code/TestProject1/bin/Debug/TestProject1.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject1.eMaterialTest, TestProject1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Get_f_ctkTest1" />
+    </UnitTest>
+    <UnitTest name="GetActionPartialSafetyFactorTest2" storage="d:\accademics\projects and assignments\esads\esads\esads_code\testproject1\bin\debug\testproject1.dll" id="3bf90e86-35c5-4ced-e14c-6919d9f0d8d6">
+      <Execution id="8e144a30-a2fe-4bf9-ad97-e963fedfc277" />
+      <TestMethod codeBase="D:/Accademics/Projects and Assignments/ESADS/ESADS/ESADS_Code/TestProject1/bin/Debug/TestProject1.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject1.eBasisOfDesignTest, TestProject1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GetActionPartialSafetyFactorTest2" />
+    </UnitTest>
+    <UnitTest name="Get_f_ydTest" storage="d:\accademics\projects and assignments\esads\esads\esads_code\testproject1\bin\debug\testproject1.dll" id="8b1775b5-85e9-30a4-02b2-01e145da2b2d">
+      <Execution id="b43a2197-89ec-446b-a6e1-5e1964b85abd" />
+      <TestMethod codeBase="D:/Accademics/Projects and Assignments/ESADS/ESADS/ESADS_Code/TestProject1/bin/Debug/TestProject1.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject1.eBasisOfDesignTest, TestProject1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Get_f_ydTest" />
+    </UnitTest>
+    <UnitTest name="Get_β_aTest" storage="d:\accademics\projects and assignments\esads\esads\esads_code\testproject1\bin\debug\testproject1.dll" id="983f23b0-7efe-e139-3d9f-0ba53071c87f">
+      <Execution id="88f8a21c-415e-4197-96af-b7ca55653486" />
+      <TestMethod codeBase="D:/Accademics/Projects and Assignments/ESADS/ESADS/ESADS_Code/TestProject1/bin/Debug/TestProject1.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject1.eServiceabilityTest, TestProject1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Get_β_aTest" />
+    </UnitTest>
+    <UnitTest name="GetMinEffDepthTest" storage="d:\accademics\projects and assignments\esads\esads\esads_code\testproject1\bin\debug\testproject1.dll" id="23eedc9a-7398-b8d3-8eae-47a1f4438fe6">
+      <Execution id="647b4915-333b-4971-9ad6-3ce7e0b86155" />
+      <TestMethod codeBase="D:/Accademics/Projects and Assignments/ESADS/ESADS/ESADS_Code/TestProject1/bin/Debug/TestProject1.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject1.eServiceabilityTest, TestProject1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GetMinEffDepthTest" />
+    </UnitTest>
+    <UnitTest name="GetActionPartialSafetyFactorTest" storage="d:\accademics\projects and assignments\esads\esads\esads_code\testproject1\bin\debug\testproject1.dll" id="9a8e5123-158d-eb14-4884-5b7643d7c026">
+      <Execution id="ac1bd8bc-a979-430e-bc9f-36c3e0618271" />
+      <TestMethod codeBase="D:/Accademics/Projects and Assignments/ESADS/ESADS/ESADS_Code/TestProject1/bin/Debug/TestProject1.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject1.eBasisOfDesignTest, TestProject1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GetActionPartialSafetyFactorTest" />
+    </UnitTest>
+    <UnitTest name="Get_f_cTest1" storage="d:\accademics\projects and assignments\esads\esads\esads_code\testproject1\bin\debug\testproject1.dll" id="8a90b07f-51dc-8ac4-6f4c-0b51bf79bfc8">
+      <Execution id="eec1b9ea-13f9-42bf-8890-e75d71e91a62" />
+      <TestMethod codeBase="D:/Accademics/Projects and Assignments/ESADS/ESADS/ESADS_Code/TestProject1/bin/Debug/TestProject1.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject1.eBasisOfDesignTest, TestProject1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Get_f_cTest1" />
+    </UnitTest>
+    <UnitTest name="Get_k_x_maxTest" storage="d:\accademics\projects and assignments\esads\esads\esads_code\testproject1\bin\debug\testproject1.dll" id="4c67efbd-4230-491c-1843-320e2240e892">
+      <Execution id="7cc3b0fa-6323-446e-b2cb-63151baa51f0" />
+      <TestMethod codeBase="D:/Accademics/Projects and Assignments/ESADS/ESADS/ESADS_Code/TestProject1/bin/Debug/TestProject1.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject1.eFlexureTest, TestProject1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Get_k_x_maxTest" />
+    </UnitTest>
+    <UnitTest name="Get_f_cTest3" storage="d:\accademics\projects and assignments\esads\esads\esads_code\testproject1\bin\debug\testproject1.dll" id="f50db4f7-2333-9105-309e-4e3868df3299">
+      <Execution id="347c1a18-e528-4a3d-8e08-987907cf3a1d" />
+      <TestMethod codeBase="D:/Accademics/Projects and Assignments/ESADS/ESADS/ESADS_Code/TestProject1/bin/Debug/TestProject1.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject1.eBasisOfDesignTest, TestProject1, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Get_f_cTest3" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="1a663aaf-4cc5-ee0c-d0e5-57d7cc972376" executionId="8db0be46-9b42-4af2-9e35-7b652bbadc70" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="23eedc9a-7398-b8d3-8eae-47a1f4438fe6" executionId="647b4915-333b-4971-9ad6-3ce7e0b86155" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="2a1943cf-01a9-eff0-173f-dd4db8b7c5ac" executionId="bb389ac5-e74b-4307-ad9e-e577524a2caf" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="2e6de8b5-0627-7c7d-3776-44264f79b8ab" executionId="dd1927a8-b6cc-49c3-baf9-d420ececfad4" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="3185bbdb-e766-d311-1fe8-cb00511a143f" executionId="803dbfc6-c3cd-4978-9929-5cca5f884f2c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="3bf90e86-35c5-4ced-e14c-6919d9f0d8d6" executionId="8e144a30-a2fe-4bf9-ad97-e963fedfc277" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="40b06917-98e0-bb75-9771-968edef86f9c" executionId="f8a012f1-c5dd-4691-9f15-3cf116553290" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="425185e0-e7fb-3cd7-aac4-f34641bc7a59" executionId="036c378b-ec42-4ea3-802f-58049820abad" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="4c67efbd-4230-491c-1843-320e2240e892" executionId="7cc3b0fa-6323-446e-b2cb-63151baa51f0" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="586169e9-2da5-0d3b-87e7-aa7d9412a9bd" executionId="6acd6011-2c1c-49ff-ba9d-9909003bea91" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="59390a1b-aec8-b61a-3cf8-9865c531d3aa" executionId="a270bdf6-2e89-4689-bba1-f99cf74edf7e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="5fafb4d7-e81d-7438-72c6-950053cacaa2" executionId="6ba48cfc-e3b8-4171-b2ce-b1ead98092d7" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="7570dfe5-d01c-8e44-cdd1-09a7b429fd7a" executionId="26e27482-138b-4362-897e-4a6f7ca77bea" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="85422c4a-13fa-0c22-2424-32a1880c79fa" executionId="33e6c312-2b64-4e4b-b3bc-358885914886" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="8a90b07f-51dc-8ac4-6f4c-0b51bf79bfc8" executionId="eec1b9ea-13f9-42bf-8890-e75d71e91a62" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="8b1775b5-85e9-30a4-02b2-01e145da2b2d" executionId="b43a2197-89ec-446b-a6e1-5e1964b85abd" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="983f23b0-7efe-e139-3d9f-0ba53071c87f" executionId="88f8a21c-415e-4197-96af-b7ca55653486" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9a8e5123-158d-eb14-4884-5b7643d7c026" executionId="ac1bd8bc-a979-430e-bc9f-36c3e0618271" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a94c496f-e59b-ca99-06aa-4f82e09b87cf" executionId="12666ce3-e8b6-4e29-b9fd-46552b56c969" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="aa67cec5-e509-84f2-8568-aee3774e35a4" executionId="d6a58f11-7707-4ad0-a4f6-f8bd65fa23d5" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ac265684-17da-1b0e-db9d-a108c3c96730" executionId="1c90fe60-9af9-4e83-b38c-c4ea0ff7f8ae" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b0603b3f-a3e8-2a4e-c25f-5436749c646c" executionId="5f3dd761-fc70-4625-829f-dd47b7567bd5" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b3e33a18-17c3-db7b-dede-67906a0a9d8a" executionId="9010d19c-8125-4831-91d8-8ee1853aba7e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b9022940-6858-2caa-133a-13b249f86206" executionId="4b4d36f0-6b77-4f21-a90e-fab631f40678" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d20a6002-7d61-15b1-251e-f95d8ab926e3" executionId="3e643033-1507-4b42-a6c6-578df291ff0b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d7fad077-e0f3-3f44-c686-b22908c89485" executionId="5a11ff00-5759-4e9f-bfb0-cbd2486377cc" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="db80eb3e-51df-e3e7-e768-251d2615d56a" executionId="51120e4f-dcd0-4675-92ff-64d5eadc2293" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e5ba1c5e-5209-c7bb-263c-9271befff433" executionId="ebd5af08-c610-4f1b-a46c-18455895d2a4" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e9d353d6-5c8b-23b7-393b-6e196225da29" executionId="519cf476-bf14-4acc-8610-2c1d9c371353" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="eddf5950-f027-5410-e704-232aa222efa0" executionId="5f91ac74-37f2-45ef-aa2a-8dcf92de2763" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f50db4f7-2333-9105-309e-4e3868df3299" executionId="347c1a18-e528-4a3d-8e08-987907cf3a1d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f65dcba7-f2ed-8db1-3bee-2ce03c9e2aed" executionId="fae83c45-e5a1-4c08-b292-48426a7a90f1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="fdfba5c8-b9b4-79df-2189-2bf92b3d245a" executionId="cd88b0d2-506c-4ed5-9268-ad187e73b0a7" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="8db0be46-9b42-4af2-9e35-7b652bbadc70" testId="1a663aaf-4cc5-ee0c-d0e5-57d7cc972376" testName="Get_f_ctdTest1" computerName="TSINU-PC" duration="00:00:00.3347211" startTime="2012-03-20T10:20:28.1672870+03:00" endTime="2012-03-20T10:20:30.3314107+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8db0be46-9b42-4af2-9e35-7b652bbadc70">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.AreEqual failed. Expected:&lt;0&gt;. Actual:&lt;0.161538461538462&gt;. </Message>
+          <StackTrace>   at TestProject1.eBasisOfDesignTest.Get_f_ctdTest1() in D:\Accademics\Projects and Assignments\ESADS\ESADS\ESADS_Code\TestProject1\eBasisOfDesignTest.cs:line 128
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="647b4915-333b-4971-9ad6-3ce7e0b86155" testId="23eedc9a-7398-b8d3-8eae-47a1f4438fe6" testName="GetMinEffDepthTest" computerName="TSINU-PC" duration="00:00:00.0124063" startTime="2012-03-20T10:20:30.3664127+03:00" endTime="2012-03-20T10:20:30.4404170+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="647b4915-333b-4971-9ad6-3ce7e0b86155">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive failed. Verify the correctness of this test method.</Message>
+          <StackTrace>   at TestProject1.eServiceabilityTest.GetMinEffDepthTest() in D:\Accademics\Projects and Assignments\ESADS\ESADS\ESADS_Code\TestProject1\eServiceabilityTest.cs:line 97
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="bb389ac5-e74b-4307-ad9e-e577524a2caf" testId="2a1943cf-01a9-eff0-173f-dd4db8b7c5ac" testName="Get_ρ_minTest" computerName="TSINU-PC" duration="00:00:00.0100358" startTime="2012-03-20T10:20:30.4774191+03:00" endTime="2012-03-20T10:20:30.5224217+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="bb389ac5-e74b-4307-ad9e-e577524a2caf">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.AreEqual failed. Expected:&lt;0&gt;. Actual:&lt;Infinity&gt;. </Message>
+          <StackTrace>   at TestProject1.eDetailingTest.Get_ρ_minTest() in D:\Accademics\Projects and Assignments\ESADS\ESADS\ESADS_Code\TestProject1\eDetailingTest.cs:line 79
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="dd1927a8-b6cc-49c3-baf9-d420ececfad4" testId="2e6de8b5-0627-7c7d-3776-44264f79b8ab" testName="GetMaterialPartialSafetyFactorTest" computerName="TSINU-PC" duration="00:00:00.0078225" startTime="2012-03-20T10:20:30.5294221+03:00" endTime="2012-03-20T10:20:30.5644241+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="dd1927a8-b6cc-49c3-baf9-d420ececfad4">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.AreEqual failed. Expected:&lt;0&gt;. Actual:&lt;1&gt;. </Message>
+          <StackTrace>   at TestProject1.eBasisOfDesignTest.GetMaterialPartialSafetyFactorTest() in D:\Accademics\Projects and Assignments\ESADS\ESADS\ESADS_Code\TestProject1\eBasisOfDesignTest.cs:line 274
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="803dbfc6-c3cd-4978-9929-5cca5f884f2c" testId="3185bbdb-e766-d311-1fe8-cb00511a143f" testName="Get_f_ykTest" computerName="TSINU-PC" duration="00:00:00.0039317" startTime="2012-03-20T10:20:30.5734246+03:00" endTime="2012-03-20T10:20:30.6134269+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="803dbfc6-c3cd-4978-9929-5cca5f884f2c">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive failed. Verify the correctness of this test method.</Message>
+          <StackTrace>   at TestProject1.eMaterialTest.Get_f_ykTest() in D:\Accademics\Projects and Assignments\ESADS\ESADS\ESADS_Code\TestProject1\eMaterialTest.cs:line 79
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="8e144a30-a2fe-4bf9-ad97-e963fedfc277" testId="3bf90e86-35c5-4ced-e14c-6919d9f0d8d6" testName="GetActionPartialSafetyFactorTest2" computerName="TSINU-PC" duration="00:00:00.0086395" startTime="2012-03-20T10:20:30.6214273+03:00" endTime="2012-03-20T10:20:30.6634297+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8e144a30-a2fe-4bf9-ad97-e963fedfc277">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.AreEqual failed. Expected:&lt;0&gt;. Actual:&lt;1&gt;. </Message>
+          <StackTrace>   at TestProject1.eBasisOfDesignTest.GetActionPartialSafetyFactorTest2() in D:\Accademics\Projects and Assignments\ESADS\ESADS\ESADS_Code\TestProject1\eBasisOfDesignTest.cs:line 336
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="f8a012f1-c5dd-4691-9f15-3cf116553290" testId="40b06917-98e0-bb75-9771-968edef86f9c" testName="Get_f_ctdTest2" computerName="TSINU-PC" duration="00:00:00.0082752" startTime="2012-03-20T10:20:30.6764305+03:00" endTime="2012-03-20T10:20:30.7224331+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f8a012f1-c5dd-4691-9f15-3cf116553290">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.AreEqual failed. Expected:&lt;0&gt;. Actual:&lt;0.14&gt;. </Message>
+          <StackTrace>   at TestProject1.eBasisOfDesignTest.Get_f_ctdTest2() in D:\Accademics\Projects and Assignments\ESADS\ESADS\ESADS_Code\TestProject1\eBasisOfDesignTest.cs:line 143
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="036c378b-ec42-4ea3-802f-58049820abad" testId="425185e0-e7fb-3cd7-aac4-f34641bc7a59" testName="GetMinSpacingTest" computerName="TSINU-PC" duration="00:00:00.0072970" startTime="2012-03-20T10:20:30.7274334+03:00" endTime="2012-03-20T10:20:30.7704359+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="036c378b-ec42-4ea3-802f-58049820abad">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.AreEqual failed. Expected:&lt;0&gt;. Actual:&lt;20&gt;. </Message>
+          <StackTrace>   at TestProject1.eDetailingTest.GetMinSpacingTest() in D:\Accademics\Projects and Assignments\ESADS\ESADS\ESADS_Code\TestProject1\eDetailingTest.cs:line 94
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="7cc3b0fa-6323-446e-b2cb-63151baa51f0" testId="4c67efbd-4230-491c-1843-320e2240e892" testName="Get_k_x_maxTest" computerName="TSINU-PC" duration="00:00:00.0094466" startTime="2012-03-20T10:20:30.7904370+03:00" endTime="2012-03-20T10:20:30.8604410+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7cc3b0fa-6323-446e-b2cb-63151baa51f0">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.AreEqual failed. Expected:&lt;0&gt;. Actual:&lt;-0.352&gt;. </Message>
+          <StackTrace>   at TestProject1.eFlexureTest.Get_k_x_maxTest() in D:\Accademics\Projects and Assignments\ESADS\ESADS\ESADS_Code\TestProject1\eFlexureTest.cs:line 77
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="6acd6011-2c1c-49ff-ba9d-9909003bea91" testId="586169e9-2da5-0d3b-87e7-aa7d9412a9bd" testName="Get_f_cdTest2" computerName="TSINU-PC" duration="00:00:00.0043718" startTime="2012-03-20T10:20:30.8774420+03:00" endTime="2012-03-20T10:20:30.9164442+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6acd6011-2c1c-49ff-ba9d-9909003bea91">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive failed. Verify the correctness of this test method.</Message>
+          <StackTrace>   at TestProject1.eBasisOfDesignTest.Get_f_cdTest2() in D:\Accademics\Projects and Assignments\ESADS\ESADS\ESADS_Code\TestProject1\eBasisOfDesignTest.cs:line 192
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="a270bdf6-2e89-4689-bba1-f99cf74edf7e" testId="59390a1b-aec8-b61a-3cf8-9865c531d3aa" testName="Get_ConcUnitWeightTest" computerName="TSINU-PC" duration="00:00:00.0477921" startTime="2012-03-20T10:20:30.9254447+03:00" endTime="2012-03-20T10:20:31.0024491+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a270bdf6-2e89-4689-bba1-f99cf74edf7e">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method TestProject1.eMaterialTest.Get_ConcUnitWeightTest threw exception: 
+System.Exception: Exception of type 'System.Exception' was thrown.</Message>
+          <StackTrace>    at ESADS_Code.EBCS_1995.eMaterial.Get_ConcUnitWeight(eConcreteType TypeOfConcrete) in D:\Accademics\Projects and Assignments\ESADS\ESADS\ESADS_Code\ESADS_Code\EBCS_1995\eMaterial.cs:line 115
+   at TestProject1.eMaterialTest.Get_ConcUnitWeightTest() in D:\Accademics\Projects and Assignments\ESADS\ESADS\ESADS_Code\TestProject1\eMaterialTest.cs:line 149
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="6ba48cfc-e3b8-4171-b2ce-b1ead98092d7" testId="5fafb4d7-e81d-7438-72c6-950053cacaa2" testName="Get_f_cTest2" computerName="TSINU-PC" duration="00:00:00.0054095" startTime="2012-03-20T10:20:31.0084495+03:00" endTime="2012-03-20T10:20:31.0474517+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6ba48cfc-e3b8-4171-b2ce-b1ead98092d7">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive failed. Verify the correctness of this test method.</Message>
+          <StackTrace>   at TestProject1.eBasisOfDesignTest.Get_f_cTest2() in D:\Accademics\Projects and Assignments\ESADS\ESADS\ESADS_Code\TestProject1\eBasisOfDesignTest.cs:line 243
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="26e27482-138b-4362-897e-4a6f7ca77bea" testId="7570dfe5-d01c-8e44-cdd1-09a7b429fd7a" testName="Get_k_x_maxTest1" computerName="TSINU-PC" duration="00:00:00.0071365" startTime="2012-03-20T10:20:31.0544521+03:00" endTime="2012-03-20T10:20:31.0914542+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="26e27482-138b-4362-897e-4a6f7ca77bea">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.AreEqual failed. Expected:&lt;0&gt;. Actual:&lt;0.448&gt;. </Message>
+          <StackTrace>   at TestProject1.eFlexureTest.Get_k_x_maxTest1() in D:\Accademics\Projects and Assignments\ESADS\ESADS\ESADS_Code\TestProject1\eFlexureTest.cs:line 90
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="33e6c312-2b64-4e4b-b3bc-358885914886" testId="85422c4a-13fa-0c22-2424-32a1880c79fa" testName="Get_f_ckTest1" computerName="TSINU-PC" duration="00:00:00.0026407" startTime="2012-03-20T10:20:31.1014548+03:00" endTime="2012-03-20T10:20:31.1324566+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="33e6c312-2b64-4e4b-b3bc-358885914886">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive failed. Verify the correctness of this test method.</Message>
+          <StackTrace>   at TestProject1.eMaterialTest.Get_f_ckTest1() in D:\Accademics\Projects and Assignments\ESADS\ESADS\ESADS_Code\TestProject1\eMaterialTest.cs:line 137
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="eec1b9ea-13f9-42bf-8890-e75d71e91a62" testId="8a90b07f-51dc-8ac4-6f4c-0b51bf79bfc8" testName="Get_f_cTest1" computerName="TSINU-PC" duration="00:00:00.0033835" startTime="2012-03-20T10:20:31.1394570+03:00" endTime="2012-03-20T10:20:31.1714588+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="eec1b9ea-13f9-42bf-8890-e75d71e91a62">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive failed. Verify the correctness of this test method.</Message>
+          <StackTrace>   at TestProject1.eBasisOfDesignTest.Get_f_cTest1() in D:\Accademics\Projects and Assignments\ESADS\ESADS\ESADS_Code\TestProject1\eBasisOfDesignTest.cs:line 225
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="b43a2197-89ec-446b-a6e1-5e1964b85abd" testId="8b1775b5-85e9-30a4-02b2-01e145da2b2d" testName="Get_f_ydTest" computerName="TSINU-PC" duration="00:00:00.0041724" startTime="2012-03-20T10:20:31.1794592+03:00" endTime="2012-03-20T10:20:31.2094610+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b43a2197-89ec-446b-a6e1-5e1964b85abd">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive failed. Verify the correctness of this test method.</Message>
+          <StackTrace>   at TestProject1.eBasisOfDesignTest.Get_f_ydTest() in D:\Accademics\Projects and Assignments\ESADS\ESADS\ESADS_Code\TestProject1\eBasisOfDesignTest.cs:line 80
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="88f8a21c-415e-4197-96af-b7ca55653486" testId="983f23b0-7efe-e139-3d9f-0ba53071c87f" testName="Get_β_aTest" computerName="TSINU-PC" duration="00:00:00.0072982" startTime="2012-03-20T10:20:31.2194615+03:00" endTime="2012-03-20T10:20:31.2574637+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="88f8a21c-415e-4197-96af-b7ca55653486">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.AreEqual failed. Expected:&lt;0&gt;. Actual:&lt;20&gt;. </Message>
+          <StackTrace>   at TestProject1.eServiceabilityTest.Get_β_aTest() in D:\Accademics\Projects and Assignments\ESADS\ESADS\ESADS_Code\TestProject1\eServiceabilityTest.cs:line 79
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="ac1bd8bc-a979-430e-bc9f-36c3e0618271" testId="9a8e5123-158d-eb14-4884-5b7643d7c026" testName="GetActionPartialSafetyFactorTest" computerName="TSINU-PC" duration="00:00:00.0079161" startTime="2012-03-20T10:20:31.2724646+03:00" endTime="2012-03-20T10:20:31.3094667+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ac1bd8bc-a979-430e-bc9f-36c3e0618271">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.AreEqual failed. Expected:&lt;0&gt;. Actual:&lt;1&gt;. </Message>
+          <StackTrace>   at TestProject1.eBasisOfDesignTest.GetActionPartialSafetyFactorTest() in D:\Accademics\Projects and Assignments\ESADS\ESADS\ESADS_Code\TestProject1\eBasisOfDesignTest.cs:line 305
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="12666ce3-e8b6-4e29-b9fd-46552b56c969" testId="a94c496f-e59b-ca99-06aa-4f82e09b87cf" testName="GetActionPartialSafetyFactorTest1" computerName="TSINU-PC" duration="00:00:00.0086601" startTime="2012-03-20T10:20:31.3224674+03:00" endTime="2012-03-20T10:20:31.3564694+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="12666ce3-e8b6-4e29-b9fd-46552b56c969">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.AreEqual failed. Expected:&lt;0&gt;. Actual:&lt;1&gt;. </Message>
+          <StackTrace>   at TestProject1.eBasisOfDesignTest.GetActionPartialSafetyFactorTest1() in D:\Accademics\Projects and Assignments\ESADS\ESADS\ESADS_Code\TestProject1\eBasisOfDesignTest.cs:line 320
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="d6a58f11-7707-4ad0-a4f6-f8bd65fa23d5" testId="aa67cec5-e509-84f2-8568-aee3774e35a4" testName="GetMaterialPartialSafetyFactorTest1" computerName="TSINU-PC" duration="00:00:00.0083068" startTime="2012-03-20T10:20:31.3614697+03:00" endTime="2012-03-20T10:20:31.3964717+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d6a58f11-7707-4ad0-a4f6-f8bd65fa23d5">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.AreEqual failed. Expected:&lt;0&gt;. Actual:&lt;1.3&gt;. </Message>
+          <StackTrace>   at TestProject1.eBasisOfDesignTest.GetMaterialPartialSafetyFactorTest1() in D:\Accademics\Projects and Assignments\ESADS\ESADS\ESADS_Code\TestProject1\eBasisOfDesignTest.cs:line 290
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="1c90fe60-9af9-4e83-b38c-c4ea0ff7f8ae" testId="ac265684-17da-1b0e-db9d-a108c3c96730" testName="Get_f_ckTest" computerName="TSINU-PC" duration="00:00:00.0040318" startTime="2012-03-20T10:20:31.4024720+03:00" endTime="2012-03-20T10:20:31.4364739+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1c90fe60-9af9-4e83-b38c-c4ea0ff7f8ae">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive failed. Verify the correctness of this test method.</Message>
+          <StackTrace>   at TestProject1.eMaterialTest.Get_f_ckTest() in D:\Accademics\Projects and Assignments\ESADS\ESADS\ESADS_Code\TestProject1\eMaterialTest.cs:line 122
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="5f3dd761-fc70-4625-829f-dd47b7567bd5" testId="b0603b3f-a3e8-2a4e-c25f-5436749c646c" testName="GetActionPartialSafetyFactorTest3" computerName="TSINU-PC" duration="00:00:00.0061016" startTime="2012-03-20T10:20:31.4434743+03:00" endTime="2012-03-20T10:20:31.4774763+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5f3dd761-fc70-4625-829f-dd47b7567bd5">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.AreEqual failed. Expected:&lt;0&gt;. Actual:&lt;1.3&gt;. </Message>
+          <StackTrace>   at TestProject1.eBasisOfDesignTest.GetActionPartialSafetyFactorTest3() in D:\Accademics\Projects and Assignments\ESADS\ESADS\ESADS_Code\TestProject1\eBasisOfDesignTest.cs:line 350
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="9010d19c-8125-4831-91d8-8ee1853aba7e" testId="b3e33a18-17c3-db7b-dede-67906a0a9d8a" testName="Get_f_ctdTest" computerName="TSINU-PC" duration="00:00:00.0078894" startTime="2012-03-20T10:20:31.4874769+03:00" endTime="2012-03-20T10:20:31.5254790+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9010d19c-8125-4831-91d8-8ee1853aba7e">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.AreEqual failed. Expected:&lt;0&gt;. Actual:&lt;0.14&gt;. </Message>
+          <StackTrace>   at TestProject1.eBasisOfDesignTest.Get_f_ctdTest() in D:\Accademics\Projects and Assignments\ESADS\ESADS\ESADS_Code\TestProject1\eBasisOfDesignTest.cs:line 111
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="4b4d36f0-6b77-4f21-a90e-fab631f40678" testId="b9022940-6858-2caa-133a-13b249f86206" testName="Get_f_cdTest" computerName="TSINU-PC" duration="00:00:00.0027258" startTime="2012-03-20T10:20:31.5294793+03:00" endTime="2012-03-20T10:20:31.5594810+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4b4d36f0-6b77-4f21-a90e-fab631f40678">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive failed. Verify the correctness of this test method.</Message>
+          <StackTrace>   at TestProject1.eBasisOfDesignTest.Get_f_cdTest() in D:\Accademics\Projects and Assignments\ESADS\ESADS\ESADS_Code\TestProject1\eBasisOfDesignTest.cs:line 160
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="3e643033-1507-4b42-a6c6-578df291ff0b" testId="d20a6002-7d61-15b1-251e-f95d8ab926e3" testName="SettingsConstructorTest" computerName="TSINU-PC" duration="00:00:00.0047425" startTime="2012-03-20T10:20:31.5694816+03:00" endTime="2012-03-20T10:20:31.6004833+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3e643033-1507-4b42-a6c6-578df291ff0b">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive failed. TODO: Implement code to verify target</Message>
+          <StackTrace>   at TestProject1.SettingsTest.SettingsConstructorTest() in D:\Accademics\Projects and Assignments\ESADS\ESADS\ESADS_Code\TestProject1\SettingsTest.cs:line 85
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="5a11ff00-5759-4e9f-bfb0-cbd2486377cc" testId="d7fad077-e0f3-3f44-c686-b22908c89485" testName="DefaultTest" computerName="TSINU-PC" duration="00:00:00.0029859" startTime="2012-03-20T10:20:31.6104839+03:00" endTime="2012-03-20T10:20:31.6424857+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5a11ff00-5759-4e9f-bfb0-cbd2486377cc">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive failed. Verify the correctness of this test method.</Message>
+          <StackTrace>   at TestProject1.SettingsTest.DefaultTest() in D:\Accademics\Projects and Assignments\ESADS\ESADS\ESADS_Code\TestProject1\SettingsTest.cs:line 75
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="51120e4f-dcd0-4675-92ff-64d5eadc2293" testId="db80eb3e-51df-e3e7-e768-251d2615d56a" testName="Get_ConcModOfElasticityTest" computerName="TSINU-PC" duration="00:00:00.0088465" startTime="2012-03-20T10:20:31.6494861+03:00" endTime="2012-03-20T10:20:31.6854882+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="51120e4f-dcd0-4675-92ff-64d5eadc2293">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.AreEqual failed. Expected:&lt;0&gt;. Actual:&lt;9.5&gt;. </Message>
+          <StackTrace>   at TestProject1.eMaterialTest.Get_ConcModOfElasticityTest() in D:\Accademics\Projects and Assignments\ESADS\ESADS\ESADS_Code\TestProject1\eMaterialTest.cs:line 164
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="ebd5af08-c610-4f1b-a46c-18455895d2a4" testId="e5ba1c5e-5209-c7bb-263c-9271befff433" testName="Get_f_ydTest1" computerName="TSINU-PC" duration="00:00:00.0039435" startTime="2012-03-20T10:20:31.6984889+03:00" endTime="2012-03-20T10:20:31.7314908+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ebd5af08-c610-4f1b-a46c-18455895d2a4">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive failed. Verify the correctness of this test method.</Message>
+          <StackTrace>   at TestProject1.eBasisOfDesignTest.Get_f_ydTest1() in D:\Accademics\Projects and Assignments\ESADS\ESADS\ESADS_Code\TestProject1\eBasisOfDesignTest.cs:line 96
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="519cf476-bf14-4acc-8610-2c1d9c371353" testId="e9d353d6-5c8b-23b7-393b-6e196225da29" testName="Get_f_cTest" computerName="TSINU-PC" duration="00:00:00.0030840" startTime="2012-03-20T10:20:31.7404913+03:00" endTime="2012-03-20T10:20:31.7704931+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="519cf476-bf14-4acc-8610-2c1d9c371353">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive failed. Verify the correctness of this test method.</Message>
+          <StackTrace>   at TestProject1.eBasisOfDesignTest.Get_f_cTest() in D:\Accademics\Projects and Assignments\ESADS\ESADS\ESADS_Code\TestProject1\eBasisOfDesignTest.cs:line 208
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="5f91ac74-37f2-45ef-aa2a-8dcf92de2763" testId="eddf5950-f027-5410-e704-232aa222efa0" testName="Get_f_cdTest1" computerName="TSINU-PC" duration="00:00:00.0028863" startTime="2012-03-20T10:20:31.7794936+03:00" endTime="2012-03-20T10:20:31.8134955+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5f91ac74-37f2-45ef-aa2a-8dcf92de2763">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive failed. Verify the correctness of this test method.</Message>
+          <StackTrace>   at TestProject1.eBasisOfDesignTest.Get_f_cdTest1() in D:\Accademics\Projects and Assignments\ESADS\ESADS\ESADS_Code\TestProject1\eBasisOfDesignTest.cs:line 177
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="347c1a18-e528-4a3d-8e08-987907cf3a1d" testId="f50db4f7-2333-9105-309e-4e3868df3299" testName="Get_f_cTest3" computerName="TSINU-PC" duration="00:00:00.0025232" startTime="2012-03-20T10:20:31.8234961+03:00" endTime="2012-03-20T10:20:31.8514977+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="347c1a18-e528-4a3d-8e08-987907cf3a1d">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive failed. Verify the correctness of this test method.</Message>
+          <StackTrace>   at TestProject1.eBasisOfDesignTest.Get_f_cTest3() in D:\Accademics\Projects and Assignments\ESADS\ESADS\ESADS_Code\TestProject1\eBasisOfDesignTest.cs:line 258
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="fae83c45-e5a1-4c08-b292-48426a7a90f1" testId="f65dcba7-f2ed-8db1-3bee-2ce03c9e2aed" testName="Get_f_ctkTest1" computerName="TSINU-PC" duration="00:00:00.0084441" startTime="2012-03-20T10:20:31.8564980+03:00" endTime="2012-03-20T10:20:31.9255019+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="fae83c45-e5a1-4c08-b292-48426a7a90f1">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.AreEqual failed. Expected:&lt;0&gt;. Actual:&lt;0.21&gt;. </Message>
+          <StackTrace>   at TestProject1.eMaterialTest.Get_f_ctkTest1() in D:\Accademics\Projects and Assignments\ESADS\ESADS\ESADS_Code\TestProject1\eMaterialTest.cs:line 107
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="cd88b0d2-506c-4ed5-9268-ad187e73b0a7" testId="fdfba5c8-b9b4-79df-2189-2bf92b3d245a" testName="Get_f_ctkTest" computerName="TSINU-PC" duration="00:00:00.0060696" startTime="2012-03-20T10:20:31.9315023+03:00" endTime="2012-03-20T10:20:31.9665043+03:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="cd88b0d2-506c-4ed5-9268-ad187e73b0a7">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.AreEqual failed. Expected:&lt;0&gt;. Actual:&lt;0.21&gt;. </Message>
+          <StackTrace>   at TestProject1.eMaterialTest.Get_f_ctkTest() in D:\Accademics\Projects and Assignments\ESADS\ESADS\ESADS_Code\TestProject1\eMaterialTest.cs:line 92
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

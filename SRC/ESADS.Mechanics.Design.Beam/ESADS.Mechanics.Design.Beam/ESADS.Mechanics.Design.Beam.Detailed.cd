@@ -1,0 +1,513 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="ESADS.Mechanics.Design.Beam.eBeamSection">
+    <Position X="10.5" Y="20.75" Width="2.25" />
+    <Members>
+      <Field Name="depth" Hidden="true" />
+      <Field Name="name" Hidden="true" />
+      <Field Name="nominal_EI" Hidden="true" />
+      <Field Name="used" Hidden="true" />
+      <Field Name="useNominal_EI" Hidden="true" />
+      <Field Name="width" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAEAEAABAAAQEwAAAAEQAAAAEAAQgAAAAcAAAAEA=</HashCode>
+      <FileName>eBeamSection.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ESADS.Mechanics.Design.Beam.eCombination">
+    <Position X="26" Y="16.75" Width="2.25" />
+    <Members>
+      <Field Name="area" Hidden="true" />
+      <Method Name="ArrangeIntoRows" Hidden="true" />
+      <Method Name="CheckCapacity" Hidden="true" />
+      <Field Name="effectivedepth" Hidden="true" />
+      <Method Name="FillArea" Hidden="true" />
+      <Method Name="FillEffectiveDepth" Hidden="true" />
+      <Method Name="FillRows" Hidden="true" />
+      <Method Name="GetArea" Hidden="true" />
+      <Method Name="GetBarPerWidth" Hidden="true" />
+      <Method Name="GetCapacity" Hidden="true" />
+      <Method Name="GetRemainingWidth" Hidden="true" />
+      <Field Name="isInCompression" Hidden="true" />
+      <Field Name="longtBar1" Hidden="true" />
+      <Field Name="longtBar2" Hidden="true" />
+      <Method Name="RefineRows" Hidden="true" />
+      <Field Name="rows" Hidden="true" />
+      <Field Name="section" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Struct Name="ESADS.Mechanics.Design.Beam.eCombination.eRow">
+        <Members>
+          <Field Name="bars" Hidden="true" />
+          <Field Name="barType1" Hidden="true" />
+          <Field Name="barType2" Hidden="true" />
+          <Field Name="commonY" Hidden="true" />
+          <Field Name="effectiveWidth" Hidden="true" />
+          <Method Name="FillY_Coordinates" Hidden="true" />
+          <Method Name="InsertBars" Hidden="true" />
+          <Field Name="isBottomRow" Hidden="true" />
+          <Field Name="minSpacing" Hidden="true" />
+          <Field Name="numOfBar1" Hidden="true" />
+          <Field Name="numOfBar2" Hidden="true" />
+          <Field Name="rowNumb" Hidden="true" />
+          <Field Name="stirrupPosition" Hidden="true" />
+          <Field Name="xCoordinates" Hidden="true" />
+        </Members>
+        <TypeIdentifier>
+          <NewMemberFileName>eRow.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>gABCBAgIAAAgSEAEAABAAIAAAAQAEAAyAAAAEYmAAAs=</HashCode>
+      <FileName>eCombination.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Section" />
+      <Property Name="LongtBar1" />
+      <Property Name="LongtBar2" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="ESADS.Mechanics.Design.Beam.eDBeam" BaseTypeListCollapsed="true">
+    <Position X="14.25" Y="17" Width="2.5" />
+    <Members>
+      <Method Name="AssociateSections" Hidden="true" />
+      <Field Name="basicBar" Hidden="true" />
+      <Field Name="beam_Analysis" Hidden="true" />
+      <Field Name="classWork" Hidden="true" />
+      <Field Name="concrete" Hidden="true" />
+      <Method Name="CreateFlexureSections" Hidden="true" />
+      <Method Name="CreateShearSections" Hidden="true" />
+      <Field Name="defaultSection" Hidden="true" />
+      <Field Name="definedSections" Hidden="true" />
+      <Method Name="EliminateSimilar" Hidden="true" />
+      <Field Name="exposureType" Hidden="true" />
+      <Field Name="longitudinalBars" Hidden="true" />
+      <Field Name="mainBar1" Hidden="true" />
+      <Field Name="mainBar2" Hidden="true" />
+      <Field Name="maxAggSize" Hidden="true" />
+      <Field Name="members" Hidden="true" />
+      <Method Name="Merge" Hidden="true" />
+      <Method Name="MergeAdjacentSections" Hidden="true" />
+      <Method Name="MixPoints" Hidden="true" />
+      <Method Name="NameSections" Hidden="true" />
+      <Field Name="negSections" Hidden="true" />
+      <Field Name="numOfNegativeSxns" Hidden="true" />
+      <Field Name="numOfPositiveSxns" Hidden="true" />
+      <Field Name="numOfShearSxns" Hidden="true" />
+      <Field Name="posSections" Hidden="true" />
+      <Field Name="preceision" Hidden="true" />
+      <Method Name="ReduceNumber" Hidden="true" />
+      <Method Name="RefineBars" Hidden="true" />
+      <Field Name="reinfCover" Hidden="true" />
+      <Field Name="shearSections" Hidden="true" />
+      <Method Name="SortBars" Hidden="true" />
+      <Method Name="SortSections" Hidden="true" />
+      <Field Name="steel" Hidden="true" />
+      <Field Name="stirrupBar" Hidden="true" />
+      <Field Name="stirrupHookLength" Hidden="true" />
+      <Field Name="stirrupPosin" Hidden="true" />
+      <Field Name="supportCompBarCuttingLength" Hidden="true" />
+      <Field Name="supportTensBarCuttingLength" Hidden="true" />
+      <Field Name="useCornerBars" Hidden="true" />
+      <Field Name="useTwoBars" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Private" Collapsed="true" />
+    </Compartments>
+    <AssociationLine Name="Concrete" Type="ESADS.Mechanics.Design.eConcrete" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="14.25" Y="19.807" />
+        <Point X="11.688" Y="19.807" />
+        <Point X="11.688" Y="17.313" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AKMBswqAICFAiiICiMgSSghRYUAAAYRSEAAEMLihQAI=</HashCode>
+      <FileName>eDBeam.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Beam_Analysis" />
+      <Property Name="Concrete" />
+      <Property Name="Steel" />
+      <Property Name="DefaultSection" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="Members" />
+      <Property Name="ShearSections" />
+      <Property Name="NegativeFlexSxns" />
+      <Property Name="PositiveFlexSxns" />
+      <Property Name="LongitudinalBars" />
+      <Property Name="DefinedSections" />
+    </ShowAsCollectionAssociation>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ESADS.Mechanics.Design.Beam.eDFlexureSection">
+    <Position X="21.25" Y="18" Width="2.75" />
+    <Members>
+      <Field Name="As" Hidden="true" />
+      <Field Name="AsPrim" Hidden="true" />
+      <Method Name="CheckAreaLimits" Hidden="true" />
+      <Method Name="CheckDepthTolerance" Hidden="true" />
+      <Field Name="compCombination" Hidden="true" />
+      <Method Name="Contains" Hidden="true" />
+      <Method Name="Count" Hidden="true" />
+      <Field Name="depthTolerance" Hidden="true" />
+      <Field Name="effectiveSLSdepth" Hidden="true" />
+      <Field Name="extendFrom" Hidden="true" />
+      <Field Name="failed" Hidden="true" />
+      <Field Name="failureNote" Hidden="true" />
+      <Method Name="FillLongitudinalBars" Hidden="true" />
+      <Method Name="GetAs_calc" Hidden="true" />
+      <Method Name="GetAs_used" Hidden="true" />
+      <Method Name="GetCompSteelStress" Hidden="true" />
+      <Method Name="GetMaxAreaOfSteel" Hidden="true" />
+      <Method Name="GetMomentCapacity" Hidden="true" />
+      <Field Name="isOverReinforced" Hidden="true" />
+      <Method Name="IsSimilar" Hidden="true" />
+      <Field Name="location" Hidden="true" />
+      <Property Name="Location" Hidden="true" />
+      <Property Name="M" Hidden="true" />
+      <Property Name="maxBarDiam" Hidden="true" />
+      <Field Name="member" Hidden="true" />
+      <Property Name="minBarDiam" Hidden="true" />
+      <Field Name="moment" Hidden="true" />
+      <Property Name="Moment" Hidden="true" />
+      <Field Name="sectionType" Hidden="true" />
+      <Field Name="spanType" Hidden="true" />
+      <Field Name="tensCombination" Hidden="true" />
+      <Field Name="X" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Private" Collapsed="true" />
+    </Compartments>
+    <InheritanceLine Type="ESADS.Mechanics.Design.Beam.eDSection" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="23" Y="16.162" />
+        <Point X="23" Y="18" />
+      </Path>
+    </InheritanceLine>
+    <AssociationLine Name="ExtendFrom" Type="ESADS.Mechanics.Design.Beam.eDFlexureSection" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="24" Y="21.857" />
+        <Point X="24.25" Y="21.857" />
+        <Point X="24.25" Y="22.576" />
+        <Point X="24" Y="22.576" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="Member" Type="ESADS.Mechanics.Design.Beam.eDMember" FixedToPoint="true">
+      <Path>
+        <Point X="21.75" Y="23.944" />
+        <Point X="21.75" Y="24.75" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>EkIBIAoAIAAAziAEhIIIAAQyAgHJUAIwCRyAAQJwQIE=</HashCode>
+      <FileName>eDFlexureSection.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="CompresionComb" />
+      <Property Name="TensileComb" />
+      <Property Name="ExtendFrom" />
+      <Property Name="Member" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="ESADS.Mechanics.Design.Beam.eDMember">
+    <Position X="19.75" Y="24.75" Width="2.25" />
+    <Members>
+      <Method Name="AreaOf" Hidden="true" />
+      <Field Name="bar1" Hidden="true" />
+      <Field Name="bar10" Hidden="true" />
+      <Field Name="bar11" Hidden="true" />
+      <Field Name="bar12" Hidden="true" />
+      <Field Name="bar2" Hidden="true" />
+      <Field Name="bar3" Hidden="true" />
+      <Field Name="bar4" Hidden="true" />
+      <Field Name="bar5" Hidden="true" />
+      <Field Name="bar6" Hidden="true" />
+      <Field Name="bar7" Hidden="true" />
+      <Field Name="bar8" Hidden="true" />
+      <Field Name="bar9" Hidden="true" />
+      <Field Name="beam" Hidden="true" />
+      <Property Name="Concrete" Hidden="true" />
+      <Field Name="effectiveSpan" Hidden="true" />
+      <Method Name="FillLongtBars" Hidden="true" />
+      <Field Name="member_Analysis" Hidden="true" />
+      <Method Name="MergeLongtBars" Hidden="true" />
+      <Method Name="NumberOf" Hidden="true" />
+      <Field Name="numOfShearSxns" Hidden="true" />
+      <Field Name="section" Hidden="true" />
+      <Field Name="shearSection" Hidden="true" />
+      <Field Name="spanSxn" Hidden="true" />
+      <Field Name="spanType" Hidden="true" />
+      <Property Name="Steel" Hidden="true" />
+      <Field Name="supportSxn_Left" Hidden="true" />
+      <Field Name="supportSxn_Right" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Private" Collapsed="true" />
+      <Compartment Name="Internal" Collapsed="true" />
+    </Compartments>
+    <AssociationLine Name="Member_Analysis" Type="ESADS.Mechanics.Analysis.Beam.eAMember" FixedToPoint="true">
+      <Path>
+        <Point X="22" Y="26.688" />
+        <Point X="24.75" Y="26.688" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="Beam" Type="ESADS.Mechanics.Design.Beam.eDBeam" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="20.125" Y="24.75" />
+        <Point X="20.125" Y="22.178" />
+        <Point X="16.75" Y="22.178" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="SupportSxn_Left" Type="ESADS.Mechanics.Design.Beam.eDFlexureSection" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="22" Y="25.062" />
+        <Point X="23.5" Y="25.062" />
+        <Point X="23.5" Y="23.944" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="SupportSxn_Right" Type="ESADS.Mechanics.Design.Beam.eDFlexureSection" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="21" Y="24.75" />
+        <Point X="21" Y="23.562" />
+        <Point X="21.25" Y="23.562" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="SpanSxn" Type="ESADS.Mechanics.Design.Beam.eDFlexureSection" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="22" Y="25.428" />
+        <Point X="24.375" Y="25.428" />
+        <Point X="24.375" Y="23.491" />
+        <Point X="24" Y="23.491" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="Section" Type="ESADS.Mechanics.Design.Beam.eBeamSection" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="19.812" Y="24.75" />
+        <Point X="19.812" Y="23.75" />
+        <Point X="16.333" Y="23.75" Type="JumpStart" />
+        <Point X="16.167" Y="23.75" Type="JumpEnd" />
+        <Point X="15.052" Y="23.75" Type="JumpStart" />
+        <Point X="14.885" Y="23.75" Type="JumpEnd" />
+        <Point X="12.75" Y="23.75" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="Bar1" Type="ESADS.Mechanics.Design.Beam.eLongtBar" FixedToPoint="true">
+      <Path>
+        <Point X="19.75" Y="26.81" />
+        <Point X="17.5" Y="26.81" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="Bar3" Type="ESADS.Mechanics.Design.Beam.eLongtBar" FixedFromPoint="true">
+      <Path>
+        <Point X="19.75" Y="26.001" />
+        <Point X="17.5" Y="26.001" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="Bar7" Type="ESADS.Mechanics.Design.Beam.eLongtBar" FixedToPoint="true">
+      <Path>
+        <Point X="19.75" Y="27.141" />
+        <Point X="17.5" Y="27.141" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="Bar10" Type="ESADS.Mechanics.Design.Beam.eLongtBar" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="19.75" Y="25.608" />
+        <Point X="16.875" Y="25.608" />
+        <Point X="16.875" Y="25.75" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>hIAAgCgAAADwRxwAAIBQUECAUABBABCxEAAAHPQHDAw=</HashCode>
+      <FileName>eDMember.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Member_Analysis" />
+      <Property Name="ShearSection" />
+      <Property Name="Beam" />
+      <Property Name="SupportSxn_Left" />
+      <Property Name="SupportSxn_Right" />
+      <Property Name="SpanSxn" />
+      <Property Name="Section" />
+      <Property Name="Bar1" />
+      <Property Name="Bar2" />
+      <Property Name="Bar3" />
+      <Property Name="Bar4" />
+      <Property Name="Bar5" />
+      <Property Name="Bar6" />
+      <Property Name="Bar7" />
+      <Property Name="Bar8" />
+      <Property Name="Bar9" />
+      <Property Name="Bar10" />
+      <Property Name="Bar11" />
+      <Property Name="Bar12" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="ESADS.Mechanics.Design.Beam.eDSection">
+    <Position X="21.5" Y="12.75" Width="2" />
+    <Members>
+      <Field Name="b" Hidden="true" />
+      <Field Name="beam" Hidden="true" />
+      <Field Name="d" Hidden="true" />
+      <Field Name="D" Hidden="true" />
+      <Field Name="designCompleted" Hidden="true" />
+      <Field Name="intervals" Hidden="true" />
+      <Method Name="IsSimilar" Hidden="true" />
+      <Field Name="name" Hidden="true" />
+    </Members>
+    <AssociationLine Name="Beam" Type="ESADS.Mechanics.Design.Beam.eDBeam" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="21.625" Y="16.162" />
+        <Point X="21.625" Y="17.552" />
+        <Point X="20.771" Y="17.552" Type="JumpStart" />
+        <Point X="20.604" Y="17.552" Type="JumpEnd" />
+        <Point X="19.901" Y="17.552" />
+        <Point X="19.901" Y="18.809" />
+        <Point X="16.75" Y="18.809" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAIAAAgAAAAACCAAAIBAAESQQAAEAACkAYAABAAQAAA=</HashCode>
+      <FileName>eDSection.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Beam" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="ESADS.Mechanics.Design.Beam.eDShearSection">
+    <Position X="17.25" Y="13.25" Width="2.5" />
+    <Members>
+      <Field Name="areaOfSteel" Hidden="true" />
+      <Field Name="barConjested" Hidden="true" />
+      <Field Name="barSpacing" Hidden="true" />
+      <Field Name="failedInDiagComp" Hidden="true" />
+      <Field Name="failureNote" Hidden="true" />
+      <Method Name="FillBarSpacing" Hidden="true" />
+      <Field Name="flexureSection" Hidden="true" />
+      <Method Name="GetConcShearCapacity" Hidden="true" />
+      <Method Name="IsSimilar" Hidden="true" />
+      <Field Name="numberOfBars" Hidden="true" />
+      <Field Name="preceision" Hidden="true" />
+      <Field Name="shear" Hidden="true" />
+      <Field Name="shearBars" Hidden="true" />
+      <Field Name="trensverseSpacingExceeded" Hidden="true" />
+      <Property Name="V" Hidden="true" />
+      <Field Name="V_c" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Private" Collapsed="true" />
+    </Compartments>
+    <AssociationLine Name="FlexureSection" Type="ESADS.Mechanics.Design.Beam.eDFlexureSection" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="19.75" Y="16.545" />
+        <Point X="21.542" Y="16.545" Type="JumpStart" />
+        <Point X="21.708" Y="16.545" Type="JumpEnd" />
+        <Point X="22.062" Y="16.545" />
+        <Point X="22.062" Y="18" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>CAAECwAABIAAKCAAAAgCAAACFIABAhaAgRISAACwAAg=</HashCode>
+      <FileName>eDShearSection.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="FlexureSection" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="ShearBars" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="ESADS.Mechanics.Design.Beam.eLongtBar" BaseTypeListCollapsed="true">
+    <Position X="15.75" Y="25.75" Width="1.75" />
+    <Members>
+      <Field Name="bentOnTheLeft" Hidden="true" />
+      <Property Name="BentOnTheLeft" Hidden="true" />
+      <Field Name="bentOnTheRight" Hidden="true" />
+      <Property Name="BentOnTheRight" Hidden="true" />
+      <Method Name="CheckRequiredAnchorageLength" Hidden="true" />
+      <Field Name="diameter" Hidden="true" />
+      <Field Name="end" Hidden="true" />
+      <Method Name="FillAnchorageLengths" Hidden="true" />
+      <Method Name="FillLength" Hidden="true" />
+      <Method Name="FillLengthLimits" Hidden="true" />
+      <Method Name="FillType" Hidden="true" />
+      <Field Name="isBent" Hidden="true" />
+      <Property Name="IsBent" Hidden="true" />
+      <Field Name="isInCompression" Hidden="true" />
+      <Field Name="isInSpan" Hidden="true" />
+      <Field Name="isOnLeft" Hidden="true" />
+      <Field Name="isTop" Hidden="true" />
+      <Field Name="length" Hidden="true" />
+      <Field Name="lengths" Hidden="true" />
+      <Field Name="level" Hidden="true" />
+      <Field Name="name" Hidden="true" />
+      <Field Name="number" Hidden="true" />
+      <Field Name="Points" Hidden="true" />
+      <Field Name="section" Hidden="true" />
+      <Field Name="start" Hidden="true" />
+      <Field Name="subLevel" Hidden="true" />
+      <Field Name="type" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Private" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>kQIAgBACASAAwACkAkYAJARQgIEFAAGBAwABAYMAAIA=</HashCode>
+      <FileName>eLongBar.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Orientation="Bottom" Position="0.1" />
+  </Class>
+  <Class Name="ESADS.Mechanics.Analysis.Beam.eABeam">
+    <Position X="7.75" Y="17.5" Width="2.5" />
+    <TypeIdentifier />
+    <ShowAsAssociation>
+      <Property Name="Beam_Design" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="ESADS.Mechanics.Design.eConcrete">
+    <Position X="10" Y="12.5" Width="2.25" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="ESADS.Mechanics.Design.eSteel">
+    <Position X="12.5" Y="12.5" Width="2" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="ESADS.Mechanics.Analysis.Beam.eAMember" Collapsed="true">
+    <Position X="24.75" Y="26.25" Width="1.5" />
+    <TypeIdentifier />
+    <ShowAsAssociation>
+      <Property Name="Member_Design" />
+    </ShowAsAssociation>
+  </Class>
+  <Struct Name="ESADS.Mechanics.Design.Beam.eShearBar" BaseTypeListCollapsed="true">
+    <Position X="17.5" Y="10" Width="2" />
+    <Members>
+      <Field Name="barType" Hidden="true" />
+      <Field Name="diameter" Hidden="true" />
+      <Method Name="FillDetails" Hidden="true" />
+      <Field Name="isTop" Hidden="true" />
+      <Field Name="lengths" Hidden="true" />
+      <Field Name="name" Hidden="true" />
+      <Field Name="section" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>gAAAQAAAAAAAAAACAAAAAARAAIAEAAGCAgABAAIAAAA=</HashCode>
+      <FileName>eShearBar.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Struct>
+  <Interface Name="ESADS.Mechanics.Design.Beam.eIBar">
+    <Position X="13.75" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAABAAAAAAA=</HashCode>
+      <FileName>eIBar.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Comic Sans MS" Size="9" />
+</ClassDiagram>

@@ -1,0 +1,28 @@
+D:\Accademics\Projects and Assignments\ESADS\ESADS\ESADS_GUI\TestWorkshop\bin\Debug\TestWorkshop.exe
+D:\Accademics\Projects and Assignments\ESADS\ESADS\ESADS_GUI\TestWorkshop\bin\Debug\TestWorkshop.pdb
+D:\Accademics\Projects and Assignments\ESADS\ESADS\ESADS_GUI\TestWorkshop\obj\x86\Debug\ResolveAssemblyReference.cache
+D:\Accademics\Projects and Assignments\ESADS\ESADS\ESADS_GUI\TestWorkshop\obj\x86\Debug\TestWorkshop.exe
+D:\Accademics\Projects and Assignments\ESADS\ESADS\ESADS_GUI\TestWorkshop\obj\x86\Debug\TestWorkshop.pdb
+\\Tsinu-pc\esads\ESADS\ESADS_GUI\TestWorkshop\bin\Debug\TestWorkshop.exe
+\\Tsinu-pc\esads\ESADS\ESADS_GUI\TestWorkshop\bin\Debug\TestWorkshop.pdb
+\\Tsinu-pc\esads\ESADS\ESADS_GUI\TestWorkshop\obj\x86\Debug\ResolveAssemblyReference.cache
+\\Tsinu-pc\esads\ESADS\ESADS_GUI\TestWorkshop\obj\x86\Debug\TestWorkshop.exe
+\\Tsinu-pc\esads\ESADS\ESADS_GUI\TestWorkshop\obj\x86\Debug\TestWorkshop.pdb
+D:\Accademics\Projects and Assignments\Private - Active\ESADS\Libraries\ESADS_GUI\TestWorkshop\bin\Debug\TestWorkshop.exe
+D:\Accademics\Projects and Assignments\Private - Active\ESADS\Libraries\ESADS_GUI\TestWorkshop\bin\Debug\TestWorkshop.pdb
+D:\Accademics\Projects and Assignments\Private - Active\ESADS\Libraries\ESADS_GUI\TestWorkshop\obj\x86\Debug\TestWorkshop.exe
+D:\Accademics\Projects and Assignments\Private - Active\ESADS\Libraries\ESADS_GUI\TestWorkshop\obj\x86\Debug\TestWorkshop.pdb
+\\TSINU-PC\Libraries\ESADS_GUI\TestWorkshop\bin\Debug\TestWorkshop.exe
+\\TSINU-PC\Libraries\ESADS_GUI\TestWorkshop\bin\Debug\TestWorkshop.pdb
+\\TSINU-PC\Libraries\ESADS_GUI\TestWorkshop\obj\x86\Debug\ResolveAssemblyReference.cache
+\\TSINU-PC\Libraries\ESADS_GUI\TestWorkshop\obj\x86\Debug\TestWorkshop.exe
+\\TSINU-PC\Libraries\ESADS_GUI\TestWorkshop\obj\x86\Debug\TestWorkshop.pdb
+D:\Accademics\Projects and Assignments\Private - Active\ESADS\Libraries\ESADS.GUI.Controls\TestWorkshop\bin\Debug\TestWorkshop.exe
+D:\Accademics\Projects and Assignments\Private - Active\ESADS\Libraries\ESADS.GUI.Controls\TestWorkshop\bin\Debug\TestWorkshop.pdb
+D:\Accademics\Projects and Assignments\Private - Active\ESADS\Libraries\ESADS.GUI.Controls\TestWorkshop\obj\x86\Debug\TestWorkshop.exe
+D:\Accademics\Projects and Assignments\Private - Active\ESADS\Libraries\ESADS.GUI.Controls\TestWorkshop\obj\x86\Debug\TestWorkshop.pdb
+\\TSINU-PC\Libraries\ESADS.GUI.Controls\TestWorkshop\bin\Debug\TestWorkshop.exe
+\\TSINU-PC\Libraries\ESADS.GUI.Controls\TestWorkshop\bin\Debug\TestWorkshop.pdb
+\\TSINU-PC\Libraries\ESADS.GUI.Controls\TestWorkshop\obj\x86\Debug\ResolveAssemblyReference.cache
+\\TSINU-PC\Libraries\ESADS.GUI.Controls\TestWorkshop\obj\x86\Debug\TestWorkshop.exe
+\\TSINU-PC\Libraries\ESADS.GUI.Controls\TestWorkshop\obj\x86\Debug\TestWorkshop.pdb

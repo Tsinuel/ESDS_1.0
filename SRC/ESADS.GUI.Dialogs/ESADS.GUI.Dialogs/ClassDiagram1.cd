@@ -1,0 +1,206 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="ESADS.GUI.eAdvancedSelectionDialog" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EgAAAAAAACAAAAEAAACAAEACAAAAAAAAACAAAAAAAAI=</HashCode>
+      <FileName>eAdvancedSelectionDialog.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ESADS.GUI.eAssignJointDialog" Collapsed="true">
+    <Position X="5.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AwAAgIIAACBAABFDAQGIIIyCACIMBEAAgiAAIQAIAAE=</HashCode>
+      <FileName>eAssignBeamJointDialog.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ESADS.GUI.eAssignBeamJointLoadDialog" Collapsed="true">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAESAAACAIUBHACICAgAECEAIAGAAAAaAABCEQhBQ=</HashCode>
+      <FileName>eAssignBeamJointLoadDialog.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ESADS.GUI.eAssignBeamLoadDialog" Collapsed="true">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>8JKBlSCCRWA4UhXgCpSAk0ECMAIyGASAAaBQnLEQojA=</HashCode>
+      <FileName>eAssignBeamLoadDialog.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ESADS.GUI.eAssignSlabLoad" Collapsed="true">
+    <Position X="7.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIEQAAACAAQBHAAACAAEgCAAAAAAQAAKAACAEQCAI=</HashCode>
+      <FileName>eAssignSlabLoad.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ESADS.GUI.eBeamSectionDialog" Collapsed="true">
+    <Position X="9.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAACAAAAACASABEAAYCgAMAKAgIACFAAACAgBYCAAAw=</HashCode>
+      <FileName>eBeamSectionDialog.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ESADS.GUI.eColumnOutputDialog" Collapsed="true">
+    <Position X="0.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>/wIAEBAAQCEAQBHBAoCBIQACQAgICmAFFOBQAQAggBA=</HashCode>
+      <FileName>eColumnOutputDialog.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ESADS.GUI.eColumnReinforcementDistributionDialog" Collapsed="true">
+    <Position X="2.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>wQAAAACAACAAAAAAICCAAAACAAgCAEAgACDAAICAAAA=</HashCode>
+      <FileName>eColumnReinforcementDistributionDialog.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ESADS.GUI.eCurtailmentRules" Collapsed="true">
+    <Position X="4" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAACAAABEAAACACIACAAICAEAIACAAIBBAAEA=</HashCode>
+      <FileName>eCurtailmentRules.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ESADS.GUI.eDefineBeamSectionDialog" Collapsed="true">
+    <Position X="5.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAQAAgAAACAAAgkQAACACIADAAIgAEYAACACEAAEAEA=</HashCode>
+      <FileName>eDefineBeamSectionDialog.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ESADS.GUI.eDefineMaterialDialog" Collapsed="true">
+    <Position X="7.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgCAAAEEACA4C5UCABCgDIBaAIYADEAAAigAAAEAAUI=</HashCode>
+      <FileName>eDefineMaterialDialog.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ESADS.GUI.eEditSlabGridDialog" Collapsed="true">
+    <Position X="9.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACQAQGAAACAQgBEAAISgDoAKASZAjECAQaABBACAAAg=</HashCode>
+      <FileName>eEditSlabGridDialog.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ESADS.GUI.eLayersDialog" Collapsed="true">
+    <Position X="2.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABQAAAAAACBAAB0EABCACIACAAAAAEAEACgALAIQAEA=</HashCode>
+      <FileName>eLayersDialog.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ESADS.GUI.eModelForm" Collapsed="true">
+    <Position X="4" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAgACAAIAwAAICIAAAiiAIAAEACAAAAAAAAAAA=</HashCode>
+      <FileName>eModelForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ESADS.GUI.eNewBeamDialog" Collapsed="true">
+    <Position X="5.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAIAASAAAhEAAAnAAIACYAYQC0ASAKAgEAAAAAo=</HashCode>
+      <FileName>eNewBeamDialog.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ESADS.GUI.eNewColumnDialog" Collapsed="true">
+    <Position X="7.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>/0iAEIAggCUgBhXAAaGoINAbEQAiCEAgEKAYAAABHAI=</HashCode>
+      <FileName>eNewColumnDialog.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ESADS.GUI.eNewFootingDialog" Collapsed="true">
+    <Position X="9.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>/4CIUBIBoCAgABHIIKCoAJBKiCCgyMkAAKAQABJRBLg=</HashCode>
+      <FileName>eNewFootingDialog.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ESADS.GUI.eNewMaterialDialog" Collapsed="true">
+    <Position X="0.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>JEAAAgAAQCAQIAECIgCQEIQCAAAAiMABYAgAAEBAIAA=</HashCode>
+      <FileName>eNewMaterialDialog.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ESADS.GUI.eNewModelDialog" Collapsed="true">
+    <Position X="2.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>oAQCFBACAyAAABiCBYCAABQCMAAAABKAEKAQiAAAAAg=</HashCode>
+      <FileName>eNewModelDialog.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ESADS.GUI.eNewSlabDialog" Collapsed="true">
+    <Position X="4" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgYIFAABAKCQABFIAAGABoACABIACkGAADCABABAEAg=</HashCode>
+      <FileName>eNewSlabDialog.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ESADS.GUI.eOptionsDialog" Collapsed="true">
+    <Position X="5.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>/8cJSEqEomCAGpubkK+JaIhO/C4Ni0C6d+sY9gUIG34=</HashCode>
+      <FileName>eOptionsDialog.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ESADS.GUI.eProgress" Collapsed="true">
+    <Position X="7.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAiAAAAAAAACAAAACAAAYAAAAACAACAAAAAA=</HashCode>
+      <FileName>eProgress.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ESADS.GUI.ProjectInformationDialog" Collapsed="true">
+    <Position X="2.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAQAAAyEADAEREACAAMAGKAAAIFACAAABIIAAACA=</HashCode>
+      <FileName>eProjectInformationDialog.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ESADS.GUI.eQuickSlabGridDialog" Collapsed="true">
+    <Position X="9.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABIAAAAhACgQABEAAACAAIACAAAAAEAAACiABAJoAAg=</HashCode>
+      <FileName>eQuickSlabGridDialog.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ESADS.GUI.eStartUpPictureForm" Collapsed="true">
+    <Position X="0.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAgSAAAAAAAACAAAECIAAgAgAAAAAAAAQAAQA=</HashCode>
+      <FileName>eStartUpPictureForm.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ESADS.GUI.eExportToAutoCAD2007Dialog" Collapsed="true">
+    <Position X="0.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ARYEUAANASAGGBEgahCINEZiBMgICAwQACGEYIAAgTs=</HashCode>
+      <FileName>Export to AutoCAD2007.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ESADS.GUI.Properties.Resources" Collapsed="true">
+    <Position X="4" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AARAgQCAAQQYIAIYBUgRNAAAQQFAaAQAARIAAAEAFIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="ESADS.GUI.eAssignOptions" Collapsed="true">
+    <Position X="0.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAACA=</HashCode>
+      <FileName>eAssignOptions.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ESADS.GUI.eMemberLoadTypes" Collapsed="true">
+    <Position X="2.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAQAAAAAAgBAAAAAQAAAEAAAAAAAAAAAAAA=</HashCode>
+      <FileName>eMemberLoadTypes.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

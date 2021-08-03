@@ -1,0 +1,70 @@
+D:\Accademics\Projects and Assignments\Private - Active\ESADS\Libraries\ESADS.EGraphics.Beam\ESADS.EGraphics.Beam\obj\Debug\ESADS.EGraphics.Beam.csprojResolveAssemblyReference.cache
+D:\Accademics\Projects and Assignments\Private - Active\ESADS\Libraries\ESADS.EGraphics.Beam\ESADS.EGraphics.Beam\bin\Debug\ESADS.EGraphics.Beam.dll
+D:\Accademics\Projects and Assignments\Private - Active\ESADS\Libraries\ESADS.EGraphics.Beam\ESADS.EGraphics.Beam\bin\Debug\ESADS.EGraphics.Beam.pdb
+D:\Accademics\Projects and Assignments\Private - Active\ESADS\Libraries\ESADS.EGraphics.Beam\ESADS.EGraphics.Beam\bin\Debug\ESADS.Mechanics.Analysis.dll
+D:\Accademics\Projects and Assignments\Private - Active\ESADS\Libraries\ESADS.EGraphics.Beam\ESADS.EGraphics.Beam\bin\Debug\ESADS_GUI_Controls.dll
+D:\Accademics\Projects and Assignments\Private - Active\ESADS\Libraries\ESADS.EGraphics.Beam\ESADS.EGraphics.Beam\bin\Debug\ESADS.Code.dll
+D:\Accademics\Projects and Assignments\Private - Active\ESADS\Libraries\ESADS.EGraphics.Beam\ESADS.EGraphics.Beam\bin\Debug\ESADS.Graphics.pdb
+D:\Accademics\Projects and Assignments\Private - Active\ESADS\Libraries\ESADS.EGraphics.Beam\ESADS.EGraphics.Beam\bin\Debug\ESADS.Mechanics.Analysis.pdb
+D:\Accademics\Projects and Assignments\Private - Active\ESADS\Libraries\ESADS.EGraphics.Beam\ESADS.EGraphics.Beam\bin\Debug\ESADS.Mechanics.Analysis.xml
+D:\Accademics\Projects and Assignments\Private - Active\ESADS\Libraries\ESADS.EGraphics.Beam\ESADS.EGraphics.Beam\bin\Debug\ESADS.Mechanics.Design.pdb
+D:\Accademics\Projects and Assignments\Private - Active\ESADS\Libraries\ESADS.EGraphics.Beam\ESADS.EGraphics.Beam\bin\Debug\ESADS_GUI_Controls.pdb
+D:\Accademics\Projects and Assignments\Private - Active\ESADS\Libraries\ESADS.EGraphics.Beam\ESADS.EGraphics.Beam\bin\Debug\ESADS.Code.pdb
+D:\Accademics\Projects and Assignments\Private - Active\ESADS\Libraries\ESADS.EGraphics.Beam\ESADS.EGraphics.Beam\bin\Debug\ESADS.Code.xml
+D:\Accademics\Projects and Assignments\Private - Active\ESADS\Libraries\ESADS.EGraphics.Beam\ESADS.EGraphics.Beam\obj\Debug\ESADS.EGraphics.Beam.dll
+D:\Accademics\Projects and Assignments\Private - Active\ESADS\Libraries\ESADS.EGraphics.Beam\ESADS.EGraphics.Beam\obj\Debug\ESADS.EGraphics.Beam.pdb
+D:\Accademics\Projects and Assignments\Private - Active\ESADS\Libraries\ESADS.EGraphics.Beam\ESADS.EGraphics.Beam\bin\Debug\ESADS.Graphics.Column.dll
+D:\Accademics\Projects and Assignments\Private - Active\ESADS\Libraries\ESADS.EGraphics.Beam\ESADS.EGraphics.Beam\bin\Debug\ESADS.Mechanics.Design.Column.dll
+D:\Accademics\Projects and Assignments\Private - Active\ESADS\Libraries\ESADS.EGraphics.Beam\ESADS.EGraphics.Beam\bin\Debug\ESADS.Graphics.Column.pdb
+D:\Accademics\Projects and Assignments\Private - Active\ESADS\Libraries\ESADS.EGraphics.Beam\ESADS.EGraphics.Beam\bin\Debug\ESADS.Mechanics.Design.Column.pdb
+D:\Accademics\Projects and Assignments\Private - Active\ESADS\Libraries\ESADS.EGraphics.Beam\ESADS.EGraphics.Beam\bin\Debug\ESADS.Mechanics.Analysis.Beam.dll
+D:\Accademics\Projects and Assignments\Private - Active\ESADS\Libraries\ESADS.EGraphics.Beam\ESADS.EGraphics.Beam\bin\Debug\ESADS.Mechanics.Design.Beam.dll
+D:\Accademics\Projects and Assignments\Private - Active\ESADS\Libraries\ESADS.EGraphics.Beam\ESADS.EGraphics.Beam\bin\Debug\ESADS.Mechanics.Analysis.Beam.pdb
+D:\Accademics\Projects and Assignments\Private - Active\ESADS\Libraries\ESADS.EGraphics.Beam\ESADS.EGraphics.Beam\bin\Debug\ESADS.Mechanics.Design.Beam.pdb
+D:\Accademics\Projects and Assignments\Private - Active\ESADS\Libraries\ESADS.EGraphics.Beam\ESADS.EGraphics.Beam\bin\Debug\ESADS.Mechanics.Design.Beam.xml
+\\TSINU-PC\Libraries\ESADS.EGraphics.Beam\ESADS.EGraphics.Beam\obj\Debug\ResolveAssemblyReference.cache
+\\TSINU-PC\Libraries\ESADS.EGraphics.Beam\ESADS.EGraphics.Beam\obj\Debug\ESADS.EGraphics.Beam.pdb
+\\TSINU-PC\Libraries\ESADS.EGraphics.Beam\ESADS.EGraphics.Beam\bin\Debug\ESADS.EGraphics.Beam.dll
+\\TSINU-PC\Libraries\ESADS.EGraphics.Beam\ESADS.EGraphics.Beam\bin\Debug\ESADS.EGraphics.Beam.pdb
+\\TSINU-PC\Libraries\ESADS.EGraphics.Beam\ESADS.EGraphics.Beam\bin\Debug\ESADS.Code.dll
+\\TSINU-PC\Libraries\ESADS.EGraphics.Beam\ESADS.EGraphics.Beam\bin\Debug\ESADS.Graphics.dll
+\\TSINU-PC\Libraries\ESADS.EGraphics.Beam\ESADS.EGraphics.Beam\bin\Debug\ESADS.GUI.Dialogs.dll
+\\TSINU-PC\Libraries\ESADS.EGraphics.Beam\ESADS.EGraphics.Beam\bin\Debug\ESADS.Mechanics.Analysis.Beam.dll
+\\TSINU-PC\Libraries\ESADS.EGraphics.Beam\ESADS.EGraphics.Beam\bin\Debug\ESADS.Mechanics.Analysis.dll
+\\TSINU-PC\Libraries\ESADS.EGraphics.Beam\ESADS.EGraphics.Beam\bin\Debug\ESADS.Mechanics.Design.Beam.dll
+\\TSINU-PC\Libraries\ESADS.EGraphics.Beam\ESADS.EGraphics.Beam\bin\Debug\ESADS.Mechanics.Design.dll
+\\TSINU-PC\Libraries\ESADS.EGraphics.Beam\ESADS.EGraphics.Beam\bin\Debug\ESADS_GUI_Controls.dll
+\\TSINU-PC\Libraries\ESADS.EGraphics.Beam\ESADS.EGraphics.Beam\bin\Debug\ESADS.Graphics.Column.dll
+\\TSINU-PC\Libraries\ESADS.EGraphics.Beam\ESADS.EGraphics.Beam\bin\Debug\ESADS.Mechanics.Design.Column.dll
+\\TSINU-PC\Libraries\ESADS.EGraphics.Beam\ESADS.EGraphics.Beam\bin\Debug\ESADS.Code.pdb
+\\TSINU-PC\Libraries\ESADS.EGraphics.Beam\ESADS.EGraphics.Beam\bin\Debug\ESADS.Code.xml
+\\TSINU-PC\Libraries\ESADS.EGraphics.Beam\ESADS.EGraphics.Beam\bin\Debug\ESADS.Graphics.pdb
+\\TSINU-PC\Libraries\ESADS.EGraphics.Beam\ESADS.EGraphics.Beam\bin\Debug\ESADS.GUI.Dialogs.pdb
+\\TSINU-PC\Libraries\ESADS.EGraphics.Beam\ESADS.EGraphics.Beam\bin\Debug\ESADS.GUI.Dialogs.xml
+\\TSINU-PC\Libraries\ESADS.EGraphics.Beam\ESADS.EGraphics.Beam\bin\Debug\ESADS.Mechanics.Analysis.pdb
+\\TSINU-PC\Libraries\ESADS.EGraphics.Beam\ESADS.EGraphics.Beam\bin\Debug\ESADS.Mechanics.Analysis.xml
+\\TSINU-PC\Libraries\ESADS.EGraphics.Beam\ESADS.EGraphics.Beam\bin\Debug\ESADS.Mechanics.Analysis.Beam.pdb
+\\TSINU-PC\Libraries\ESADS.EGraphics.Beam\ESADS.EGraphics.Beam\bin\Debug\ESADS.Mechanics.Design.pdb
+\\TSINU-PC\Libraries\ESADS.EGraphics.Beam\ESADS.EGraphics.Beam\bin\Debug\ESADS.Mechanics.Design.xml
+\\TSINU-PC\Libraries\ESADS.EGraphics.Beam\ESADS.EGraphics.Beam\bin\Debug\ESADS.Mechanics.Design.Beam.pdb
+\\TSINU-PC\Libraries\ESADS.EGraphics.Beam\ESADS.EGraphics.Beam\bin\Debug\ESADS.Mechanics.Design.Beam.xml
+\\TSINU-PC\Libraries\ESADS.EGraphics.Beam\ESADS.EGraphics.Beam\bin\Debug\ESADS_GUI_Controls.pdb
+\\TSINU-PC\Libraries\ESADS.EGraphics.Beam\ESADS.EGraphics.Beam\bin\Debug\ESADS.Graphics.Column.pdb
+\\TSINU-PC\Libraries\ESADS.EGraphics.Beam\ESADS.EGraphics.Beam\bin\Debug\ESADS.Mechanics.Design.Column.pdb
+\\TSINU-PC\Libraries\ESADS.EGraphics.Beam\ESADS.EGraphics.Beam\obj\Debug\ESADS.EGraphics.Beam.dll
+D:\Accademics\Projects and Assignments\Private - Active\ESADS\Libraries\ESADS.EGraphics.Beam\ESADS.EGraphics.Beam\bin\Debug\ESADS.GUI.Dialogs.pdb
+D:\Accademics\Projects and Assignments\Private - Active\ESADS\Libraries\ESADS.EGraphics.Beam\ESADS.EGraphics.Beam\bin\Debug\ESADS.GUI.Dialogs.xml
+D:\Accademics\Projects and Assignments\Private - Active\ESADS\Libraries\ESADS.EGraphics.Beam\ESADS.EGraphics.Beam\bin\Debug\ESADS.GUI.MainForm.exe
+D:\Accademics\Projects and Assignments\Private - Active\ESADS\Libraries\ESADS.EGraphics.Beam\ESADS.EGraphics.Beam\bin\Debug\ESADS.pdb
+D:\Accademics\Projects and Assignments\Private - Active\ESADS\Libraries\ESADS.EGraphics.Beam\ESADS.EGraphics.Beam\bin\Debug\ESADS.xml
+D:\Accademics\Projects and Assignments\Private - Active\ESADS\Libraries\ESADS.EGraphics.Beam\ESADS.EGraphics.Beam\bin\Debug\ESADS.GUI.MainForm.pdb
+D:\Accademics\Projects and Assignments\Private - Active\ESADS\Libraries\ESADS.EGraphics.Beam\ESADS.EGraphics.Beam\bin\Debug\ESADS.Graphics.Column.xml
+D:\Accademics\Projects and Assignments\Private - Active\ESADS\Libraries\ESADS.EGraphics.Beam\ESADS.EGraphics.Beam\bin\Debug\ESADS.dll
+D:\Accademics\Projects and Assignments\Private - Active\ESADS\Libraries\ESADS.EGraphics.Beam\ESADS.EGraphics.Beam\bin\Debug\ESADS.Graphics.dll
+D:\Accademics\Projects and Assignments\Private - Active\ESADS\Libraries\ESADS.EGraphics.Beam\ESADS.EGraphics.Beam\bin\Debug\ESADS.GUI.Dialogs.dll
+D:\Accademics\Projects and Assignments\Private - Active\ESADS\Libraries\ESADS.EGraphics.Beam\ESADS.EGraphics.Beam\bin\Debug\ESADS.Mechanics.Design.dll
+D:\Accademics\Projects and Assignments\Private - Active\ESADS\Libraries\ESADS.EGraphics.Beam\ESADS.EGraphics.Beam\bin\Debug\ESADS.Export.ToAutoCAD.dll
+D:\Accademics\Projects and Assignments\Private - Active\ESADS\Libraries\ESADS.EGraphics.Beam\ESADS.EGraphics.Beam\bin\Debug\ESADS.Export.ToAutoCAD.pdb
+D:\Accademics\Projects and Assignments\Private - Active\ESADS\Libraries\ESADS.EGraphics.Beam\ESADS.EGraphics.Beam\bin\Debug\ESADS.Graphics.xml
+D:\Accademics\Projects and Assignments\Private - Active\ESADS\Libraries\ESADS.EGraphics.Beam\ESADS.EGraphics.Beam\bin\Debug\ESADS.GUI.Controls.dll
+D:\Accademics\Projects and Assignments\Private - Active\ESADS\Libraries\ESADS.EGraphics.Beam\ESADS.EGraphics.Beam\bin\Debug\ESADS.GUI.Controls.pdb

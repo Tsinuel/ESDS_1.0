@@ -1,0 +1,39 @@
+D:\Accademics\Projects and Assignments\ESADS\ESADS\ESADS_GUI\ESADS_GUI_Controls\bin\Debug\ESADS_GUI_Controls.dll
+D:\Accademics\Projects and Assignments\ESADS\ESADS\ESADS_GUI\ESADS_GUI_Controls\bin\Debug\ESADS_GUI_Controls.pdb
+D:\Accademics\Projects and Assignments\ESADS\ESADS\ESADS_GUI\ESADS_GUI_Controls\obj\Debug\ResolveAssemblyReference.cache
+D:\Accademics\Projects and Assignments\ESADS\ESADS\ESADS_GUI\ESADS_GUI_Controls\obj\Debug\GenerateResource.read.1.tlog
+D:\Accademics\Projects and Assignments\ESADS\ESADS\ESADS_GUI\ESADS_GUI_Controls\obj\Debug\GenerateResource.write.1.tlog
+D:\Accademics\Projects and Assignments\ESADS\ESADS\ESADS_GUI\ESADS_GUI_Controls\obj\Debug\ESADS_GUI_Controls.dll
+D:\Accademics\Projects and Assignments\ESADS\ESADS\ESADS_GUI\ESADS_GUI_Controls\obj\Debug\ESADS_GUI_Controls.pdb
+D:\Accademics\Projects and Assignments\ESADS\ESADS\ESADS_GUI\ESADS_GUI_Controls\obj\Debug\ESADS_GUI_Controls.Properties.Resources.resources
+\\Tsinu-pc\esads\ESADS\ESADS_GUI\ESADS_GUI_Controls\bin\Debug\ESADS_GUI_Controls.dll
+\\Tsinu-pc\esads\ESADS\ESADS_GUI\ESADS_GUI_Controls\bin\Debug\ESADS_GUI_Controls.pdb
+\\Tsinu-pc\esads\ESADS\ESADS_GUI\ESADS_GUI_Controls\obj\Debug\ResolveAssemblyReference.cache
+\\Tsinu-pc\esads\ESADS\ESADS_GUI\ESADS_GUI_Controls\obj\Debug\ESADS_GUI_Controls.Properties.Resources.resources
+\\Tsinu-pc\esads\ESADS\ESADS_GUI\ESADS_GUI_Controls\obj\Debug\GenerateResource.read.1.tlog
+\\Tsinu-pc\esads\ESADS\ESADS_GUI\ESADS_GUI_Controls\obj\Debug\GenerateResource.write.1.tlog
+\\Tsinu-pc\esads\ESADS\ESADS_GUI\ESADS_GUI_Controls\obj\Debug\ESADS_GUI_Controls.dll
+\\Tsinu-pc\esads\ESADS\ESADS_GUI\ESADS_GUI_Controls\obj\Debug\ESADS_GUI_Controls.pdb
+\\Tsinu-pc\esads\ESADS\ESADS_GUI\ESADS_GUI_Controls\obj\Debug\ESADS.GUI.Controls.eStructureTemplate.resources
+\\Tsinu-pc\esads\ESADS\ESADS_GUI\ESADS_GUI_Controls\obj\Debug\ESADS.GUI.Controls.eNumericTextBox.resources
+D:\Accademics\Projects and Assignments\ESADS\ESADS\ESADS_GUI\ESADS_GUI_Controls\obj\Debug\ESADS.GUI.Controls.eStructureTemplate.resources
+D:\Accademics\Projects and Assignments\ESADS\ESADS\ESADS_GUI\ESADS_GUI_Controls\obj\Debug\ESADS.GUI.Controls.eNumericTextBox.resources
+D:\Accademics\Projects and Assignments\Private - Active\ESADS\Libraries\ESADS_GUI\ESADS_GUI_Controls\bin\Debug\ESADS_GUI_Controls.dll
+D:\Accademics\Projects and Assignments\Private - Active\ESADS\Libraries\ESADS_GUI\ESADS_GUI_Controls\bin\Debug\ESADS_GUI_Controls.pdb
+D:\Accademics\Projects and Assignments\Private - Active\ESADS\Libraries\ESADS_GUI\ESADS_GUI_Controls\obj\Debug\ESADS_GUI_Controls.csprojResolveAssemblyReference.cache
+D:\Accademics\Projects and Assignments\Private - Active\ESADS\Libraries\ESADS_GUI\ESADS_GUI_Controls\obj\Debug\ESADS.GUI.Controls.eStructureTemplate.resources
+D:\Accademics\Projects and Assignments\Private - Active\ESADS\Libraries\ESADS_GUI\ESADS_GUI_Controls\obj\Debug\ESADS.GUI.Controls.eNumericTextBox.resources
+D:\Accademics\Projects and Assignments\Private - Active\ESADS\Libraries\ESADS_GUI\ESADS_GUI_Controls\obj\Debug\ESADS_GUI_Controls.Properties.Resources.resources
+D:\Accademics\Projects and Assignments\Private - Active\ESADS\Libraries\ESADS_GUI\ESADS_GUI_Controls\obj\Debug\ESADS_GUI_Controls.csproj.GenerateResource.Cache
+D:\Accademics\Projects and Assignments\Private - Active\ESADS\Libraries\ESADS_GUI\ESADS_GUI_Controls\obj\Debug\ESADS_GUI_Controls.dll
+D:\Accademics\Projects and Assignments\Private - Active\ESADS\Libraries\ESADS_GUI\ESADS_GUI_Controls\obj\Debug\ESADS_GUI_Controls.pdb
+\\TSINU-PC\Libraries\ESADS_GUI\ESADS_GUI_Controls\obj\Debug\ResolveAssemblyReference.cache
+\\TSINU-PC\Libraries\ESADS_GUI\ESADS_GUI_Controls\obj\Debug\ESADS.GUI.Controls.eStructureTemplate.resources
+\\TSINU-PC\Libraries\ESADS_GUI\ESADS_GUI_Controls\obj\Debug\ESADS.GUI.Controls.eNumericTextBox.resources
+\\TSINU-PC\Libraries\ESADS_GUI\ESADS_GUI_Controls\obj\Debug\GenerateResource.read.1.tlog
+\\TSINU-PC\Libraries\ESADS_GUI\ESADS_GUI_Controls\obj\Debug\GenerateResource.write.1.tlog
+\\TSINU-PC\Libraries\ESADS_GUI\ESADS_GUI_Controls\bin\Debug\ESADS.GUI.Controls.dll
+\\TSINU-PC\Libraries\ESADS_GUI\ESADS_GUI_Controls\bin\Debug\ESADS.GUI.Controls.pdb
+\\TSINU-PC\Libraries\ESADS_GUI\ESADS_GUI_Controls\obj\Debug\ESADS.GUI.Controls.Properties.Resources.resources
+\\TSINU-PC\Libraries\ESADS_GUI\ESADS_GUI_Controls\obj\Debug\ESADS.GUI.Controls.dll
+\\TSINU-PC\Libraries\ESADS_GUI\ESADS_GUI_Controls\obj\Debug\ESADS.GUI.Controls.pdb

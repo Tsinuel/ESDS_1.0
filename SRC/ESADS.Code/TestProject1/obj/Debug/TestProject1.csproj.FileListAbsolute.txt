@@ -1,0 +1,22 @@
+D:\Accademics\Projects and Assignments\ESADS\ESADS\ESADS_Code\TestProject1\bin\Debug\TestProject1.dll
+D:\Accademics\Projects and Assignments\ESADS\ESADS\ESADS_Code\TestProject1\bin\Debug\TestProject1.pdb
+D:\Accademics\Projects and Assignments\ESADS\ESADS\ESADS_Code\TestProject1\bin\Debug\ESADS_Code.dll
+D:\Accademics\Projects and Assignments\ESADS\ESADS\ESADS_Code\TestProject1\bin\Debug\ESADS_Code.pdb
+D:\Accademics\Projects and Assignments\ESADS\ESADS\ESADS_Code\TestProject1\bin\Debug\ESADS_Code.xml
+D:\Accademics\Projects and Assignments\ESADS\ESADS\ESADS_Code\TestProject1\obj\Debug\ResolveAssemblyReference.cache
+D:\Accademics\Projects and Assignments\ESADS\ESADS\ESADS_Code\TestProject1\obj\Debug\TestProject1.dll
+D:\Accademics\Projects and Assignments\ESADS\ESADS\ESADS_Code\TestProject1\obj\Debug\TestProject1.pdb
+\\Tsinu-pc\esads\ESADS\ESADS_Code\TestProject1\bin\Debug\TestProject1.dll
+\\Tsinu-pc\esads\ESADS\ESADS_Code\TestProject1\bin\Debug\TestProject1.pdb
+\\Tsinu-pc\esads\ESADS\ESADS_Code\TestProject1\bin\Debug\ESADS_Code.dll
+\\Tsinu-pc\esads\ESADS\ESADS_Code\TestProject1\bin\Debug\ESADS_Code.pdb
+\\Tsinu-pc\esads\ESADS\ESADS_Code\TestProject1\bin\Debug\ESADS_Code.xml
+\\Tsinu-pc\esads\ESADS\ESADS_Code\TestProject1\obj\Debug\ResolveAssemblyReference.cache
+\\Tsinu-pc\esads\ESADS\ESADS_Code\TestProject1\obj\Debug\TestProject1.dll
+\\Tsinu-pc\esads\ESADS\ESADS_Code\TestProject1\obj\Debug\TestProject1.pdb
+D:\Accademics\Projects and Assignments\ESADS\ESADS\ESADS_Code\TestProject1\bin\Debug\ESADS.dll
+D:\Accademics\Projects and Assignments\ESADS\ESADS\ESADS_Code\TestProject1\bin\Debug\ESADS.pdb
+D:\Accademics\Projects and Assignments\ESADS\ESADS\ESADS_Code\TestProject1\bin\Debug\ESADS.xml
+\\Tsinu-pc\esads\ESADS\ESADS_Code\TestProject1\bin\Debug\ESADS.dll
+\\Tsinu-pc\esads\ESADS\ESADS_Code\TestProject1\bin\Debug\ESADS.pdb
+\\Tsinu-pc\esads\ESADS\ESADS_Code\TestProject1\bin\Debug\ESADS.xml

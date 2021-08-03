@@ -1,0 +1,502 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{795D265B-FE45-4BEF-96AF-7D0889652243}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ESADS.GUI</RootNamespace>
+    <AssemblyName>ESADS.GUI.Dialogs</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Debug\ESADS.GUI.Dialogs.XML</DocumentationFile>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ESADS, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\ESADS\ESADS\bin\Debug\ESADS.dll</HintPath>
+    </Reference>
+    <Reference Include="ESADS.Code, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\Accademics\Projects and Assignments\Private - Active\ESADS\Libraries\ESADS_Code\ESADS.Code\bin\Debug\ESADS.Code.dll</HintPath>
+    </Reference>
+    <Reference Include="ESADS.EGraphics.Beam, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\Accademics\Projects and Assignments\Private - Active\ESADS\Libraries\ESADS.Graphics.Beam\ESADS.Graphics.Beam\bin\Debug\ESADS.EGraphics.Beam.dll</HintPath>
+    </Reference>
+    <Reference Include="ESADS.EGraphics.Footing, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\ESADS.Graphics.Footing\ESADS.Graphics.Footing\bin\Debug\ESADS.EGraphics.Footing.dll</HintPath>
+    </Reference>
+    <Reference Include="ESADS.Export.ToAutoCAD">
+      <HintPath>..\..\ESADS.Export.ToAutoCAD\ESADS.Export.ToAutoCAD\bin\Debug\ESADS.Export.ToAutoCAD.dll</HintPath>
+    </Reference>
+    <Reference Include="ESADS.Graphics">
+      <HintPath>..\..\ESADS.Graphics\ESADS.Graphics\bin\Debug\ESADS.Graphics.dll</HintPath>
+    </Reference>
+    <Reference Include="ESADS.Graphics.Column, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\ESADS.Graphics.Column\ESADS.Graphics.Column\bin\Debug\ESADS.Graphics.Column.dll</HintPath>
+    </Reference>
+    <Reference Include="ESADS.Graphics.Slab">
+      <HintPath>D:\Accademics\Projects and Assignments\Private - Active\ESADS\Libraries\ESADS.Graphics.Slab\ESADS.Graphics.Slab\bin\Debug\ESADS.Graphics.Slab.dll</HintPath>
+    </Reference>
+    <Reference Include="ESADS.GUI.Controls, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>\\TSINU-PC\Libraries\ESADS.GUI.Controls\ESADS_GUI_Controls\bin\Debug\ESADS.GUI.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="ESADS.Mechanics.Analysis">
+      <HintPath>\\tsinu-pc\libraries\ESADS.Mechanics.Analysis\ESADS.Mechanics.Analysis\bin\Debug\ESADS.Mechanics.Analysis.dll</HintPath>
+    </Reference>
+    <Reference Include="ESADS.Mechanics.Analysis.Beam">
+      <HintPath>\\tsinu-pc\libraries\ESADS.Mechanics.Analysis.Beam\ESADS.Mechanics.Analysis.Beam\bin\Debug\ESADS.Mechanics.Analysis.Beam.dll</HintPath>
+    </Reference>
+    <Reference Include="ESADS.Mechanics.Design">
+      <HintPath>..\..\ESADS.Mechanics.Design\ESADS.Mechanics.Design\bin\Debug\ESADS.Mechanics.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="ESADS.Mechanics.Design.Beam, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\Accademics\Projects and Assignments\Private - Active\ESADS\Libraries\ESADS.Mechanics.Design.Beam\ESADS.Mechanics.Design.Beam\bin\Debug\ESADS.Mechanics.Design.Beam.dll</HintPath>
+    </Reference>
+    <Reference Include="ESADS.Mechanics.Design.Column">
+      <HintPath>..\..\ESADS.Mechanics.Design.Column\ESADS.Mechanics.Design.Column\bin\Debug\ESADS.Mechanics.Design.Column.dll</HintPath>
+    </Reference>
+    <Reference Include="ESADS.Mechanics.Design.Footing">
+      <HintPath>..\..\ESADS.Mechanics.Design.Footing\ESADS.Mechanics.Design.Footing\bin\Debug\ESADS.Mechanics.Design.Footing.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="eAdvancedSelectionDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="eAdvancedSelectionDialog.designer.cs">
+      <DependentUpon>eAdvancedSelectionDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="eAssignBeamJointDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="eAssignBeamJointDialog.designer.cs">
+      <DependentUpon>eAssignBeamJointDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="eAssignBeamJointLoadDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="eAssignBeamJointLoadDialog.designer.cs">
+      <DependentUpon>eAssignBeamJointLoadDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="eAssignBeamLoadDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="eAssignBeamLoadDialog.designer.cs">
+      <DependentUpon>eAssignBeamLoadDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="eAssignOptions.cs" />
+    <Compile Include="eAssignSlabLoad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="eAssignSlabLoad.designer.cs">
+      <DependentUpon>eAssignSlabLoad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="eBeamSectionDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="eBeamSectionDialog.designer.cs">
+      <DependentUpon>eBeamSectionDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="eColumnCustomReinforcementDistributionDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="eColumnCustomReinforcementDistributionDialog.Designer.cs">
+      <DependentUpon>eColumnCustomReinforcementDistributionDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="eColumnReinforcementDistributionDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="eColumnReinforcementDistributionDialog.Designer.cs">
+      <DependentUpon>eColumnReinforcementDistributionDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="eNewColumnDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="eNewColumnDialog.designer.cs">
+      <DependentUpon>eNewColumnDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="eColumnOutputDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="eColumnOutputDialog.designer.cs">
+      <DependentUpon>eColumnOutputDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="eCurtailmentRules.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="eCurtailmentRules.designer.cs">
+      <DependentUpon>eCurtailmentRules.cs</DependentUpon>
+    </Compile>
+    <Compile Include="eDefineBeamSectionDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="eDefineBeamSectionDialog.designer.cs">
+      <DependentUpon>eDefineBeamSectionDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="eDefineMaterialDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="eDefineMaterialDialog.designer.cs">
+      <DependentUpon>eDefineMaterialDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="eEditSlabGridDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="eEditSlabGridDialog.designer.cs">
+      <DependentUpon>eEditSlabGridDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="eLayersDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="eLayersDialog.designer.cs">
+      <DependentUpon>eLayersDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="eMemberLoadTypes.cs" />
+    <Compile Include="eModelForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="eModelForm.designer.cs">
+      <DependentUpon>eModelForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="eNewBeamDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="eNewBeamDialog.designer.cs">
+      <DependentUpon>eNewBeamDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="eNewFootingDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="eNewFootingDialog.designer.cs">
+      <DependentUpon>eNewFootingDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="eNewMaterialDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="eNewMaterialDialog.designer.cs">
+      <DependentUpon>eNewMaterialDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="eNewModelDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="eNewModelDialog.designer.cs">
+      <DependentUpon>eNewModelDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="eNewSlabDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="eNewSlabDialog.designer.cs">
+      <DependentUpon>eNewSlabDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="eOptionsDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="eOptionsDialog.designer.cs">
+      <DependentUpon>eOptionsDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="eProgress.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="eProgress.designer.cs">
+      <DependentUpon>eProgress.cs</DependentUpon>
+    </Compile>
+    <Compile Include="eProjectInformationDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="eProjectInformationDialog.Designer.cs">
+      <DependentUpon>eProjectInformationDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="eQuickSlabGridDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="eQuickSlabGridDialog.Designer.cs">
+      <DependentUpon>eQuickSlabGridDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="eStartUpPictureForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="eStartUpPictureForm.Designer.cs">
+      <DependentUpon>eStartUpPictureForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Export to AutoCAD2007.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Export to AutoCAD2007.Designer.cs">
+      <DependentUpon>Export to AutoCAD2007.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="eAdvancedSelectionDialog.resx">
+      <DependentUpon>eAdvancedSelectionDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="eAssignBeamJointDialog.resx">
+      <DependentUpon>eAssignBeamJointDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="eAssignBeamJointLoadDialog.resx">
+      <DependentUpon>eAssignBeamJointLoadDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="eAssignBeamLoadDialog.resx">
+      <DependentUpon>eAssignBeamLoadDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="eAssignSlabLoad.resx">
+      <DependentUpon>eAssignSlabLoad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="eBeamSectionDialog.resx">
+      <DependentUpon>eBeamSectionDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="eColumnCustomReinforcementDistributionDialog.resx">
+      <DependentUpon>eColumnCustomReinforcementDistributionDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="eColumnReinforcementDistributionDialog.resx">
+      <DependentUpon>eColumnReinforcementDistributionDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="eNewColumnDialog.resx">
+      <DependentUpon>eNewColumnDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="eColumnOutputDialog.resx">
+      <DependentUpon>eColumnOutputDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="eCurtailmentRules.resx">
+      <DependentUpon>eCurtailmentRules.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="eDefineBeamSectionDialog.resx">
+      <DependentUpon>eDefineBeamSectionDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="eDefineMaterialDialog.resx">
+      <DependentUpon>eDefineMaterialDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="eEditSlabGridDialog.resx">
+      <DependentUpon>eEditSlabGridDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="eLayersDialog.resx">
+      <DependentUpon>eLayersDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="eModelForm.resx">
+      <DependentUpon>eModelForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="eNewBeamDialog.resx">
+      <DependentUpon>eNewBeamDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="eNewFootingDialog.resx">
+      <DependentUpon>eNewFootingDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="eNewMaterialDialog.resx">
+      <DependentUpon>eNewMaterialDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="eNewModelDialog.resx">
+      <DependentUpon>eNewModelDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="eNewSlabDialog.resx">
+      <DependentUpon>eNewSlabDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="eOptionsDialog.resx">
+      <DependentUpon>eOptionsDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="eProgress.resx">
+      <DependentUpon>eProgress.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="eProjectInformationDialog.resx">
+      <DependentUpon>eProjectInformationDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="eQuickSlabGridDialog.resx">
+      <DependentUpon>eQuickSlabGridDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="eStartUpPictureForm.resx">
+      <DependentUpon>eStartUpPictureForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Export to AutoCAD2007.resx">
+      <DependentUpon>Export to AutoCAD2007.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Resources\pin11.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Beam Icon11.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SLAB1.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\column1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Footing sd1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fixed1.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hinge1.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\roller2.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vertical roller1.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Crossed Pin Footing21.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pin footing1.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fixed Footing31.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ESADS-V3.11.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SLAB2.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\reinforcement1.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\footing full1.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Beam final curtailment.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Beam final curtailment2.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\newfootingpreview.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\newfootingpreview2.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\newfootingpreview1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\newfootingpreview3.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\newfootingpreview21.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BiaxialType1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BiaxialType2.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BiaxialType3.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CustomDistribution.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CustomDst.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Descrete.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NewCustom.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\NewDescrete.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nt1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\t1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\type1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Type2.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Type3.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Type3NoDim.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UniaxialType1.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UniaxialType2.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\UniaxialType3.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Type4.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Image1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Type4Biaxial.PNG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Type4Uniaxial.PNG" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

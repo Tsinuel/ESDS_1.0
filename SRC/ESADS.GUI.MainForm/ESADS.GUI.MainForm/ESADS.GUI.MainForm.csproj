@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FF2988A6-F5E9-4BB0-AC54-A0A8E2B9445A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ESADS.GUI.MainForm</RootNamespace>
+    <AssemblyName>ESADS.GUI.MainForm</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Pink.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ESADS, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\ESADS\ESADS\bin\Debug\ESADS.dll</HintPath>
+    </Reference>
+    <Reference Include="ESADS.Code, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\Accademics\Projects and Assignments\Private - Active\ESADS\Libraries\ESADS.Code\ESADS.Code\bin\Debug\ESADS.Code.dll</HintPath>
+    </Reference>
+    <Reference Include="ESADS.EGraphics.Beam, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\Libraries\from tsinu\Libraries\ESADS.Graphics.Beam\ESADS.Graphics.Beam\bin\Debug\ESADS.EGraphics.Beam.dll</HintPath>
+    </Reference>
+    <Reference Include="ESADS.EGraphics.Footing, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\ESADS.Graphics.Footing\ESADS.Graphics.Footing\bin\Debug\ESADS.EGraphics.Footing.dll</HintPath>
+    </Reference>
+    <Reference Include="ESADS.Graphics">
+      <HintPath>..\..\ESADS.Graphics\ESADS.Graphics\bin\Debug\ESADS.Graphics.dll</HintPath>
+    </Reference>
+    <Reference Include="ESADS.Graphics.Column">
+      <HintPath>..\..\ESADS.Graphics.Column\ESADS.Graphics.Column\bin\Debug\ESADS.Graphics.Column.dll</HintPath>
+    </Reference>
+    <Reference Include="ESADS.Graphics.Slab">
+      <HintPath>D:\Accademics\Projects and Assignments\Private - Active\ESADS\Libraries\ESADS.Graphics.Slab\ESADS.Graphics.Slab\bin\Debug\ESADS.Graphics.Slab.dll</HintPath>
+    </Reference>
+    <Reference Include="ESADS.GUI.Controls, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\Accademics\Projects and Assignments\Private - Active\ESADS\Libraries\ESADS.GUI.Controls\ESADS_GUI_Controls\bin\Debug\ESADS.GUI.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="ESADS.GUI.Dialogs">
+      <HintPath>..\..\ESADS.GUI.Dialogs\ESADS.GUI.Dialogs\bin\Debug\ESADS.GUI.Dialogs.dll</HintPath>
+    </Reference>
+    <Reference Include="ESADS.Mechanics.Analysis, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\Accademics\Projects and Assignments\Private - Active\ESADS\Libraries\ESADS.Mechanics.Analysis\ESADS.Mechanics.Analysis\bin\Debug\ESADS.Mechanics.Analysis.dll</HintPath>
+    </Reference>
+    <Reference Include="ESADS.Mechanics.Analysis.Beam, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\Libraries\from tsinu\Libraries\ESADS.Graphics.Beam\ESADS.Graphics.Beam\bin\Debug\ESADS.Mechanics.Analysis.Beam.dll</HintPath>
+    </Reference>
+    <Reference Include="ESADS.Mechanics.Analysis.Slab">
+      <HintPath>..\..\ESADS.Mechanics.Analysis.Slab\ESADS.Mechanics.Analysis.Slab\bin\Debug\ESADS.Mechanics.Analysis.Slab.dll</HintPath>
+    </Reference>
+    <Reference Include="ESADS.Mechanics.Design">
+      <HintPath>..\..\ESADS.Mechanics.Design\ESADS.Mechanics.Design\bin\Debug\ESADS.Mechanics.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="ESADS.Mechanics.Design.Beam, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>D:\Libraries\from tsinu\Libraries\ESADS.Graphics.Beam\ESADS.Graphics.Beam\bin\Debug\ESADS.Mechanics.Design.Beam.dll</HintPath>
+    </Reference>
+    <Reference Include="ESADS.Mechanics.Design.Column">
+      <HintPath>..\..\ESADS.Mechanics.Design.Column\ESADS.Mechanics.Design.Column\bin\Debug\ESADS.Mechanics.Design.Column.dll</HintPath>
+    </Reference>
+    <Reference Include="ESADS.Mechanics.Design.Footing, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\ESADS.Mechanics.Design.Footing\ESADS.Mechanics.Design.Footing\bin\Debug\ESADS.Mechanics.Design.Footing.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="eMainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="eMainForm.designer.cs">
+      <DependentUpon>eMainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="eMainForm.resx">
+      <DependentUpon>eMainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Pink.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

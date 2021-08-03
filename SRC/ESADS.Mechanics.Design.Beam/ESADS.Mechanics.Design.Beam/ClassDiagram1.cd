@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="ESADS.Mechanics.Design.Design.eBarManager" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>kMACAAIMIAgEAAAAAAAIAAwAhgEgBABAACEABEAAJIE=</HashCode>
+      <FileName>eBarManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ESADS.Mechanics.Design.eDesignFailedEventArgs" Collapsed="true">
+    <Position X="4" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAEAhgCAAEAAAQBAAAAAAAAAAAAAgAA=</HashCode>
+      <FileName>eDesignFailedEventArgs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ESADS.Mechanics.Design.eDesignProgressEventArgs" Collapsed="true">
+    <Position X="0.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAA=</HashCode>
+      <FileName>eDesignProgressEventArgs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ESADS.Mechanics.Design.eBeam" Collapsed="true">
+    <Position X="2.25" Y="0.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Events" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AACAIgRBoAiACREIXAwIQWwACGMIjIj2GEyA8TQhQCQ=</HashCode>
+      <FileName>eBeam.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="ESADS.Mechanics.Design.eConcrete" Collapsed="true">
+    <Position X="4" Y="2.75" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAgABGCAAAAgAEAAAAAAAAAAwBAAEAAQAAAgEABAA=</HashCode>
+      <FileName>eConcrete.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="ESADS.Mechanics.Design.eSteel" Collapsed="true">
+    <Position X="4" Y="3.75" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="true" />
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAACAEAAAQAAAAAAACAAYAQAABAgAAQQAAAgEAAAA=</HashCode>
+      <FileName>eSteel.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="ESADS.Mechanics.Design.eBar" Collapsed="true">
+    <Position X="0.5" Y="2.75" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAQAAAAMEAAACBEQAAAAE=</HashCode>
+      <FileName>eBar.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="ESADS.Mechanics.Design.eLoad" Collapsed="true">
+    <Position X="0.5" Y="3.75" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="true" />
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAEBGAABBRgAAASBAAAAAAOAQACAgAAAgAAoAAAAIA=</HashCode>
+      <FileName>eLoad.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="ESADS.Mechanics.Design.eRow" Collapsed="true">
+    <Position X="2.25" Y="3.75" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAEABAgFAAAAAAAAAAACAAACAAAAABQAAAAAASiAAAE=</HashCode>
+      <FileName>eRow.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Struct Name="ESADS.Mechanics.Design.eCombination" Collapsed="true">
+    <Position X="2.25" Y="2.75" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AEEABAgBAAAAAEAAAABAAAAAAAAAAAAAAAAAAQiAAAE=</HashCode>
+      <FileName>eCombination.cs</FileName>
+    </TypeIdentifier>
+  </Struct>
+  <Enum Name="ESADS.Mechanics.Design.eRelativeStirrupPosition" Collapsed="true">
+    <Position X="2.25" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>eRelativeStirrupPosition.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ESADS.Mechanics.Design.eFailureTypes" Collapsed="true">
+    <Position X="0.5" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAAAAgAAAAAAAAAAAACAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>eFailurTypes.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Delegate Name="ESADS.Mechanics.Design.eDesignFailurEventHandler" Collapsed="true">
+    <Position X="0.5" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAIAAAAAAAAAQAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>eDesignFailurEventHandler.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="ESADS.Mechanics.Design.eDesignFailurLink" Collapsed="true">
+    <Position X="2.25" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>eDesignFailurLink.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="ESADS.Mechanics.Design.eDesignProgressEventHandler" Collapsed="true">
+    <Position X="4" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>eDesignProgressEventHandler.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

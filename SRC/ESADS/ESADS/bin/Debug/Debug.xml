@@ -1,0 +1,486 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ESADS</name>
+    </assembly>
+    <members>
+        <member name="T:ESADS.eUnitChangedEventHandler">
+            <summary>
+            Represents methods which handle event which occure when the unit system is changed.
+            </summary>
+            <param name="sender">Object sending the event.</param>
+            <param name="e">Event argument which contain all the neccessary data realated to the event.</param>
+        </member>
+        <member name="T:ESADS.eDocumentModifiedEventHandler">
+            <summary>
+            Represents all methods which handle ESADS.eDocument.Modified event.
+            </summary>
+        </member>
+        <member name="T:ESADS.eDocumentModifiedEventArgs">
+            <summary>
+            Holds all information related to the event ESADS.eDocument.Modified.
+            </summary>
+        </member>
+        <member name="F:ESADS.ePoint.x">
+            <summary>
+            Holds the x coordinate of the point.
+            </summary>
+        </member>
+        <member name="F:ESADS.ePoint.y">
+            <summary>
+            Holds the y coordinate of the point.
+            </summary>
+        </member>
+        <member name="M:ESADS.ePoint.#ctor(System.Double,System.Double)">
+            <summary>
+            Creates a point which stores the coordinates in double type.
+            </summary>
+            <param name="X">The x coordinate of the point</param>
+            <param name="Y">The y coordinate of the point.</param>
+        </member>
+        <member name="M:ESADS.ePoint.op_Implicit(ESADS.ePoint)~System.Drawing.PointF">
+            <summary>
+            Returns a System.Drawing.Point instance with the same X and Y coordinates
+            </summary>
+            <param name="point">The point to be converted</param>
+            <returns>Point format of the point</returns>
+        </member>
+        <member name="M:ESADS.ePoint.op_Implicit(ESADS.ePoint)~System.Drawing.Point">
+            <summary>
+            Returns a System.Drawing.PointF instance with the same X and Y coordinates
+            </summary>
+            <param name="point">The point to be converted</param>
+            <returns>PointF format of the point</returns>
+        </member>
+        <member name="P:ESADS.ePoint.X">
+            <summary>
+            Gets or sets the x coordinate of the point
+            </summary>
+        </member>
+        <member name="P:ESADS.ePoint.Y">
+            <summary>
+            Gets or sets the y coordinate of the point.
+            </summary>
+        </member>
+        <member name="P:ESADS.ePoint.X_float">
+            <summary>
+            Gets or sets the x coordinate in float.
+            </summary>
+        </member>
+        <member name="P:ESADS.ePoint.Y_float">
+            <summary>
+            Gets or sets the y coordinate in float.
+            </summary>
+        </member>
+        <member name="T:ESADS.eForceUints">
+            <summary>
+            Specifies different unit systems used to measure force.
+            </summary>
+        </member>
+        <member name="F:ESADS.eForceUints.KN">
+            <summary>
+            Represents Metric unit system, KiloNewton.
+            </summary>
+        </member>
+        <member name="F:ESADS.eForceUints.N">
+            <summary>
+            Represents Metric unit system, Newton.
+            </summary>
+        </member>
+        <member name="F:ESADS.eForceUints.lb">
+            <summary>
+            Represents Imperial unit system, Pound.
+            </summary>
+        </member>
+        <member name="F:ESADS.eForceUints.Kip">
+            <summary>
+            Represents Imperial unit system, Kilo Pounds
+            </summary>
+        </member>
+        <member name="T:ESADS.eApplication">
+            <summary>
+            Contains all necessary information related to the current application.
+            </summary>
+        </member>
+        <member name="M:ESADS.eApplication.Close">
+            <summary>
+            Closes the application that is running currently.
+            </summary>
+        </member>
+        <member name="M:ESADS.eApplication.Run">
+            <summary>
+            Runs ESADS application.
+            </summary>
+        </member>
+        <member name="T:ESADS.eUtility">
+            <summary>
+            Contains static methods used to convert measurments from one unit system to the other and other utility methods.
+            </summary>
+        </member>
+        <member name="F:ESADS.eUtility.SFU">
+            <summary>
+            The force unit used in the calculations in the background. All other units are converted to this for use in low level libraries(eg. ESADS_Mechanics) 
+            </summary>
+        </member>
+        <member name="F:ESADS.eUtility.SLU">
+            <summary>
+            The length unit used in the calculations in the background. All other units are converted to this for use in low level libraries(eg. ESADS_Mechanics) 
+            </summary>
+        </member>
+        <member name="M:ESADS.eUtility.Convert(System.Double,ESADS.eLengthUnits,ESADS.eLengthUnits)">
+            <summary>
+            Converts length from one unit system to the other.
+            </summary>
+            <param fileName="Length">Length that is goint to be converted from one unit system to the other.</param>
+            <param fileName="InputUnit">The current unit system of the measurment.</param>
+            <param fileName="OutputUnit">The unit system to which the measurment is going to be converted.</param>
+            <returns></returns>
+        </member>
+        <member name="M:ESADS.eUtility.Convert(System.Double,ESADS.eForceUints,ESADS.eForceUints)">
+            <summary>
+            Converts force from one unit system to the other.
+            </summary>
+            <param fileName="Force">Force that is going to be converted from one unit system to the other.</param>
+            <param fileName="InputUnit">The current unit system of the measurment.</param>
+            <param fileName="OutputUnit">The unit system to which the measurment is going to be converted.</param>
+            <returns></returns>
+        </member>
+        <member name="M:ESADS.eUtility.Convert(System.Double,ESADS.eLengthUnits,ESADS.eForceUints,ESADS.eLengthUnits,ESADS.eForceUints)">
+            <summary>
+            Converts stress from one unit system to the other.
+            </summary>
+            <param fileName="Stress">The magnitude of the stress that is going to be converted.</param>
+            <param fileName="InputLengthUnit">Length unit used in the input stress.</param>
+            <param fileName="InputFoceUnit">Force unit used in the input stress.</param>
+            <param fileName="OutPutLengthUnit">Length unit system used in the out put stress.</param>
+            <param fileName="OutPutForceUnit">Force unit system used in the out put stress.</param>
+            <returns></returns>
+        </member>
+        <member name="M:ESADS.eUtility.Convert(System.Double,ESADS.eLengthUnits,ESADS.eLengthUnits,ESADS.eForceUints,ESADS.eForceUints)">
+            <summary>
+            Converts moment from one unit sytem to the other.
+            </summary>
+            <param fileName="Moment">The magnitude of moment that is going to be converted.</param>
+            <param fileName="InputlengthUnit">Length unit system used in the input moment.</param>
+            <param fileName="OutPutLengthUnit">Length unit system used in the output moment.</param>
+            <param fileName="InputForceUnit">Force unit system used in the input moment.</param>
+            <param fileName="OutPutForceUnit">Force unit system used in the output moment.</param>
+            <returns></returns>
+        </member>
+        <member name="M:ESADS.eUtility.Sort(System.Double[],System.Boolean)">
+            <summary>
+            Sorts the one dimensional double array in the specified order.
+            </summary>
+            <param fileName="array">The array to be sorted.</param>
+            <param fileName="inAscendignOrder">True to sort in ascending order, otherwise false.</param>
+        </member>
+        <member name="M:ESADS.eUtility.ConvertTo(System.Double,ESADS.eLengthUnits)">
+            <summary>
+            Converts the given length from the given unit systyem to system unit.
+            </summary>
+            <param name="length">Length to be converted.</param>
+            <param name="lengthUnit">Length unit from  which the length is goint to be converted. </param>
+            <returns></returns>
+        </member>
+        <member name="M:ESADS.eUtility.ConvertTo(System.Double,ESADS.eForceUints)">
+            <summary>
+            Converts the given force from the given unit systyem to system unit.
+            </summary>
+            <param name="force">Force to be converted.</param>
+            <param name="forceUnit">Force unit from  which the force is goint to be converted. </param>
+            <returns></returns>
+        </member>
+        <member name="M:ESADS.eUtility.ConvertTo(System.Double,ESADS.eLengthUnits,ESADS.eForceUints)">
+            <summary>
+            Converts the given moment from the given unit systyem to system unit.
+            </summary>
+            <param name="moment">Moment to be converted.</param>
+            <param name="lengthUnit">Length unit from  which the length is goint to be converted. </param>
+            <param name="forceUnit">Force unit from  which the force is goint to be converted.</param>
+            <returns></returns>
+        </member>
+        <member name="M:ESADS.eUtility.ConvertFrom(System.Double,ESADS.eLengthUnits)">
+            <summary>
+            Converts the given length from system unit to the given unit system.
+            </summary>
+            <param name="length">Measurment to be converted.</param>
+            <param name="lengthUnit">Length unit to which the given measuremtn is goint to be converted.</param>
+            <returns></returns>
+        </member>
+        <member name="M:ESADS.eUtility.ConvertFrom(System.Double,ESADS.eForceUints)">
+            <summary>
+            Converts the given force from system unit to the given unit system.
+            </summary>
+            <param name="force">Measurment to be converted.</param>
+            <param name="forceUnit">Force unit to which the given measuremtn is goint to be converted.</param>
+            <returns></returns>
+        </member>
+        <member name="M:ESADS.eUtility.ConvertFrom(System.Double,ESADS.eLengthUnits,ESADS.eForceUints)">
+            <summary>
+            Converts the given moment from system unit to the given unit system.
+            </summary>
+            <param name="moment">Measurment to be converted.</param>
+            <param name="lengthUnit">Length unit to which the given measuremtn is goint to be converted.</param>
+            <param name="forceUnit">Force unit to which the given measuremtn is goint to be converted.</param>
+            <returns></returns>
+        </member>
+        <member name="M:ESADS.eUtility.Interpolate(System.Double,System.Double,System.Double,System.Double,System.Double)">
+            <summary>
+            Gets the linear interpolation of a point from two points.
+            </summary>
+            <param name="X1">First independent value.</param>
+            <param name="Y1">First dependent value.</param>
+            <param name="X2">Second independent value.</param>
+            <param name="Y2">Second dependent value.</param>
+            <param name="X">Dependent value for the required value.</param>
+        </member>
+        <member name="M:ESADS.eUtility.RoundUp(System.Double)">
+            <summary>
+            Rounds a given double value to upper integral part.
+            </summary>
+            <param name="value">Value to be rounded.</param>
+            <returns></returns>
+        </member>
+        <member name="M:ESADS.eUtility.FillComboBox``1(System.Windows.Forms.ComboBox,System.Boolean)">
+            <summary>
+            Fills a combo box with all the elements of a given enumeration.
+            </summary>
+            <typeparam name="EnumType">Enumeration to fill the combo box with</typeparam>
+            <param name="ComboBoxTobeFilled">The combo box to be filled with the enumeration</param>
+            <param name="EraseFormerValues">Apends to existing values if the value is false, otherwise replaces them.</param>
+        </member>
+        <member name="M:ESADS.eUtility.FillComboBox``1(System.Windows.Forms.ComboBox,``0,System.Boolean)">
+            <summary>
+            Fills a combo box with all the elements of a given enumeration.
+            </summary>
+            <typeparam name="EnumType">Enumeration to fill the combo box with</typeparam>
+            <param name="ComboBoxTobeFilled">The combo box to be filled with the enumeration</param>
+            <param name="EraseFormerValues">Apends to existing values if the value is false, otherwise replaces them.</param>
+        </member>
+        <member name="M:ESADS.eUtility.FillComboBox``1(System.Windows.Forms.ComboBox,System.Int32,System.Int32,System.Boolean)">
+            <summary>
+            Fills a given combo box with the elements of an enumeration from 'StartIndex' to 'StopIndex'.
+            </summary>
+            <typeparam name="EnumType">The enumeration to fill the combo box with.</typeparam>
+            <param name="ComboBoxTobeFilled">Combo box to be filled.</param>
+            <param name="StartIndex">Zero based index of the first required element of the enumeration.</param>
+            <param name="StopIndex">Zero based index of the last required element of the enumeration</param>
+            <param name="EraseFormerValues">Apends to existing values if the value is false, otherwise replaces them.</param>
+        </member>
+        <member name="M:ESADS.eUtility.FillComboBox``1(System.Windows.Forms.ComboBox,System.Int32,System.Boolean)">
+            <summary>
+            Fills a combo box with elements of an enumeration starting from 'StartIndex' to the end.
+            </summary>
+            <typeparam name="EnumType">Enumeration to fill the combo box with.</typeparam>
+            <param name="ComboBoxTobeFilled">The combo box to be filled.</param>
+            <param name="StartIndex">Zero based index of the first element to be added to the combo box.</param>
+            <param name="EraseFormerValues">Apends to existing values if the value is false, otherwise replaces them.</param>
+        </member>
+        <member name="T:ESADS.eUnitChangedEventArgs">
+            <summary>
+            Provideds data for event which is raised when unit system used in the measurment is changed.
+            </summary>
+        </member>
+        <member name="F:ESADS.eUnitChangedEventArgs.forceUnit">
+            <summary>
+            Value of the 'ForceUnit' property.
+            </summary>
+        </member>
+        <member name="F:ESADS.eUnitChangedEventArgs.lengthUnit">
+            <summary>
+            Value of the 'LengthUnit' property.
+            </summary>
+        </member>
+        <member name="M:ESADS.eUnitChangedEventArgs.#ctor(ESADS.eForceUints,ESADS.eLengthUnits)">
+            <summary>
+            Creates a new event argument with the new force and length units.
+            </summary>
+            <param name="newForceUnit">The new force unit.</param>
+            <param name="newLengthUnit">The new length unit.</param>
+        </member>
+        <member name="P:ESADS.eUnitChangedEventArgs.LengthUnit">
+            <summary>
+            Gets the newly changed length unit.
+            </summary>
+        </member>
+        <member name="P:ESADS.eUnitChangedEventArgs.ForceUnit">
+            <summary>
+            Gets the newly changed force unit.
+            </summary>
+        </member>
+        <member name="T:ESADS.eDocument">
+            <summary>
+            Stores all necessary information related to ESADS application.
+            </summary>
+        </member>
+        <member name="F:ESADS.eDocument.model">
+            <summary>
+            Holds a value for public property 'Model'.
+            </summary>
+        </member>
+        <member name="F:ESADS.eDocument.concretes">
+            <summary>
+            Holds a value for public property 'Concretes'.
+            </summary>
+        </member>
+        <member name="F:ESADS.eDocument.steels">
+             <summary>
+            Holds a value for public property 'Steels'.
+             </summary>
+        </member>
+        <member name="F:ESADS.eDocument.name">
+            <summary>
+            Holds a value for public property 'FileName'.
+            </summary>
+        </member>
+        <member name="F:ESADS.eDocument.modelForm">
+            <summary>
+            Holds a value for public property 'ModelForm'.
+            </summary>
+        </member>
+        <member name="F:ESADS.eDocument.isSaved">
+            <summary>
+            Holds a value for public property 'IsSaved'.
+            </summary>
+        </member>
+        <member name="F:ESADS.eDocument.lengthUnit">
+            <summary>
+            Holds a value for 'LengthUnit' property.
+            </summary>
+        </member>
+        <member name="F:ESADS.eDocument.forceUnit">
+            <summary>
+            Holds a value for 'ForceUnit' property.
+            </summary>
+        </member>
+        <member name="F:ESADS.eDocument.modelType">
+            <summary>
+            Holds a value for property 'ModelType'.
+            </summary>
+        </member>
+        <member name="M:ESADS.eDocument.#ctor(ESADS.Code.eStructureType,ESADS.eLengthUnits,ESADS.eForceUints)">
+            <summary>
+            Creates un instance of ESADS.eDocument class for a given basic parameters.
+            </summary>
+            <param name="modelType">Type of model.</param>
+            <param name="lengthUnit">Length unit used in the design.</param>
+            <param name="forceUnit">Force unit used in the design.</param>
+        </member>
+        <member name="M:ESADS.eDocument.Save">
+            <summary>
+            Saves the document in the prefvious location.
+            </summary>
+        </member>
+        <member name="M:ESADS.eDocument.SaveAs">
+            <summary>
+            Saves the document in the specified location.
+            </summary>
+        </member>
+        <member name="M:ESADS.eDocument.OnModified">
+            <summary>
+            Firs the the Document Modified event.
+            </summary>
+        </member>
+        <member name="M:ESADS.eDocument.Open">
+            <summary>
+            Opnes pre-existing document from the specified location.
+            </summary>
+            <returns>Returns the document if it exists or in correct format and returns null if it is not in the correct format or doesn't exist.</returns>
+        </member>
+        <member name="P:ESADS.eDocument.Beam">
+            <summary>
+            Gets the graphics object of the model if it is a beam. If not, it returns null.
+            </summary>
+        </member>
+        <member name="P:ESADS.eDocument.column">
+            <summary>
+            Gets the graphics object of the column.
+            </summary>
+        </member>
+        <member name="P:ESADS.eDocument.LengthUnit">
+            <summary>
+            Gets or sets the length unit used in the document.
+            </summary>
+        </member>
+        <member name="P:ESADS.eDocument.ForceUnit">
+            <summary>
+            Gets or sets the force unit used in the document
+            </summary>
+        </member>
+        <member name="P:ESADS.eDocument.ModelForm">
+            <summary>
+            Gets or sets the model Form on which the design is done.
+            </summary>
+        </member>
+        <member name="P:ESADS.eDocument.Concretes">
+            <summary>
+            Gets or sets collection of defiend concrete materials.
+            </summary>
+        </member>
+        <member name="P:ESADS.eDocument.Steels">
+            <summary>
+            Gets or sets collection of defiend steel materials.
+            </summary>
+        </member>
+        <member name="P:ESADS.eDocument.Model">
+            <summary>
+            Gets information related to  model and some user inputs.
+            </summary>
+        </member>
+        <member name="P:ESADS.eDocument.Name">
+            <summary>
+            Gets the file name of the  document.
+            </summary>
+        </member>
+        <member name="P:ESADS.eDocument.IsSaved">
+            <summary>
+            Gets or sets the value indication either the document is saved or not.
+            </summary>
+        </member>
+        <member name="P:ESADS.eDocument.ModelType">
+            <summary>
+            Gets the type of model.
+            </summary>
+        </member>
+        <member name="P:ESADS.eDocument.Slab">
+            <summary>
+            Gets the slab object if the document is created for slab.
+            </summary>
+        </member>
+        <member name="E:ESADS.eDocument.Modified">
+            <summary>
+            Occures when the document is modified.
+            </summary>
+        </member>
+        <member name="T:ESADS.eLengthUnits">
+            <summary>
+            Specifies different unit systems used to measure length.
+            </summary>
+        </member>
+        <member name="F:ESADS.eLengthUnits.m">
+            <summary>
+            Represents Metric unit system, meter.
+            </summary>
+        </member>
+        <member name="F:ESADS.eLengthUnits.cm">
+            <summary>
+            Represents Metric units system, centimeter.
+            </summary>
+        </member>
+        <member name="F:ESADS.eLengthUnits.mm">
+            <summary>
+            Represents Metric units system, millimeter.
+            </summary>
+        </member>
+        <member name="F:ESADS.eLengthUnits.ft">
+            <summary>
+            Represents Imperial units system, feet.
+            </summary>
+        </member>
+        <member name="F:ESADS.eLengthUnits.In">
+            <summary>
+            Represents Imperial units system, inch.
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,124 @@
+D:\Accademics\Projects and Assignments\ESADS\ESADS\ESADS.Mechanics.Design\ESADS.Mechanics.Design\obj\Debug\ResolveAssemblyReference.cache
+D:\Accademics\Projects and Assignments\ESADS\ESADS\ESADS.Mechanics.Design\ESADS.Mechanics.Design\bin\Debug\ESADS_Mechanics.dll
+D:\Accademics\Projects and Assignments\ESADS\ESADS\ESADS.Mechanics.Design\ESADS.Mechanics.Design\bin\Debug\ESADS.dll
+D:\Accademics\Projects and Assignments\ESADS\ESADS\ESADS.Mechanics.Design\ESADS.Mechanics.Design\bin\Debug\ESADS.Mechanics.Analysis.dll
+D:\Accademics\Projects and Assignments\ESADS\ESADS\ESADS.Mechanics.Design\ESADS.Mechanics.Design\bin\Debug\ESADS_WorkSpace.dll
+D:\Accademics\Projects and Assignments\ESADS\ESADS\ESADS.Mechanics.Design\ESADS.Mechanics.Design\bin\Debug\ESADS_GUI.dll
+D:\Accademics\Projects and Assignments\ESADS\ESADS\ESADS.Mechanics.Design\ESADS.Mechanics.Design\bin\Debug\ESADS Graphics.dll
+D:\Accademics\Projects and Assignments\ESADS\ESADS\ESADS.Mechanics.Design\ESADS.Mechanics.Design\bin\Debug\ESADS2004.exe
+D:\Accademics\Projects and Assignments\ESADS\ESADS\ESADS.Mechanics.Design\ESADS.Mechanics.Design\bin\Debug\ESADS_GUI_Controls.dll
+D:\Accademics\Projects and Assignments\ESADS\ESADS\ESADS.Mechanics.Design\ESADS.Mechanics.Design\bin\Debug\ESADS.pdb
+D:\Accademics\Projects and Assignments\ESADS\ESADS\ESADS.Mechanics.Design\ESADS.Mechanics.Design\bin\Debug\ESADS.xml
+D:\Accademics\Projects and Assignments\ESADS\ESADS\ESADS.Mechanics.Design\ESADS.Mechanics.Design\bin\Debug\ESADS.Mechanics.Analysis.pdb
+D:\Accademics\Projects and Assignments\ESADS\ESADS\ESADS.Mechanics.Design\ESADS.Mechanics.Design\bin\Debug\ESADS.Mechanics.Analysis.xml
+D:\Accademics\Projects and Assignments\ESADS\ESADS\ESADS.Mechanics.Design\ESADS.Mechanics.Design\bin\Debug\ESADS_WorkSpace.pdb
+D:\Accademics\Projects and Assignments\ESADS\ESADS\ESADS.Mechanics.Design\ESADS.Mechanics.Design\bin\Debug\ESADS_WorkSpace.xml
+D:\Accademics\Projects and Assignments\ESADS\ESADS\ESADS.Mechanics.Design\ESADS.Mechanics.Design\bin\Debug\ESADS_GUI.pdb
+D:\Accademics\Projects and Assignments\ESADS\ESADS\ESADS.Mechanics.Design\ESADS.Mechanics.Design\bin\Debug\ESADS Graphics.pdb
+D:\Accademics\Projects and Assignments\ESADS\ESADS\ESADS.Mechanics.Design\ESADS.Mechanics.Design\bin\Debug\ESADS Graphics.xml
+D:\Accademics\Projects and Assignments\ESADS\ESADS\ESADS.Mechanics.Design\ESADS.Mechanics.Design\bin\Debug\ESADS2004.pdb
+D:\Accademics\Projects and Assignments\ESADS\ESADS\ESADS.Mechanics.Design\ESADS.Mechanics.Design\bin\Debug\ESADS_GUI_Controls.pdb
+D:\Accademics\Projects and Assignments\ESADS\ESADS\ESADS.Mechanics.Design\ESADS.Mechanics.Design\bin\Debug\ESADS.Mechanics.Design.xml
+D:\Accademics\Projects and Assignments\ESADS\ESADS\ESADS.Mechanics.Design\ESADS.Mechanics.Design\bin\Debug\ESADS.Mechanics.Design.dll
+D:\Accademics\Projects and Assignments\ESADS\ESADS\ESADS.Mechanics.Design\ESADS.Mechanics.Design\bin\Debug\ESADS.Mechanics.Design.pdb
+D:\Accademics\Projects and Assignments\ESADS\ESADS\ESADS.Mechanics.Design\ESADS.Mechanics.Design\obj\Debug\ESADS.Mechanics.Design.dll
+D:\Accademics\Projects and Assignments\ESADS\ESADS\ESADS.Mechanics.Design\ESADS.Mechanics.Design\obj\Debug\ESADS.Mechanics.Design.pdb
+\\Tsinu-pc\esads\ESADS\ESADS.Mechanics.Design\ESADS.Mechanics.Design\obj\Debug\ResolveAssemblyReference.cache
+\\Tsinu-pc\esads\ESADS\ESADS.Mechanics.Design\ESADS.Mechanics.Design\obj\Debug\ESADS.Mechanics.Design.dll
+\\Tsinu-pc\esads\ESADS\ESADS.Mechanics.Design\ESADS.Mechanics.Design\bin\Debug\ESADS.Mechanics.Design.xml
+\\Tsinu-pc\esads\ESADS\ESADS.Mechanics.Design\ESADS.Mechanics.Design\bin\Debug\ESADS.Mechanics.Design.dll
+\\Tsinu-pc\esads\ESADS\ESADS.Mechanics.Design\ESADS.Mechanics.Design\bin\Debug\ESADS.Mechanics.Design.pdb
+\\Tsinu-pc\esads\ESADS\ESADS.Mechanics.Design\ESADS.Mechanics.Design\bin\Debug\ESADS.dll
+\\Tsinu-pc\esads\ESADS\ESADS.Mechanics.Design\ESADS.Mechanics.Design\bin\Debug\ESADS.Mechanics.Analysis.dll
+\\Tsinu-pc\esads\ESADS\ESADS.Mechanics.Design\ESADS.Mechanics.Design\bin\Debug\ESADS_WorkSpace.dll
+\\Tsinu-pc\esads\ESADS\ESADS.Mechanics.Design\ESADS.Mechanics.Design\bin\Debug\ESADS_GUI.dll
+\\Tsinu-pc\esads\ESADS\ESADS.Mechanics.Design\ESADS.Mechanics.Design\bin\Debug\ESADS Graphics.dll
+\\Tsinu-pc\esads\ESADS\ESADS.Mechanics.Design\ESADS.Mechanics.Design\bin\Debug\ESADS_Mechanics.dll
+\\Tsinu-pc\esads\ESADS\ESADS.Mechanics.Design\ESADS.Mechanics.Design\bin\Debug\ESADS2004.exe
+\\Tsinu-pc\esads\ESADS\ESADS.Mechanics.Design\ESADS.Mechanics.Design\bin\Debug\ESADS_GUI_Controls.dll
+\\Tsinu-pc\esads\ESADS\ESADS.Mechanics.Design\ESADS.Mechanics.Design\bin\Debug\ESADS.pdb
+\\Tsinu-pc\esads\ESADS\ESADS.Mechanics.Design\ESADS.Mechanics.Design\bin\Debug\ESADS.xml
+\\Tsinu-pc\esads\ESADS\ESADS.Mechanics.Design\ESADS.Mechanics.Design\bin\Debug\ESADS.Mechanics.Analysis.pdb
+\\Tsinu-pc\esads\ESADS\ESADS.Mechanics.Design\ESADS.Mechanics.Design\bin\Debug\ESADS.Mechanics.Analysis.xml
+\\Tsinu-pc\esads\ESADS\ESADS.Mechanics.Design\ESADS.Mechanics.Design\bin\Debug\ESADS_WorkSpace.pdb
+\\Tsinu-pc\esads\ESADS\ESADS.Mechanics.Design\ESADS.Mechanics.Design\bin\Debug\ESADS_WorkSpace.xml
+\\Tsinu-pc\esads\ESADS\ESADS.Mechanics.Design\ESADS.Mechanics.Design\bin\Debug\ESADS_GUI.pdb
+\\Tsinu-pc\esads\ESADS\ESADS.Mechanics.Design\ESADS.Mechanics.Design\bin\Debug\ESADS Graphics.pdb
+\\Tsinu-pc\esads\ESADS\ESADS.Mechanics.Design\ESADS.Mechanics.Design\bin\Debug\ESADS Graphics.xml
+\\Tsinu-pc\esads\ESADS\ESADS.Mechanics.Design\ESADS.Mechanics.Design\bin\Debug\ESADS2004.pdb
+\\Tsinu-pc\esads\ESADS\ESADS.Mechanics.Design\ESADS.Mechanics.Design\bin\Debug\ESADS_GUI_Controls.pdb
+\\Tsinu-pc\esads\ESADS\ESADS.Mechanics.Design\ESADS.Mechanics.Design\obj\Debug\ESADS.Mechanics.Design.pdb
+\\Tsinu-pc\esads\ESADS\ESADS.Mechanics.Design\ESADS.Mechanics.Design\bin\Debug\ESADS_Code.dll
+\\Tsinu-pc\esads\ESADS\ESADS.Mechanics.Design\ESADS.Mechanics.Design\bin\Debug\ESADS_Code.pdb
+\\Tsinu-pc\esads\ESADS\ESADS.Mechanics.Design\ESADS.Mechanics.Design\bin\Debug\ESADS_Code.xml
+\\Tsinu-pc\esads\ESADS\ESADS.Mechanics.Design\ESADS.Mechanics.Design\bin\Debug\ESADS.Code.dll
+\\Tsinu-pc\esads\ESADS\ESADS.Mechanics.Design\ESADS.Mechanics.Design\bin\Debug\ESADS.Code.pdb
+\\Tsinu-pc\esads\ESADS\ESADS.Mechanics.Design\ESADS.Mechanics.Design\bin\Debug\ESADS.Code.xml
+D:\Accademics\Projects and Assignments\ESADS\ESADS\ESADS.Mechanics.Design\ESADS.Mechanics.Design\bin\Debug\ESADS.Code.dll
+D:\Accademics\Projects and Assignments\ESADS\ESADS\ESADS.Mechanics.Design\ESADS.Mechanics.Design\bin\Debug\ESADS_Code.dll
+D:\Accademics\Projects and Assignments\ESADS\ESADS\ESADS.Mechanics.Design\ESADS.Mechanics.Design\bin\Debug\ESADS.Code.pdb
+D:\Accademics\Projects and Assignments\ESADS\ESADS\ESADS.Mechanics.Design\ESADS.Mechanics.Design\bin\Debug\ESADS.Code.xml
+D:\Accademics\Projects and Assignments\ESADS\ESADS\ESADS.Mechanics.Design\ESADS.Mechanics.Design\bin\Debug\ESADS_Code.pdb
+D:\Accademics\Projects and Assignments\ESADS\ESADS\ESADS.Mechanics.Design\ESADS.Mechanics.Design\bin\Debug\ESADS_Code.xml
+F:\Accademics\Projects and Assignments\Private - Active\ESADS\Libraries\ESADS.Mechanics.Design\ESADS.Mechanics.Design\bin\Debug\ESADS.Mechanics.Design.xml
+F:\Accademics\Projects and Assignments\Private - Active\ESADS\Libraries\ESADS.Mechanics.Design\ESADS.Mechanics.Design\bin\Debug\ESADS.Mechanics.Design.dll
+F:\Accademics\Projects and Assignments\Private - Active\ESADS\Libraries\ESADS.Mechanics.Design\ESADS.Mechanics.Design\bin\Debug\ESADS.Mechanics.Design.pdb
+F:\Accademics\Projects and Assignments\Private - Active\ESADS\Libraries\ESADS.Mechanics.Design\ESADS.Mechanics.Design\bin\Debug\ESADS.dll
+F:\Accademics\Projects and Assignments\Private - Active\ESADS\Libraries\ESADS.Mechanics.Design\ESADS.Mechanics.Design\bin\Debug\ESADS.Mechanics.Analysis.dll
+F:\Accademics\Projects and Assignments\Private - Active\ESADS\Libraries\ESADS.Mechanics.Design\ESADS.Mechanics.Design\bin\Debug\ESADS_WorkSpace.dll
+F:\Accademics\Projects and Assignments\Private - Active\ESADS\Libraries\ESADS.Mechanics.Design\ESADS.Mechanics.Design\bin\Debug\ESADS_GUI.dll
+F:\Accademics\Projects and Assignments\Private - Active\ESADS\Libraries\ESADS.Mechanics.Design\ESADS.Mechanics.Design\bin\Debug\ESADS Graphics.dll
+F:\Accademics\Projects and Assignments\Private - Active\ESADS\Libraries\ESADS.Mechanics.Design\ESADS.Mechanics.Design\bin\Debug\ESADS_Mechanics.dll
+F:\Accademics\Projects and Assignments\Private - Active\ESADS\Libraries\ESADS.Mechanics.Design\ESADS.Mechanics.Design\bin\Debug\ESADS2004.exe
+F:\Accademics\Projects and Assignments\Private - Active\ESADS\Libraries\ESADS.Mechanics.Design\ESADS.Mechanics.Design\bin\Debug\ESADS_GUI_Controls.dll
+F:\Accademics\Projects and Assignments\Private - Active\ESADS\Libraries\ESADS.Mechanics.Design\ESADS.Mechanics.Design\bin\Debug\ESADS_Code.dll
+F:\Accademics\Projects and Assignments\Private - Active\ESADS\Libraries\ESADS.Mechanics.Design\ESADS.Mechanics.Design\bin\Debug\ESADS.pdb
+F:\Accademics\Projects and Assignments\Private - Active\ESADS\Libraries\ESADS.Mechanics.Design\ESADS.Mechanics.Design\bin\Debug\ESADS.xml
+F:\Accademics\Projects and Assignments\Private - Active\ESADS\Libraries\ESADS.Mechanics.Design\ESADS.Mechanics.Design\bin\Debug\ESADS.Code.pdb
+F:\Accademics\Projects and Assignments\Private - Active\ESADS\Libraries\ESADS.Mechanics.Design\ESADS.Mechanics.Design\bin\Debug\ESADS.Code.xml
+F:\Accademics\Projects and Assignments\Private - Active\ESADS\Libraries\ESADS.Mechanics.Design\ESADS.Mechanics.Design\bin\Debug\ESADS.Mechanics.Analysis.pdb
+F:\Accademics\Projects and Assignments\Private - Active\ESADS\Libraries\ESADS.Mechanics.Design\ESADS.Mechanics.Design\bin\Debug\ESADS.Mechanics.Analysis.xml
+F:\Accademics\Projects and Assignments\Private - Active\ESADS\Libraries\ESADS.Mechanics.Design\ESADS.Mechanics.Design\bin\Debug\ESADS_WorkSpace.pdb
+F:\Accademics\Projects and Assignments\Private - Active\ESADS\Libraries\ESADS.Mechanics.Design\ESADS.Mechanics.Design\bin\Debug\ESADS_WorkSpace.xml
+F:\Accademics\Projects and Assignments\Private - Active\ESADS\Libraries\ESADS.Mechanics.Design\ESADS.Mechanics.Design\bin\Debug\ESADS_GUI.pdb
+F:\Accademics\Projects and Assignments\Private - Active\ESADS\Libraries\ESADS.Mechanics.Design\ESADS.Mechanics.Design\bin\Debug\ESADS Graphics.pdb
+F:\Accademics\Projects and Assignments\Private - Active\ESADS\Libraries\ESADS.Mechanics.Design\ESADS.Mechanics.Design\bin\Debug\ESADS Graphics.xml
+F:\Accademics\Projects and Assignments\Private - Active\ESADS\Libraries\ESADS.Mechanics.Design\ESADS.Mechanics.Design\bin\Debug\ESADS2004.pdb
+F:\Accademics\Projects and Assignments\Private - Active\ESADS\Libraries\ESADS.Mechanics.Design\ESADS.Mechanics.Design\bin\Debug\ESADS_GUI_Controls.pdb
+F:\Accademics\Projects and Assignments\Private - Active\ESADS\Libraries\ESADS.Mechanics.Design\ESADS.Mechanics.Design\bin\Debug\ESADS_Code.pdb
+F:\Accademics\Projects and Assignments\Private - Active\ESADS\Libraries\ESADS.Mechanics.Design\ESADS.Mechanics.Design\bin\Debug\ESADS_Code.xml
+F:\Accademics\Projects and Assignments\Private - Active\ESADS\Libraries\ESADS.Mechanics.Design\ESADS.Mechanics.Design\obj\Debug\ESADS.Mechanics.Design.csprojResolveAssemblyReference.cache
+F:\Accademics\Projects and Assignments\Private - Active\ESADS\Libraries\ESADS.Mechanics.Design\ESADS.Mechanics.Design\obj\Debug\ESADS.Mechanics.Design.dll
+F:\Accademics\Projects and Assignments\Private - Active\ESADS\Libraries\ESADS.Mechanics.Design\ESADS.Mechanics.Design\obj\Debug\ESADS.Mechanics.Design.pdb
+D:\Accademics\Projects and Assignments\Private - Active\ESADS\Libraries\ESADS.Mechanics.Design\ESADS.Mechanics.Design\bin\Debug\ESADS.Mechanics.Design.xml
+D:\Accademics\Projects and Assignments\Private - Active\ESADS\Libraries\ESADS.Mechanics.Design\ESADS.Mechanics.Design\bin\Debug\ESADS.Mechanics.Design.dll
+D:\Accademics\Projects and Assignments\Private - Active\ESADS\Libraries\ESADS.Mechanics.Design\ESADS.Mechanics.Design\bin\Debug\ESADS.Mechanics.Design.pdb
+D:\Accademics\Projects and Assignments\Private - Active\ESADS\Libraries\ESADS.Mechanics.Design\ESADS.Mechanics.Design\bin\Debug\ESADS.dll
+D:\Accademics\Projects and Assignments\Private - Active\ESADS\Libraries\ESADS.Mechanics.Design\ESADS.Mechanics.Design\bin\Debug\ESADS.Mechanics.Analysis.dll
+D:\Accademics\Projects and Assignments\Private - Active\ESADS\Libraries\ESADS.Mechanics.Design\ESADS.Mechanics.Design\bin\Debug\ESADS_WorkSpace.dll
+D:\Accademics\Projects and Assignments\Private - Active\ESADS\Libraries\ESADS.Mechanics.Design\ESADS.Mechanics.Design\bin\Debug\ESADS_GUI.dll
+D:\Accademics\Projects and Assignments\Private - Active\ESADS\Libraries\ESADS.Mechanics.Design\ESADS.Mechanics.Design\bin\Debug\ESADS Graphics.dll
+D:\Accademics\Projects and Assignments\Private - Active\ESADS\Libraries\ESADS.Mechanics.Design\ESADS.Mechanics.Design\bin\Debug\ESADS_Mechanics.dll
+D:\Accademics\Projects and Assignments\Private - Active\ESADS\Libraries\ESADS.Mechanics.Design\ESADS.Mechanics.Design\bin\Debug\ESADS2004.exe
+D:\Accademics\Projects and Assignments\Private - Active\ESADS\Libraries\ESADS.Mechanics.Design\ESADS.Mechanics.Design\bin\Debug\ESADS_GUI_Controls.dll
+D:\Accademics\Projects and Assignments\Private - Active\ESADS\Libraries\ESADS.Mechanics.Design\ESADS.Mechanics.Design\bin\Debug\ESADS_Code.dll
+D:\Accademics\Projects and Assignments\Private - Active\ESADS\Libraries\ESADS.Mechanics.Design\ESADS.Mechanics.Design\bin\Debug\ESADS.pdb
+D:\Accademics\Projects and Assignments\Private - Active\ESADS\Libraries\ESADS.Mechanics.Design\ESADS.Mechanics.Design\bin\Debug\ESADS.xml
+D:\Accademics\Projects and Assignments\Private - Active\ESADS\Libraries\ESADS.Mechanics.Design\ESADS.Mechanics.Design\bin\Debug\ESADS.Code.pdb
+D:\Accademics\Projects and Assignments\Private - Active\ESADS\Libraries\ESADS.Mechanics.Design\ESADS.Mechanics.Design\bin\Debug\ESADS.Code.xml
+D:\Accademics\Projects and Assignments\Private - Active\ESADS\Libraries\ESADS.Mechanics.Design\ESADS.Mechanics.Design\bin\Debug\ESADS.Mechanics.Analysis.pdb
+D:\Accademics\Projects and Assignments\Private - Active\ESADS\Libraries\ESADS.Mechanics.Design\ESADS.Mechanics.Design\bin\Debug\ESADS.Mechanics.Analysis.xml
+D:\Accademics\Projects and Assignments\Private - Active\ESADS\Libraries\ESADS.Mechanics.Design\ESADS.Mechanics.Design\bin\Debug\ESADS_WorkSpace.pdb
+D:\Accademics\Projects and Assignments\Private - Active\ESADS\Libraries\ESADS.Mechanics.Design\ESADS.Mechanics.Design\bin\Debug\ESADS_WorkSpace.xml
+D:\Accademics\Projects and Assignments\Private - Active\ESADS\Libraries\ESADS.Mechanics.Design\ESADS.Mechanics.Design\bin\Debug\ESADS_GUI.pdb
+D:\Accademics\Projects and Assignments\Private - Active\ESADS\Libraries\ESADS.Mechanics.Design\ESADS.Mechanics.Design\bin\Debug\ESADS Graphics.pdb
+D:\Accademics\Projects and Assignments\Private - Active\ESADS\Libraries\ESADS.Mechanics.Design\ESADS.Mechanics.Design\bin\Debug\ESADS Graphics.xml
+D:\Accademics\Projects and Assignments\Private - Active\ESADS\Libraries\ESADS.Mechanics.Design\ESADS.Mechanics.Design\bin\Debug\ESADS2004.pdb
+D:\Accademics\Projects and Assignments\Private - Active\ESADS\Libraries\ESADS.Mechanics.Design\ESADS.Mechanics.Design\bin\Debug\ESADS_GUI_Controls.pdb
+D:\Accademics\Projects and Assignments\Private - Active\ESADS\Libraries\ESADS.Mechanics.Design\ESADS.Mechanics.Design\bin\Debug\ESADS_Code.pdb
+D:\Accademics\Projects and Assignments\Private - Active\ESADS\Libraries\ESADS.Mechanics.Design\ESADS.Mechanics.Design\bin\Debug\ESADS_Code.xml
+D:\Accademics\Projects and Assignments\Private - Active\ESADS\Libraries\ESADS.Mechanics.Design\ESADS.Mechanics.Design\obj\Debug\ESADS.Mechanics.Design.csprojResolveAssemblyReference.cache
+D:\Accademics\Projects and Assignments\Private - Active\ESADS\Libraries\ESADS.Mechanics.Design\ESADS.Mechanics.Design\obj\Debug\ESADS.Mechanics.Design.dll
+D:\Accademics\Projects and Assignments\Private - Active\ESADS\Libraries\ESADS.Mechanics.Design\ESADS.Mechanics.Design\obj\Debug\ESADS.Mechanics.Design.pdb
+F:\Accademics\Projects and Assignments\Private - Active\ESADS\Libraries\ESADS.Mechanics.Design\ESADS.Mechanics.Design\bin\Debug\ESADS.Code.dll
+D:\Accademics\Projects and Assignments\Private - Active\ESADS\Libraries\ESADS.Mechanics.Design\ESADS.Mechanics.Design\bin\Debug\ESADS.Code.dll

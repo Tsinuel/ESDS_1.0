@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{101C4302-A303-4ED6-8411-D1D187D0F18E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ESADS.Mechanics.Design.Beam</RootNamespace>
+    <AssemblyName>ESADS.Mechanics.Design.Beam</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Debug\ESADS.Mechanics.Design.Beam.xml</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ESADS, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>\\ABIY-PC\Users\Abiy\Documents\Visual Studio 2010\Projects\ESADS\ESADS\bin\Debug\ESADS.dll</HintPath>
+    </Reference>
+    <Reference Include="ESADS.Code, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\ESADS.Code\ESADS.Code\bin\Debug\ESADS.Code.dll</HintPath>
+    </Reference>
+    <Reference Include="ESADS.Mechanics.Analysis, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\ESADS.Mechanics.Analysis\ESADS.Mechanics.Analysis\bin\Debug\ESADS.Mechanics.Analysis.dll</HintPath>
+    </Reference>
+    <Reference Include="ESADS.Mechanics.Analysis.Beam">
+      <HintPath>..\..\ESADS.Mechanics.Analysis.Beam\ESADS.Mechanics.Analysis.Beam\bin\Debug\ESADS.Mechanics.Analysis.Beam.dll</HintPath>
+    </Reference>
+    <Reference Include="ESADS.Mechanics.Design, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>\\abiy-pc\users\Abiy\Documents\Visual Studio 2010\Projects\ESADS.Mechanics.Design\ESADS.Mechanics.Design\bin\Debug\ESADS.Mechanics.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="eBeamSection.cs" />
+    <Compile Include="eDBeam.cs" />
+    <Compile Include="eImposibleSteelRatioException.cs" />
+    <Compile Include="eLongtBarTypes.cs" />
+    <Compile Include="eSectionType.cs" />
+    <Compile Include="eSheaBarTypes.cs" />
+    <Compile Include="eXBar.cs" />
+    <Compile Include="eCombination.cs" />
+    <Compile Include="eDFlexureSection.cs" />
+    <Compile Include="eDMember.cs" />
+    <Compile Include="eDSection.cs" />
+    <Compile Include="eDShearSection.cs" />
+    <Compile Include="eIBar.cs" />
+    <Compile Include="eRelativeStirrupPosition.cs" />
+    <Compile Include="eRow.cs" />
+    <Compile Include="eFailurTypes.cs" />
+    <Compile Include="eShearBar.cs" />
+    <Compile Include="eLongBar.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ESADS.Mechanics.Design.Beam.cd" />
+    <None Include="ESADS.Mechanics.Design.Beam.Detailed.cd" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

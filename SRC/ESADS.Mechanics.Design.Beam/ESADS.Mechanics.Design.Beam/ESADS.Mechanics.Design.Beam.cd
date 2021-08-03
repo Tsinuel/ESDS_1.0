@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="ESADS.Mechanics.Design.Beam.eDMember" Collapsed="true">
+    <Position X="5.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>hIAAgCgAAADwRxwAAIBQUECAUABBABCxEAAAHPQHDAw=</HashCode>
+      <FileName>eDMember.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ESADS.Mechanics.Design.Beam.eDSection" Collapsed="true">
+    <Position X="2" Y="0.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAIAAAgAAAAACCAAAIBAAESQQAAEAACkAYAABAAQAAA=</HashCode>
+      <FileName>eDSection.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ESADS.Mechanics.Design.Beam.eDFlexureSection" Collapsed="true">
+    <Position X="0.75" Y="1.75" Width="1.75" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>EkIBIAoAIAAAziAEhIIIAAQyAgHJUAIwCRyAAQJwQIE=</HashCode>
+      <FileName>eDFlexureSection.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ESADS.Mechanics.Design.Beam.eDShearSection" Collapsed="true">
+    <Position X="3.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAECwAABIAAKCAAAAgCAAACFIABAhaAgRISAACwAAg=</HashCode>
+      <FileName>eDShearSection.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ESADS.Mechanics.Design.Beam.eDBeam" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="9.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AKMBswqAICFAiiICiMgSSghRYUAAAYRSEAAEMLihQAI=</HashCode>
+      <FileName>eDBeam.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ESADS.Mechanics.Design.Beam.eCombination">
+    <Position X="11.25" Y="1" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Properties" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+      <Compartment Name="Events" Collapsed="true" />
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Struct Name="ESADS.Mechanics.Design.Beam.eCombination.eRow" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>eRow.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>gABCBAgIAAAgSEAEAABAAIAAAAQAEAAyAAAAEYmAAAs=</HashCode>
+      <FileName>eCombination.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ESADS.Mechanics.Design.Beam.eLongtBar" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="9.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>kQIAgBACASAAwACkAkYAJARQgIEFAAGBAwABAYMAAIA=</HashCode>
+      <FileName>eLongBar.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="ESADS.Mechanics.Design.Beam.eImposibleSteelRatioException" Collapsed="true">
+    <Position X="7.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAAAACAAAAAEAAAAAAAAAAAAAAAAAIAAAAAA=</HashCode>
+      <FileName>eImposibleSteelRatioException.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ESADS.Mechanics.Design.Beam.eBeamSection" Collapsed="true">
+    <Position X="5.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAEAABAAAQEwAAAAEQAAAAEAAQgAAAAcAAAAEA=</HashCode>
+      <FileName>eBeamSection.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Struct Name="ESADS.Mechanics.Design.Beam.eXBar" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="7.5" Y="2.75" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAAAAAACAAAAAARCQIAEAsEAAACBEQAAAAE=</HashCode>
+      <FileName>eXBar.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Struct>
+  <Struct Name="ESADS.Mechanics.Design.Beam.eShearBar" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="5.75" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAAQAAAAAAAAAACAAAAAARAAIAEAAGCAgABAAIAAAA=</HashCode>
+      <FileName>eShearBar.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.179" Collapsed="true" />
+  </Struct>
+  <Interface Name="ESADS.Mechanics.Design.Beam.eIBar" Collapsed="true">
+    <Position X="5.75" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAABAAAAAAA=</HashCode>
+      <FileName>eIBar.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="ESADS.Mechanics.Design.Beam.eRelativeStirrupPosition" Collapsed="true">
+    <Position X="9.25" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAEAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>eRelativeStirrupPosition.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ESADS.Mechanics.Design.Beam.eFailureTypes" Collapsed="true">
+    <Position X="5.75" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEIAAAAAAAgAAAAAAAAAAAACgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>eFailurTypes.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ESADS.Mechanics.Design.Beam.eShearBarTypes" Collapsed="true">
+    <Position X="7.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>eSheaBarTypes.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ESADS.Mechanics.Design.Beam.eSectionType" Collapsed="true">
+    <Position X="5.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAIAAAA=</HashCode>
+      <FileName>eSectionType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ESADS.Mechanics.Design.Beam.eLongtBarTypes" Collapsed="true">
+    <Position X="7.5" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAADwBwwAAAAAEAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>eLongtBarTypes.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

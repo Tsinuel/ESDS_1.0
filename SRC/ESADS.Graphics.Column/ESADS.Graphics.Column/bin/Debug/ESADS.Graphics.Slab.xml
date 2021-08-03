@@ -1,0 +1,872 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ESADS.Graphics.Slab</name>
+    </assembly>
+    <members>
+        <member name="F:ESADS.EGraphics.Slab.eGSBeam.aBeam">
+            <summary>
+            Holds the value of 'ABeam'.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.Slab.eGSBeam.column1">
+            <summary>
+            Holds the value of 'Column1'.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.Slab.eGSBeam.column2">
+            <summary>
+            Holds the value of 'Column2'.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.Slab.eGSBeam.grid">
+            <summary>
+            Holds the value of 'Grid'.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.Slab.eGSBeam.slab">
+            <summary>
+            Holds the value of 'Slab'.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.Slab.eGSBeam.leftPanel">
+            <summary>
+            Holds the value of 'LeftPanel'.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.Slab.eGSBeam.rightPanel">
+            <summary>
+            Holds the value of 'RightPanel'.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.Slab.eGSBeam.startGridPoint">
+            <summary>
+            Holds the value of 'StartGridPoint'.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.Slab.eGSBeam.endGridPoint">
+            <summary>
+            Holds the value of 'EndGridPoint'.
+            </summary>
+        </member>
+        <member name="M:ESADS.EGraphics.Slab.eGSBeam.#ctor(ESADS.EGraphics.Slab.eGSlab,ESADS.EGraphics.Slab.eSGridPoint,ESADS.EGraphics.Slab.eSGridPoint)">
+            <summary>
+            Creates a beam that supports slab.
+            </summary>
+            <param name="slabSystem">The slab system bearing the beam.</param>
+            <param name="startGridPoint">The grid point object at the start of the beam.</param>
+            <param name="endGridPoint">The grid point object at the end of the beam.</param>
+        </member>
+        <member name="P:ESADS.EGraphics.Slab.eGSBeam.ABeam">
+            <summary>
+            Gets the analysis part of the beam to be drawn.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.Slab.eGSBeam.Column1">
+            <summary>
+            Gets the column drawing at the startGridPoint of the beam.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.Slab.eGSBeam.Column2">
+            <summary>
+            Gets the column drawing at the endGridPoint of the beam.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.Slab.eGSBeam.Grid">
+            <summary>
+            Gets the grid one which the beam is drawn.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.Slab.eGSBeam.Slab">
+            <summary>
+            Gets the slab system drawing bearing the beam.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.Slab.eGSBeam.Start">
+            <summary>
+            Gets the startGridPoint point of the beam.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.Slab.eGSBeam.End">
+            <summary>
+            Gets the endGridPoint point of the beam
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.Slab.eGSBeam.LeftPanel">
+            <summary>
+            Gets the panel on the left hand side when one is looking in the direction from the startGridPoint to the endGridPoint of the beam.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.Slab.eGSBeam.RightPanel">
+            <summary>
+            Gets the panel on the right hand side when one is looking in the direction from the startGridPoint to the endGridPoint of the beam.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.Slab.eGSBeam.StartGridPoint">
+            <summary>
+            Gets the grid point object at the startGridPoint of the beam.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.Slab.eGSBeam.EndGridPoint">
+            <summary>
+            Gets the grid point object at the endGridPoint of the beam.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.Slab.eSGrid.coordinate">
+            <summary>
+            Holds the value of 'Coordinates'.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.Slab.eSGrid.slab">
+            <summary>
+            Holds the value of 'Slab'.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.Slab.eSGrid.leftDimension">
+            <summary>
+            Holds the value of 'LeftDimension'.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.Slab.eSGrid.rightDimension">
+            <summary>
+            Holds the value of 'RightDimension'.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.Slab.eSGrid.gridPoints">
+            <summary>
+            Holds the value of 'GridPoints'.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.Slab.eSGrid.type">
+            <summary>
+            Holds the value of 'Type'.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.Slab.eSGrid.start">
+            <summary>
+            Holds the value of 'Start'.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.Slab.eSGrid.end">
+            <summary>
+            Holds the value of 'End'.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.Slab.eSGrid.name">
+            <summary>
+            Holds the value of 'Name'.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.Slab.eSGrid.bubbleLocation">
+            <summary>
+            Holds the value of 'BubbleLoction'.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.Slab.eSGrid.showBubble">
+            <summary>
+            Holds the value of 'ShowBubble'.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.Slab.eSGrid.show">
+            <summary>
+            Holds the value of 'Show'.
+            </summary>
+        </member>
+        <member name="M:ESADS.EGraphics.Slab.eSGrid.#ctor(ESADS.EGraphics.Slab.eGSlab,System.Double,ESADS.EGraphics.eGridType)">
+            <summary>
+            Creates a grid from the coordinate, type and ID.
+            </summary>
+            <param name="slabSystem">The slab system bearing the grid.</param>
+            <param name="coordinate">The perpendicular distance from the origin to the grid.</param>
+            <param name="type">Indicates if the grid is horizontal or vertical.</param>
+        </member>
+        <member name="E:ESADS.EGraphics.Slab.eSGrid.Move">
+            <summary>
+            Occurs when the coordinate of the grid is changed.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.Slab.eSGrid.Slab">
+            <summary>
+            Gets the slab system bearing the grid.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.Slab.eSGrid.Coordinate">
+            <summary>
+            Gets the perpendicular distance from the orgin to the grid.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.Slab.eSGrid.LeftDimension">
+            <summary>
+            Gets the dimension line measuring the distance to the next grid to the left when one is looking with the bubbles at the top.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.Slab.eSGrid.RightDimension">
+            <summary>
+            Gets the dimension line measuring the distance to the next grid on the right when one is looking with the bubbles at the top.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.Slab.eSGrid.GridPoints">
+            <summary>
+            Gets the grid points found at the points of intersection with orthogonal h_Grids crossing this grid.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.Slab.eSGrid.Start">
+            <summary>
+            Gets the startGridPoint point of the grid line.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.Slab.eSGrid.End">
+            <summary>
+            Gets the endGridPoint point of the grid line.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.Slab.eSGrid.Name">
+            <summary>
+            Gets or sets the name of the grid.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.Slab.eSGrid.Type">
+            <summary>
+            Gets the orientation of the grid (horizontal or vertical).
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.Slab.eSGrid.BubbleLocation">
+            <summary>
+            Gets or sets the gridPoint of the bubble for the grid.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.Slab.eSGrid.ShowBubble">
+            <summary>
+            Gets or sets whether to show the bubble or not.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.Slab.eSGrid.Show">
+            <summary>
+            Gets or sets the value if the grid is shown or not.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.Slab.eGSlab.panels">
+            <summary>
+            Holds the value of 'Panels'.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.Slab.eGSlab.aSlab">
+            <summary>
+            Holds the value of 'ASlab'.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.Slab.eGSlab.h_Grids">
+            <summary>
+            Holds the value of 'H_Grids'.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.Slab.eGSlab.dimensions">
+            <summary>
+            Holds the value of 'Dimensions'.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.Slab.eGSlab.beams">
+            <summary>
+            Holds the value of 'Beams'.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.Slab.eGSlab.columns">
+            <summary>
+            Holds the value of 'Columns'.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.Slab.eGSlab.modelForm">
+            <summary>
+            Holds the value of 'ModelForm'.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.Slab.eGSlab.document">
+            <summary>
+            Holds the value of 'Document'.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.Slab.eGSlab.clientRectangle">
+            <summary>
+            Holds the value of 'ContainingRectangle'.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.Slab.eGSlab.gridPoints">
+            <summary>
+            Holds the value of 'GridPoints'.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.Slab.eGSlab.bubbleSize">
+            <summary>
+            Holds the value of 'BubbleSize'.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.Slab.eGSlab.v_Grids">
+            <summary>
+            Holds the value of 'V_Grids'.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.Slab.eGSlab.showGrid">
+            <summary>
+            Holds the value of 'ShowGrid'.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.Slab.eGSlab.snapToGrid">
+            <summary>
+            Holds the value of 'SnapToGrid'.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.Slab.eGSlab.showDimension">
+            <summary>
+            Holds the value of 'ShowDimension'.
+            </summary>
+        </member>
+        <member name="M:ESADS.EGraphics.Slab.eGSlab.#ctor(ESADS.eDocument)">
+            <summary>
+            Creates new slab system with a given set of x and y coordinates of the vertical and horizontal grids, respectively.
+            </summary>
+            <param name="x_coords">The x_coords of the vertical grids.</param>
+            <param name="y_coordinates">The y_coordinates of the horizontal grids.</param>
+        </member>
+        <member name="M:ESADS.EGraphics.Slab.eGSlab.CreateGrids(System.Double[],System.Double[])">
+            <summary>
+            Creates girds, given the x and y coordiantes.
+            </summary>
+            <param name="x_coords">The x coordinates of the vertical grids.</param>
+            <param name="y_coords">The y coordinates of the horizontal grids.</param>
+        </member>
+        <member name="M:ESADS.EGraphics.Slab.eGSlab.SortGrids">
+            <summary>
+            Sorts both horizontal and vertical grids in increasing order of ordinates.
+            </summary>
+        </member>
+        <member name="M:ESADS.EGraphics.Slab.eGSlab.AddPanel(ESADS.ePoint)">
+            <summary>
+            Adds a panel to the slab system if the given point lies between girds.
+            </summary>
+            <param name="clickPoint">The point hit by the user.</param>
+        </member>
+        <member name="M:ESADS.EGraphics.Slab.eGSlab.AddPanel(ESADS.ePoint,ESADS.ePoint,ESADS.ePoint,ESADS.ePoint)">
+            <summary>
+            Adds a panel to the slab system if the given corner points lie on grid points in a valid way.
+            </summary>
+            <param name="p13">The top left corner point.</param>
+            <param name="p23">The top right corner point.</param>
+            <param name="p14">The bottom left corner point.</param>
+            <param name="p24">The bottom right corner point.</param>
+        </member>
+        <member name="M:ESADS.EGraphics.Slab.eGSlab.PanelExists(ESADS.ePoint,ESADS.ePoint,ESADS.ePoint,ESADS.ePoint)">
+            <summary>
+            Checks if there is a previously defined panel with the same four corner points.
+            </summary>
+            <param name="p13">The top left corner point.</param>
+            <param name="p23">The top right corner point.</param>
+            <param name="p14">The bottom left corner point.</param>
+            <param name="p24">The bottom right corner point.</param>
+        </member>
+        <member name="M:ESADS.EGraphics.Slab.eGSlab.PanelExists(ESADS.EGraphics.Slab.eGPanel)">
+            <summary>
+            Checks if there is a previously defined panel with the same four corner points.
+            </summary>
+            <param name="p13">The top left corner point.</param>
+            <param name="p23">The top right corner point.</param>
+            <param name="p14">The bottom left corner point.</param>
+            <param name="p24">The bottom right corner point.</param>
+        </member>
+        <member name="M:ESADS.EGraphics.Slab.eGSlab.IsGridPoint(ESADS.ePoint)">
+            <summary>
+            Checks if a given point is a grid point.
+            </summary>
+            <param name="p13">The point to be checked.</param>
+        </member>
+        <member name="M:ESADS.EGraphics.Slab.eGSlab.IsGridPoint(ESADS.ePoint,ESADS.EGraphics.Slab.eSGridPoint@)">
+            <summary>
+            Checks if a given point is a grid point and passes the grid point object as out parameter.
+            </summary>
+            <param name="p13">The point to be checked.</param>
+            <param name="gridPoint">The grid point.</param>
+        </member>
+        <member name="M:ESADS.EGraphics.Slab.eGSlab.Refresh">
+            <summary>
+            Refreshs the relation of adjacent components.
+            </summary>
+        </member>
+        <member name="M:ESADS.EGraphics.Slab.eGSlab.AddColumn(ESADS.EGraphics.Slab.eSGridPoint)">
+            <summary>
+            Adds a column drawing from a clicked or selected grid point.
+            </summary>
+            <param name="gridPoint">The grid point on which to draw the column.</param>
+        </member>
+        <member name="M:ESADS.EGraphics.Slab.eGSlab.AddBeam(ESADS.ePoint,ESADS.ePoint)">
+            <summary>
+            Adds a beam from the startGridPoint and endGridPoint points of the beam.
+            </summary>
+            <param name="startGridPoint">The startGridPoint point of the beam.</param>
+            <param name="endGridPoint">The endGridPoint point of the beam.</param>
+        </member>
+        <member name="M:ESADS.EGraphics.Slab.eGSlab.ResetSystem">
+            <summary>
+            Destroys all drawing objects after releasing their references from the slab system and other objects.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.Slab.eGSlab.ASlab">
+            <summary>
+            Gets the analysis component of the slab system.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.Slab.eGSlab.H_Grids">
+            <summary>
+            Gets the collection of horizontal grid drawings in the slab sytem.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.Slab.eGSlab.Panels">
+            <summary>
+            Gets the panel drawings in the slab system.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.Slab.eGSlab.Dimensions">
+            <summary>
+            Gets the dimensions drawn in the slab system.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.Slab.eGSlab.Beams">
+            <summary>
+            Gets the beam drawings in the slab sytem.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.Slab.eGSlab.Columns">
+            <summary>
+            Gets the column drawings in the slab sytem.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.Slab.eGSlab.ModelForm">
+            <summary>
+            Gets the model form used to draw the slab sytem.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.Slab.eGSlab.Document">
+            <summary>
+            Gets the document of the slab system.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.Slab.eGSlab.ContainingRectangle">
+            <summary>
+            Gets the rectangle that just includes every drawing of the slab system.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.Slab.eGSlab.V_Grids">
+            <summary>
+            Gets the collection of vertical h_Grids in the slab system.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.Slab.eGSlab.ShowGrid">
+            <summary>
+            Gets or sets the value whether to show grids or not.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.Slab.eGSlab.SnapToGrid">
+            <summary>
+            Gets or sets whether to snap to grid points or not.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.Slab.eGSlab.ShowDimension">
+            <summary>
+            Gets or sets whether to show grid spacing dimensions or not.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.Slab.eGSlab.BubbleSize">
+            <summary>
+            Gets or sets the bubble size of the grids.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.Slab.eGSlab.GridPoints">
+            <summary>
+            Gets all the grid points of the slab system.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.Slab.eGSlab.Layers">
+            <summary>
+            Gets the collection of layers to display every drawing.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.Slab.eGSlab.DefaultColumnType">
+            <summary>
+            Gets or sets the default column type used to create new columns.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.Slab.eGSlab.DefaultColumnDepth">
+            <summary>
+            Gets or sets the default column depth.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.Slab.eGSlab.DefaultColumnWidth">
+            <summary>
+            Gets or sets the default column width.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.Slab.eGSlab.DefaultColumnDiameter">
+            <summary>
+            Gets or sets the default column diameter.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.Slab.eGSlab.DefaultBeamDepth">
+            <summary>
+            Gets or sets the default value of beam depth.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.Slab.eGSlab.DefaultBeamWidth">
+            <summary>
+            Gets or sets the default value of beam width.
+            </summary>
+        </member>
+        <member name="M:ESADS.EGraphics.Slab.eSGridPoint.#ctor(ESADS.EGraphics.Slab.eSGrid,ESADS.EGraphics.Slab.eSGrid)">
+            <summary>
+            Creates a grid point from the horizontal and vertical grids passing through it and its id in the slab system.
+            </summary>
+            <param name="h_grid">The horizontal grid passing through the grid point.</param>
+            <param name="v_grid">The vertical grid passing through the grid point.</param>
+        </member>
+        <member name="E:ESADS.EGraphics.Slab.eSGridPoint.Click">
+            <summary>
+            Occurs when a point that lies within the radius of the grid point of the grid point is clicked by the user while the grid point is active.
+            </summary>
+        </member>
+        <member name="E:ESADS.EGraphics.Slab.eSGridPoint.Move">
+            <summary>
+            Occurs when the gridPoint of the grid point is changed.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.Slab.eSGridPoint.H_Grid">
+            <summary>
+            Gets the horizontal grid passing through the grid point.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.Slab.eSGridPoint.V_Grid">
+            <summary>
+            Gets the vertical grid passing through the grid point.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.Slab.eSGridPoint.Location">
+            <summary>
+            Gets the gridPoint of the grid point.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.Slab.eSGridPoint.Radius">
+            <summary>
+            Gets the radius of activeness of the grid point.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.Slab.eSGridPoint.Active">
+            <summary>
+            Gets or sets the value whether to respond to a cursor or not.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.Slab.eSGridPoint.Column">
+            <summary>
+            Gets or sets the column drawing drawn on the grid point.
+            </summary>
+        </member>
+        <member name="M:ESADS.EGraphics.Slab.eGridEventArgs.#ctor(System.Double,System.Boolean)">
+            <summary>
+            Creates the instance when the change is in one coordinate only.
+            </summary>
+            <param name="Change">Change in  coordinate.</param>
+            <param name="IsInX">Indicates if the specified change in coordinate is in x coordinate.</param>
+        </member>
+        <member name="M:ESADS.EGraphics.Slab.eGridEventArgs.#ctor(System.Double,System.Double)">
+            <summary>
+            Creates instance when the change is in both x and y.
+            </summary>
+            <param name="Change">Change in X coordinate.</param>
+            <param name="ChangeInY">Change in Y coordinate.</param>
+        </member>
+        <member name="P:ESADS.EGraphics.Slab.eGridEventArgs.ChangeInX">
+            <summary>
+            Gets the change in the x coordinate of the grid or grid point on which the event ocured.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.Slab.eGridEventArgs.ChangeInY">
+            <summary>
+            Gets the change in the y coordinate of the grid or grid point on which the event occured.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.Slab.eGPanel.aPanel">
+            <summary>
+            Holds the value of 'APanel'.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.Slab.eGPanel.slab">
+            <summary>
+            Holds the value of 'Slab'.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.Slab.eGPanel.beam1">
+            <summary>
+            Holds the value of 'Beam1'.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.Slab.eGPanel.beam2">
+            <summary>
+            Holds the value of 'Beam2'.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.Slab.eGPanel.beam3">
+            <summary>
+            Holds the value of 'Beam3'.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.Slab.eGPanel.beam4">
+            <summary>
+            Holds the value of 'Beam4'.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.Slab.eGPanel.clientRectangle">
+            <summary>
+            Holds the value of 'ContainingRectangle'.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.Slab.eGPanel.grid1">
+            <summary>
+            Holds the value of 'Grid1'.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.Slab.eGPanel.grid2">
+            <summary>
+            Holds the value of 'Grid2'.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.Slab.eGPanel.grid3">
+            <summary>
+            Holds the value of 'Grid3'.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.Slab.eGPanel.grid4">
+            <summary>
+            Holds the value of 'Grid4'.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.Slab.eGPanel.selected">
+            <summary>
+            Holds the value of 'Selected'.
+            </summary>
+        </member>
+        <member name="M:ESADS.EGraphics.Slab.eGPanel.#ctor(ESADS.EGraphics.Slab.eGSlab,ESADS.EGraphics.Slab.eSGrid,ESADS.EGraphics.Slab.eSGrid,ESADS.EGraphics.Slab.eSGrid,ESADS.EGraphics.Slab.eSGrid)">
+            <summary>
+            Creates a slab panel from the four grids bounding it.
+            </summary>
+            <param name="slabSystem">The slab system bearing the panel</param>
+            <param name="grid1">The grid on the left side of the panel.</param>
+            <param name="grid2">The grid on the right side of the panel.</param>
+            <param name="grid3">The grid on the top side of the panel.</param>
+            <param name="grid4">The grid on the bottom side of the panel.</param>
+        </member>
+        <member name="P:ESADS.EGraphics.Slab.eGPanel.APanel">
+            <summary>
+            Gets the analysis part of the panel.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.Slab.eGPanel.Slab">
+            <summary>
+            Gets the slab system bearing the panel.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.Slab.eGPanel.Beam1">
+            <summary>
+            Gets the drawing of the left beam.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.Slab.eGPanel.Beam2">
+            <summary>
+            Gets the drawing of the right beam.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.Slab.eGPanel.Beam3">
+            <summary>
+            Gets the drawing of the top beam.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.Slab.eGPanel.Beam4">
+            <summary>
+            Gets the drawing of the bottom beam.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.Slab.eGPanel.ClientRectangle">
+            <summary>
+            Gets the rectangle that just includes every drawing of the panel.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.Slab.eGPanel.Grid1">
+            <summary>
+            Gets the grid bounding the panel on the left side of the panel.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.Slab.eGPanel.Grid2">
+            <summary>
+            Gets the grid bounding the panel on the right side of the panel.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.Slab.eGPanel.Grid3">
+            <summary>
+            Gets the grid bounding the panel on the top side of the panel.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.Slab.eGPanel.Grid4">
+            <summary>
+            Gets the grid bounding the panel on the bottom side of the panel.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.Slab.eGPanel.Selected">
+            <summary>
+            Gets or sets the value if the panel is selected or not.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.Slab.eGPanel.Panel1">
+            <summary>
+            Gets or sets the panel drawing on the left.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.Slab.eGPanel.Panel2">
+            <summary>
+            Gets or sets the panel drawing on the right.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.Slab.eGPanel.Panel3">
+            <summary>
+            Gets or sets the panel drawing at the top.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.Slab.eGPanel.Panel4">
+            <summary>
+            Gets or sets the panel drawing at the bottom.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.Slab.eGPanel.Valid">
+            <summary>
+            Gets the value if the slab panel is a valid one interms of neighborhood and support.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.Slab.eGPanel.GP13">
+            <summary>
+            Gets the grid point at the top left corner of the panel.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.Slab.eGPanel.GP14">
+            <summary>
+            Gets the grid point at the bottom left corner of the panel.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.Slab.eGPanel.GP23">
+            <summary>
+            Gets the grid point at the top right corner of the panel.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.Slab.eGPanel.GP24">
+            <summary>
+            Gets the grid point at the bottom right corner of the panel.
+            </summary>
+        </member>
+        <member name="M:ESADS.EGraphics.Slab.eGSColumn.#ctor(ESADS.EGraphics.Slab.eGSlab,ESADS.EGraphics.Slab.eSGridPoint)">
+            <summary>
+            Creates a new drawing to represent a column on the plan drawing of a slab system.
+            </summary>
+            <param name="slab">The slab system bearing the column drawing.</param>
+            <param name="gridPoint">The grid point where the column is drawn.</param>
+        </member>
+        <member name="M:ESADS.EGraphics.Slab.eGSColumn.Dispose">
+            <summary>
+            Detaches every reference referring to this object.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.Slab.eGSColumn.Width">
+            <summary>
+            Gets or sets the horizontal dimension of the column drawing.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.Slab.eGSColumn.Depth">
+            <summary>
+            Gets or sets the vertical dimension of the column drawing.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.Slab.eGSColumn.Name">
+            <summary>
+            Gets or sets the name of the column.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.Slab.eGSColumn.Beam1">
+            <summary>
+            Gets the beam drawing on the left hand side of the column.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.Slab.eGSColumn.Beam2">
+            <summary>
+            Gets the beam drawing on the right hand side of the column.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.Slab.eGSColumn.Beam3">
+            <summary>
+            Gets the beam drawing on the top of the column.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.Slab.eGSColumn.Beam4">
+            <summary>
+            Gets the beam drawing on the bottom of the column.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.Slab.eGSColumn.V_Grid">
+            <summary>
+            Gets the vertical grid passing over the column.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.Slab.eGSColumn.H_Grid">
+            <summary>
+            Gets the horizontal grid passing over the column.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.Slab.eGSColumn.Slab">
+            <summary>
+            Gets the slab system bearing the column.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.Slab.eGSColumn.Location">
+            <summary>
+            Gets the gridPoint location of the column center.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.Slab.eGSColumn.GridPoint">
+            <summary>
+            Gets the grid point where the column is located.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.Slab.eGSColumn.Type">
+            <summary>
+            Gets or sets the type of the column.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.Slab.eGSColumn.Diameter">
+            <summary>
+            Gets or sets the diameter of a circular column.
+            </summary>
+        </member>
+        <member name="T:ESADS.EGraphics.Slab.eGridEventHandler">
+            <summary>
+            Handler for move events of the grid and grid point.
+            </summary>
+            <param name="sender">The sender of the event.</param>
+            <param name="e">Object holding information about the event.</param>
+        </member>
+        <member name="F:ESADS.EGraphics.Slab.eBubbleLocation.TopOrLeft">
+            <summary>
+            At the top for vertical grids and on the left for horizontal.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.Slab.eBubbleLocation.BottomOrRight">
+            <summary>
+            At the bottom for vertical grids and on the right side for horizontal.
+            </summary>
+        </member>
+        <member name="F:ESADS.EGraphics.Slab.eBubbleLocation.DoNotShow">
+            <summary>
+            Hides the bubble.
+            </summary>
+        </member>
+    </members>
+</doc>

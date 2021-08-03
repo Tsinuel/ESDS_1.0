@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="ESADS.EGraphics.Footing.eFootingPlan" Collapsed="true">
+    <Position X="2" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAACBAIACAAAABAAAAAAQAAAIJIgAAAAAAgAIABA=</HashCode>
+      <FileName>eFootingPlan.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ESADS.EGraphics.Footing.eFootingSection" Collapsed="true">
+    <Position X="4.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAmACAAIAKAAEAAQABAAkQAAAIJAgAAAAAAgAIABA=</HashCode>
+      <FileName>eFootingSection.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ESADS.EGraphics.Footing.eFootingBar" Collapsed="true">
+    <Position X="6.75" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BACACAAAAYgAAAABALIABAAiAAAAMIAEAKAQBAQAAAA=</HashCode>
+      <FileName>eFootingBar.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ESADS.EGraphics.Footing.eGFooting" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="8.5" Y="0.75" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Properties" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAAECCAAQQIABARAAAAEAAAAWIAhQBAAAAEA=</HashCode>
+      <FileName>eGFooting.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ESADS.EGraphics.Footing.eFDrawing" Collapsed="true">
+    <Position X="3.25" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAiAAAACAAAAAJAAAAIQAAAIJJgUAKAQBgAIEAA=</HashCode>
+      <FileName>eFDrawing.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="ESADS.EGraphics.Footing.eBarAlignment" Collapsed="true">
+    <Position X="6.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAABAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>eBarAlignment.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ESADS.EGraphics.Footing.eBarLoaction" Collapsed="true">
+    <Position X="8.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAFAAAAAIAAAAA=</HashCode>
+      <FileName>eBarLoaction.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ESADS.EGraphics.Footing.eFootingColumnConnection" Collapsed="true">
+    <Position X="8.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAABAAAA=</HashCode>
+      <FileName>eFootingColumnConnection.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ESADS.EGraphics.Footing.eDrawingStage" Collapsed="true">
+    <Position X="6.75" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>eDrawingStage.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

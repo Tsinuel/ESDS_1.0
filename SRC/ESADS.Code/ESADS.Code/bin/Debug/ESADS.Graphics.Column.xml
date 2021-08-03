@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ESADS.Graphics.Column</name>
+    </assembly>
+    <members>
+        <member name="T:ESADS.EGraphics.Column.eColumnDrawingStage">
+            <summary>
+            Represents different stages of drawing in Graphics of column design.
+            </summary>
+        </member>
+        <member name="M:ESADS.EGraphics.Column.eGColumn.#ctor(ESADS.GUI.eModelForm,ESADS.Mechanics.Design.Column.eDColumn)">
+            <summary>
+            Creates un instance of ESADS.EGraphics.eGColumn class from the given basic parameters.
+            </summary>
+            <param name="mForm">Model form.</param>
+            <param name="column">Mechanics component of the column being designed.</param>
+        </member>
+        <member name="M:ESADS.EGraphics.Column.eGColumn.Design">
+            <summary>
+            Design the comlumn and display the detailing in the model form.
+            </summary>
+        </member>
+        <member name="M:ESADS.EGraphics.Column.eGColumn.DisplayModel">
+            <summary>
+            Desplaye the medeling stage drawing in the model form.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.Column.eGColumn.Precision">
+            <summary>
+            Gets or set the precision to display numerica values.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.Column.eGColumn.LengthUnit">
+            <summary>
+            Length unit used in the design.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.Column.eGColumn.ForceUnit">
+            <summary>
+            Force unit used in the design.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.Column.eGColumn.DrawingStage">
+            <summary>
+            Stage of drawing in the column i.e. Modeling and Detailing.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.Column.eGColumn.Column">
+            <summary>
+            The Mechanics component of the column being designed.
+            </summary>
+        </member>
+        <member name="P:ESADS.EGraphics.Column.eGColumn.Layers">
+            <summary>
+            Layers involved in the graphic display of the column.
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,611 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ESADS.Mechanics.Design.Footing</name>
+    </assembly>
+    <members>
+        <member name="T:ESADS.Mechanics.Design.Footing.eInsufficientDephtException">
+            <summary>
+            Reresets expction thrown when the depth provided is not seficeint to suppor the acting puching or wide beam shear in a footing.
+            </summary>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.Footing.eFBar.GetBandSapacing">
+            <summary>
+            returns reinforcement distribution factor in the band
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.Footing.eFBar.GetOutSideBandSpacing">
+            <summary>
+            returns reinforcement distribution outside the band
+            </summary>
+            <param name="bspacing"></param>
+            <returns></returns>
+        </member>
+        <member name="T:ESADS.Mechanics.Design.Footing.eDFooting">
+            <summary>
+            Represents a footing design component.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.Footing.eDFooting.lSteelRatio">
+            <summary>
+            Represents steel ratio in L direction.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.Footing.eDFooting.bSteelRatio">
+            <summary>
+            Represents calculated steel ratio in B direction.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.Footing.eDFooting.qav">
+            <summary>
+            Represents avarage bearing stress used for punching shear
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.Footing.eDFooting.qu">
+            <summary>
+            Represets ultimate bearsing stress used for wide beam and flexur.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.Footing.eDFooting.dIncr">
+            <summary>
+            Represets Depth incremetation by which the  gross depth of the footing increases
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.Footing.eDFooting.cover">
+            <summary>
+            Holds a value for publilc property 'Cover'.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.Footing.eDFooting.maxBarDiam">
+            <summary>
+            Holds a value for property 'MaxBarDiam'.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.Footing.eDFooting.minBarDiam">
+            <summary>
+            Holds a value for porperty 'MinBarDiam'.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.Footing.eDFooting.sIncrmt">
+            <summary>
+            Holds a value for porperty 'SpacingIncrement'.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.Footing.eDFooting.Lbar">
+            <summary>
+            Holds a value for property 'LBar'.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.Footing.eDFooting.Bbar">
+            <summary>
+            Holds a value for property 'BBar'.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.Footing.eDFooting.completionState">
+            <summary>
+            Holds a value for property 'CompletionState'.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.Footing.eDFooting.combs">
+            <summary>
+            Holds a value for property 'Combinations'.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.Footing.eDFooting.L">
+            <summary>
+            Holds a value for property 'Length'
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.Footing.eDFooting.D">
+            <summary>
+            Holds a value for property 'gross depth D'
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.Footing.eDFooting.d">
+            <summary>
+            Holds a value for property 'effective depth d' 
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.Footing.eDFooting.B">
+            <summary>
+            Holds a value for property 'Width'
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.Footing.eDFooting.S">
+            <summary>
+            Holds a value for property 'S'
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.Footing.eDFooting.C">
+            <summary>
+            Holds a value for property 'ConcreteColumnOrPedestal'
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.Footing.eDFooting.p">
+            <summary>
+            Holds a value for property 'p'
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.Footing.eDFooting.Mb">
+            <summary>
+            Holds a value for property 'MB'
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.Footing.eDFooting.Ml">
+            <summary>
+            Holds a value for property 'ML'
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.Footing.eDFooting.Lc">
+            <summary>
+            Holds a value for property 'ColumnWidth'
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.Footing.eDFooting.Bc">
+            <summary>
+            Holds a value for property 'ColumnDepth'
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.Footing.eDFooting.columnType">
+            <summary>
+            Holds a value for property 'ColumnType'
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.Footing.eDFooting.columnDiam">
+            <summary>
+            Holds a value for property 'ColumnDiameter'
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.Footing.eDFooting.minSpacing">
+            <summary>
+            Holds a value for public property 'MinSpacing'.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.Footing.eDFooting.maxSpacing">
+            <summary>
+            Holds a value for public property 'MaxSpacing'.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.Footing.eDFooting.isDepthGiven">
+            <summary>
+            Holds a value for property 'IsDepthGiven'
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.Footing.eDFooting.logSideHorizontal">
+            <summary>
+            Holds a value for property 'LongSideHorizontal'.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.Footing.eDFooting.considerSelfWeight">
+            <summary>
+            Holds a value for public property 'ConsiderSelefWeight'.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.Footing.eDFooting.barDiam">
+            <summary>
+            Holds a value for public property 'BarDiam'.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.Footing.eDFooting.spacing">
+            <summary>
+            Holds a value for public property 'Spacing'.
+            </summary>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.Footing.eDFooting.#ctor(System.Double,System.Double,ESADS.Mechanics.Design.eSteel,ESADS.Mechanics.Design.eConcrete,System.Double,System.Double,System.Double,System.Double,System.Boolean)">
+            <summary>
+            Creates an instance of ESADS.Mechanics.Design.eDFooting class from a given basic parameters
+            </summary>
+            <param name="L">Length of the footing</param>
+            <param name="B">Width of the footing</param>
+            <param name="S">Steel Strength</param>
+            <param name="C">Concrete material used for the design.</param>
+            <param name="D">Gross depth of the footiong</param>
+            <param name="P">Axial load on the footing</param>
+            <param name="Mb">Moment in B direction</param>
+            <param name="Ml">Moment in L direction</param>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.Footing.eDFooting.#ctor(System.Double,System.Double,ESADS.Mechanics.Design.eSteel,ESADS.Mechanics.Design.eConcrete,System.Double,System.Double,System.Double,System.Boolean)">
+            <summary>
+            Creates an instance of ESADS.Mechanics.Design.eDFooting class from a given basic parameters
+            </summary>
+            <param name="L">Length of the footing</param>
+            <param name="B">Width of the footing</param>
+            <param name="S">Steel Strength</param>
+            <param name="C">Concrete material used for the design.</param>
+            <param name="P">Axial load on the footing</param>
+            <param name="Mb">Moment in B direction</param>
+            <param name="Ml">Moment in L direction</param>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.Footing.eDFooting.CalculateDepthAndAs">
+            <summary>
+            Designs the isolated footing.
+            </summary>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.Footing.eDFooting.FillEffectiveDepths">
+            <summary>
+            Fills the average of the L and B direction depths
+            </summary>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.Footing.eDFooting.GetEcentricity(System.Double,System.Double)">
+            <summary>
+            return the eccentricity
+            </summary>
+            <param name="M">the given moment</param>
+            <param name="P">the given axial load</param>
+            <returns></returns>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.Footing.eDFooting.GetStress(System.Double,System.Double,System.Double)">
+            <summary>
+            returns the value of stress on the footing
+            </summary>
+            <param name="P">the given axial load</param>
+            <param name="L">Length of the footing</param>
+            <param name="B">Width of the footing</param>
+            <returns></returns>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.Footing.eDFooting.GetVprd(System.Double)">
+            <summary>
+            returns the value of punching shear resistance 
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.Footing.eDFooting.GetVp(System.Double)">
+            <summary>
+            returns the value of acting punching shear
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.Footing.eDFooting.GetMB">
+            <summary>
+            returns the value of Moment in B direction
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.Footing.eDFooting.GetML">
+            <summary>
+            returns the value of Moment in L direction
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.Footing.eDFooting.GetSteelRatio(System.Double,System.Double,System.Double)">
+            <summary>
+            returns the value of steel ratio in both L and B direction
+            </summary>
+            <param name="M">Moment in the corresponding direction</param>
+            <param name="b">width of the footing</param>
+            <param name="d">effective depth</param>
+            <returns></returns>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.Footing.eDFooting.GetAs(System.Double,System.Double,System.Double)">
+            <summary>
+            returns the value of Area of steel in both L and B direction
+            </summary>
+            <param name="steelRatio"></param>
+            <param name="b"></param>
+            <param name="d"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.Footing.eDFooting.GetArea(System.Double)">
+            <summary>
+            returns the area of single bar for a given bar diameter
+            </summary>
+            <param name="diam"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.Footing.eDFooting.GetProvidedSteelRatio(System.Double,System.Double,System.Double)">
+            <summary>
+            returns provided steel ratio 
+            </summary>
+            <param name="diam">bar diameter</param>
+            <param name="b">width or length of the footing</param>
+            <param name="d">depth along the corresponding directions</param>
+            <returns></returns>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.Footing.eDFooting.FillBearingStress">
+            <summary>
+            fills the ultimate bearing stress value
+            </summary>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.Footing.eDFooting.GetBVrd(System.Double)">
+            <summary>
+            returns the value of wide beam shear resistance in B direction
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.Footing.eDFooting.GetLVrd(System.Double)">
+            <summary>
+            returns the value of wide beam shear resistance in L direction
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.Footing.eDFooting.GetBV(System.Double)">
+            <summary>
+            returns the value of acting wide beam shear in shorter(B) direction
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.Footing.eDFooting.GetLV(System.Double)">
+            <summary>
+            returns the value of acting wide beam shear in shorter(B) direction
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.Footing.eDFooting.CheckDepth">
+            <summary>
+            checks the depth for wide beam shear and punching shear
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.Footing.eDFooting.SetRectangularFootingColumnData(System.Double,System.Double)">
+            <summary>
+            sets the data about footing column 
+            </summary>
+            <param name="Lc">Length of column</param>
+            <param name="Bc">Width of column</param>
+            <param name="columnType">ColumnWithSteelBasePlate type</param>
+            <param name="columnDiam">ColumnWithSteelBasePlate Diameter</param>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.Footing.eDFooting.SetCircularFootingColumnData(System.Double)">
+            <summary>
+            Sets the diameter of the column for circular footing column.
+            </summary>
+            <param name="columnDiam">Column diameter</param>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.Footing.eDFooting.GetPractSpacing(System.Double)">
+            <summary>
+            returns the value of  practical spacing 
+            </summary>
+            <param name="spacing">the actual spacing from calculation</param>
+            <returns></returns>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.Footing.eDFooting.GetSpacing(System.Double,System.Double)">
+            <summary>
+            Returns the actual spacing between bars
+            </summary>
+            <param name="As">Total area of steel in the corresponding direction</param>
+            <param name="diam">diameter of  bar in that direction</param>
+            <returns></returns>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.Footing.eDFooting.GetLAvailInLdxn">
+            <summary>
+            returns the value of available anchorage length in L direction
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.Footing.eDFooting.GetLAvailInBdxn">
+            <summary>
+            returns the value of available anchorage length in B direction
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.Footing.eDFooting.GetLb(System.Double)">
+            <summary>
+            returns the value of basic anchorage length
+            </summary>
+            <param name="diam">diameter of the bar</param>
+            <returns></returns>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.Footing.eDFooting.GetNoOfBars(System.Double,System.Double)">
+            <summary>
+            returns number of bars
+            </summary>
+            <param name="diam">diameter of the bar</param>
+            <param name="steelRatio">steel ratio</param>
+            <returns></returns>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.Footing.eDFooting.GetAsProvided(System.Double,System.Double)">
+            <summary>
+            returns the value of area of steel provided
+            </summary>
+            <param name="diam">diameter of the bar</param>
+            <param name="steelRatio">steel ratio</param>
+            <returns></returns>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.Footing.eDFooting.SetDetailingData(System.Double,System.Double,System.Double,System.Double,System.Double)">
+            <summary>
+            sets bar preference
+            </summary>
+            <param name="Lbar.Diameter">diameter of bar to be placed in L direction </param>
+            <param name="bBarDiam">diameter of bar to be placed in B direction</param>
+            <param name="maxBarDiam">maximum bar diameter</param>
+            <param name="minBarDiam">minimum bar diameter</param>
+            <param name="maxSpacing">maximum spacing</param>
+            <param name="minSpacing">minimum spacing</param>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.Footing.eDFooting.CheckPrecision(System.Double,System.Double,System.Int32)">
+            <summary>
+            Checks whether a given value statisfied the given precision relative to its actual value.
+            </summary>
+            <param name="value">Value to be checked for precision.</param>
+            <param name="actualValue">Actual value used to check the precision.</param>
+            <param name="precision">Precision interms of number of correct decimal paceses.</param>
+            <returns></returns>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.Footing.eDFooting.ExposureType">
+            <summary>
+            Gets or set the Exposure type of the footing usually sever exposure in soil.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.Footing.eDFooting.Spacing">
+            <summary>
+            Gets or set the only spacing used in the design;
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.Footing.eDFooting.BarDiam">
+            <summary>
+            Get or set the only bar diameter used in the design.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.Footing.eDFooting.ConsiderSelfWeight">
+            <summary>
+            Gets or sets whether to includ self wheight in the design or not.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.Footing.eDFooting.LongSideHorizontal">
+            <summary>
+            Gets or sets the value indicating whether the loger side is horizonal or not.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.Footing.eDFooting.MinSpacing">
+            <summary>
+            Gets or sets the minimum spacing of bars used in the design.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.Footing.eDFooting.MaxSpacing">
+            <summary>
+            Gets or sets the maximum spacing of bars used in the design.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.Footing.eDFooting.Combinations">
+            <summary>
+            Gets List of combination design output of the footing at different bar combination in both directions.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.Footing.eDFooting.CompletionState">
+            <summary>
+            Gets the design completion state.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.Footing.eDFooting.Width">
+            <summary>
+            Gets or sets the width of the footing
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.Footing.eDFooting.Length">
+            <summary>
+            Gets or sets the length of the footing
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.Footing.eDFooting.Concrete">
+            <summary>
+            Gets or setst the ConcreteColumnOrPedestal material used for the design.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.Footing.eDFooting.CalcAsL">
+            <summary>
+            Gets or sets the calculated area of steel extending in L-Direction
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.Footing.eDFooting.CalcAsB">
+            <summary>
+            Gets or sets the calculated area of steel extending in B-Direction
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.Footing.eDFooting.ProvAsB">
+            <summary>
+            Gets the provided area of steel in B direction.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.Footing.eDFooting.ProvAsL">
+            <summary>
+            Gets the provided area of steel in L direction.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.Footing.eDFooting.Cover">
+            <summary>
+            Gets or sets the ConcreteColumnOrPedestal cover used.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.Footing.eDFooting.Depth">
+            <summary>
+            Gets or sets the gross depth of the footing
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.Footing.eDFooting.Deff">
+            <summary>
+            Gets or sets the effective depth of the footing
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.Footing.eDFooting.ColumnWidth">
+            <summary>
+            Gets or sets the width of the footing column.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.Footing.eDFooting.ColumnType">
+            <summary>
+            Gets or sets the shape of footing column used.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.Footing.eDFooting.ColumnLength">
+            <summary>
+            Gets or sets the width of the footing column.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.Footing.eDFooting.ColumnDiameter">
+            <summary>
+            Gets or sets the diameter of the footing column.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.Footing.eDFooting.MB">
+            <summary>
+            Gets or sets the moment along B direction
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.Footing.eDFooting.ML">
+            <summary>
+            Gets or sets the moment along L direction
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.Footing.eDFooting.P">
+            <summary>
+            Gets or sets the axial load
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.Footing.eDFooting.Steel">
+            <summary>
+            Gets or sets the steel material used for the design
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.Footing.eDFooting.IsDepthGiven">
+            <summary>
+            Gets or sets the value indicating wether the depth is providied or to be designed. True if depth is given and false if depth is not given.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.Footing.eDFooting.LBar">
+            <summary>
+            Gets the bar extending in L direction.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.Footing.eDFooting.BBar">
+            <summary>
+            Gets the bar extending in B Direction.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.Footing.eDFooting.DepthIncrement">
+            <summary>
+            Gets or set the value by which gross depth is incremented.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.Footing.eDFooting.SpacingIncrement">
+            <summary>
+            Gets or sets the value by which spacing is incremented.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.Footing.eDFooting.MinBar">
+            <summary>
+            Gets or sets the minimum bar diameter used.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.Footing.eDFooting.MaxBar">
+            <summary>
+            Gets or set the maximum bar diameter used.
+            </summary>
+        </member>
+        <member name="T:ESADS.Mechanics.Design.Footing.eColumnType">
+            <summary>
+            List type of column used in the design of footing.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.Footing.eColumnType.Rectangular">
+            <summary>
+            Represents rectangular type of footing column.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.Footing.eColumnType.Circular">
+            <summary>
+            Represents rectangular type of footing column.
+            </summary>
+        </member>
+    </members>
+</doc>

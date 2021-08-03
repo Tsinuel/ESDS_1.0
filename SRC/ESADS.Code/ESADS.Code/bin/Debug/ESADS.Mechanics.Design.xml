@@ -1,0 +1,2097 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ESADS.Mechanics.Design</name>
+    </assembly>
+    <members>
+        <member name="T:ESADS.Mechanics.Design.eRelativeStirrupPosition">
+            <summary>
+            Specifies the orientation of of stirrups holding the logtudinal bars.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.eRelativeStirrupPosition.StirrupAtBottom">
+            <summary>
+            Specifies Orientation with bottom stirrup and top longtudinal bar.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.eRelativeStirrupPosition.StirrupAtTop">
+            <summary>
+            Specifies Orientation with top stirrup and bottom longtudinal bar.
+            </summary>
+        </member>
+        <member name="T:ESADS.Mechanics.Design.eIllegalGradeAssignmentException">
+            <summary>
+            Exeption thrown when using user defined grades as predefined grade to calculate other properies of material specified in the code.
+            </summary>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.eIllegalGradeAssignmentException.#ctor">
+            <summary>
+            Initializes an instance of ESADS_Mechanics.eIllegalAssignmentException class.
+            </summary>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.eIllegalGradeAssignmentException.#ctor(System.String)">
+            <summary>
+            Initializes an instance of ESADS_Mechanics.eIllegalAssignmentException class for specified exception message.
+            </summary>
+            <param name="message">The error message that explains the reason for the exception.</param>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.eIllegalGradeAssignmentException.#ctor(System.String,System.Exception)">
+            <summary>
+            Initializes an instance of ESADS_Mechanics.eIllegalAssignmentException class with specified error message and 
+             a reference to the inner exception that is the cause ofthis exception.
+            </summary>
+             <param name="message">The error message that explains the reason for the exception.</param>
+             <param name="innerException"> The exception that is the cause of the current exception, or a null reference.</param>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.eIllegalGradeAssignmentException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Initializes an instance of ESADS_Mechanics.eIllegalAssignmentException class with serialize data.
+            </summary>
+            <param name="info">The System.Runtime.Serialization.SerializationInfo that holds the serialized object data about the exception being thrown.</param>
+            <param name="context"> The System.Runtime.Serialization.StreamingContext that contains contextual information about the source or destination.</param>
+        </member>
+        <member name="T:ESADS.Mechanics.Design.eDesignProgressEventArgs">
+            <summary>
+            Contais all the necessary information about design progress.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.eDesignProgressEventArgs.progressDescription">
+            <summary>
+            Holds a value for public property 'ProgressDescription'.
+            </summary>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.eDesignProgressEventArgs.#ctor(System.String)">
+            <summary>
+            Creates an instance of the ESADS.Mechanics.Design.eDesignProgressEventArgs class from the given progress description.
+            </summary>
+            <param name="progressDescription">Description of the progress.</param>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.eDesignProgressEventArgs.ProgressDescription">
+            <summary>
+            Gets the progress description or the step at which the design present.
+            </summary>
+        </member>
+        <member name="T:ESADS.Mechanics.Design.eSteel">
+            <summary>
+            Contains information related to Reinforcement eSteel
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.eSteel.charYeildStrgth">
+            <summary>
+            feild used to access public property 'DesnCharStrgth'
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.eSteel.desnMaxStrain">
+            <summary>
+            feild used to access public property 'DesnMaxStrain'
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.eSteel.desnYeildStrgth">
+            <summary>
+            feild used to access public property 'DesnYeildStrgth'
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.eSteel.grade">
+            <summary>
+            feild used to access public property 'Grade'
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.eSteel.modulOfElast">
+            <summary>
+            feild used to access public property 'ClassWork'
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.eSteel.desnYeildStrain">
+            <summary>
+            field used to access public property 'DesnYeildStrain'
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.eSteel.unitWeight">
+            <summary>
+            Access the public property 'UnitWeight'.
+            </summary>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.eSteel.#ctor(ESADS.Code.eSteelGrade)">
+            <summary>
+            Intializes an instance of ESADS_Mechanics.eSteel class from a given grade of steel.
+            </summary>
+            <param name="grade">Specifies the grade of steel used</param>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.eSteel.#ctor(System.Double,System.Double,System.Double)">
+            <summary>
+            Creates an instance of ESADS_Mechanics.eSteel class from a given custom grade,modules of elasticity and characterstic yeild strength.
+            </summary>
+            <param name="modulesOfElasticity">Modulus of elasticity for the newly defined steel material.</param>
+            <param name="charYeildStrength">characterstic yeild strength of the newly defined steel material.</param>
+            <param name="unitWeight">Unit wheight of the newly defined steel material.</param>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.eSteel.SetClassWork(ESADS.Code.eClassWork)">
+            <summary>
+            Sets the classWork of the constraction using this material.
+            </summary>
+            <param name="ClassWork">ClassWork of the constraction.</param>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.eSteel.Grade">
+            <summary>
+            Gets the grade of steel.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.eSteel.fyd">
+            <summary>
+            Gets the Desing Yeild Strength of Steel Class
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.eSteel.fyk">
+            <summary>
+            Gets the characterstic yeild strength of steel material.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.eSteel.UnitWeight">
+            <summary>
+            Gets the unit weight of steel.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.eSteel.E">
+            <summary>
+            Gets the modulus of elasticity of Steel materail.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.eSteel.εsMax">
+            <summary>
+            Gets the design maximum strain of Steel material.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.eSteel.εs">
+            <summary>
+            Gets the design yeild strain of Steel material.
+            </summary>
+        </member>
+        <member name="T:ESADS.Mechanics.Design.eDesignProgressEventHandler">
+            <summary>
+            Delegates all events related to Design progress.
+            </summary>
+            <param name="sender">Represent an object which is the sender of this event.</param>
+            <param name="e">Represent an event argument which contains all the necessary information about the event.</param>
+        </member>
+        <member name="T:ESADS.Mechanics.Design.eRow">
+            <summary>
+            Contains information related a row of longitudinal bars residing in a combination.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.eRow.bars">
+            <summary>
+            Accesses public property 'Bars'.
+            </summary>
+            
+        </member>
+        <member name="F:ESADS.Mechanics.Design.eRow.area">
+            <summary>
+            Accesses public property 'Area'.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.eRow.effectivedepth">
+            <summary>
+            Accesses public property 'EffectiveWidth'.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.eRow.usedDiameters">
+            <summary>
+            Contains used diameters in a row, excluding those with zero number of bars.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.eRow.xCoordinate">
+            <summary>
+            Contains bars in a row and their coresponding X-Coordinate.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.eRow.yCoordinates">
+            <summary>
+            Contains bars in a row and their corespodning Y-Coordinate.
+            </summary>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.eRow.#ctor(System.Double[0:,0:],System.Double[])">
+            <summary>
+            Creates an instance of 'eRow' class given X-Coordinates , Y- Coordinates and used diameters in a row.
+            </summary>
+            <param name="xCoordinate">X-Coordinates of bars in a row.</param>
+            <param name="yCoordinates">Y-Coordinates of bars in a row.</param>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.eRow.FillBarsCoordinates">
+            <summary>
+            Fills the X and Y coordinates of bars.
+            </summary>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.eRow.GetY_Coordinate(System.Double)">
+            <summary>
+            Returns the Y-Coordinated of a bar in a row given its Diameter.
+            </summary>
+            <param name="diameter">The Diameter of the bar for which the coordinates are to be filled.</param>
+            <returns></returns>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.eRow.FillEffectiveDepth">
+            <summary>
+            Fill the EffectiveDepth property of the instance.
+            </summary>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.eRow.FillArea">
+            <summary>
+            Fills the area by adding the areas of each bar in the row.
+            </summary>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.eRow.FillUsedDiameters">
+            <summary>
+            Fills the field 'usedDiameters'.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.eRow.Bars">
+            <summary>
+            Gets the reinforcement bars used in the row.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.eRow.Area">
+            <summary>
+            Gets the total steel area of the row.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.eRow.EffectiveDepth">
+            <summary>
+            Gets the Effective depth of the row measured from the furthest compressive concrete fiber.
+            </summary>
+        </member>
+        <member name="T:ESADS.Mechanics.Design.eCombination">
+            <summary>
+            Contains information related to combination of longitudinal bars in rows along an effective width.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.eCombination.rows">
+            <summary>
+            Accesses the public property 'Rows'.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.eCombination.area">
+            <summary>
+            Accesses the public property 'Area'.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.eCombination.effectivedepth">
+            <summary>
+            Accesses the public property 'EffectiveDepth'.
+            </summary>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.eCombination.#ctor(System.Collections.Generic.List{ESADS.Mechanics.Design.eRow})">
+            <summary>
+            Creates an instance of eCombination class provided all the rows in a combination.
+            </summary>
+            <param name="rows">List of rows in the combination.</param>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.eCombination.FillBars">
+            <summary>
+            Fills all bars in the combination.
+            </summary>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.eCombination.FillArea">
+            <summary>
+            Fills the Area property of a Combination.
+            </summary>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.eCombination.FillEffectiveDepth">
+            <summary>
+            Fills the Effective Width property of a combination.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.eCombination.Rows">
+            <summary>
+            Gets the all the Rows in the Combination.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.eCombination.Area">
+            <summary>
+            Gets the area of the Combination.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.eCombination.EffectiveDepth">
+            <summary>
+            Gets the Effective Width of the Combination.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.eCombination.Bars">
+            <summary>
+            Gets all bars in the combination.
+            </summary>
+        </member>
+        <member name="T:ESADS.Mechanics.Design.eLoad">
+            <summary>
+            Handles data related to Loads
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.eLoad.isFactored">
+            <summary>
+            used to access the public property 'IsFactored'
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.eLoad.torsion">
+            <summary>
+            private feild used to access the public 'Torsion'  property of eLoad class
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.eLoad.axial">
+            <summary>
+            private feild used to access the public 'Axail' property of eLoad class
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.eLoad.fexure">
+            <summary>
+            private feild used to access the public 'Flexure' property of eLoad class
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.eLoad.shear">
+            <summary>
+            private feild used to access the public 'Shear' property of eLoad Class
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.eLoad.desnAxial">
+            <summary>
+            private feild used to access the public 'DesnAxial' property of eLoad Class
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.eLoad.desnFlexure">
+            <summary>
+            private feild used to access the public 'DesnFlexure' property of eLoad Class
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.eLoad.desnShear">
+            <summary>
+            private feild used to access the public 'DesnShear' property of eLoad Class
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.eLoad.desnTorsion">
+            <summary>
+            private feild used to access the public 'DesnTorsion' property of eLoad Class
+            </summary>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.eLoad.#ctor(System.Double,System.Double,System.Double,System.Double,System.Boolean)">
+            <summary>
+            Public constructor used to make an instance of eLoad class for unfactored load case
+            </summary>
+            <param name="flexure">Value represeting the flexural load</param>
+            <param name="shear">Value representing the shear load</param>
+            <param name="axial">Value representing the axial load</param>
+            <param name="torsion">Value representing the torsional load</param>
+            <param name="isFactored">Value specifying weather the load is factored or not</param>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.eLoad.FindDesnFlexure">
+            <summary>
+            Used to calculate the Desing Flexural Load
+            </summary>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.eLoad.FindDesnAxial">
+            <summary>
+            Used to calculate the Desing Axial Load
+            </summary>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.eLoad.FindDesnShear">
+            <summary>
+            Used to calculate the Desing Shear Load
+            </summary>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.eLoad.FindDesnTorsion">
+            <summary>
+            Used to calculate the Desing Torsional Load
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.eLoad.IsFactored">
+            <summary>
+            Used to check if the load is factored or not
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.eLoad.Flexure">
+            <summary>
+            Used to get or set the Flexural Load property of load class
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.eLoad.Shear">
+            <summary>
+            Used to get or set the Shear Load property of eLoad class
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.eLoad.Torsion">
+            <summary>
+            Used to get or set the Torsional Load property of eLoad class
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.eLoad.Axial">
+            <summary>
+            Used to get or set the Axial Load property of eLoad class
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.eLoad.DesnAxial">
+            <summary>
+            Used to get the Desing Axial Load property of eLoad class
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.eLoad.DesnTorsion">
+            <summary>
+            Used to get the design Torsional Load property of eLoad class
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.eLoad.DesnShear">
+            <summary>
+            Used to get the Desing Torsional Load property of eLoad Class
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.eLoad.DesnFlexure">
+            <summary>
+            Used to get the Desing Flexural Load property of eLoad class
+            </summary>
+        </member>
+        <member name="T:ESADS.Mechanics.Design.eDesignFailurLink">
+            <summary>
+            Deligates a method which invokes all failur events when they are passed to static class.
+            </summary>
+            <param name="e">Event argument to be filled when the design fails.</param>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.eBeamSection.e">
+            <summary>
+            Holds all information related design failur event.It is used mainly wheither to stop or 
+            procced the design whenever the desing fails. 
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.eBeamSection.designSummary">
+             <summary>
+            Accesses the public property 'DesignSummary'.
+             </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.eBeamSection.sectionName">
+            <summary>
+            Accesses the public property 'SectionName'.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.eBeamSection.DepthTolerance">
+            <summary>
+            Specifies the tolerance to which depth revision is significantly not important.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.eBeamSection.barConstraints">
+            <summary>
+            Accesses the public property 'BarConstraints'.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.eBeamSection.classWork">
+            <summary>
+            Accesses the public property 'ClassWork'.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.eBeamSection.compCombination">
+            <summary>
+            Accesses the public property 'CompCombination'.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.eBeamSection.concrete">
+            <summary>
+            Accesses the public property 'Concrete'.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.eBeamSection.concreteCover">
+            <summary>
+            Accesses the public property 'ConcreteCover'.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.eBeamSection.depth">
+            <summary>
+            Accesses the public property 'Depth'.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.eBeamSection.designMoment">
+            <summary>
+            Accesses the public property 'DesignMoment'.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.eBeamSection.doublyReinforced">
+            <summary>
+            Accesses the public property 'DoublyReinforced'.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.eBeamSection.doublyReinfWithSLSdepth">
+            <summary>
+            Accesses the public property 'DoublyReinfWithSLSdepth'.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.eBeamSection.effectiveSLSdepth">
+            <summary>
+            Accesses the public property 'EffectiveSLSdepth'.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.eBeamSection.effectiveSpanLength">
+            <summary>
+            Accesses the public property 'EffectiveSpanLength'.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.eBeamSection.maxAggrSize">
+            <summary>
+            Accesses the public property 'MaxAggrSize'.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.eBeamSection.spanType">
+            <summary>
+            Accesses the public property 'SpanType'.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.eBeamSection.steel">
+            <summary>
+            Accesses the public property 'Steel'.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.eBeamSection.tensCombination">
+            <summary>
+            Accesses the public property 'TensCombination'.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.eBeamSection.width">
+            <summary>
+            Accesses the public property 'Width'.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.eBeamSection.stirrupPosition">
+            <summary>
+            Accesses the public property 'StirrupPosition'.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.eBeamSection.exposureType">
+            <summary>
+            Accesses the public property 'ExposureType'.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.eBeamSection.mainStirrupDiam">
+            <summary>
+            Accesses the public property 'MainStirrupDiam'.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.eBeamSection.linkStirrupDiam">
+            <summary>
+            Accesses the public property 'LinkStirrupDiam'.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.eBeamSection.effectiveDepth">
+            <summary>
+            Holds temporaty memory for depth calculated at each steep of the design procedure.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.eBeamSection.designedCompled">
+            <summary>
+            Hold a value for public property 'DesignedCompleted'
+            </summary>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.eBeamSection.#ctor(System.String,System.Double,System.Double,System.Double)">
+            <summary>
+            Creates an instance of beam class from basic input parameters.
+            </summary>
+            <param name="sectionName"> Name of the section.</param>
+            <param name="width">Width of the beam.</param>
+            <param name="depth">Depth of the beam.</param>
+            <param name="designMoment">Factored design moment loaded on the beam.</param>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.eBeamSection.#ctor(System.String,System.Double,System.Double)">
+            <summary>
+            Creates an instance of ESADS.Mechanics.Design.eBeam class for specified width and design moment[for singly reinforced case].
+            </summary>
+            <param name="sectionName">Name of the section.</param>
+            <param name="width">Width of the beam.</param>
+            <param name="designMoment">Design moment of the beam.</param>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.eBeamSection.#ctor(ESADS.WorkSpace.eBeamInput)">
+            <summary>
+            Creates an instance of ESADS.Mechanics.Design.eBeam class from the given input values.
+            </summary>
+            <param name="inputValues"></param>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.eBeamSection.SetBarPreferences(System.Double[],ESADS.Mechanics.Design.eRelativeStirrupPosition,System.Double,System.Double)">
+            <summary>
+            Sets properties related bar preferences of the beam.
+            </summary>
+            <param name="BarConstraints">Main bar constraints.</param>
+            <param name="StirrupPosition">Relative location of the stirrup.</param>
+            <param name="MainStirrupDiam">Diameter of the main stirrup.</param>
+            <param name="LinkStirrupDiam">Diameter of the link stirrup.</param>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.eBeamSection.SetDesignOptions(System.Boolean,System.Boolean)">
+            <summary>
+            Sets properties of the beam related to design options.
+            </summary>
+            <param name="doublyReinforced">True if doubly reinforced and false otherwise.</param>
+            <param name="doublyReinfWithSLSdepth">True if doubly reinforced with servisability limit state depth and false otherwise.</param>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.eBeamSection.SetDesignConditions(ESADS.Code.eClassWork,ESADS.Code.eExposureType,ESADS.Code.eSpanType,System.Double,System.Double,System.Double)">
+            <summary>
+            Sets the properties related to design condition.
+            </summary>
+            <param name="classWork">Class work of the design.</param>
+            <param name="exposureType">Exposure type of the beam.</param>
+            <param name="spanType">Span type of the beam.</param>
+            <param name="effectiveSpanLength">Effective length of the span at which the beam section is taken.</param>
+            <param name="maxAggrSize">Maximum aggregate size used in the design of the beam.</param>
+            <param name="concreteCover">Concrete cover used in the design of the beam.</param>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.eBeamSection.SetMaterial(ESADS.Mechanics.Design.eConcrete,ESADS.Mechanics.Design.eSteel)">
+            <summary>
+            Sets the material property of the beam.
+            </summary>
+            <param name="Concrete">Concrete materail used for the beam.</param>
+            <param name="Steel">Steel material used for the beam.</param>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.eBeamSection.SetGeometry(System.Double,System.Double)">
+            <summary>
+            Sets the geometric property of the beam.
+            </summary>
+            <param name="width">Width of the beam.</param>
+            <param name="depth">Depth of the beam.</param>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.eBeamSection.GetNutralAxisDepth(System.Double)">
+            <summary>
+            Returns the depth of the nutral axis from a given steel ratio.
+            </summary>
+            <param name="Moment">Magnitude of moment used for singly reinforced part.</param>
+            <returns></returns>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.eBeamSection.CheckMinAreaOfSteel(System.Double@)">
+            <summary>
+            Checks if the given area satisfies the minimum requirments.
+            </summary>
+            <param name="As">Area of steel to be checked for minimum requirments.</param>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.eBeamSection.FillCombinations(System.Double,System.Double,System.Double)">
+            <summary>
+            Fills bar combinations for Compresive and Tensile area of steel.
+            </summary>
+            <param name="As">Tensile area of steel</param>
+            <param name="AsPrim">Compressive area of steel.</param>
+            <param name="X">Depth of nutrual axis.</param>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.eBeamSection.GetMaxAreaOfSteel">
+            <summary>
+            Returns the maximum area of steel.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.eBeamSection.Design">
+            <summary>
+            Designs the beam on which it is called.
+            </summary>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.eBeamSection.CheckDepthTolerance(System.Double,System.Double)">
+            <summary>
+            Checks if a given NewDepth is within specified tolerance of a given OldDepth.
+            </summary>
+            <param name="OldDepth">The previous depth.</param>
+            <param name="NewDepth">The new depth.</param>
+            <returns></returns>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.eBeamSection.GetMaxSteelRatio">
+            <summary>
+            Returns the maxismum possible steel ratio to make a beam section dectile.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.eBeamSection.GetULSdepth(System.Double)">
+            <summary>
+            Returns the ultimate limit state depth required.
+            </summary>
+            <param name="ReductionFactor">The reduction factor by which steel ratio is going to be reduced.</param>
+            <returns></returns>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.eBeamSection.GetSteelRation(System.Double)">
+            <summary>
+            Returns the steel ration for a given moment capacity and effective depth.
+            </summary>
+            <param name="MomentCapacity">The moment capacity of the section if it is singly reinforced.</param>
+            <returns></returns>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.eBeamSection.GetMomentCapacity(System.Double)">
+            <summary>
+            Returns the singly reinforced moment capacity.
+            </summary>
+            <param name="ReductionFactor">Reducton factor to reduce steel ratio.</param>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.eBeamSection.GetAreaOfSteel(System.Double)">
+            <summary>
+            Returns the area of steel required for a given moment capacity.
+            </summary>
+            <param name="Moment">The moment for which the steel is going to be calcualated.</param>
+            <returns></returns>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.eBeamSection.GetAreaOfSteel(System.Double,System.Double)">
+            <summary>
+            Returns the secondary tensile area of steel that makes couple with top compressive steel.
+            </summary>
+            <param name="SecondaryMoment">Secondary moment caried by the coupled tensile and compresive areas of steel.</param>
+            <param name="dcPrim">The distance between top compresion fiber and the centroid of compresive area of steel.</param>
+            <returns></returns>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.eBeamSection.GetAreaOfSteel(System.Double,System.Double,System.Double)">
+            <summary>
+            Returns the area of compressive steel required to resist secondary moment coupling with bottom tensile reinforcement.
+            </summary>
+            <param name="SecondaryMoment">Secondary moment caried by the coupled tensile and compresive areas of steel.</param>
+            <param name="dcPrim">The distance between top compresion fiber and the centroid of compresive area of steel.</param>
+            <param name="X">Depth of nutral axis.</param>
+            <returns></returns>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.eBeamSection.GetCompSteelStress(System.Double,System.Double)">
+            <summary>
+            Returns the stress in compresion area of steel.
+            </summary>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.eBeamSection.GetBarArea(System.Double)">
+            <summary>
+            Returns the area of a given bar.
+            </summary>
+            <param name="BarDiameter"> The diameter of the bar.</param>
+            <returns></returns>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.eBeamSection.OnAllFailurs(ESADS.Mechanics.Design.eDesignFailedEventArgs)">
+            <summary>
+            Invokes the failur event which is specified in event argument.
+            </summary>
+            <param name="e">Event argument which contains all the necessary information related to the event.</param>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.eBeamSection.OnDesignProgress(System.String)">
+            <summary>
+            Firs the design progress event from the given progress description message.
+            </summary>
+            <param name="progressDescription">Description of the progress on which the design is currently on.</param>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.eBeamSection.GetConstraintsBarArray">
+            <summary>
+            Returns the string containing all bars useded in the design and their diameters.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.eBeamSection.GetDesignSummary(ESADS.eForceUints,ESADS.eLengthUnits)">
+            <summary>
+            Returns all information related to beam and 
+            </summary>
+            <param name="ForceUnit"></param>
+            <param name="LengthUnit"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.eBeamSection.GetReductionFactor">
+            <summary>
+            Returns the reduction factor for reinforcement to limit the area of steel not to be above maximum area.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="E:ESADS.Mechanics.Design.eBeamSection.SLSdepthFailed">
+            <summary>
+            Occurs when the depth of th beam fails to satisfy the servisability limit state requirment.
+            </summary>
+        </member>
+        <member name="E:ESADS.Mechanics.Design.eBeamSection.AllCombinationsCongested">
+            <summary>
+            Occurs when all combinations are congested.
+            </summary>
+        </member>
+        <member name="E:ESADS.Mechanics.Design.eBeamSection.SymetricCombinationNotFound">
+            <summary>
+            Occurs when all combinations are not symetrical.
+            </summary>
+            
+        </member>
+        <member name="E:ESADS.Mechanics.Design.eBeamSection.DesignProgress">
+            <summary>
+            Occurs when all procedures of beam design gets completed.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.eBeamSection.DesignCompleted">
+            <summary>
+            Gets the value indicating whether the design of this cross section is designed or not.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.eBeamSection.Width">
+            <summary>
+            Gets the width of the beam.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.eBeamSection.Depth">
+            <summary>
+            Gets the depth of the beam.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.eBeamSection.EffectiveSpanLength">
+            <summary>
+            Gets the  effective span length of the beam.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.eBeamSection.EffectiveSLSdepth">
+            <summary>
+            Gets the effective servisability limit state depth of the beam.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.eBeamSection.Concrete">
+            <summary>
+            Gets the type of concrete used in the design of the beam.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.eBeamSection.Steel">
+            <summary>
+            Gets the type of steel used in the design of the beam.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.eBeamSection.DesignMoment">
+            <summary>
+            Gets the the design moment on the beam.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.eBeamSection.BarConstraints">
+            <summary>
+            Gets the bar constraints used in the design of the beam.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.eBeamSection.StirrupPosition">
+            <summary>
+            Gets the Relative stirrup position in the beam.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.eBeamSection.DoublyReinforced">
+            <summary>
+            Gets the value indicating whether the beam is doubly reinforced or not.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.eBeamSection.DoublyReinfWithSLSdepth">
+            <summary>
+            Gets the value indicating wether the beam is Doubly reinforced with servisability limit state depth or not.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.eBeamSection.ExposureType">
+            <summary>
+            Gets the exposure type of the beam.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.eBeamSection.ConcreteCover">
+            <summary>
+            Gets the concrete cover used in the design of the beam.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.eBeamSection.MaxAggrSize">
+            <summary>
+            Gets the maximum aggregate size used in the design of the beam.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.eBeamSection.SpanType">
+            <summary>
+            Gets the span type of the beam.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.eBeamSection.TensCombination">
+            <summary>
+            Gets the tensile bar combination of the beam.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.eBeamSection.CompCombination">
+            <summary>
+            Gets the compresion bar combination of the beam.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.eBeamSection.ClassWork">
+            <summary>
+            Gets the class work of the beam going to be designed.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.eBeamSection.MainStirrupDiam">
+            <summary>
+            Gets the diameter of the main stirrup.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.eBeamSection.LinkStirrupDiam">
+            <summary>
+            Gets the diameter of the link stirrup used when the number of rows of bars in a beam is more than one.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.eBeamSection.SectionName">
+            <summary>
+            Gets the name of of the section.
+            </summary>
+        </member>
+        <member name="T:ESADS.Mechanics.Design.eDMember">
+            <summary>
+            Represents a member in continious beam structure used for design purpose.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.eDMember.member">
+            <summary>
+            Holds a value for property 'Member'.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.eDMember.steel">
+            <summary>
+            Holds a value for property 'Steel'.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.eDMember.concrete">
+            <summary>
+            Holds a value for property 'Concrete'.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.eDMember.depth">
+            <summary>
+            Holds a value for property 'Depth'.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.eDMember.width">
+            <summary>
+            Holds a value for property 'Width'.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.eDMember.Concrete">
+            <summary>
+            Gets or set the concrete material used for this member.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.eDMember.Steel">
+            <summary>
+            Gets or set the steel material used fo this member.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.eDMember.Depth">
+            <summary>
+            Gets or set the depth of this member.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.eDMember.Width">
+            <summary>
+            Gets or set the width of this member.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.eDMember.Member">
+            <summary>
+            Gets or sets the member used in the anaysis.
+            </summary>
+        </member>
+        <member name="T:ESADS.Mechanics.Design.eDBeamSection">
+            <summary>
+            Represents a reinforced concrete beam stracture whith its all properties and design process methods.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.eDBeamSection.e">
+            <summary>
+            Holds all information related design failur event.It is used mainly wheither to stop or 
+            procced the design whenever the desing fails. 
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.eDBeamSection.designSummary">
+             <summary>
+            Accesses the public property 'DesignSummary'.
+             </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.eDBeamSection.sectionName">
+            <summary>
+            Accesses the public property 'SectionName'.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.eDBeamSection.DepthTolerance">
+            <summary>
+            Specifies the tolerance to which depth revision is significantly not important.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.eDBeamSection.barConstraints">
+            <summary>
+            Accesses the public property 'BarConstraints'.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.eDBeamSection.classWork">
+            <summary>
+            Accesses the public property 'ClassWork'.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.eDBeamSection.compCombination">
+            <summary>
+            Accesses the public property 'CompCombination'.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.eDBeamSection.concrete">
+            <summary>
+            Accesses the public property 'Concrete'.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.eDBeamSection.concreteCover">
+            <summary>
+            Accesses the public property 'ConcreteCover'.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.eDBeamSection.depth">
+            <summary>
+            Accesses the public property 'Depth'.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.eDBeamSection.designMoment">
+            <summary>
+            Accesses the public property 'DesignMoment'.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.eDBeamSection.doublyReinforced">
+            <summary>
+            Accesses the public property 'DoublyReinforced'.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.eDBeamSection.doublyReinfWithSLSdepth">
+            <summary>
+            Accesses the public property 'DoublyReinfWithSLSdepth'.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.eDBeamSection.effectiveSLSdepth">
+            <summary>
+            Accesses the public property 'EffectiveSLSdepth'.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.eDBeamSection.effectiveSpanLength">
+            <summary>
+            Accesses the public property 'EffectiveSpanLength'.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.eDBeamSection.maxAggrSize">
+            <summary>
+            Accesses the public property 'MaxAggrSize'.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.eDBeamSection.spanType">
+            <summary>
+            Accesses the public property 'SpanType'.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.eDBeamSection.steel">
+            <summary>
+            Accesses the public property 'Steel'.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.eDBeamSection.tensCombination">
+            <summary>
+            Accesses the public property 'TensCombination'.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.eDBeamSection.width">
+            <summary>
+            Accesses the public property 'Width'.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.eDBeamSection.stirrupPosition">
+            <summary>
+            Accesses the public property 'StirrupPosition'.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.eDBeamSection.exposureType">
+            <summary>
+            Accesses the public property 'ExposureType'.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.eDBeamSection.mainStirrupDiam">
+            <summary>
+            Accesses the public property 'MainStirrupDiam'.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.eDBeamSection.linkStirrupDiam">
+            <summary>
+            Accesses the public property 'LinkStirrupDiam'.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.eDBeamSection.effectiveDepth">
+            <summary>
+            Holds temporaty memory for depth calculated at each steep of the design procedure.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.eDBeamSection.formWorkIncrimentation">
+            <summary>
+            Access the public property 'FormWorkIncrimentation'.
+            </summary>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.eDBeamSection.#ctor(System.String,System.Double,System.Double,System.Double)">
+            <summary>
+            Creates an instance of beam class from basic input parameters.
+            </summary>
+            <param name="sectionName"> Name of the section.</param>
+            <param name="width">Width of the beam.</param>
+            <param name="depth">Depth of the beam.</param>
+            <param name="designMoment">Factored design moment loaded on the beam.</param>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.eDBeamSection.#ctor(System.String,System.Double,System.Double)">
+            <summary>
+            Creates an instance of ESADS.Mechanics.Design.eBeam class for specified width and design moment[for singly reinforced case].
+            </summary>
+            <param name="sectionName">Name of the section.</param>
+            <param name="width">Width of the beam.</param>
+            <param name="designMoment">Design moment of the beam.</param>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.eDBeamSection.#ctor(ESADS.WorkSpace.eBeamInput)">
+            <summary>
+            Creates an instance of ESADS.Mechanics.Design.eBeam class from the given input values.
+            </summary>
+            <param name="inputValues"></param>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.eDBeamSection.SetBarPreferences(System.Double[],ESADS.Mechanics.Design.eRelativeStirrupPosition,System.Double,System.Double)">
+            <summary>
+            Sets properties related bar preferences of the beam.
+            </summary>
+            <param name="BarConstraints">Main bar constraints.</param>
+            <param name="StirrupPosition">Relative location of the stirrup.</param>
+            <param name="MainStirrupDiam">Diameter of the main stirrup.</param>
+            <param name="LinkStirrupDiam">Diameter of the link stirrup.</param>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.eDBeamSection.SetDesignOptions(System.Boolean,System.Boolean)">
+            <summary>
+            Sets properties of the beam related to design options.
+            </summary>
+            <param name="doublyReinforced">True if doubly reinforced and false otherwise.</param>
+            <param name="doublyReinfWithSLSdepth">True if doubly reinforced with servisability limit state depth and false otherwise.</param>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.eDBeamSection.SetDesignConditions(ESADS.Code.eClassWork,ESADS.Code.eExposureType,ESADS.Code.eSpanType,System.Double,System.Double,System.Double)">
+            <summary>
+            Sets the properties related to design condition.
+            </summary>
+            <param name="classWork">Class work of the design.</param>
+            <param name="exposureType">Exposure type of the beam.</param>
+            <param name="spanType">Span type of the beam.</param>
+            <param name="effectiveSpanLength">Effective length of the span at which the beam section is taken.</param>
+            <param name="maxAggrSize">Maximum aggregate size used in the design of the beam.</param>
+            <param name="concreteCover">Concrete cover used in the design of the beam.</param>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.eDBeamSection.SetMaterial(ESADS.Mechanics.Design.eConcrete,ESADS.Mechanics.Design.eSteel)">
+            <summary>
+            Sets the material property of the beam.
+            </summary>
+            <param name="Concrete">Concrete materail used for the beam.</param>
+            <param name="Steel">Steel material used for the beam.</param>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.eDBeamSection.SetGeometry(System.Double,System.Double)">
+            <summary>
+            Sets the geometric property of the beam.
+            </summary>
+            <param name="width">Width of the beam.</param>
+            <param name="depth">Depth of the beam.</param>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.eDBeamSection.GetPracticalGrossDepth(System.Double)">
+            <summary>
+            Returns the practica depth that depends on the availability of formwork for the beam to be designed.
+            </summary>
+            <param name="dtPrim">The distance between top compresion fiber and the centroid of compresive area of steel.</param>
+            <returns></returns>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.eDBeamSection.GetNutralAxisDepth(System.Double)">
+            <summary>
+            Returns the depth of the nutral axis from a given steel ratio.
+            </summary>
+            <param name="Moment">Magnitude of moment used for singly reinforced part.</param>
+            <returns></returns>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.eDBeamSection.DesingSignlyReinforced">
+            <summary>
+            Designs a singly reinforced section.
+            </summary>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.eDBeamSection.DesignDoublyReinforced">
+            <summary>
+            Desing a singly doubly reinforced beam section.
+            </summary>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.eDBeamSection.GetMaxAreaOfSteel">
+            <summary>
+            Returns the maximum area of steel.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.eDBeamSection.Design">
+            <summary>
+            Designs the beam on which it is called.
+            </summary>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.eDBeamSection.CheckDepthTolerance(System.Double,System.Double)">
+            <summary>
+            Checks if a given NewDepth is within specified tolerance of a given OldDepth.
+            </summary>
+            <param name="OldDepth">The previous depth.</param>
+            <param name="NewDepth">The new depth.</param>
+            <returns></returns>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.eDBeamSection.GetMaxSteelRatio">
+            <summary>
+            Returns the maxismum possible steel ratio to make a beam section dectile.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.eDBeamSection.GetULSdepth(System.Double)">
+            <summary>
+            Returns the ultimate limit state depth required.
+            </summary>
+            <param name="ReductionFactor">The reduction factor by which steel ratio is going to be reduced.</param>
+            <returns></returns>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.eDBeamSection.GetSteelRation(System.Double)">
+            <summary>
+            Returns the steel ration for a given moment capacity and effective depth.
+            </summary>
+            <param name="MomentCapacity">The moment capacity of the section if it is singly reinforced.</param>
+            <returns></returns>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.eDBeamSection.GetMomentCapacity(System.Double)">
+            <summary>
+            Returns the singly reinforced moment capacity.
+            </summary>
+            <param name="ReductionFactor">Reducton factor to reduce steel ratio.</param>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.eDBeamSection.GetAreaOfSteel(System.Double)">
+            <summary>
+            Returns the area of steel required for a given moment capacity.
+            </summary>
+            <param name="Moment">The moment for which the steel is going to be calcualated.</param>
+            <returns></returns>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.eDBeamSection.GetAreaOfSteel(System.Double,System.Double)">
+            <summary>
+            Returns the secondary tensile area of steel that makes couple with top compressive steel.
+            </summary>
+            <param name="SecondaryMoment">Secondary moment caried by the coupled tensile and compresive areas of steel.</param>
+            <param name="dcPrim">The distance between top compresion fiber and the centroid of compresive area of steel.</param>
+            <returns></returns>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.eDBeamSection.GetAreaOfSteel(System.Double,System.Double,System.Double)">
+            <summary>
+            Returns the area of compressive steel required to resist secondary moment coupling with bottom tensile reinforcement.
+            </summary>
+            <param name="SecondaryMoment">Secondary moment caried by the coupled tensile and compresive areas of steel.</param>
+            <param name="dcPrim">The distance between top compresion fiber and the centroid of compresive area of steel.</param>
+            <param name="NutralAxisDepth">Depth of nutral axis.</param>
+            <returns></returns>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.eDBeamSection.GetCompSteelStress(System.Double,System.Double)">
+            <summary>
+            Returns the stress in compresion area of steel.
+            </summary>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.eDBeamSection.GetBarArea(System.Double)">
+            <summary>
+            Returns the area of a given bar.
+            </summary>
+            <param name="BarDiameter"> The diameter of the bar.</param>
+            <returns></returns>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.eDBeamSection.OnAllFailurs(ESADS.Mechanics.Design.eDesignFailedEventArgs)">
+            <summary>
+            Invokes the failur event which is specified in event argument.
+            </summary>
+            <param name="e">Event argument which contains all the necessary information related to the event.</param>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.eDBeamSection.OnDesignProgress(System.String)">
+            <summary>
+            Firs the design progress event from the given progress description message.
+            </summary>
+            <param name="progressDescription">Description of the progress on which the design is currently on.</param>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.eDBeamSection.GetConstraintsBarArray">
+            <summary>
+            Returns the string containing all bars useded in the design and their diameters.
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.eDBeamSection.GetDesignSummary(ESADS.eForceUints,ESADS.eLengthUnits)">
+            <summary>
+            Returns all information related to beam and 
+            </summary>
+            <param name="ForceUnit"></param>
+            <param name="LengthUnit"></param>
+            <returns></returns>
+        </member>
+        <member name="E:ESADS.Mechanics.Design.eDBeamSection.SLSdepthFailed">
+            <summary>
+            Occurs when the depth of th beam fails to satisfy the servisability limit state requirment.
+            </summary>
+        </member>
+        <member name="E:ESADS.Mechanics.Design.eDBeamSection.AllCombinationsCongested">
+            <summary>
+            Occurs when all combinations are congested.
+            </summary>
+        </member>
+        <member name="E:ESADS.Mechanics.Design.eDBeamSection.SymetricCombinationNotFound">
+            <summary>
+            Occurs when all combinations are not symetrical.
+            </summary>
+            
+        </member>
+        <member name="E:ESADS.Mechanics.Design.eDBeamSection.DesignProgress">
+            <summary>
+            Occurs when all procedures of beam design gets completed.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.eDBeamSection.Width">
+            <summary>
+            Gets the width of the beam.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.eDBeamSection.Depth">
+            <summary>
+            Gets the depth of the beam.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.eDBeamSection.EffectiveSpanLength">
+            <summary>
+            Gets the  effective span length of the beam.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.eDBeamSection.EffectiveSLSdepth">
+            <summary>
+            Gets the effective servisability limit state depth of the beam.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.eDBeamSection.Concrete">
+            <summary>
+            Gets the type of concrete used in the design of the beam.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.eDBeamSection.Steel">
+            <summary>
+            Gets the type of steel used in the design of the beam.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.eDBeamSection.DesignMoment">
+            <summary>
+            Gets the the design moment on the beam.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.eDBeamSection.BarConstraints">
+            <summary>
+            Gets the bar constraints used in the design of the beam.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.eDBeamSection.StirrupPosition">
+            <summary>
+            Gets the Relative stirrup position in the beam.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.eDBeamSection.DoublyReinforced">
+            <summary>
+            Gets the value indicating whether the beam is doubly reinforced or not.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.eDBeamSection.DoublyReinfWithSLSdepth">
+            <summary>
+            Gets the value indicating wether the beam is Doubly reinforced with servisability limit state depth or not.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.eDBeamSection.ExposureType">
+            <summary>
+            Gets the exposure type of the beam.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.eDBeamSection.ConcreteCover">
+            <summary>
+            Gets the concrete cover used in the design of the beam.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.eDBeamSection.MaxAggrSize">
+            <summary>
+            Gets the maximum aggregate size used in the design of the beam.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.eDBeamSection.SpanType">
+            <summary>
+            Gets the span type of the beam.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.eDBeamSection.TensCombination">
+            <summary>
+            Gets the tensile bar combination of the beam.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.eDBeamSection.CompCombination">
+            <summary>
+            Gets the compresion bar combination of the beam.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.eDBeamSection.ClassWork">
+            <summary>
+            Gets the class work of the beam going to be designed.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.eDBeamSection.MainStirrupDiam">
+            <summary>
+            Gets the diameter of the main stirrup.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.eDBeamSection.LinkStirrupDiam">
+            <summary>
+            Gets the diameter of the link stirrup used when the number of rows of bars in a beam is more than one.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.eDBeamSection.FormWorkIcrimentation">
+            <summary>
+            Gets the value by which available formworks increas in dimension.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.eDBeamSection.SectionName">
+            <summary>
+            Gets the name of of the section.
+            </summary>
+        </member>
+        <member name="T:ESADS.Mechanics.Design.eImposibleSteelRatioException">
+            <summary>
+            Exception thrown when the actual steel ratios are one bellow the absolute minimum and one above the absolute maximum steel ratio or when both are above the absolute maximum steel ratio.
+            </summary>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.eImposibleSteelRatioException.#ctor">
+            <summary>
+            Initializes an instance of ESADS_Mechanics.eImposibleSteelRatioException class.
+            </summary>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.eImposibleSteelRatioException.#ctor(System.String,System.Double,System.Double,System.Double)">
+             <summary>
+             Initializes an instance of ESADS_Mechanics.eImposibleSteelRatioException class for specified exception message.
+             </summary>
+             <param name="message">The error message that explains the reason for the exception.</param>
+            <param name="steelRatio1">The smallest reinforcement ratio that is calculated from mechanics requirment.</param>
+            <param name="steelRatio2">The largest reinforcement ratio that is calculated from mechanics requirment.</param>
+            <param name="steelRatioMax">The largest reinforcement ratio that is provided in the code.</param>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.eImposibleSteelRatioException.#ctor(System.String,System.Exception)">
+            <summary>
+            Initializes an instance of ESADS_Mechanics.eImposibleSteelRatioException class with specified error message and 
+             a reference to the inner exception that is the cause of this exception.
+            </summary>
+             <param name="message">The error message that explains the reason for the exception.</param>
+             <param name="innerException"> The exception that is the cause of the current exception, or a null reference.</param>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.eImposibleSteelRatioException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Initializes an instance of ESADS_Mechanics.eImposibleSteelRatioException class with serialize data.
+            </summary>
+            <param name="info">The System.Runtime.Serialization.SerializationInfo that holds the serialized object data about the exception being thrown.</param>
+            <param name="context"> The System.Runtime.Serialization.StreamingContext that contains contextual information about the source or destination.</param>
+        </member>
+        <member name="T:ESADS.Mechanics.Design.eConcrete">
+            <summary>
+            Contains information related to eConcrete class
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.eConcrete.charactersticCompressiveStrength">
+            <summary>
+            Holds the value of the characterstic compressive strength property.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.eConcrete.charactersticTensileStrength">
+            <summary>
+            Holds the value of the characterstic tensile strength property.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.eConcrete.desnCompStrength">
+            <summary>
+            Access the public property 'fcd'.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.eConcrete.desnTensStrength">
+            <summary>
+            Accesses the public property 'fctd'.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.eConcrete.grade">
+            <summary>
+            Holds the value of the Concrete grade property.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.eConcrete.modulusOfElasticity">
+            <summary>
+            Holds the value of the modulus of elasticity property of the material.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.eConcrete.unitWeight">
+            <summary>
+            Holds the value of the unit weight property of the concrete.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.eConcrete.concreteType">
+            <summary>
+            Holds the value of the concrete type property.
+            </summary>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.eConcrete.#ctor(System.Double,System.Double,System.Double,System.Double)">
+            <summary>
+            Creates new instance of concrete from its properties directly instead of grade.
+            </summary>
+            <param name="charactersticCompressiveStrength">The characterstic compressive strength of the concrete.</param>
+            <param name="charactersticTensileStrength">The characterstic tensile strength of the concrete.</param>
+            <param name="modulusOfElasticity">The modulus of elasticity of the concrete.</param>
+            <param name="unitWeight">The unit weight of the concrete.</param>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.eConcrete.#ctor(ESADS.Code.eConcreteGrade,ESADS.Code.eConcreteType)">
+            <summary>
+            Creates new instance of concrete from its name, grade and concrete type
+            </summary>
+            <param name="grade">The grade of the concrete.</param>
+            <param name="type">The type of the concrete defined by the eConcreteType enumeration.</param>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.eConcrete.#ctor(ESADS.Code.eConcreteGrade)">
+            <summary>
+            Creates new instance of concrete from its name, grade considering the concrete as the normal weight.
+            </summary>
+            <param name="grade">The grade of the concrete.</param>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.eConcrete.SetClassWork(ESADS.Code.eClassWork)">
+             <summary>
+            Sets the class work of the constraction using this concrete material.
+             </summary>
+             <param name="ClassWork">The class work in which the design is taking place.</param>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.eConcrete.fck">
+            <summary>
+            Gets or sets the characterstic compressive strength of the material. When this is set, it automatically chages the grade property to custom.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.eConcrete.fctk">
+            <summary>
+            Gets or sets the characterstic tensile strength of the material. When this is set, it automatically chages the grade property to custom.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.eConcrete.fcd">
+            <summary>
+            Gets the design yeild strength of the concrete.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.eConcrete.fctd">
+            <summary>
+            Gets the the design tesile strength of the concrete.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.eConcrete.E">
+            <summary>
+            Gets or sets the modulus of elasticity of the concrete material.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.eConcrete.UnitWeight">
+            <summary>
+            Gets the unit weight of the concrete unit weight.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.eConcrete.Grade">
+            <summary>
+            Gets the grade of the concrete. If the properties are user defined, the grade is custom.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.eConcrete.ConcreteType">
+            <summary>
+            Gets the concrete type of the material.
+            </summary>
+        </member>
+        <member name="T:ESADS.Mechanics.Design.eBarManager">
+            <summary>
+            Contains static methods used to arrange calculated area of steel considering economy,code requirement,symetry and congestion constraints.
+            </summary>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.eBarManager.GetCombinations(System.Double[],System.Double,System.Double,System.Double,System.Collections.Generic.List{System.Int32[]},System.Collections.Generic.List{System.Double},System.Int32[])">
+            <summary>
+            Gets all the possible bar combinations of the given bar constraints to cover the given area below a certain area limit.
+            </summary>
+            <param name="Diameters">Diameters of the bar constriants sorted in descending order of size.</param>
+            <param name="AsCalc">The calculated area of steel which is going to be covered by each combination. It is the area to be covered by the bars passed.</param>
+            <param name="AsMax">The maximum allowable area for a combination.</param>
+            <param name="AsOriginal">The original area of steel for which the combinations are going to be computed.</param>
+            <param name="Combinations">Used to hold all the combinations in the form of array of bar numbers in the same order as they appear in the constraints array.</param>
+            <param name="Areas">Used to store the area of a combination found at the same index in the Combinations collection. Can be initialized with an appropriate new collection object.</param>
+            <param name="Combination">Represents a single combination. The numbers represent the number of a bar at the same index in the constraints array. At the first call
+            to the method pass a new object having equal dimention as that of the diameters array.</param>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.eBarManager.FillTheRestOfBars(System.Int32[],System.Int32)">
+            <summary>
+            Completes a combination by assigning a value zero to the bars beyond a given index. This is used when the bars already inserted in the combination are enough
+            and thus to make sure that the rest of the numbers are zero.
+            </summary>
+            <param name="Combination">The combination to be completed.</param>
+            <param name="index">The index of the combination beyond which all the combination members are to be zero. The element at the index will not be altered.</param>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.eBarManager.GenerateRemainderDiameters(System.Double[],System.Double[]@)">
+            <summary>
+            Generates an array of diameters for next recursion from the current diameters array. 
+            </summary>
+            <param name="Diameters">The current array of diameters.</param>
+            <param name="RemainderDiameters">The array to be passed to the next recursion. It is one element less than the current diameters array.</param>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.eBarManager.StoreCombination(System.Collections.Generic.List{System.Int32[]},System.Int32[],System.Collections.Generic.List{System.Double},System.Double,System.Double)">
+            <summary>
+            Stores a completed combination and its total area to their corresponding collection at their appropriate location so that at the end both collection would be sorted in 
+            ascending order of total area used.
+            </summary>
+            <param name="Combinations">Holds the arrays representing each of the combinations. They are sorted in ascending order of their total area.</param>
+            <param name="Combination">A complete combination ready to be put into the collection of combination at its appropriate order.</param>
+            <param name="Areas">Holds the areas of combinations lying in the combinations collection at the same index.</param>
+            <param name="AsCombination">The total area of the completed combination. Both the combination and this area will have the same index in their corresponding collections.</param>
+            <param name="AsMax">The maximum allowable for a combination to have. If a combination has an area more than this area, it won't be placed in combinations collection.</param>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.eBarManager.GetAreaOf(System.Double,System.Int32)">
+            <summary>
+            Gets the area of a number of bars of the same diameter given their diameter and number only. 
+            </summary>
+            <param name="Diameter">The diameter of the bars.</param>
+            <param name="Number">The number of the bars. For a single bar just leave this parameter unassigned.</param>
+            <returns>The total area of the given number of bars.</returns>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.eBarManager.GetNumberOf(System.Double,System.Double)">
+            <summary>
+            Gets the minimum number of a certain bar to cover a given area.
+            </summary>
+            <param name="Diameter">The diameter of the bar.</param>
+            <param name="Area">The area to covered by the number of bars.</param>
+            <returns>The minimum bar requiredEffectiveDepth.</returns>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.eBarManager.GetRows(System.Double[],System.Int32[],System.Double,System.Double)">
+            <summary>
+            Returns arranged rows of bars for a given combination.
+            </summary>
+            <param name="Diameters">Diameters of the bars used in the combination in descending order of diameter.</param>
+            <param name="Combination">Number of each bar for each diameter in the combination.</param>
+            <param name="EffectiveWidth">The usable width on which the bars can be palced.</param>
+            <param name="MinSpacing">The minimum clear distance between two bars.</param>
+            <returns></returns>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.eBarManager.GetMinWidthForEachDiam(System.Double[],System.Double)">
+            <summary>
+            Returns minimum widths requiredEffectiveDepth for each diameters, if only one bar is used.
+            </summary>
+            <param name="Diametrs">Diameter of bars used.</param>
+            <param name="MinSpacing">Minimum clear spacing between two bars</param>
+            <returns></returns>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.eBarManager.GetWidthFor(System.Double,System.Int32,System.Double)">
+            <summary>
+            Returns the width requiredEffectiveDepth for a given diameter,number of bars and minimum spacing.
+            </summary>
+            <param name="Diameter">Diameter of the bars used</param>
+            <param name="NumbOfBars">Number of bars in the width</param>
+            <param name="MinSpacing">Minimum clear spacing between two bars</param>
+            <returns></returns>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.eBarManager.GetNumbOfBarsForWidth(System.Double,System.Double,System.Double)">
+            <summary>
+            Return the maximum possible number of bars in a given width for a given diameter and minimum spacing.
+            </summary>
+            <param name="Width"> Width on which the bars are going to be distributed.</param>
+            <param name="Diameter">Diameter of the bar used.</param>
+            <param name="MinSpacing">Minimum clear distance between two bars.</param>
+            <returns></returns>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.eBarManager.CompleteRow(System.Double[],System.Int32[],System.Double@,System.Double,System.Int32[],System.Double[],System.Int32)">
+            <summary>
+            Completes the given row by filling smaller bars if the space is not enough to place larger bars.
+            </summary>
+            <param name="Diameters">Diameters used in the combination.</param>
+            <param name="Combination">Number of each Diameter of bars.</param>
+            <param name="Width">The remaining width on which samaller bars are going to be placed.</param>
+            <param name="MinSpacing">Minimum clear spacing between two bars.</param>
+            <param name="Row">Row which is needed to be complited.</param>
+            <param name="MinWidth">Minimum width requiredEffectiveDepth for each diameters of bar if only one bars is used.</param>
+            <param name="Index">The index of diameter from which smaller bars are going to be checked.</param>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.eBarManager.IsAllElementsEmpty(System.Int32[],System.Int32)">
+            <summary>
+            checks if the elements of a combination are zero after a specified index.
+            </summary>
+            <param name="combination"> Combination to be checked</param>
+            <param name="index">Index at which the checkin starts.</param>
+            <returns></returns>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.eBarManager.GetSymmetricArrangements(System.Double[],System.Int32[],System.Double)">
+            <summary>
+            Gets the most symmetric arrangement of a row given the diameters and the corresponding numbers, effective width of the row. It also fills the
+            centroid of the arrangement into a refernce variable.
+            </summary>
+            <param name="Diameters">An array containing all the diameters in the row. Some may exist evenif their number is zero.</param>
+            <param name="NumberOfBars">Holds the number of the bars in the row. Its members may be odd, even or zero.</param>
+            <param name="EffectiveWidth">The effective width occupied by the bars of the row.</param>
+            <returns>The arrangement with diameters and the corresponding coordinates measured from the center line.</returns>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.eBarManager.FillArrangement(System.Double[0:,0:],System.Double[0:,0:],System.Double@,System.Double[],System.Double)">
+            <summary>
+            Fills the arrangement of bars whose diameters and the clear spacing are passed in a one dimensional array. It fills the coordinate of the 
+            arrangement with the least centroid. 
+            </summary>
+            <param name="BestArrangement">An array to hold the order of the best arrangement with its corresponding coordinates. Pass the variable to hold
+            the final arrangement here.</param>
+            <param name="TempArrangement">A temporary array to hold any arrangement until it will be compared to the best arrangement by their centroid.</param>
+            <param name="CentroidOfBest">Holds by reference, the centroid of the best arrangement.</param>
+            <param name="Diameters">The diameters of the bars. If there are duplicates in these diameters, this method is no efficient, use GetSymmetricArrangements() method instead.</param>
+            <param name="Spacing">The clear spacing between bars.</param>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.eBarManager.Copy(System.Double[0:,0:],System.Double[0:,0:])">
+            <summary>
+            Copies the first two dimensional double array to the second two dimensional array elementwisely.
+            </summary>
+            <param name="From">The array to be copied.</param>
+            <param name="To">The array to receive the copied array.</param>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.eBarManager.InitializeBestArrangement(System.Double[0:,0:],System.Double@,System.Double[],System.Double)">
+            <summary>
+            Initializes the BestArrangement array by filling all the diameters passed by putting them in the same order as they appear in the diameters
+            array. It simultaneously fills the centroid into a variable passed by reference.
+            </summary>
+            <param name="BestArrangement">The BestArray to be initialized. It has second dimension of two, for diameter and coordinate. The second dimension
+            shall be equal to the length of the diameters array.</param>
+            <param name="CentroidOfBest">The reference to a variable holding the centroid of the best arrangement.</param>
+            <param name="Diameters">Array of bar diameters to be arranged into the row.</param>
+            <param name="Spacing">The average clear spacing to be applied between the bars.</param>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.eBarManager.FillCoordinates(System.Double[0:,0:],System.Double)">
+            <summary>
+            Fills the coordinates of the bars whose diameters are specified in the first index of the second dimension based on the average spacing passed.
+            </summary>
+            <param name="Arrangement">An array holding an arrangement. It is a two dimensional array whose first index of its second dimension is filled with 
+            the diameters of the bars in the arrangement. The coordinates are going to be filled into the second elements of the second dimension.</param>
+            <param name="Spacing">Is the average clear spacing between bars to be adopting while placing the bars.</param>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.eBarManager.GetWidth(System.Double[0:,0:],System.Double)">
+            <summary>
+            Gets the total effective width occupied by all bars placed in an arrangement given the arrangement and the average clear spacing.
+            </summary>
+            <param name="Arrangement">A two dimensional array holding the diameters of the bars in the first index of the second dimension.</param>
+            <param name="Spacing">The average clear spacing between bars.</param>
+            <returns>The total effective width occupied by the bars and the spacing between them.</returns>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.eBarManager.GetCentroid(System.Double[0:,0:])">
+            <summary>
+            Gets the centroid of an arrangement in the horizontal axis measured from the mid-point of the distribution width. Positive is considered to the right of the mid-point.
+            </summary>
+            <param name="Arrangement">A two dimensional array containing the diameters in its first index of the second dimension and its coordinates in the second index of the second
+            dimension.</param>
+            <returns>The centroid of an arrangement measured from the center of the distribution width.</returns>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.eBarManager.FillSubDiameters(System.Double[],System.Double[],System.Int32)">
+            <summary>
+            Fills the SubDiameters array which is one less than the diameters array with all the elements of the diameters array except the element at a specified index.
+            </summary>
+            <param name="Diameters">The source of the diameters to be filled into the subDiameters array.</param>
+            <param name="SubDiameters">An array to be filled with diamters. Its length is one less than that of the main diamters array.</param>
+            <param name="Index">The index of an elelement in the main diameters array which is not to be included in the subDiameters array.</param>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.eBarManager.GetSpacing(System.Double[],System.Int32[],System.Double)">
+            <summary>
+            Gets the average clear spacing between bars, given their diameters and the total effective width for a row of bars. It is assumed that when the number of bars 
+            is placed into the row the minimum spacing requirement is satisfied so that there is no need to check for it here.
+            </summary>
+            <param name="Diameters">An array containing the diameters of different bars found in the row.</param>
+            <param name="NumberOfBars">The corresponding number of the bars whose diameters are passed by the Diameters array parameter.</param>
+            <param name="EffectiveWidth">The total effective width occupied by both the bars and the clear spacing between them.</param>
+            <returns>Returns the equal or average clear spacing between the bars of the row so that there is no spare space left at the end.</returns>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.eBarManager.GetOddDiameters(System.Double[],System.Int32[])">
+            <summary>
+            Gets a one dimensional array containing the diameters of the bars whose number in the row when passed first was odd. It also alters the odd numbers in NumberOfBars
+            array to even numbers by subtracting one from each.
+            </summary>
+            <param name="Diameters">The array containing the diameters of the bars contained in the row.</param>
+            <param name="NumberOfBars">The number of the corresponding bars whose diameters are specified in the diameters array.</param>
+            <returns>A one dimensional array containing the diameters of the bars whose number in the row was odd when first entered. There will be no duplicate in this array
+            unless there was a duplicate diameter in the original diameters array with all odd numbered.</returns>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.eBarManager.IsOdd(System.Int32)">
+            <summary>
+            Checks if a number passed is odd number.
+            </summary>
+            <param name="num">The number to be checked for oddness.</param>
+            <returns>true is the number is odd and false it is not odd, i.e. even.</returns>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.eBarManager.FillCombinationY_Coordinates(System.Collections.Generic.List{System.Double[0:,0:]},System.Double,System.Double,System.Double,System.Double,ESADS.Mechanics.Design.eRelativeStirrupPosition,System.Collections.Generic.List{System.Double[]})">
+            <summary>
+            Fills the Y-coordinates measured from the furthest concrete compression fiber from the neutral axis, of each of the bars in a combination. The combination shall be 
+            arranged into rows beforehand.
+            </summary>
+            <param name="RowsOfComb">List of the rows in which each row is expressed as two dimensional array, the first dimension equal to the bar types involved in a row and
+            the second dimension of two. The first index of the second dimension of any bar is the dimeter of the bar. The second index is not used here.</param>
+            <param name="GrossDepth">The total height of the concrete beam, i.e. from the furthest compression fiber to the furthest tension fiber of concrete.</param>
+            <param name="ConcreteCover">The concrete cover provided for any steel to be far from the concrete surface.</param>
+            <param name="StirrupDiameter">The diameter of the stirrup used to hold the longitudinal bars in place.</param>
+            <param name="MinSpacing">Minimum allowable clear spacing between bars both horizontally and vertically.</param>
+            <param name="StirrupPosn">The ralative position of the stirrups relative to the longitudinal bar that they hold. This doesn't concern the bottom row in which the 
+            stirrup is always on the bottom of the longitudinal bars.</param>
+            <param name="Y_Coordinates">List to be filled by the array of coordinates in the same order as the RowsOfComb.</param>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.eBarManager.FillRowY_Coordinates(System.Double[0:,0:],System.Double[],System.Double,ESADS.Mechanics.Design.eRelativeStirrupPosition)">
+            <summary>
+            Fills the y-coordinates of each of the bars based on the basic coordinate of the row passed. 
+            </summary>
+            <param name="Diameters">Contains the diameters in the first index of the second dimension for each bar represented by an index in the first dimension.</param>
+            <param name="RowY_Coordinates">Array to be filled with the y coordinates in the same order as they appear in the diameters array.</param>
+            <param name="BasicCoordinate">The common coordinate for a row.</param>
+            <param name="StirrupPosition">Condition of the stirrup whether it is on top of the main bars or not.</param>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.eBarManager.IsCongested(System.Collections.Generic.List{System.Double[0:,0:]},System.Collections.Generic.List{System.Double[]},System.Double,System.Double@)">
+            <summary>
+            Checks if a combination causes congestion by comparing the minimum reinforcement fiber coordinate.
+            </summary>
+            <param name="RowsOfComb">Holds the collection of rows each represented by the diameters of the bars arranged in descending order.</param>
+            <param name="Y_Coordinates">The y-coordinates of the bars specified in the same order as the diameters.</param>
+            <param name="NeutralAxisDepth">The depth of neutral axis measured from the furthest compressive concrete fiber.</param>
+            <param name="LevelOfCongestion">Returns the depth up to which the top of the rinforcement has extend.</param>
+            <returns>Returns true if the combinatio is congested and false otherwise.</returns>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.eBarManager.GetEffectiveWidth(System.Double,System.Double,System.Double)">
+            <summary>
+            Returns effective width for a given beam section.
+            </summary>
+            <param name="GrossWidth">Gross width of the beam.</param>
+            <param name="StirupDiam">Diameter of stirrup used in the beam.</param>
+            <param name="ConcretCover">Thickness of concrete cover used in the design.</param>
+            <returns></returns>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.eBarManager.SortDescending(System.Double[])">
+            <summary>
+            Sortes given Diameters of bars in descending order. The calculation is performed by refference.
+            </summary>
+            <param name="Diameters">Diameters used as a Constraint.</param>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.eBarManager.RemoveBarsWithZeroNumber(System.Collections.Generic.List{System.Int32[]},System.Double[])">
+            <summary>
+            Returns list of rows removing all bars with zero number of bars as an element.
+            </summary>
+            <param name="Rows">Rows of a combination on which diameters with zero elements to be removed.</param>
+            <param name="ConstraintDiameters">Set of diameters from which the combination is going to be generated.</param>
+            <returns></returns>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.eBarManager.GetMaxDepthCombination(System.Collections.Generic.List{ESADS.Mechanics.Design.eCombination})">
+            <summary>
+            Retursn the combination with larger effective depth from a given set of combinations.
+            </summary>
+            <param name="Combinations"></param>
+            <returns></returns>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.eBarManager.GetCombinations(System.Double,System.Double[],System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,ESADS.Mechanics.Design.eRelativeStirrupPosition,ESADS.Mechanics.Design.eDesignFailurLink)">
+            <summary>
+            Returns the most economical arrangment of bar combination with all properties filled. Used when there is a risk of design failur[like doubly reinforced beam section.]
+            </summary>
+            <param name="AsCalculated">Calculated area of steel for strength.</param>
+            <param name="ConstraintDiameters">Set of bar diameter user preferences from which the combinations are to be generate from.</param>
+            <param name="AsMax">Maximum allowable area of steel from code requirment.</param>
+            <param name="GrossWidth">Gross width of the beam.</param>
+            <param name="GrossDepth">Gross depth of the beam.</param>
+            <param name="NutralAxisDepth">Distance of nutrual axis from top compresion fiber.</param>
+            <param name="MinSpacing">Minimum clear spacing between two bars.</param>
+            <param name="ConcreteCover">Thickness of concrete cover used in the design.</param>
+            <param name="StirupDiameter">Diameter of stirrup used in the beam.</param>
+            <param name="StirrupPosition">Orientation of the stirrup i.e. Stirrup at bottom or Stirrup at top of logtudinal bar.</param>
+            <param name="DesignFailur">A delegate used to fire a failur event that is expected when the combinations are generated.</param>
+            <returns></returns>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.eBarManager.GetCombinations(System.Double,System.Double[],System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,System.Double,ESADS.Mechanics.Design.eRelativeStirrupPosition)">
+            <summary>
+            Returns the most economical arrangment of bar combination with all properties filled and when there is no risk of design failur[like singly reinforced beam].
+            </summary>
+            <param name="AsCalculated">Calculated area of steel for strength.</param>
+            <param name="ConstraintDiameters">Set of bar diameter user preferences from which the combinations are to be generate from.</param>
+            <param name="AsMax">Maximum allowable area of steel from code requirment.</param>
+            <param name="GrossWidth">Gross width of the beam.</param>
+            <param name="GrossDepth">Gross depth of the beam.</param>
+            <param name="NutralAxisDepth">Distance of nutrual axis from top compresion fiber.</param>
+            <param name="MinSpacing">Minimum clear spacing between two bars.</param>
+            <param name="ConcreteCover">Thickness of concrete cover used in the design.</param>
+            <param name="StirupDiameter">Diameter of stirrup used in the beam.</param>
+            <param name="StirrupPosition">Orientation of the stirrup i.e. Stirrup at bottom or Stirrup at top of logtudinal bar.</param>
+            <returns></returns>
+        </member>
+        <member name="T:ESADS.Mechanics.Design.eDesignFailurEventHandler">
+            <summary>
+            Delegates all event handler methods which are related to desing failur.
+            </summary>
+        </member>
+        <member name="T:ESADS.Mechanics.Design.eDesignFailedEventArgs">
+            <summary>
+            Contains all the necessary information when a design failur events occure.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.eDesignFailedEventArgs.failedGrossDepth">
+            <summary>
+            Accesses the public property 'FailedEffectiveDepth'.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.eDesignFailedEventArgs.requiredGrossDepth">
+            <summary>
+            Accesses the public property 'RequiredDepth'.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.eDesignFailedEventArgs.typeOfFailur">
+            <summary>
+            Accesses the public property 'TypeOFFailur'
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.eDesignFailedEventArgs.summary">
+            <summary>
+            The summary of the failure compiled each time a property is changed. Each string represents a line.
+            </summary>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.eDesignFailedEventArgs.#ctor(System.Double,System.Double,ESADS.Mechanics.Design.eFailureTypes)">
+            <summary>
+            Creates an instance of ESADS_Mechanics.eDesignFailedEventArgs from a given required depth and failed depth.
+            </summary>
+            <param name="failedGrossDepth">The gross depth at which the design failed.</param>
+            <param name="requiredGrossDepth">The gross depth required for the failur generating this event argument not to occure.</param>
+            <param name="typeOfFailur">The type of failur that has occured.</param>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.eDesignFailedEventArgs.AddToSummary(System.String[])">
+            <summary>
+            Adds a number of lines of summary to the existing summary.
+            </summary>
+            <param name="AdditionalLines">Additional notes to be appended at the end of the summary</param>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.eDesignFailedEventArgs.GetSummary(ESADS.eLengthUnits)">
+            <summary>
+            Gets the short summary of the failure type, filed gross depth and required gross depth.
+            </summary>
+            <param name="windowLengthUnit">The user preference for the length unit.</param>
+            <returns></returns>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.eDesignFailedEventArgs.FailedGrossDepth">
+            <summary>
+            Gets the gross depth at which the design failed.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.eDesignFailedEventArgs.RequiredGrossDepth">
+            <summary>
+            Gets the minimum gross depth requiredEffectiveDepth for safe design.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.eDesignFailedEventArgs.TypeOfFailure">
+            <summary>
+            Gets the failur type that has occured.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.eDesignFailedEventArgs.DesignCanceled">
+            <summary>
+            Gets or sets the value indicating wheither the design is canceled or not.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.eDBeam.analyzer">
+            <summary>
+            Holds the value of the 'Analyzer' property.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.eDBeam.flexureSections">
+            <summary>
+            Holds the value of the 'FlexureSections' property.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.eDBeam.members">
+            <summary>
+            Holds all the members for the whole beam.
+            </summary>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.eDBeam.Design">
+            <summary>
+            Runs the design of the whole beam.
+            </summary>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.eDBeam.CreateSections">
+            <summary>
+            Creates all the necessary moment sections for the whole beam.
+            </summary>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.eDBeam.GetMomentIntervals">
+            <summary>
+            Gets all the x coordinate intervals with its maximum moment.
+            </summary>
+            <returns>A two dimensional double array of three element row. Each row represents the start coordinate first the end coordinate second and the value of the moment last.</returns>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.eDBeam.Analyzer">
+            <summary>
+            Gets the analysis component of the continuous beam
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.eDBeam.FlexureSections">
+            <summary>
+            Gets the sections designed for flexure.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.eDBeam.Members">
+            <summary>
+            Gets the members holding the design properties needed by the sections.
+            </summary>
+        </member>
+        <member name="T:ESADS.Mechanics.Design.eFailureTypes">
+            <summary>
+            Enumerates all possible types of beam failurs.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.eFailureTypes.AllCombinationsCongested">
+            <summary>
+            Represents failur by congestion.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.eFailureTypes.NoSymetricCombination">
+            <summary>
+            Represents failur in which all combinations are not symetrical.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.eFailureTypes.SLS">
+            <summary>
+            Represents failur due to servisability limit state failur.
+            </summary>
+        </member>
+        <member name="T:ESADS.Mechanics.Design.eBar">
+            <summary>
+            Contains information related to reinforcement bar.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.eBar.diameter">
+            <summary>
+            Accesses public property 'Diameter'.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.eBar.area">
+            <summary>
+            Accesses public property 'Area'.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.eBar.xCoord">
+            <summary>
+            Accesses public property 'XCoord'.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.eBar.yCoord">
+            <summary>
+            Accesses public property 'YCoord'.
+            </summary>
+        </member>
+        <member name="F:ESADS.Mechanics.Design.eBar.name">
+            <summary>
+            Accesses the 'Name' property.
+            </summary>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.eBar.#ctor(System.Double,System.Double,System.Double)">
+            <summary>
+            Creates an instance of eBar class given Diameter,X-Coordinate and Y-Coordinate.
+            </summary>
+            <param name="diameter">Diameter of the bar.</param>
+            <param name="xCoord">X-Coordinate of the bar.</param>
+            <param name="yCoord">Y-Coordinate of the bar.</param>
+        </member>
+        <member name="M:ESADS.Mechanics.Design.eBar.GetArea(System.Double)">
+            <summary>
+            Returns the area of a bar for the given diameter.
+            </summary>
+            <param name="diameter">Diameter of the bar.</param>
+            <returns></returns>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.eBar.Diameter">
+            <summary>
+            Gets the Diameter of a Bar.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.eBar.Area">
+            <summary>
+            Gets the area of a bar.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.eBar.XCoord">
+            <summary>
+            Gets the X-Coordinate of a bar.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.eBar.YCoord">
+            <summary>
+            Gets the Y- Coordinate of a bar.
+            </summary>
+        </member>
+        <member name="P:ESADS.Mechanics.Design.eBar.Name">
+            <summary>
+            Gets or sets the name of the bar.
+            </summary>
+        </member>
+    </members>
+</doc>

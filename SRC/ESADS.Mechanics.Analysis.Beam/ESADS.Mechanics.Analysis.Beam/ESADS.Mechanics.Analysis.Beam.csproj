@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DB9D857C-885B-4886-8B47-E2E5C8C5DE67}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ESADS.Mechanics.Analysis.Beam</RootNamespace>
+    <AssemblyName>ESADS.Mechanics.Analysis.Beam</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ESADS, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>\\ABIY-PC\Users\Abiy\Documents\Visual Studio 2010\Projects\ESADS\ESADS\bin\Debug\ESADS.dll</HintPath>
+    </Reference>
+    <Reference Include="ESADS.Code">
+      <HintPath>..\..\ESADS_Code\ESADS.Code\bin\Debug\ESADS.Code.dll</HintPath>
+    </Reference>
+    <Reference Include="ESADS.Mechanics.Analysis">
+      <HintPath>..\..\ESADS.Mechanics.Analysis\ESADS.Mechanics.Analysis\bin\Debug\ESADS.Mechanics.Analysis.dll</HintPath>
+    </Reference>
+    <Reference Include="ESADS.Mechanics.Design">
+      <HintPath>\\abiy-pc\Users\Abiy\Documents\Visual Studio 2010\Projects\ESADS.Mechanics.Design\ESADS.Mechanics.Design\bin\Debug\ESADS.Mechanics.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="ESADS.Mechanics.Design.Beam, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\ESADS.Mechanics.Design.Beam\ESADS.Mechanics.Design.Beam\bin\Debug\ESADS.Mechanics.Design.Beam.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="eABeam.cs" />
+    <Compile Include="eAMember.cs" />
+    <Compile Include="eConcentratedForce.cs" />
+    <Compile Include="eConcentratedMoment.cs" />
+    <Compile Include="eConstrainedAxis.cs" />
+    <Compile Include="eJoint.cs" />
+    <Compile Include="eJointChangedEventHandler.cs" />
+    <Compile Include="eJointType.cs" />
+    <Compile Include="eLoad.cs" />
+    <Compile Include="eLoadChangedEventArgs.cs" />
+    <Compile Include="eLoadChangedEventHandler.cs" />
+    <Compile Include="eLoadType.cs" />
+    <Compile Include="eRectangularLoad.cs" />
+    <Compile Include="eSectionAt.cs" />
+    <Compile Include="eTriangularLoad.cs" />
+    <Compile Include="eTriangularLoadOrientation.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ESADS.Mechanics.Analysis.Beam.cd" />
+    <None Include="ESADS.Mechanics.Analysis.Beam.Detailed.cd" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

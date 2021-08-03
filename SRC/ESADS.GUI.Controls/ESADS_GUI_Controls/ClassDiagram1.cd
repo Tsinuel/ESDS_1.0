@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="ESADS.GUI.Controls.eNumericTextBox">
+    <Position X="0.5" Y="0.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAGCgAAJCIAAAAEAICABAICAAAIAFAAAIBQAAAAAAg=</HashCode>
+      <FileName>eNumericTextBox.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ESADS.GUI.Controls.eStructureTemplate">
+    <Position X="3.25" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAABAACAAAAAAAACgAAACAAAAAAAAAAAgCAAAAAA=</HashCode>
+      <FileName>eStructureTemplate.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ESADS.GUI.Controls.Properties.Resources">
+    <Position X="5.5" Y="0.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABEAAAAQAAAAAAAAAAAAAAAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="ESADS.GUI.Controls.eTypeOfStructure">
+    <Position X="7.5" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAABAAAIAQAAAAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>eStructureTemplate.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ESADS.GUI.Controls.eMeasurment">
+    <Position X="9.5" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgAAIAAAAAAAAAAAAAAAAABAAAABAAAAAAAAAQEIAIA=</HashCode>
+      <FileName>eMeasurment.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="ESADS.GUI.Controls.eDataType">
+    <Position X="7.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAA=</HashCode>
+      <FileName>eDataType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Comic Sans MS" Size="9" />
+</ClassDiagram>
